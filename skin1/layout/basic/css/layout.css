@@ -343,7 +343,7 @@ a:hover {
   overflow: hidden;
   font-size: 13px;
   line-height: 1;
-  color: var(--grayScale-N2);
+  color: var(--grayScale-N1);
   font-weight: 300;
   white-space: nowrap;
   text-decoration: none;
@@ -491,7 +491,6 @@ a:hover {
 }
 #header .inner .top_nav_box .top_category .sub_cate01 li a,
 #header .inner .top_nav_box .top_category .sub-category li a {
-  font-family: 'Pretendard';
   font-size: 16px;
   color: var(--grayScale-N1);
   line-height: 1;
@@ -755,7 +754,7 @@ a:hover {
   width: 100%;
   margin: 0 auto;
   padding: 0;
-  /* background: var(--grayScale-N2); */
+  background: var(--main-color-op);
   overflow: hidden;
 }
 #footer .inner {
@@ -796,7 +795,6 @@ a:hover {
 
 /* 하단 쇼핑몰정보 */
 #footer .inner .inner_t .info_left .bt_info {
-  font-family: 'Pretendard';
   letter-spacing: -0.05em;
 }
 #footer .inner .inner_t .info_left .bt_info .bt_title {
@@ -825,13 +823,15 @@ a:hover {
 #footer .inner .inner_t .info_left .bt_info .bt_info_list > div {
   margin: 0 10px 0 0;
 }
+#footer .inner .inner_t .info_left .bt_info .bt_info_list > div span {
+  letter-spacing: 0.05em;
+}
 #footer .inner .inner_t .info_left .bt_info .bt_info_list > div span:first-child {
   font-weight: 600;
 }
 
 /* 하단 메뉴 */
 #footer .inner .inner_t .info_right .bt_util {
-  font-family: 'Pretendard';
   margin-bottom: 50px;
 }
 #footer .inner .inner_t .info_right .bt_util ul {
@@ -854,7 +854,6 @@ a:hover {
 #footer .inner .inner_t .info_right .wrap_cs {
   display: flex;
   justify-content: space-between;
-  font-family: 'Pretendard';
 }
 #footer .inner .inner_t .info_right .wrap_cs .bt_title {
   font-size: 14px;
@@ -871,10 +870,10 @@ a:hover {
 #footer .inner .inner_t .info_right .wrap_cs .cs_center_txt,
 #footer .inner .inner_t .info_right .wrap_cs .bank_txt {
   font-size: 15px;
-  font-weight: 300;
+  font-weight: var(--font-weight-Light);
   color: var(--grayScale-N1);
   line-height: 24px;
-  letter-spacing: -0.05em;
+  letter-spacing: 0.05em;
 }
 #footer .inner .inner_t .info_right .wrap_cs .sns_txt a {
   font-size: 15px;
@@ -1523,7 +1522,7 @@ a:hover {
   #footer .inner .inner_t .info_right .wrap_cs .cs_center_txt,
   #footer .inner .inner_t .info_right .wrap_cs .bank_txt {
     font-size: 12px;
-    font-weight: 300;
+    font-weight: var(--font-weight-Light);
     color: var(--grayScale-N1);
     line-height: 24px;
     letter-spacing: -0.05em;

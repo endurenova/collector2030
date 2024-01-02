@@ -110,14 +110,12 @@
   > th::after {
   content: '작가명';
   display: inline-block;
-  font-family: 'Pretendard';
   font-size: 16px;
   font-weight: var(--font-weight-Bold);
 }
 .xans-product-detail .infoArea table > tbody > tr > th span,
 .xans-product-detail .infoArea table > tbody > tr > td span {
   display: inline-block;
-  font-family: 'Pretendard';
   font-size: 16px !important;
 }
 .xans-product-detail .infoArea table > tbody > tr > th span {
@@ -131,7 +129,6 @@
 }
 .xans-product-detail .infoArea table > tbody > tr:nth-of-type(2) > td span {
   /* 작가명 td */
-  font-family: 'Montserrat';
   font-weight: var(--font-weight-Bold) !important;
 }
 .xans-product-detail .infoArea table > tbody > tr:nth-of-type(3) > th span {
@@ -1320,10 +1317,10 @@
     width: 95% !important;
   }
   .xans-product #prdDetail table tbody tr th,
-.xans-product #prdDetail table tbody tr td {
-  /* 상품 상세 페이지 상세 정보 */
-  font-size: clamp(12px, 3.333vw, 16px) !important;
-}
+  .xans-product #prdDetail table tbody tr td {
+    /* 상품 상세 페이지 상세 정보 */
+    font-size: clamp(12px, 3.333vw, 16px) !important;
+  }
   #mCafe24Order #totalProducts .delete {
     position: relative;
     display: inline-block;
@@ -1332,7 +1329,6 @@
   #mCafe24Order .product_detail #totalProducts tbody td p:not(.product) {
     padding: 0 30px;
   }
-  
 }
 /********************* Mobile / Tablet *********************/
 @media all and (max-width: 1024px) {

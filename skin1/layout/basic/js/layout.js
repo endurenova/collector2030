@@ -530,17 +530,17 @@ function ifmore() {
       var isstatus = jQuery(this).children('img').attr('icon_status');
       if (isstatus == 'on') {
         jQuery(this).addClass('on');
-        jQuery(this).closest('li').find('.heart-icon').addClass('checked'); // 하트아이콘
+        jQuery(this).closest('li').find('.heart-mark').addClass('checked'); // 하트아이콘
       }
     });
     jQuery('.ec-base-product .prdList .icon__box .wish').click(function () {
       var isstatus = jQuery(this).children('img').attr('icon_status');
       if (isstatus == 'off') {
         jQuery(this).addClass('on');
-        jQuery(this).closest('li').find('.heart-icon').addClass('checked'); // 하트아이콘
+        jQuery(this).closest('li').find('.heart-mark').addClass('checked'); // 하트아이콘
       } else {
         jQuery(this).removeClass('on');
-        jQuery(this).closest('li').find('.heart-icon').removeClass('checked'); // 하트아이콘
+        jQuery(this).closest('li').find('.heart-mark').removeClass('checked'); // 하트아이콘
       }
     });
   }, 200);

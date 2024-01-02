@@ -54,7 +54,7 @@
 }
 .slide_text_box .slide_btn_area a {
   box-sizing: border-box;
-  font-family: 'Montserrat';
+
   font-size: clamp(16px, 1.25vw, 24px);
   line-height: 2.4;
   text-align: center;
@@ -76,7 +76,7 @@
 .main_title .main_title_txt01 {
   position: relative;
   margin: 0;
-  font-family: 'Montserrat';
+
   padding-top: 20px;
   font-size: 36px;
   font-weight: var(--font-weight-Bold);
@@ -99,7 +99,6 @@
   line-height: 1;
   color: var(--grayScale-N2);
   margin-top: 16px;
-  font-family: 'Pretendard-Regular';
 }
 .main_title.ez-align-left {
   text-align: left;
@@ -176,6 +175,14 @@
   display: block;
   position: relative;
   text-align: center;
+}
+
+.main_image_text_gallery .main_3dan_banner ul li a img {
+  transform: scale(1);
+  transition: 0.3s;
+}
+.main_image_text_gallery .main_3dan_banner ul li a:hover img {
+  transform: scale(1.05);
 }
 .main_image_text_gallery .main_3dan_banner ul li a picture {
   overflow: hidden;
@@ -491,7 +498,6 @@ ul.prdList.grid4.list_gallery .description {
 }
 
 ul.prdList.grid4.list_gallery .description .spec > li:last-child span {
-  font-family: 'Montserrat';
   font-weight: var(--font-weight-Bold);
   font-size: 20px !important;
   color: #fff !important;
@@ -504,7 +510,7 @@ ul.prdList.grid4.list_gallery .description .name {
 
 ul.prdList.grid4.list_gallery .description .name span {
   display: block;
-  font-family: 'Montserrat';
+
   font-weight: var(--font-weight-Regular);
   white-space: nowrap;
   overflow: hidden;
@@ -530,7 +536,6 @@ ul.prdList.grid4.list_gallery .description .main_list_detail {
 } /* 메인페이지 NEW ARRIVALS 상세버튼 */
 
 ul.prdList.grid4.list_gallery .description .main_list_detail span:first-child {
-  font-family: 'montserrat';
   font-size: 16px;
 }
 ul.prdList.grid4.list_gallery .description .main_list_detail .material-symbols-outlined {
@@ -625,7 +630,6 @@ ul.prdList.grid4.list_gallery > li:hover .icon__box {
   font-weight: var(--font-weight-Medium);
   color: var(--grayScale-N1);
   letter-spacing: -0.01em;
-  font-family: 'Montserrat';
 }
 .main_product_category .main_product_inner .main_product_tab li .button::before {
   font-size: 14px;
@@ -772,7 +776,7 @@ ul.prdList.grid4.list_gallery > li:hover .icon__box {
 }
 .ec-base-product ul.grid3_slide li .prdList__item .description > ul > li > span {
   /* 작가명 */
-  font-family: 'Montserrat';
+
   font-size: 16px !important;
   font-weight: var(--font-weight-Bold);
   line-height: 1.5;
@@ -783,7 +787,7 @@ ul.prdList.grid4.list_gallery > li:hover .icon__box {
 }
 .ec-base-product ul.grid3_slide li .prdList__item .description .name a > span {
   /* 작품명 */
-  font-family: 'Montserrat';
+
   font-size: 18px !important;
   font-weight: var(--font-weight-Medium);
   line-height: 1.5;

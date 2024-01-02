@@ -11,7 +11,9 @@
   margin: 10px 0 0 0;
 }
 .ec-base-product .prdList .spec > li {
-  /* margin: 0 0 5px; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   margin: unset;
 }
 .ec-base-product .prdList .xans-product-listitem.spec > li:nth-of-type(2) {
@@ -219,11 +221,11 @@
 
 /* 상품진열 아이콘 */
 .ec-base-product .prdList .icon {
-  /* margin: 0 0 5px 0; */
   display: flex;
   width: 100%;
   justify-content: space-between;
   margin: unset;
+  padding: 2% 0;
 }
 .ec-base-product .prdList .icon .product-item__price {
   color: var(--main-color);
@@ -3047,7 +3049,6 @@ div.ec-base-help ul {
   margin: 0 auto;
   font-size: 24px;
   color: var(--grayScale-N1);
-  font-family: 'Montserrat';
   font-weight: var(--font-weight-Bold);
   letter-spacing: 0.22px;
   border-bottom: 2px solid var(--grayScale-N1);
