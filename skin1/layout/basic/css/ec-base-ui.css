@@ -517,21 +517,24 @@ span.noBorder input {
   content: '/';
   display: inline-block;
   margin: 0 4px 0 2px;
-  color: #7d7d7d;
+  color: var(--grayScale-N3);
   vertical-align: top;
 }
 .path li:first-child {
   background: none;
 }
 .path li a {
-  font-size: 12px;
-  color: #7d7d7d;
+  font-size: 14px;
+  color: var(--grayScale-N1-opa);
   text-decoration: none;
+}
+.path li strong {
+  font-size: 16px;
 }
 .path li:last-child a,
 .path li strong,
 .path li strong a {
-  color: var(--grayScale-N1);
+  color: var(--main-color);
 }
 
 /* ec-base-field */

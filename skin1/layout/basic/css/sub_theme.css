@@ -2,23 +2,27 @@
 
 /* 공통 타이틀 */
 .titleArea h2 {
-  font-weight: 700;
-  font-size: 32px;
-  color: #1f1f1f;
+  font-weight: var(--font-weight-Bold);
+  font-size: 36px;
+  color: var(--grayScale-N1);
 }
 .titleArea h3 {
-  font-weight: 500;
+  font-weight: var(--font-weight-Medium);
+}
+.titleArea p {
+  font-size: 16px;
+  color: var(--grayScale-N2);
 }
 .titleArea .desc {
-  font-weight: 400;
+  font-weight: var(--font-weight-Regular);
 }
 .xans-project-package .title {
   margin: 45px 0 30px;
 }
 .xans-project-package .title h2 {
-  font-weight: 700;
-  font-size: 32px;
-  color: #1f1f1f;
+  font-weight: var(--font-weight-Bold);
+  font-size: 36px;
+  color: var(--grayScale-N1);
 }
 
 /* checkbox */

@@ -61,7 +61,7 @@ textarea,
 body,
 code,
 button {
-  font-family: 'Montserrat', 'Pretendard-Regular', Arial, sans-serif !important;
+  font-family: 'Montserrat', 'Noto Sans KR', Arial, sans-serif !important;
 }
 a:hover {
   text-decoration: none;
@@ -563,7 +563,7 @@ a:hover {
   width: 18px;
   height: 18px;
   border-radius: 50%;
-  background-color: var(--grayScale-N1);
+  background-color: var(--main-color);
   color: #fff;
   text-align: center;
   line-height: 1;
