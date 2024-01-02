@@ -1,0 +1,43 @@
+<!--@layout(/layout/basic/popup.html)-->
+<div module="Product_RestockEmail" class="ec-base-layer">
+    <!--@css(/css/module/product/restock_email.css)-->
+    <div class="header">
+        <h1>Email Restock Notification</h1>
+    </div>
+    <div class="content">
+        <div class="ec-base-box typeProduct">
+            <p class="thumbnail"><img src="{$product_image}" alt="" onerror="this.src='//img.echosting.cafe24.com/thumb/75x75.gif'" /></p>
+            <div class="information">
+                <h2>{$product_name}</h2>
+                <p>Option Information</p>
+
+                <div class="optionWrap">
+                    <ul module="Product_optionstock">
+                        <li>
+                            <span class="name">{$option_name}</span>
+                            <div class="option">{$form.option}<p class="value">{$option_desc}</p></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="emailArea">
+            <p><strong>Sign up for an email restock notification, so you can find out when the item is back in stock.</strong></p>
+            <div class="contact">
+                <p>Your email address : <strong>{$member_id}</strong></p>
+                <p>{$form.email}</p>
+            </div>
+            <ul>
+                <li>The item that you have requested for an email restock notification will be added to your wish list.</li>
+                <li>
+                    Items may be restocked at a different price or with different options.<br />
+                    Please make sure to check the product details before making your purchase.
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="ec-base-button">
+        <button type="button" class="btnSubmitFix sizeS" onclick="{$action_write}">Submit</button>
+        <button type="button" class="btnNormalFix sizeS" onclick="window.close();">Cancel</button>
+    </div>
+</div>

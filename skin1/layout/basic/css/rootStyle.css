@@ -1,0 +1,88 @@
+:root {
+  --font-color-base: var(--grayScale-N1);
+  --font-color-heading: var(--grayScale-N1);
+  --font-color-primary: var(--grayScale-N1);
+  --font-color-secondary: #ef441f;
+  --font-color-warn: #ec2a1d;
+  --font-color-success: #0985df;
+
+  --main-color: #8b7965;
+  --main-color-op: rgba(139, 121, 101, 0.2);
+  --main-color-opa: rgba(139, 121, 101, 0.8);
+  /* --pallet-color-1: #cfc3b9;
+  --pallet-color-2: #e1cfc1;
+  --pallet-color-3: #e6ddd4;
+  --pallet-color-4: #ebe3dd;
+  --pallet-color-5: #f4f1ee; */
+
+  --pallet-color-1: #cfc3b9;
+  --pallet-color-2: #e1cfc1;
+  --pallet-color-3: #e6ddd4;
+
+  --pallet-color-4: #edebe7;
+  --pallet-color-5: #f7f6f5;
+
+  --grayScale-N1: #1d1611;
+  --grayScale-N1-op: rgba(29, 22, 17, 0.2);
+  --grayScale-N1-opa: rgba(29, 22, 17, 0.7);
+  --grayScale-N2: #3c3c3c;
+  --grayScale-N3: #999999;
+  --grayScale-N4: #cccccc;
+  --grayScale-N5: #f3f3f3;
+
+  --font-weight-Thin: 100;
+  --font-weight-ExtraLight: 200;
+  --font-weight-Light: 300;
+  --font-weight-Regular: 400;
+  --font-weight-Medium: 500;
+  --font-weight-SemiBold: 600;
+  --font-weight-Bold: 700;
+  --font-weight-ExtraBold: 800;
+  --font-weight-Black: 900;
+  /* 100 Thin (Hairline) */
+  /* 200 ExtraLight (Ultra Light) */
+  /* 300 Light */
+  /* 400 Regular (Normal) */
+  /* 500 Medium */
+  /* 600 Semi Bold (Demi Bold) */
+  /* 700 Bold */
+  /* 800 Extra Bold (Ultra Bold) */
+  /* 900 Black(Heavy) */
+
+  --quick-icon-shadow: 2px 2px 10px 0px var(--grayScale-N1-op);
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../font/Montserrat-VariableFont_wght.ttf');
+}
+@font-face {
+  font-family: 'MinervaMorden-Black';
+  src: url('../font/minervamodern-black.ttf');
+}
+@font-face {
+  font-family: 'MinervaMorden-BlackItalic';
+  src: url('../font/minervamodern-blackitalic.ttf');
+}
+@font-face {
+  font-family: 'MinervaMorden-Bold';
+  src: url('../font/minervamodern-bold.ttf');
+}
+@font-face {
+  font-family: 'MinervaMorden-BoldItalic';
+  src: url('../font/minervamodern-bolditalic.ttf');
+}
+@font-face {
+  font-family: 'MinervaMorden-Italic';
+  src: url('../font/minervamodern-italic.ttf');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
