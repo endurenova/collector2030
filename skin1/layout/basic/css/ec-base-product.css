@@ -376,7 +376,7 @@
 }
 .ec-base-product:not(.xans-product-listmain-1) .prdList:not(.grid3_slide) .description .icon .sold-out {
   /* sold out 텍스트 */
-  color: var(--main-color);
+  color: var(--pallet-color-1);
   font-weight: var(--font-weight-Bold);
 }
 

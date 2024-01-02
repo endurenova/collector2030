@@ -83,7 +83,7 @@
   display: inline-block;
   float: none;
   color: #ef441f;
-  margin: 0 0 0 8px;
+  /* margin: 0 0 0 8px; */
 }
 
 /* 공지글, 고정글 */
@@ -155,6 +155,8 @@
   overflow: hidden;
 }
 .xans-board-listpackage-8 .xans-board-list-8 ul {
+  display: flex;
+  flex-flow: row wrap;
   font-size: 0;
   line-height: 0;
   padding: 0 11px;
@@ -167,7 +169,8 @@
   vertical-align: top;
   box-sizing: border-box;
   margin: 30px 0 0;
-  padding: 0 5px;
+  padding: 0 2%;
+  min-height: 360px;
 }
 .xans-board-listpackage-8 .xans-board-list-8 li .boardChk {
   display: block;
@@ -175,12 +178,14 @@
   margin: 3% auto;
 }
 .xans-board-listpackage-8 .xans-board-list-8 li a .thumbnail {
-  display: block;
+  display: flex;
+  height: 80%;
 }
 .xans-board-listpackage-8 .xans-board-list-8 li a .thumbnail img {
   display: block;
-  width: 100%;
+  /* width: 100%; */
   min-width: 88px;
+  padding: 3% 0;
   margin: 0 auto;
 }
 .xans-board-listpackage-8 .xans-board-list-8 li a .summary {
@@ -188,26 +193,35 @@
   flex-flow: row wrap;
   color: var(--main-color);
   box-sizing: border-box;
+  height: 20%;
 }
 .xans-board-listpackage-8 .xans-board-list-8 li a .summary .subject {
-  display: block;
-  margin: 15px 0 8px;
+  display: flex;
+  align-items: center;
   font-weight: normal;
   color: var(--grayScale-N1);
   font-size: 18px;
-  text-decoration: unset;
+  text-decoration: unset !important;
   width: 100%;
   box-sizing: border-box;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .xans-board-listpackage-8 .xans-board-list-8 li a .summary span {
-  display: inline-block;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
   font-size: 14px;
   width: 50%;
   box-sizing: border-box;
 }
 .xans-board-listpackage-8 .xans-board-list-8 li a .summary span.date {
-  display: inline-block;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: end;
   width: 50%;
   text-align: right;
   box-sizing: border-box;
@@ -332,14 +346,14 @@
   .xans-board-listpackage-8 .xans-board-list-8 li {
     width: 25%;
     margin: 50px 0 0;
-    padding: 0 10px;
+    /* padding: 0 10px; */
   }
   .xans-board-listpackage-8 .xans-board-list-8 li a .summary .subject {
-    margin: 25px 0 8px;
+    /* margin: 25px 0 8px; */
   }
   .xans-board-listpackage-8 .xans-board-list-8 li a .summary span.date {
-    float: none;
-    display: inline-block;
+    /* float: none;
+    display: inline-block; */
     /* margin: 0 0 0 12px; */
   }
 }

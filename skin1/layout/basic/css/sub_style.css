@@ -225,6 +225,13 @@
   justify-content: space-between;
   margin: unset;
 }
+.ec-base-product .prdList .icon .product-item__price {
+  color: var(--main-color);
+  font-size: 14px;
+}
+.ec-base-product .prdList .icon .product-item__price.sold-out__price {
+  text-decoration: line-through;
+}
 .ec-base-product .prdList .icon img {
   max-height: none;
 }
