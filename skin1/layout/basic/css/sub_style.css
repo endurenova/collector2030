@@ -1894,6 +1894,18 @@ div.ec-base-help ul {
   }
 }
 @media screen and (max-width: 1024px) {
+  .about_contents .about_collector > .about_box > .txt_box > .about-introduce-number {
+    font-size: clamp(48px, 6.316vw, 60px) !important; /* 760px */
+  }
+  .about_contents .about_collector > .about_box > .txt_box > .about-company-name {
+    font-size: clamp(30px, 3.947vw, 36px) !important; /* 760px */
+  }
+  .about_contents .about_collector > .about_box > .txt_box > h4 {
+    font-size: clamp(18px, 2.368vw, 20px) !important; /* 760px */
+  }
+  .about_contents .about_collector > .about_box > .txt_box > p {
+    font-size: clamp(16px, 2.105vw, 18px) !important; /* 760px */
+  }
   /* 상품진열 퀵바아이콘 */
   .ec-base-product .prdList .thumbnail .likeButton {
     display: none;
@@ -2774,6 +2786,49 @@ div.ec-base-help ul {
 }
 
 @media all and (max-width: 767px) {
+  .about_contents .about_collector > .about_title > span {
+    font-size: clamp(18px, 5vw, 20px) !important;
+  }
+  .about_contents .about_collector > .about_title > h3 {
+    font-size: clamp(36px, 10vw, 42px) !important;
+  }
+  .about_contents .about_collector > .about_box {
+    margin-top: 100px !important;
+  }
+  .about_contents .about_collector > .about_box:nth-of-type(1) {
+    margin-top: unset !important;
+  }
+  .about_contents .about_cs > .about_cs_title {
+    font-size: clamp(20px, 5.556vw, 24px) !important;
+    padding: 20% 0 !important;
+  }
+  .about_contents .about_cs > .about_cs_contact {
+    font-size: clamp(20px, 5.556vw, 24px) !important;
+  }
+  .about_contents .about_cs > .about_cs_info_box {
+    flex-flow: column !important;
+    justify-content: space-evenly !important;
+    align-content: center !important;
+  }
+  .about_contents .about_cs > .about_cs_info_box > li {
+    width: 100% !important;
+    padding: 3% 0;
+  }
+  .about_contents .about_cs > .about_cs_info_box dt {
+    font-size: clamp(16px, 4.444vw, 18px);
+  }
+  .about_contents .about_cs > .about_cs_info_box dl {
+    font-size: clamp(14px, 3.889vw, 16px);
+  }
+  .about_contents .about_collector > .about_box {
+    flex-flow: column !important;
+  }
+  .about_contents .about_collector > .about_box > .img_box {
+    width: 100% !important;
+  }
+  .about_contents .about_collector > .about_box > .txt_box {
+    width: 100% !important;
+  }
   /* .about_contents .about_collector > .about_box > .txt_box > .about-company-name {
     font-size: clamp(30px, 3.947vw, 36px) !important;
   }

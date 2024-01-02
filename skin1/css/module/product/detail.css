@@ -1313,6 +1313,12 @@
 
 /********************* Mobile  *********************/
 @media all and (max-width: 640px) {
+  .xans-product-detail .imgArea .prdImg img {
+    padding: 10% !important;
+  }
+  .xans-product #prdDetail table {
+    width: 95% !important;
+  }
   .xans-product #prdDetail table tbody tr th,
 .xans-product #prdDetail table tbody tr td {
   /* 상품 상세 페이지 상세 정보 */
