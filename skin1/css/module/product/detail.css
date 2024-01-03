@@ -18,9 +18,12 @@
 
 /* imgArea */
 .xans-product-detail .imgArea .prdImg .thumbnail {
-  display: block;
+  display: flex;
   position: relative;
   max-width: 100%;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
 }
 .xans-product-detail .imgArea .prdImg .prdIcon {
   position: absolute;
@@ -31,6 +34,7 @@
   background-repeat: no-repeat;
 }
 .xans-product-detail .imgArea .prdImg img {
+  background-color: transparent;
   cursor: pointer;
 }
 .xans-product-detail .imgArea .color {
@@ -77,14 +81,14 @@
   border: 0;
   margin: 10px 0 0;
   font-size: 13px;
-  line-height: 18px;
+  line-height: 1.4;
 }
 .xans-product-detail .infoArea table:not(.product_detail_table) th {
   font-weight: normal;
   width: 106px;
   padding: 7px 5px 6px 0;
   text-align: left;
-  vertical-align: top;
+  vertical-align: middle;
 }
 
 #contents
@@ -1311,7 +1315,6 @@
 /********************* Mobile  *********************/
 @media all and (max-width: 640px) {
   .xans-product-detail .imgArea .prdImg img {
-    padding: 10% !important;
   }
   .xans-product #prdDetail table {
     width: 95% !important;
@@ -1339,8 +1342,8 @@
     margin: 0 0 28px;
   }
   .xans-product-detail .imgArea .prdImg img {
-    width: 100%;
-    padding: 4%;
+    max-height: 80%;
+    max-width: 80%;
   }
   .xans-product-detail .imgArea .listImg {
     display: none;
@@ -1847,7 +1850,8 @@
 
 /* 구매버튼 */
 .xans-product-additional.section {
-  margin: 0 auto 120px;
+  /* margin: 0 auto 120px; */
+  margin: 120px auto;
   max-width: 1280px !important;
 }
 .xans-product-action .action_button {
@@ -2027,7 +2031,7 @@
 .relation .swiper-next-relation {
   width: 50px;
   height: 50px;
-  top: 42%;
+  top: 50%;
   position: absolute;
   z-index: 2;
   opacity: 0.5;
@@ -2081,12 +2085,15 @@
   letter-spacing: -0.025em;
 }
 .swiper-container.relation_slide ul > li .description .price {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 600;
-  margin-top: 25px;
-  color: var(--grayScale-N1);
+  margin-top: 10px;
+  color: var(--main-color);
 }
 
+.ec-base-product:not(.xans-product-listmain-1) .prdList:not(.grid3_slide) .description .name a {
+  font-weight: var(--font-weight-Medium);
+}
 /* 게시판 */
 .board_title {
   display: flex;
@@ -2451,7 +2458,7 @@
   }
   .swiper-container.relation_slide ul > li .description .price {
     font-size: 16px;
-    margin-top: 15px;
+    margin-top: 8px;
   }
 
   /* 안내 */

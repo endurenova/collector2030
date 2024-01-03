@@ -23,7 +23,7 @@
 .xans-board-listheader-8.ec-base-tab li a {
   display: block;
   font-size: 14px;
-  color: #6d6d6d;
+  color: var(--grayScale-N2);
   border-bottom: 1px solid #e0e0e0;
   padding: 20px 15px;
 }
@@ -59,9 +59,10 @@
 /* Title */
 .xans-board-listpackage .titleArea p {
   max-width: 586px;
-  margin: 25px auto 0;
-  font-size: 14px;
-  color: #6d6d6d;
+  /* margin: 25px auto 0; */
+  margin: 0 auto;
+  font-size: 16px;
+  color: var(--grayScale-N2);
 }
 /* Table */
 .xans-board-listpackage {
@@ -71,7 +72,7 @@
   clear: both;
 }
 .xans-board-listpackage .ec-base-table table td.no {
-  color: #6d6d6d;
+  color: var(--grayScale-N2);
 }
 .xans-board-listpackage .ec-base-table table th.chk,
 .xans-board-listpackage .ec-base-table table td.chk {
@@ -83,7 +84,7 @@
 .xans-board-listpackage .ec-base-table table td.subject .product {
   margin: 0 10px 5px 0;
   line-height: 18px;
-  color: #6d6d6d;
+  color: var(--grayScale-N2);
 }
 .xans-board-listpackage .ec-base-table table td.subject .product:empty {
   margin-bottom: 0;
@@ -91,6 +92,8 @@
 .xans-board-listpackage .ec-base-table table td.subject a {
   margin-right: 5px;
   vertical-align: middle;
+  font-size: 14px;
+  color: var(--grayScale-N1);
 }
 .xans-board-listpackage .ec-base-table table td.subject img {
   width: auto;

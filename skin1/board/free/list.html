@@ -39,7 +39,8 @@
         <col style="width: 80px" />
         <col style="width: auto" />
         <col style="width: 100px" class="{$config.is_category|display}" />
-        <col style="width: 90px" />
+        <!-- <col style="width: 90px" /> -->
+        <col style="width: 120px" />
         <col style="width: 120px" class="{$config.use_date|display}" />
         <col style="width: 74px" class="{$config.use_cnt|display}" />
         <col style="width: 94px" class="{$config.is_use_point|display}" />
@@ -62,7 +63,7 @@
                     $deny_access_url = /index.html
                 -->
         <tr style="{$list_bg_color} {$list_char_color}" class="{$block_target_class}" {$block_data_attr}>
-          <td class="chk">{$checkbox}<span class="RW">{$notice_icon}</span></td>
+          <td class="chk">{$checkbox}<span class="RW board-list-number">{$notice_icon}</span></td>
           <td class="subject left txtBreak">
             <span class="badge">{$notice_icon}</span>
             <strong
@@ -85,7 +86,7 @@
           </td>
         </tr>
         <tr style="{$list_bg_color} {$list_char_color}" class="{$block_target_class}" {$block_data_attr}>
-          <td class="chk">{$checkbox}<span class="RW">{$notice_icon}</span></td>
+          <td class="chk">{$checkbox}<span class="RW board-list-number">{$notice_icon}</span></td>
           <td class="subject left txtBreak">
             <span class="badge">{$notice_icon}</span>
             <strong
@@ -115,7 +116,7 @@
                     $deny_access_url = /index.html
                 -->
         <tr style="{$list_bg_color} {$list_char_color}" class="{$block_target_class}" {$block_data_attr}>
-          <td class="chk">{$checkbox}<span class="RW">{$fixed_icon}</span></td>
+          <td class="chk">{$checkbox}<span class="RW board-list-number">{$fixed_icon}</span></td>
           <td class="subject left txtBreak">
             <span class="badge">{$fixed_icon}</span>
             <strong
@@ -138,7 +139,7 @@
           </td>
         </tr>
         <tr style="{$list_bg_color} {$list_char_color}" class="{$block_target_class}" {$block_data_attr}>
-          <td class="chk">{$checkbox}<span class="RW">{$fixed_icon}</span></td>
+          <td class="chk">{$checkbox}<span class="RW board-list-number">{$fixed_icon}</span></td>
           <td class="subject left txtBreak">
             <span class="badge">{$fixed_icon}</span>
             <strong
@@ -167,7 +168,7 @@
                     $deny_access_url = /index.html
                 -->
         <tr style="{$list_bg_color} {$list_char_color}" class="{$block_target_class}" {$block_data_attr}>
-          <td class="chk no">{$checkbox}<span class="RW">{$no}</span></td>
+          <td class="chk no">{$checkbox}<span class="RW board-list-number">{$no}</span></td>
           <td class="subject left txtBreak">
             {$icon_re}{$icon_lock}<a href="{$link_board_detail}" style="{$link_color}" class="{$block_content_class}"
               >{$subject}</a
@@ -187,7 +188,7 @@
           </td>
         </tr>
         <tr style="{$list_bg_color} {$list_char_color}" class="{$block_target_class}" {$block_data_attr}>
-          <td class="chk no">{$checkbox}<span class="RW">{$no}</span></td>
+          <td class="chk no">{$checkbox}<span class="RW board-list-number">{$no}</span></td>
           <td class="subject left txtBreak">
             {$icon_re}{$icon_lock}<a href="{$link_board_detail}" style="{$link_color}" class="{$block_content_class}"
               >{$subject}</a

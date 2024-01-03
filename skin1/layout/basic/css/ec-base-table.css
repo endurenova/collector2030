@@ -288,7 +288,7 @@
     padding: 3px 8px;
     border-bottom: 0;
     text-align: left;
-    color: #6d6d6d;
+    color: var(--grayScale-N2);
   }
   .ec-base-table.typeList td a {
     color: #6d6d6d;
@@ -308,7 +308,7 @@
     box-sizing: border-box;
   }
   .ec-base-table.typeList td.subject a {
-    color: var(--grayScale-N1);
+    color: var(--grayScale-N1) !important;
   }
   .ec-base-table.typeList.gThumb td.thumb {
     overflow: hidden;

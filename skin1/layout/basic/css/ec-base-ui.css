@@ -106,6 +106,9 @@ html:lang(zh-tw) .txt11 {
 .titleArea h2 {
   font-weight: normal;
 }
+.titleArea h2 font {
+  color: var(--grayScale-N1) !important;
+}
 
 /* grid */
 .gBlank5 {

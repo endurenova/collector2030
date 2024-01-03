@@ -998,7 +998,7 @@
 
     <div module="product_relation">
       <div class="relation">
-        <div class="relation_title">Related Products</div>
+        <div class="relation_title"></div>
 
         <div module="product_relationlist" class="ec-base-product swiper-container relation_slide">
           <ul class="swiper-wrapper prdList">
@@ -1291,3 +1291,10 @@
 </div>
 <!--@define(cmc_log)-->
 <!--#ez="1/4"-->
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const artistName = document.querySelector(".infoArea table tbody tr:nth-of-type(2) td");
+    const relatedProducts = document.querySelector(".relation_title");
+    relatedProducts.innerHTML=`<span class="artist_relation_artworks">${artistName.textContent}의 다른 작품</span>`;
+  });
