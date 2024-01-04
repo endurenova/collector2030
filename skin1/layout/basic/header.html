@@ -186,7 +186,7 @@
 			-->
             <fieldset>
                 <legend>검색</legend>
-                <div class="wrap_search_box">
+                <div class="wrapF_search_box">
                     <div class="search_find_product">Find Product</div>
                     <div class="top_search_box">
                         <button type="button" class="btnClose">
@@ -207,20 +207,6 @@
     <!-- //inner -->
 </header>
 <div data-ez-module="user-defined/1" data-ez-name="USER DEFINED" data-ez-type="plain" data-ez="module-09gapfl-1">
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            try {
-                const pathInfo = document.querySelector('.path ol li:nth-of-type(2)');
-                const currentPath = document.querySelector('.path li strong');
-                const headerMenuList = document.querySelectorAll('.top_nav_box .sub_cate01 li a');
-                Array.from(headerMenuList).forEach(e => {
-                    if (e.textContent === currentPath.textContent) {
-                        const mainCategory = e.closest('.header-menu').querySelector('.main-cate').textContent;
-                        pathInfo.innerHTML = `<a href='javascript:void(0);'>${mainCategory}</a>`;
-                    }
-                });
-            } catch (e) {}
-        });
-    </script>
+    <script src="/js/makePath.js"></script>
 </div>
 <!--#ez="1/2"-->

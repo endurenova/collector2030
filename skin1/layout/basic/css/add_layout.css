@@ -19,33 +19,33 @@
     justify-content: center;
   }
 
-  #footer.layout02 .inner .inner_t .info_right {
+  #footer.layout02 .info_top {
     order: 1;
     margin: 0;
     width: 46%;
   }
-  #footer.layout02 .inner .inner_t .info_right .bt_util ul {
+  #footer.layout02 .info_top .bt_util ul {
     justify-content: flex-start;
   }
-  #footer.layout02 .inner .inner_t .info_right .bt_util ul li:first-child {
+  #footer.layout02 .info_top .bt_util ul li:first-child {
     margin-left: 0px;
   }
-  #footer.layout02 .inner .inner_t .info_left {
+  #footer.layout02 .inner .inner_t .info_middle {
     order: 2;
     width: 46%;
     text-align: right;
   }
-  #footer.layout02 .inner .inner_t .info_left .bt_logo {
+  #footer.layout02 .inner .inner_t .info_middle .bt_logo {
     justify-content: flex-end;
   }
-  #footer.layout02 .inner .inner_t .info_left .bt_logo a {
+  #footer.layout02 .inner .inner_t .info_middle .bt_logo a {
     justify-content: flex-end;
   }
-  #footer.layout02 .inner .inner_t .info_left .bt_info .bt_info_list {
+  #footer.layout02 .inner .inner_t .info_middle .bt_info .bt_info_list {
     justify-content: flex-end;
     margin: 0 0 0 auto;
   }
-  #footer.layout02 .inner .inner_t .info_left .bt_info .bt_info_list > div {
+  #footer.layout02 .inner .inner_t .info_middle .bt_info .bt_info_list > div {
     margin: 0 0 0 10px;
   }
   #footer.layout02 .inner .inner_b .bt_escrow {
@@ -83,56 +83,56 @@
     align-items: center;
     flex-direction: column;
   }
-  #footer.layout03 .inner .inner_t .info_left {
+  #footer.layout03 .inner .inner_t .info_middle {
     order: 1;
     text-align: center;
   }
-  #footer.layout03 .inner .inner_t .info_left .bt_info {
+  #footer.layout03 .inner .inner_t .info_middle .bt_info {
     margin-bottom: 30px;
   }
-  #footer.layout03 .inner .inner_t .info_left .bt_info .bt_info_list {
+  #footer.layout03 .inner .inner_t .info_middle .bt_info .bt_info_list {
     justify-content: center;
     margin: 0 auto;
   }
-  #footer.layout03 .inner .inner_t .info_left .bt_info .bt_info_list > div {
+  #footer.layout03 .inner .inner_t .info_middle .bt_info .bt_info_list > div {
     margin: 0 5px;
   }
-  #footer.layout03 .inner .inner_t .info_left .bt_logo {
+  #footer.layout03 .inner .inner_t .info_middle .bt_logo {
     margin-bottom: 30px;
     justify-content: center;
   }
-  #footer.layout03 .inner .inner_t .info_left .bt_logo a {
+  #footer.layout03 .inner .inner_t .info_middle .bt_logo a {
     justify-content: center;
   }
-  #footer.layout03 .inner .inner_t .info_left .bt_tel {
+  #footer.layout03 .inner .inner_t .info_middle .bt_tel {
     margin-bottom: 15px;
   }
-  #footer.layout03 .inner .inner_t .info_right {
+  #footer.layout03 .info_top {
     order: 2;
     margin: 0;
     display: flex;
     flex-direction: column-reverse;
   }
-  #footer.layout03 .inner .inner_t .info_right .bt_util {
+  #footer.layout03 .info_top .bt_util {
     margin-bottom: 30px;
   }
-  #footer.layout03 .inner .inner_t .info_right .bt_util ul {
+  #footer.layout03 .info_top .bt_util ul {
     justify-content: center;
   }
-  #footer.layout03 .inner .inner_t .info_right .bt_util ul li:first-child {
+  #footer.layout03 .info_top .bt_util ul li:first-child {
     margin-left: 0;
   }
-  #footer.layout03 .inner .inner_t .info_right .wrap_cs {
+  #footer.layout03 .info_top {
     flex-direction: column;
     align-items: center;
   }
-  #footer.layout03 .inner .inner_t .info_right .wrap_cs .cs_center_txt,
-  #footer.layout03 .inner .inner_t .info_right .wrap_cs .bank_txt,
-  #footer.layout03 .inner .inner_t .info_right .wrap_cs .sns_txt {
+  #footer.layout03 .info_top .cs_center_txt,
+  #footer.layout03 .info_top .bank_txt,
+  #footer.layout03 .info_top .sns_txt {
     margin: 0 0 30px;
     text-align: center;
   }
-  #footer.layout03 .inner .inner_t .info_right .wrap_cs .sns_txt a {
+  #footer.layout03 .info_top .sns_txt a {
     display: inline-block;
     margin: 0 7px;
   }

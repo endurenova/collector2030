@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', () => {
       event.preventDefault();
       artistVideoModal.innerHTML = `
         <span class="close-modal">&times;</span>
-        <iframe src="${artistVideoInfo[i].url}?embedparameter=value&autoplay=1&loop=1&autopause=0" width="50%" height="75%" frameborder="0" allowfullscreen></iframe>
+        <iframe src="${artistVideoInfo[i].url}?embedparameter=value&autoplay=1&loop=1&autopause=0"  frameborder="0" allowfullscreen></iframe>
       `;
       artistVideoModal.style.transform = `translate(-50%, ${window.scrollY}px)`;
       artistVideoModal.classList.add('on');
