@@ -909,6 +909,59 @@ svg .main-circ {
 
 /********************* Mobile *********************/
 @media all and (max-width: 767px) {
+  .ec-base-product.xans-product-listmain-1 ul.prdList.grid4.list_gallery::-webkit-scrollbar {
+    display: none;
+  }
+  .ec-base-product.xans-product-listmain-1 ul.prdList.grid4.list_gallery::-webkit-scrollbar-thumb {
+    display: none;
+  }
+  .ec-base-product.xans-product-listmain-1 ul.prdList.grid4.list_gallery::-webkit-scrollbar-track {
+    display: none;
+  }
+  .ec-base-product.xans-product-listmain-1 ul.prdList.grid4.list_gallery > li {
+    min-width: 300px;
+  }
+  ul.prdList.grid4.list_gallery .thumbnail {
+    height: 360px;
+  }
+  ul.prdList.grid4.list_gallery .description {
+    bottom: 0%;
+    height: 20%;
+    padding: 0 4%;
+    margin: unset;
+  }
+  ul.prdList.grid4.list_gallery .description .spec > li:last-child span {
+    font-size: 14px !important;
+    font-weight: var(--font-weight-SemiBold);
+  }
+  ul.prdList.grid4.list_gallery .description .name {
+    margin: unset;
+  }
+  ul.prdList.grid4.list_gallery .description .name span {
+    font-size: 16px !important;
+    font-weight: var(--font-weight-Light);
+  }
+  ul.prdList.grid4.list_gallery .description .main_list_detail {
+    justify-content: center;
+    position: absolute;
+    right: 0%;
+    bottom: 2%;
+    border: none;
+  }
+  ul.prdList.grid4.list_gallery .description .main_list_detail span:first-child {
+    font-size: 14px;
+    font-weight: var(--font-weight-Light);
+  }
+  ul.prdList.grid4.list_gallery .description .main_list_detail .material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 100, 'GRAD' 0, 'opsz' 24;
+  }
+  ul.prdList.grid4.list_gallery .description .main_list_detail:hover span {
+    color: var(--grayScale-N5);
+    z-index: 2;
+  }
+  ul.prdList.grid4.list_gallery .description .main_list_detail:hover::before {
+    width: 0%;
+  }
   .ec-base-product ul.grid5 > li {
     width: 50%;
   }

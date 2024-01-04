@@ -1060,7 +1060,134 @@ a:hover {
   width: 30px;
   height: 100%;
 }
+/* 아티스트 비디오 */
+.artist-video-box {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+  height: 394px;
+}
+.artist-video-direction {
+  position: absolute;
+  top: 10%;
+  right: 0%;
+  transform: translate(0%, -50%);
+  box-sizing: border-box;
+}
+.artist-video-direction .material-symbols-outlined {
+  font-size: 48px;
+  color: var(--pallet-color-4);
+  font-variation-settings: 'FILL' 0, 'wght' 100, 'GRAD' 0, 'opsz' 24;
+}
+.artist-video-direction .material-symbols-outlined.active {
+  color: var(--pallet-color-1);
+  cursor: pointer;
+  font-variation-settings: 'FILL' 0, 'wght' 100, 'GRAD' 0, 'opsz' 24;
+}
+.artist-video-direction .material-symbols-outlined.active:hover {
+  font-variation-settings: 'FILL' 1, 'wght' 100, 'GRAD' 0, 'opsz' 24;
+}
+.artist-video-list {
+  display: flex;
+  position: absolute;
+  flex-flow: row nowrap;
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.3s;
+}
+.artist-video-list li {
+  width: calc(33.3334% - 20px);
+  margin-right: 20px;
+  box-sizing: border-box;
+}
+.artist-video-list li:last-of-type {
+  width: calc(33.3334%);
+  margin-right: 0px;
+}
+.artist-video-thumbnail {
+  position: relative;
+  width: 480px;
+  height: 320px;
+  cursor: pointer;
+  overflow: hidden;
+}
+.artist-video-thumbnail::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--grayScale-N1-op);
+  z-index: 5;
+  transition: 0.3s;
+}
+.artist-video-thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: 0.3s;
+}
+.artist-video-thumbnail:hover::before {
+  background-color: transparent;
+}
+.artist-video-thumbnail:hover img {
+  transform: scale(1.1);
+}
+.artist-video-description {
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 48px;
+  margin: 12px 0;
+}
+.artist-video-description img {
+  height: 100%;
+  border-radius: 20%;
+  object-fit: contain;
+}
+.artist-video-description a {
+  text-indent: 10px;
+  color: var(--main-color);
+  font-weight: 600;
+}
+.modal-artist-video {
+  display: none;
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: calc(100vw + 4px);
+  height: calc(100vh + 4px);
+  z-index: 999;
+  background-color: var(--grayScale-N1-opa);
+}
+.modal-artist-video .close-modal {
+  position: absolute;
+  top: 1%;
+  right: 2%;
+  font-size: 48px;
+  cursor: pointer;
+  color: var(--grayScale-N5);
+}
+.modal-artist-video.on {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.play_btn.material-symbols-outlined {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+  color: var(--grayScale-N5);
+  font-size: 48px;
+  font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+}
 
+.artist-video-thumbnail:hover .play_btn.material-symbols-outlined {
+  color: var(--grayScale-N5);
+  font-variation-settings: 'FILL' 1, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+}
 @media all and (max-width: 1680px) {
   /* 최상단 배너 */
   .main_top_banner .top_banner_box_inner .top_banner_text a {
@@ -1082,6 +1209,29 @@ a:hover {
 /********************* Tablet *********************/
 /* @media all and (max-width: 1024px) { */
 @media all and (max-width: 1280px) {
+  .artist-video-box {
+    overflow-x: scroll;
+    height: calc(394px + 8px);
+  }
+  .artist-video-direction {
+    display: none;
+  }
+  .artist-video-box::-webkit-scrollbar {
+    /* 스크롤바의 너비 */
+    width: 4px;
+    height: 10px !important;
+  }
+  .artist-video-box::-webkit-scrollbar-thumb {
+    height: 2px !important; /* 스크롤바의 길이 */
+    background: var(--main-color);
+    border-radius: 10px;
+  }
+  .artist-video-box::-webkit-scrollbar-track {
+    height: 2px !important;
+    background: #f6eee7;
+    left: 0;
+    width: 100%;
+  }
   /* responsive class */
   .RW {
     /* display: none !important */
@@ -1671,6 +1821,37 @@ a:hover {
 /********************* Mobile *********************/
 @media all and (max-width: 767px) {
   /* responsive class */
+  .artist-video-box {
+    overflow-x: scroll;
+    height: calc(394px + 8px);
+    width: 92%;
+    margin: 0 auto;
+  }
+  .artist-video-thumbnail:hover::before {
+    background-color: var(--grayScale-N1-op);
+  }
+  .artist-video-thumbnail:hover img {
+    transform: scale(1);
+  }
+  .artist-video-thumbnail:hover .play_btn.material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+  }
+  .artist-video-direction {
+    display: none;
+  }
+  .artist-video-box::-webkit-scrollbar {
+    /* 스크롤바의 너비 */
+    display: none;
+  }
+  .artist-video-box::-webkit-scrollbar-thumb {
+    display: none;
+  }
+  .artist-video-box::-webkit-scrollbar-track {
+    display: none;
+  }
+  .artist-video-list li {
+    margin-right: 10px;
+  }
   .RTB {
     display: none !important;
   }
