@@ -32,7 +32,7 @@
 .ec-base-product:not(.xans-product-listmain-1).relation_slide .prdList {
   margin: unset;
 }
-.ec-base-product .prdList:not(.grid4) > li {
+.ec-base-product .prdList:not(.grid3_slide, .grid4) > li {
   display: inline-block;
   margin: 0 0 18px;
   color: #757575;
@@ -75,7 +75,7 @@
   position: relative;
 }
 .ec-base-product .prdList .thumbnail a img {
-  max-width: 65% !important;
+  max-width: 70% !important;
   max-height: 80% !important;
   box-sizing: border-box;
   object-fit: contain;
@@ -263,25 +263,24 @@
   overflow-x: scroll;
   padding-bottom: 20px;
 }
-.ec-base-product.xans-product-listmain-1 ul.prdList.grid4.list_gallery::-webkit-scrollbar {
+.artist-video-box::-webkit-scrollbar,
+.ec-base-product .prdList::-webkit-scrollbar {
   /* 스크롤바의 너비 */
   width: 4px;
   height: 10px !important;
 }
-.ec-base-product.xans-product-listmain-1 ul.prdList.grid4.list_gallery::-webkit-scrollbar-thumb {
+.artist-video-box::-webkit-scrollbar-thumb,
+.ec-base-product .prdList::-webkit-scrollbar-thumb {
   height: 2px !important; /* 스크롤바의 길이 */
   background: var(--main-color);
   border-radius: 10px;
 }
-.ec-base-product.xans-product-listmain-1 ul.prdList.grid4.list_gallery::-webkit-scrollbar-track {
+.artist-video-box::-webkit-scrollbar-track,
+.ec-base-product .prdList::-webkit-scrollbar-track {
   height: 2px !important;
   background: #f6eee7;
   left: 0;
   width: 100%;
-}
-.ec-base-product.xans-product-listmain-1 ul.prdList.grid4.list_gallery > li {
-  /* 메인페이지 NEW ARRIVAL 아이템 */
-  min-width: 350px;
 }
 .ec-base-product:not(.xans-product-listmain-1) .prdList:not(.grid3_slide) {
   /* 상품 진열 리스트 */
@@ -959,63 +958,6 @@ svg .main-circ {
   .xans-product-detail .infoArea table > tbody > tr > td span {
     font-size: clamp(14px, 3.889vw, 16px) !important;
   }
-}
-@media (max-width: 960px) {
-  .ec-base-product:not(.xans-product-listmain-1) .grid4:not(.grid3_slide) > li {
-    width: 48%;
-    margin-right: 4%;
-  }
-  .ec-base-product:not(.xans-product-listmain-1) .grid4:not(.grid3_slide) > li:nth-of-type(3n),
-  .ec-base-product:not(.xans-product-listmain-1) .grid4:not(.grid3_slide) > li:nth-of-type(4n) {
-    margin-right: 4%;
-  }
-  .ec-base-product:not(.xans-product-listmain-1) .grid4:not(.grid3_slide) > li:nth-of-type(2n) {
-    margin-right: 0;
-  }
-}
-/********************* Tablet *********************/
-@media all and (min-width: 768px) and (max-width: 1024px) {
-  .ec-base-product ul.grid5 > li {
-    width: 33.33%;
-  }
-  .ec-base-product ul.grid4 > li {
-    width: 33.33%;
-  }
-
-  .ec-base-product .prdList:not(.grid4) {
-    margin: 0 -8px 0;
-  }
-  .ec-base-product:not(.xans-product-listmain-1) .prdList:not(.grid3_slide) .prdList__item {
-    margin: unset;
-  }
-}
-
-/********************* PC *********************/
-@media all and (min-width: 1025px) {
-  .ec-base-product .title h3 {
-    margin: 50px 0 25px;
-    font-size: 20px;
-  }
-
-  .ec-base-product .layerDiscountPeriod {
-    left: 50%;
-    top: 26px;
-    width: 247px;
-    margin: 0 0 0 -124px;
-  }
-  .ec-base-product .btnTooltip {
-    position: relative;
-  }
-  .differentialShipping {
-    left: 50%;
-    top: 17px;
-    width: 350px;
-    margin: 0 0 0 -176px;
-  }
-}
-
-/********************* Mobile *********************/
-@media all and (max-width: 767px) {
   .ec-base-product.xans-product-listmain-1 ul.prdList.grid4.list_gallery::-webkit-scrollbar {
     display: none;
   }
@@ -1026,10 +968,19 @@ svg .main-circ {
     display: none;
   }
   .ec-base-product.xans-product-listmain-1 ul.prdList.grid4.list_gallery > li {
-    min-width: calc(50% - 5px);
+    width: var(--item-row-3-width-portable);
   }
+
   ul.prdList.grid4.list_gallery .thumbnail {
     height: 360px;
+  }
+  ul.prdList.grid4.list_gallery .thumbnail a {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+  }
+  ul.prdList.grid4.list_gallery .prdList__item img {
+    max-width: 70% !important;
   }
   ul.prdList.grid4.list_gallery .description {
     bottom: 0%;
@@ -1069,6 +1020,63 @@ svg .main-circ {
   ul.prdList.grid4.list_gallery .description .main_list_detail:hover::before {
     width: 0%;
   }
+}
+@media (max-width: 960px) {
+  .ec-base-product:not(.xans-product-listmain-1) .grid4:not(.grid3_slide) > li {
+    width: 48%;
+    margin-right: 4%;
+  }
+  .ec-base-product:not(.xans-product-listmain-1) .grid4:not(.grid3_slide) > li:nth-of-type(3n),
+  .ec-base-product:not(.xans-product-listmain-1) .grid4:not(.grid3_slide) > li:nth-of-type(4n) {
+    margin-right: 4%;
+  }
+  .ec-base-product:not(.xans-product-listmain-1) .grid4:not(.grid3_slide) > li:nth-of-type(2n) {
+    margin-right: 0;
+  }
+}
+/********************* Tablet *********************/
+@media all and (min-width: 768px) and (max-width: 1024px) {
+  .ec-base-product ul.grid5 > li {
+    width: 33.33%;
+  }
+  .ec-base-product ul.grid4 > li {
+    width: 33.33%;
+  }
+
+  .ec-base-product .prdList:not(.grid3_slide, .grid4) {
+    margin: 0 -8px 0;
+  }
+  .ec-base-product:not(.xans-product-listmain-1) .prdList:not(.grid3_slide) .prdList__item {
+    margin: unset;
+  }
+}
+
+/********************* PC *********************/
+@media all and (min-width: 1025px) {
+  .ec-base-product .title h3 {
+    margin: 50px 0 25px;
+    font-size: 20px;
+  }
+
+  .ec-base-product .layerDiscountPeriod {
+    left: 50%;
+    top: 26px;
+    width: 247px;
+    margin: 0 0 0 -124px;
+  }
+  .ec-base-product .btnTooltip {
+    position: relative;
+  }
+  .differentialShipping {
+    left: 50%;
+    top: 17px;
+    width: 350px;
+    margin: 0 0 0 -176px;
+  }
+}
+
+/********************* Mobile *********************/
+@media all and (max-width: 767px) {
   .ec-base-product ul.grid5 > li {
     width: 50%;
   }
@@ -1079,7 +1087,7 @@ svg .main-circ {
     width: 22px;
   }
   ul.prdList.grid4.list_gallery > li {
-    margin-right: 10px;
+    margin-right: var(--item-margin-right-pc);
   }
   ul.prdList.grid4.list_gallery > li:last-of-type {
     margin-right: 0;

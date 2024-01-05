@@ -1116,13 +1116,6 @@ a:hover {
   height: 100%;
 }
 /* 아티스트 비디오 */
-.artist-video-box {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-  box-sizing: border-box;
-  height: 394px;
-}
 .artist-video-direction {
   position: absolute;
   top: 10%;
@@ -1143,6 +1136,14 @@ a:hover {
 .artist-video-direction .material-symbols-outlined.active:hover {
   font-variation-settings: 'FILL' 1, 'wght' 100, 'GRAD' 0, 'opsz' 24;
 }
+.artist-video-box {
+  position: relative;
+  height: calc(var(--item-row-3-width-pc-max1480) / 3 * 2 + 84px);
+  margin: 0 auto;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  box-sizing: border-box;
+}
 .artist-video-list {
   display: flex;
   position: absolute;
@@ -1151,18 +1152,17 @@ a:hover {
   transition-duration: 0.3s;
 }
 .artist-video-list li {
-  width: calc(33.3334% - 20px);
-  margin-right: 20px;
+  margin-right: var(--item-margin-right-pc);
   box-sizing: border-box;
 }
 .artist-video-list li:last-of-type {
-  width: calc(33.3334%);
   margin-right: 0px;
 }
+
 .artist-video-thumbnail {
   position: relative;
-  width: 480px;
-  height: 320px;
+  width: var(--item-row-3-width-pc-max1480);
+  height: calc(var(--item-row-3-width-pc-max1480) / 3 * 2);
   cursor: pointer;
   overflow: hidden;
 }
@@ -1262,33 +1262,22 @@ a:hover {
   }
 }
 
-/********************* Tablet *********************/
-/* @media all and (max-width: 1024px) { */
-@media all and (max-width: 1280px) {
+@media (max-width: 1280px) {
   .artist-video-box {
-    width: 90%;
     margin: 0 auto;
     overflow-x: scroll;
-    height: calc((45vw - 5px) / 3 * 2 + 72px);
+    height: calc(var(--item-row-2-width-portable) / 3 * 2 + 84px);
+  }
+  .artist-video-list li {
+    margin-right: var(--item-margin-right-portable);
+  }
+  .artist-video-thumbnail {
+    width: var(--item-row-2-width-portable);
+    height: calc(var(--item-row-2-width-portable) / 3 * 2);
+    cursor: unset;
   }
   .artist-video-direction {
     display: none;
-  }
-  .artist-video-box::-webkit-scrollbar {
-    /* 스크롤바의 너비 */
-    width: 4px;
-    height: 10px !important;
-  }
-  .artist-video-box::-webkit-scrollbar-thumb {
-    height: 2px !important; /* 스크롤바의 길이 */
-    background: var(--main-color);
-    border-radius: 10px;
-  }
-  .artist-video-box::-webkit-scrollbar-track {
-    height: 2px !important;
-    background: #f6eee7;
-    left: 0;
-    width: 100%;
   }
   #footer .inner .inner_t .info_middle .bt_info_flex {
     margin-bottom: 30px;
@@ -1861,6 +1850,7 @@ a:hover {
   }
 }
 
+/********************* Tablet *********************/
 @media (max-width: 1024px) {
   .board-list-number {
     display: none !important;
@@ -1869,18 +1859,22 @@ a:hover {
   #footer .inner .inner_b {
     margin-bottom: 8%;
   }
+  .artist-video-box::-webkit-scrollbar,
+  .ec-base-product .prdList::-webkit-scrollbar {
+    display: none;
+  }
+  .artist-video-box::-webkit-scrollbar-thumb,
+  .ec-base-product .prdList::-webkit-scrollbar-thumb {
+    display: none;
+  }
+  .artist-video-box::-webkit-scrollbar-track,
+  .ec-base-product .prdList::-webkit-scrollbar-track {
+    display: none;
+  }
 }
 /********************* Mobile *********************/
 @media all and (max-width: 767px) {
   /* responsive class */
-  ul.prdList.grid4.list_gallery .thumbnail a {
-    position: absolute;
-    top: 40%;
-    transform: translateY(-50%);
-  }
-  ul.prdList.grid4.list_gallery .prdList__item img {
-    max-width: 70% !important;
-  }
   .main_video .wrap_video_box {
     padding: 10% 20%;
   }
@@ -1899,16 +1893,6 @@ a:hover {
   #footer .info_middle .wrap_cs {
     flex-flow: column-reverse wrap;
     justify-content: flex-start;
-  }
-  .artist-video-box {
-    overflow-x: scroll;
-    width: 90%;
-    margin: 0 auto;
-  }
-  .artist-video-thumbnail {
-    width: calc(45vw - 5px);
-    height: calc((45vw - 5px) / 3 * 2);
-    cursor: unset;
   }
   .artist-video-thumbnail:hover::before {
     background-color: var(--grayScale-N1-op);
@@ -1931,9 +1915,6 @@ a:hover {
   }
   .artist-video-box::-webkit-scrollbar-track {
     display: none;
-  }
-  .artist-video-list li {
-    margin-right: 10px;
   }
   .RTB {
     display: none !important;
@@ -2117,29 +2098,6 @@ a:hover {
   }
 }
 @media (max-width: 480px) {
-  .ec-base-product.xans-product-listmain-1 ul.prdList.grid4.list_gallery > li {
-    min-width: unset !important;
-    width: 90vw;
-  }
-  ul.prdList.grid4.list_gallery .prdList__item {
-    width: 90vw;
-  }
-  ul.prdList.grid4.list_gallery .thumbnail {
-    height: 50vh !important;
-  }
-  ul.prdList.grid4.list_gallery .prdList__item img {
-    max-width: 85% !important;
-  }
-  .artist-video-box {
-    height: calc((90vw / 3 * 2) + 72px);
-  }
-  .artist-video-list li {
-    width: 90vw;
-  }
-  .artist-video-thumbnail {
-    width: 90vw;
-    height: calc(90vw / 3 * 2);
-  }
   #footer .info_top {
     margin: 0;
     flex-flow: column-reverse;

@@ -43,6 +43,29 @@
   /* 900 Black(Heavy) */
 
   --quick-icon-shadow: 2px 2px 10px 0px var(--grayScale-N1-op);
+
+  /* 
+    percent = viewport size / 100 
+    vw = px / percent 
+    
+    360 viewport 에서 18px 폰트 사이즈를 구한다고 가정 했을 때 
+    
+    percent = 360 / 100  // 3.6
+    vw = 18 / 3.6        // 5vw
+  */
+
+  --item-margin-right-pc: 20px;
+  --item-margin-right-portable: 10px;
+
+  --item-row-4-width-pc-max1480: calc((1480px - var(--item-margin-right-pc) * 3) / 4);
+  --item-row-4-width-pc: calc((90vw - var(--item-margin-right-pc) * 3) / 4);
+  --item-row-3-width-pc-max1480: calc((1480px - var(--item-margin-right-pc) * 2) / 3);
+  --item-row-3-width-pc: calc((90vw - var(--item-margin-right-pc) * 2) / 3);
+  --item-row-3-width-portable: calc((90vw - var(--item-margin-right-portable) * 2) / 3);
+  --item-row-2-width-portable: calc((90vw - var(--item-margin-right-portable)) / 2);
+  --item-row-1-width-portable: 90vw;
+
+  height: calc((90vw - 40px) / 3 / 3 * 2);
 }
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @font-face {

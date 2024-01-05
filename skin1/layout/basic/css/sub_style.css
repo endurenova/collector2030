@@ -2102,7 +2102,7 @@ div.ec-base-help ul {
     transform: unset;
   }
   /* 상품진열 일반형3단 */
-  .ec-base-product .prdList:not(.grid4) > li {
+  .ec-base-product .prdList:not(.grid3_slide, .grid4) > li {
     margin: 0 0 35px 0;
   }
   .ec-base-product ul.grid3 > li {
@@ -2129,9 +2129,6 @@ div.ec-base-help ul {
   }
 
   /* 상품진열 강조형 */
-  .ec-base-product ul.list_gallery:not(.grid4) > li {
-    margin: 0 0 35px 0;
-  }
   .ec-base-product ul.list_gallery .prdList__item {
     overflow: visible;
   }
