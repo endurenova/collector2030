@@ -152,7 +152,6 @@
 }
 .main_image_text_gallery .main_3dan_banner {
   position: relative;
-  overflow-x: scroll;
   height: var(--item-row-3-width-pc);
 }
 .main_image_text_gallery .main_3dan_banner ul {
@@ -1360,6 +1359,7 @@ ul.prdList.grid4.list_gallery > li:hover .icon__box {
   }
 
   .main_image_text_gallery .main_3dan_banner {
+    overflow-x: scroll;
     height: var(--item-row-2-width-portable) !important;
   }
   .main_image_text_gallery .main_3dan_banner ul li {

@@ -1860,14 +1860,17 @@ a:hover {
     margin-bottom: 8%;
   }
   .artist-video-box::-webkit-scrollbar,
+  .main_3dan_banner.ez-mobile-layout-slide::-webkit-scrollbar,
   .ec-base-product .prdList::-webkit-scrollbar {
     display: none;
   }
   .artist-video-box::-webkit-scrollbar-thumb,
+  .main_3dan_banner.ez-mobile-layout-slide::-webkit-scrollbar-thumb,
   .ec-base-product .prdList::-webkit-scrollbar-thumb {
     display: none;
   }
   .artist-video-box::-webkit-scrollbar-track,
+  .main_3dan_banner.ez-mobile-layout-slide::-webkit-scrollbar-track,
   .ec-base-product .prdList::-webkit-scrollbar-track {
     display: none;
   }
