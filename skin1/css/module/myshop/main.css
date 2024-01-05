@@ -14,7 +14,7 @@
   }
   .xans-myshop-main h3 {
     color: var(--grayScale-N1);
-    color: var(--font-color-heading);
+    color: var(--grayScale-N1);
     font-size: 16px;
   }
   .xans-myshop-main .menu {
@@ -75,7 +75,7 @@
   }
   .xans-myshop-main h3 {
     color: var(--grayScale-N1);
-    color: var(--font-color-heading);
+    color: var(--grayScale-N1);
     font-size: 18px;
     font-weight: normal;
     font-weight: bold;

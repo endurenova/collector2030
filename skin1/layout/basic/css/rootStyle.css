@@ -1,7 +1,4 @@
 :root {
-  --font-color-base: var(--grayScale-N1);
-  --font-color-heading: var(--grayScale-N1);
-  --font-color-primary: var(--grayScale-N1);
   --font-color-secondary: #ef441f;
   --font-color-warn: #ec2a1d;
   --font-color-success: #0985df;
@@ -9,19 +6,15 @@
   --main-color: #8b7965;
   --main-color-op: rgba(139, 121, 101, 0.2);
   --main-color-opa: rgba(139, 121, 101, 0.8);
-  /* --pallet-color-1: #cfc3b9;
-  --pallet-color-2: #e1cfc1;
-  --pallet-color-3: #e6ddd4;
-  --pallet-color-4: #ebe3dd;
-  --pallet-color-5: #f4f1ee; */
 
   --pallet-color-1: #cfc3b9;
   --pallet-color-2: #e1cfc1;
   --pallet-color-3: #e6ddd4;
-
   --pallet-color-4: #edebe7;
   --pallet-color-5: #f7f6f5;
+  /* --pallet-color-5: #f4f1ee; */
 
+  --footer-bg: #242424;
   --grayScale-N1: #1d1611;
   --grayScale-N1-op: rgba(29, 22, 17, 0.2);
   --grayScale-N1-opa: rgba(29, 22, 17, 0.7);

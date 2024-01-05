@@ -14,6 +14,10 @@
 #container #contents > .section {
   max-width: 1480px;
 }
+#container #contents > .section.main_product_category {
+  display: flex;
+  flex-flow: row;
+}
 .slide_text_box {
   display: flex;
   flex-flow: column;
@@ -72,12 +76,11 @@
 .main_title .main_title_txt01 {
   position: relative;
   margin: 0;
-
   padding-top: 20px;
   font-size: 36px;
   font-weight: var(--font-weight-Bold);
   line-height: 1;
-  color: var(--grayScale-N1);
+  color: var(--main-color);
   letter-spacing: -0.001em;
 }
 .main_title .main_title_txt01:after {
@@ -134,14 +137,14 @@
 /* 메인 상품진열 */
 .main_product_list {
   max-width: 1480px !important;
-  width: 92%;
+  width: 90%;
   padding: 0;
 }
 
 /* 이미지&텍스트갤러리 */
 .main_image_text_gallery {
   max-width: 1480px !important;
-  width: 92%;
+  width: 90%;
   padding: 0;
 }
 .main_image_text_gallery .main_3dan_banner ul {
@@ -151,7 +154,6 @@
   margin: 0 -10px;
 }
 .main_image_text_gallery .main_3dan_banner ul li {
-  margin: 0 0 30px;
   flex: 1;
   max-width: 500px;
   box-sizing: border-box;
@@ -213,7 +215,6 @@
   position: absolute;
   bottom: 0;
   right: 0;
-  margin-left: 60px;
   padding: 9% 3% 6% 9%;
   background: #fff;
   text-align: left;
@@ -226,14 +227,14 @@
 }
 .main_image_text_gallery .main_3dan_banner ul li a .main_3dan_banner_txt .main_banner_more {
   font-size: 16px;
-  font-weight: 300;
+  font-weight: var(--font-weight-Regular);
   line-height: 1.5;
-  color: #888888;
+  color: var(--grayScale-N3);
   margin-top: clamp(16px, 1.25vw, 20px);
 }
 .main_image_text_gallery .main_3dan_banner ul li a:hover .main_3dan_banner_txt .main_banner_more {
   text-decoration: underline;
-  color: #333;
+  color: var(--grayScale-N2);
 }
 
 /* 메인 비디오배너 */
@@ -264,7 +265,7 @@
   background-color: var(--grayScale-N1-op);
 }
 .main_video .margin_video_box {
-  /* width: 92%;
+  /* width: 90%;
   margin: 0 auto; */
 }
 .main_video .wrap_video_box {
@@ -323,7 +324,7 @@
 .main_product_slide {
   position: relative;
   max-width: 1480px !important;
-  width: 92%;
+  width: 90%;
   padding: 0;
 }
 .swiper-container.highlight_slide {
@@ -395,7 +396,7 @@
 /* 메인 텍스트배너 */
 .main_text {
   max-width: 1480px !important;
-  width: 92%;
+  width: 90%;
   padding: 0;
   background: #faf7f3;
 }
@@ -461,11 +462,15 @@
 
 /* 메인페이지 NEW ARRIVALS ------------------------------------------------------------ */
 ul.prdList.grid4.list_gallery > li {
-  margin: 0 0 20px 0;
+  margin-right: 20px;
+}
+ul.prdList.grid4.list_gallery > li:last-of-type {
+  margin-right: 0;
 }
 ul.prdList.grid4.list_gallery .prdList__item {
   position: relative;
   overflow: hidden;
+  border-radius: 5%;
 }
 ul.prdList.grid4.list_gallery .thumbnail {
   display: flex;
@@ -603,7 +608,7 @@ ul.prdList.grid4.list_gallery > li:hover .icon__box {
   align-items: flex-start;
   justify-content: flex-start;
   max-width: 1480px !important;
-  width: 92%;
+  width: 90%;
   padding: 0;
 }
 .main_product_category .main_title {
@@ -721,7 +726,7 @@ ul.prdList.grid4.list_gallery > li:hover .icon__box {
 .main_product_category .ec-base-product {
   margin: 0 !important;
 }
-.main_product_category .ec-base-product .prdList {
+.main_product_category .ec-base-product .prdList:not(.grid4) {
   margin: 0 -10px 0;
 }
 .main_product_category .ec-base-product .prdList > li {
@@ -734,6 +739,7 @@ ul.prdList.grid4.list_gallery > li:hover .icon__box {
 .main_product_category .tabcontent ul.grid3_slide > li {
   width: 33.3334%;
 }
+
 .main_product_category .tabcontent ul.grid4_slide > li {
   width: 25%;
 }
@@ -796,7 +802,6 @@ ul.prdList.grid4.list_gallery > li:hover .icon__box {
 }
 .ec-base-product ul.grid3_slide li .prdList__item .description > ul > li > span {
   /* 작가명 */
-
   font-size: 16px !important;
   font-weight: var(--font-weight-Bold);
   line-height: 1.5;
@@ -819,7 +824,9 @@ ul.prdList.grid4.list_gallery > li:hover .icon__box {
 .ec-base-product ul.grid3_slide > li .prdList__item {
   margin: 0;
 }
-
+.ec-base-product ul.grid3_slide li .prdList__item .description .icon .icon_img {
+  display: none;
+}
 .main_product_category .swiper03 .swiper-scrollbar_swiper03 {
   /* Artwork Price Range 스크롤바 */
   height: 4px !important;
@@ -836,7 +843,7 @@ ul.prdList.grid4.list_gallery > li:hover .icon__box {
 /* 메인 지도 */
 .main_map {
   max-width: 1480px !important;
-  width: 92%;
+  width: 90%;
   padding: 0;
   clear: both;
 }
@@ -1025,6 +1032,9 @@ ul.prdList.grid4.list_gallery > li:hover .icon__box {
   .slide_text_box .slide_btn_area a {
     font-size: clamp(12px, 1.565vw, 16px);
   }
+  .main_product_category .ec-base-product ul.prdList.swiper-wrapper.grid3_slide.list_gallery > li .prdList__item {
+    height: 360px;
+  }
 }
 @media all and (max-width: 1024px) {
   .xans-smart-banner-admin,
@@ -1042,7 +1052,7 @@ ul.prdList.grid4.list_gallery > li:hover .icon__box {
 
   /* 메인 텍스트배너 */
   .main_text {
-    width: 92%;
+    width: 90%;
   }
 
   /* 메인 비디오배너 */
@@ -1168,9 +1178,6 @@ ul.prdList.grid4.list_gallery > li:hover .icon__box {
     width: 100%;
     flex: 1;
   }
-  .main_image_text_gallery .main_3dan_banner ul li a picture img {
-    width: 100%;
-  }
 
   /* 이미지&텍스트갤러리 슬라이드 */
   .main_image_text_gallery .main_3dan_banner.ez-mobile-layout-slide ul {
@@ -1246,9 +1253,6 @@ ul.prdList.grid4.list_gallery > li:hover .icon__box {
     font-size: clamp(12px, 3.333vw, 16px);
     /* font-size: calc(13px + (14 - 13) * ((100vw - 370px) / (1480 - 370))); */
   }
-  .main_image_text_gallery .main_3dan_banner ul li a .main_3dan_banner_txt .main_banner_more {
-    margin-top: clamp(10px, 2.778vw, 16px);
-  }
   .main_image_text_gallery .main_3dan_banner.ez-mobile-layout-slide ul li {
     scroll-snap-align: center;
     margin: 0;
@@ -1298,22 +1302,17 @@ ul.prdList.grid4.list_gallery > li:hover .icon__box {
 
   /* 이미지&텍스트갤러리 */
   .main_image_text_gallery .main_3dan_banner ul li a .main_3dan_banner_txt {
-    margin-left: 30px;
-    /* padding: 25px 0 20px 25px; */
+    padding: 8% 6% 6% 10%;
   }
-  .main_image_text_gallery .main_3dan_banner ul li a .main_3dan_banner_txt .main_3dan_banner_txt02 {
-    /* margin-top: 10px; */
+  .main_image_text_gallery .main_3dan_banner ul li a .main_3dan_banner_txt .main_banner_more {
+    margin-top: 10px;
   }
-
   /* 메인 비디오배너 */
   .main_video .main_video_title .main_title_txt01 {
     margin-top: 18px;
   }
   .main_video .main_video_title .main_title_txt02 {
     margin-top: 5px;
-  }
-  .main_image_text_gallery .main_3dan_banner.ez-mobile-layout-slide ul li {
-    width: 100%;
   }
   /* 메인상품분류 슬라이드 상품진열 */
   .main_product_slide {

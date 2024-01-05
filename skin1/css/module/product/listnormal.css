@@ -84,14 +84,14 @@
 }
 .product_top_image {
   max-width: 1480px !important;
-  width: 92%;
+  width: 90%;
   margin: 0 auto;
   padding: 20px 0;
   text-align: center;
 }
 .xans-product-headcategory.titleArea.section {
   max-width: 1480px !important;
-  width: 92%;
+  width: 90%;
   margin: 0 auto;
   padding: 45px 0 30px;
 }
@@ -198,19 +198,19 @@
     width: 100%;
   }
   .xans-product-normalpackage {
-    width: 92%;
+    width: 90%;
     margin: 0 auto;
   }
 
   /* 상품분류 추천상품 */
   .xans-product-listrecommend {
-    width: 92%;
+    width: 90%;
     padding: 0 0 50px;
   }
 
   /* 상품분류 신상품 */
   .xans-product-listnew {
-    width: 92%;
+    width: 90%;
     padding: 0 0 50px;
   }
 }

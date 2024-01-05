@@ -82,7 +82,7 @@ textarea {
   font-size: 100%;
   font-family: 'Montserrat', 'Noto Sans KR', Arial, sans-serif;
   color: var(--grayScale-N1);
-  color: var(--font-color-base);
+  color: var(--grayScale-N1);
   vertical-align: middle;
   border-radius: 0;
   box-sizing: border-box;
@@ -102,7 +102,7 @@ hr.layout {
 a {
   text-decoration: none;
   color: var(--grayScale-N1);
-  color: var(--font-color-base);
+  color: var(--grayScale-N1);
 }
 a:hover {
   text-decoration: underline;

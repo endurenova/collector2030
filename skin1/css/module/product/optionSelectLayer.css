@@ -575,7 +575,7 @@ body#popup {
 }
 #totalPrice .total strong {
   color: var(--grayScale-N1);
-  color: var(--font-color-primary);
+  color: var(--grayScale-N1);
   font-size: 15px;
 }
 #totalPrice .total em {

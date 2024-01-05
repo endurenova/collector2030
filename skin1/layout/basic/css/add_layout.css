@@ -24,10 +24,10 @@
     margin: 0;
     width: 46%;
   }
-  #footer.layout02 .info_top .bt_util ul {
+  #footer.layout02 .inner_b .bt_util ul {
     justify-content: flex-start;
   }
-  #footer.layout02 .info_top .bt_util ul li:first-child {
+  #footer.layout02 .inner_b .bt_util ul li:first-child {
     margin-left: 0px;
   }
   #footer.layout02 .inner .inner_t .info_middle {
@@ -35,10 +35,10 @@
     width: 46%;
     text-align: right;
   }
-  #footer.layout02 .inner .inner_t .info_middle .bt_logo {
+  #footer.layout02 .inner .inner_t .info_top .bt_logo {
     justify-content: flex-end;
   }
-  #footer.layout02 .inner .inner_t .info_middle .bt_logo a {
+  #footer.layout02 .inner .inner_t .info_top .bt_logo a {
     justify-content: flex-end;
   }
   #footer.layout02 .inner .inner_t .info_middle .bt_info .bt_info_list {
@@ -97,11 +97,11 @@
   #footer.layout03 .inner .inner_t .info_middle .bt_info .bt_info_list > div {
     margin: 0 5px;
   }
-  #footer.layout03 .inner .inner_t .info_middle .bt_logo {
+  #footer.layout03 .inner .inner_t .info_top .bt_logo {
     margin-bottom: 30px;
     justify-content: center;
   }
-  #footer.layout03 .inner .inner_t .info_middle .bt_logo a {
+  #footer.layout03 .inner .inner_t .info_top .bt_logo a {
     justify-content: center;
   }
   #footer.layout03 .inner .inner_t .info_middle .bt_tel {
@@ -113,13 +113,13 @@
     display: flex;
     flex-direction: column-reverse;
   }
-  #footer.layout03 .info_top .bt_util {
+  #footer.layout03 .inner_b .bt_util {
     margin-bottom: 30px;
   }
-  #footer.layout03 .info_top .bt_util ul {
+  #footer.layout03 .inner_b .bt_util ul {
     justify-content: center;
   }
-  #footer.layout03 .info_top .bt_util ul li:first-child {
+  #footer.layout03 .inner_b .bt_util ul li:first-child {
     margin-left: 0;
   }
   #footer.layout03 .info_top {
@@ -128,11 +128,11 @@
   }
   #footer.layout03 .info_top .cs_center_txt,
   #footer.layout03 .info_top .bank_txt,
-  #footer.layout03 .info_top .sns_txt {
+  #footer.layout03 .info_top .sns_icon {
     margin: 0 0 30px;
     text-align: center;
   }
-  #footer.layout03 .info_top .sns_txt a {
+  #footer.layout03 .info_top .sns_icon a {
     display: inline-block;
     margin: 0 7px;
   }
@@ -168,7 +168,7 @@
   /* 풀사이즈 */
   #contents > .section {
     max-width: 1480px;
-    width: 92%;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
   }

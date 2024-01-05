@@ -943,7 +943,7 @@
 }
 #totalPrice .total strong {
   color: var(--grayScale-N1);
-  color: var(--font-color-primary);
+  color: var(--grayScale-N1);
   font-size: 15px;
 }
 #totalPrice .total em {
@@ -2482,7 +2482,7 @@
     padding: 15px 0;
   }
   .tabProduct.tab_fixed ul {
-    width: 92%;
+    width: 90%;
     margin: 0 auto;
   }
   .tabProduct ul {

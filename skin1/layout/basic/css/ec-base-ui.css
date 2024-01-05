@@ -278,7 +278,7 @@ input[type='password'] {
   line-height: 40px;
   padding: 2px 4px 2px 15px;
   border: 1px solid #e0e0e0;
-  color: var(--font-color-base);
+  color: var(--grayScale-N1);
   font-size: 13px;
   box-sizing: border-box;
   outline: 1px;
@@ -705,12 +705,12 @@ span.noBorder input {
   }
   .titleArea h2 {
     display: inline-block;
-    color: var(--font-color-heading);
+    color: var(--grayScale-N1);
     font-size: 22px;
   }
   .titleArea h3 {
     display: inline-block;
-    color: var(--font-color-heading);
+    color: var(--grayScale-N1);
     font-size: 16px;
   }
   .titleArea--middle {
@@ -721,7 +721,7 @@ span.noBorder input {
   }
   .titleArea--middle h2 {
     display: inline-block;
-    color: var(--font-color-heading);
+    color: var(--grayScale-N1);
     font-size: 16px;
   }
   .titleArea .desc {
@@ -771,12 +771,12 @@ span.noBorder input {
   .titleArea h2 {
     display: inline-block;
     color: var(--grayScale-N1);
-    color: var(--font-color-heading);
+    color: var(--grayScale-N1);
     font-size: 30px;
   }
   .titleArea h3 {
     color: var(--grayScale-N1);
-    color: var(--font-color-heading);
+    color: var(--grayScale-N1);
     font-size: 16px;
     font-weight: normal;
   }
@@ -786,7 +786,7 @@ span.noBorder input {
   }
   .titleArea--middle h2 {
     color: var(--grayScale-N1);
-    color: var(--font-color-heading);
+    color: var(--grayScale-N1);
     font-size: 16px;
     font-weight: normal;
   }
@@ -796,7 +796,7 @@ span.noBorder input {
   }
   .titleArea.titleArea--myshop h2 {
     color: var(--grayScale-N1);
-    color: var(--font-color-heading);
+    color: var(--grayScale-N1);
     font-size: 16px;
     font-weight: normal;
   }

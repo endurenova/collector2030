@@ -692,7 +692,7 @@ body {
 }
 #product_detail_option_layer .totalPrice .total strong {
   color: var(--grayScale-N1);
-  color: var(--font-color-primary);
+  color: var(--grayScale-N1);
   font-size: 15px;
 }
 #product_detail_option_layer .totalPrice .total em {
