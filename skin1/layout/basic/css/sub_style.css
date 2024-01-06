@@ -1932,7 +1932,7 @@ div.ec-base-help ul {
   transform: translateY(-50%);
   width: 37px;
   height: 20px;
-  background-color: var(--main-color);
+  background-color: var(--pallet-color-2);
   z-index: -1;
 }
 .about_contents .about_collector > .about_box > .txt_box > h4 {

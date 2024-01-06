@@ -1,14 +1,14 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const menuList = document.querySelectorAll('#slide_add_category li');
+  const mainMenuList = document.querySelectorAll('#slide_add_category > li > a');
+  const subMenuList = document.querySelectorAll('#slide_add_category .sub_cate01 > li a');
   const deviceWidth = window.innerWidth;
   if (deviceWidth <= 1280) {
-    Array.from(menuList).forEach(e => {
+    Array.from(mainMenuList).forEach(e => {
       e.addEventListener('click', event => {
         event.preventDefault();
-        console.log(e);
-        e.classList.toggle('selected');
+        event.stopPropagation();
+        e.parentElement.classList.toggle('selected');
       });
     });
   }
-  console.log(deviceWidth);
 });

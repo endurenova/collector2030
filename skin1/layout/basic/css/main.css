@@ -43,7 +43,7 @@
 .slide_text_box .slide_text_area h1 {
   /* 메인슬라이드 타이틀 */
   font-size: clamp(40px, 3.125vw, 60px); /* 1280px ~ */
-  line-height: 2.4;
+  line-height: 1.6;
 }
 .slide_text_box .slide_text_area p {
   /* 메인슬라이드 텍스트 */
@@ -162,8 +162,7 @@
 .main_image_text_gallery .main_3dan_banner ul li {
   flex: 1;
   box-sizing: border-box;
-  width: var(--item-row-3-width-pc);
-  height: var(--item-row-3-width-pc);
+  width: 33.3334%;
   margin-right: var(--item-margin-right-pc);
 }
 .main_image_text_gallery .main_3dan_banner ul li:last-of-type {
@@ -1329,7 +1328,7 @@ ul.prdList.grid4.list_gallery > li:hover .icon__box {
     margin: 0 auto 50px;
   }
   .section.main_product_category {
-    display: none;
+    display: none !important;
   }
   .slide_text_box {
     width: 60%;
