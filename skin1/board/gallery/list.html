@@ -211,4 +211,10 @@
     const formatDate = e.textContent.split(' ')[0];
     e.textContent = formatDate;
   });
+
+  const boardCheck = document.querySelector('.boardList .xans-board > ul > li > a').getAttribute('href');
+  if (boardCheck.split('/')[2] === '전시-소식') {
+    const articleBoardList = document.querySelector('.boardList .xans-board > ul');
+    articleBoardList.classList.add('horizontal-board-layout');
+  }
 </script>

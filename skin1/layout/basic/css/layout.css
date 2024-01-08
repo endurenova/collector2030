@@ -826,7 +826,7 @@ a:hover {
 #footer .inner .inner_t .info_middle .bt_info .bt_info_list a {
   font-size: 15px;
   font-weight: 300;
-  color: var(--grayScale-N1);
+  color: var(--grayScale-N5);
 }
 #footer .inner .inner_t .info_middle .bt_info .bt_info_list > div {
   margin: 0 10px 0 0;

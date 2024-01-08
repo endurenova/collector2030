@@ -237,6 +237,87 @@
   text-align: center;
 }
 
+/* 갤러리 커스터마이징 ------------------------------------------------------------------------------------------ */
+.xans-board-listpackage-8 .xans-board-list-8 ul.horizontal-board-layout {
+  display: flex;
+  flex-flow: row wrap;
+}
+.xans-board-listpackage-8 .xans-board-list-8 ul.horizontal-board-layout li {
+  width: 33.3334%;
+  height: fit-content;
+}
+.xans-board-listpackage-8 .xans-board-list-8 ul.horizontal-board-layout li a {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+}
+.xans-board-listpackage-8 .xans-board-list-8 ul.horizontal-board-layout li a .thumbnail {
+  display: flex;
+  width: 100%;
+  height: 260px;
+}
+.xans-board-listpackage-8 .xans-board-list-8 ul.horizontal-board-layout li a .thumbnail img {
+  object-fit: cover;
+  padding: 0;
+}
+.xans-board-listpackage-8 .xans-board-list-8 ul.horizontal-board-layout li a .summary {
+  display: flex;
+  flex-flow: row wrap;
+  color: var(--main-color);
+  box-sizing: border-box;
+  width: 100%;
+  padding: 3%;
+}
+.xans-board-listpackage-8 .xans-board-list-8 ul.horizontal-board-layout li a .summary .subject {
+  flex-flow: row wrap;
+}
+.xans-board-listpackage-8 .xans-board-list-8 ul.horizontal-board-layout li a .summary .subject span {
+  width: 100%;
+}
+.xans-board-listpackage-8 .xans-board-list-8 ul.horizontal-board-layout li a .summary .subject span:nth-of-type(1) {
+  /* 전시회 제목 */
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  white-space: wrap;
+  text-overflow: ellipsis;
+  font-size: 16px;
+  color: var(--grayScale-N1);
+  font-weight: var(--font-weight-SemiBold);
+}
+.xans-board-listpackage-8 .xans-board-list-8 ul.horizontal-board-layout li a .summary .subject span:nth-of-type(2) {
+  /* 전시회 기간 */
+  display: inline-block;
+  color: var(--main-color);
+  margin-bottom: 4%;
+}
+.xans-board-listpackage-8 .xans-board-list-8 ul.horizontal-board-layout li a .summary .subject span:nth-of-type(3) {
+  /* 전시회 장소 */
+  width: 65%;
+}
+.xans-board-listpackage-8 .xans-board-list-8 ul.horizontal-board-layout li a .summary .subject span:nth-of-type(4) {
+  /* 전시회 지역 */
+  display: inline-block;
+  text-align: right;
+  width: 35%;
+}
+.xans-board-listpackage-8 .xans-board-list-8 ul.horizontal-board-layout li a .summary > span {
+  display: none;
+}
+/* ------------------------------------------------------------------------------------------ 갤러리 커스터마이징 */
+@media (max-width: 1480px) {
+  /* 갤러리 커스터마이징 ------------------------------------------------------------------------------------------ */
+  .xans-board-listpackage-8 .xans-board-list-8 ul.horizontal-board-layout li a .summary .subject span:nth-of-type(1) {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    white-space: wrap;
+    text-overflow: ellipsis;
+  }
+  /* ------------------------------------------------------------------------------------------ 갤러리 커스터마이징 */
+}
 /********************* PC *********************/
 @media all and (min-width: 1025px) {
   /* 리스트 정렬 */
@@ -358,11 +439,17 @@
   }
 }
 @media (max-width: 1024px) {
+  .xans-board-listpackage-8 .xans-board-list-8 ul.horizontal-board-layout li {
+    width: 50%;
+  }
   .xans-board-listpackage-8 .xans-board-list-8 li {
     margin: 5% 0;
   }
 }
 @media (max-width: 767px) {
+  .xans-board-listpackage-8 .xans-board-list-8 ul.horizontal-board-layout li {
+    width: 100%;
+  }
   .xans-board-listpackage-8 .xans-board-list-8 li {
     position: relative;
     width: 90%;

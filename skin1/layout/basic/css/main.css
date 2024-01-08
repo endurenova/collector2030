@@ -260,7 +260,7 @@
   top: 0;
   left: 0;
   background-size: cover;
-  background-image: url(/layout/basic/img/youtube_background.png);
+  background-image: url(/SkinImg/img/youtube_background.png);
 }
 .main_video .youtube_background::before {
   content: '';

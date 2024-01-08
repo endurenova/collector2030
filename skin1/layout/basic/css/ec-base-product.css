@@ -22,7 +22,7 @@
   border: 1px solid #ececec;
 }
 
-.ec-base-product:not(.xans-product-listmain-1) .prdList {
+.ec-base-product:not(.xans-product-listmain) .prdList {
   /* 상품 전체 영향 */
   margin: 0 -10px 0;
   text-align: left;

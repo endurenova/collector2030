@@ -376,5 +376,12 @@
   </span>
   <span class="ec-base-help">{$board_function_help|replace:*,}</span>
 </div>
+<script>
+  const readCheck = document.querySelector('.path strong').textContent;
+  if (readCheck === '전시 소식') {
+    const articleHead = document.querySelector('.typeWrite .head');
+    articleHead.classList.add('display-info-head');
+  }
+</script>
 <!-- // Admin only -->
 <!--@define(cmc_log)-->
