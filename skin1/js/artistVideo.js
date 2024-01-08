@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
   try {
-    if (document.querySelector('.path')) {
+    if (!document.querySelector('.path')) {
       const artistVideoInfo = [
         {
           idx: 0,
