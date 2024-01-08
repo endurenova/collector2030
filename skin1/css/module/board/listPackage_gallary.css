@@ -254,7 +254,7 @@
 .xans-board-listpackage-8 .xans-board-list-8 ul.horizontal-board-layout li a .thumbnail {
   display: flex;
   width: 100%;
-  height: 260px;
+  height: fit-content;
 }
 .xans-board-listpackage-8 .xans-board-list-8 ul.horizontal-board-layout li a .thumbnail img {
   object-fit: cover;
@@ -455,7 +455,7 @@
     width: 90%;
     margin: 0 auto 20%;
   }
-  .xans-board-listpackage-8 .xans-board-list-8 li::after {
+  .xans-board-listpackage-8 .xans-board-list-8 ul:not(.horizontal-board-layout) li::after {
     content: '';
     position: absolute;
     left: 50%;
@@ -468,7 +468,7 @@
     width: 95%;
     margin: 0 auto;
   }
-  .xans-board-listpackage-8 .xans-board-list-8 li .boardChk {
+  .xans-board-listpackage-8 .xans-board-list-8 ul:not(.horizontal-board-layout) li .boardChk {
     position: absolute;
     bottom: -12%;
     right: 5%;
