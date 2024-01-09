@@ -364,7 +364,10 @@ a:hover {
   justify-content: space-between;
 }
 #header .inner .top_nav_box div[data-ez-module='menu-main/1'] {
-  width: 40%;
+  /* width: 40%; */
+  display: flex;
+  width: 80%;
+  justify-content: space-around;
 }
 #header .inner .top_nav_box .top_category {
   display: flex;
@@ -379,12 +382,12 @@ a:hover {
   height: 80px;
   display: flex;
   align-items: center;
-  padding: 0 clamp(8px, 0.625vw, 10px); /* width 1280px */
+  padding: 0 24px; /* width 1280px */
   position: relative;
 }
 #header .inner .top_nav_box .top_category > ul > li > a {
   font-size: clamp(14px, 1.094vw, 16px); /* width 1280px */
-  font-weight: 400;
+  font-weight: var(--font-weight-Medium);
   display: block;
   line-height: 78px;
   color: var(--grayScale-N2);
@@ -494,7 +497,7 @@ a:hover {
   font-size: 16px;
   color: var(--grayScale-N1);
   line-height: 1;
-  font-weight: 300;
+  font-weight: var(--font-weight-Medium);
   display: block;
   padding: 10px 20px 10px 20px;
   white-space: nowrap;
@@ -508,9 +511,10 @@ a:hover {
 }
 #header .inner .top_nav_box .top_logo {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-shrink: 0;
+  width: 20%;
   height: 80px;
 }
 #header .inner .top_nav_box .top_logo a {
@@ -530,7 +534,7 @@ a:hover {
   display: flex;
   flex-shrink: 0;
   height: 80px;
-  width: 40%;
+  width: 20%;
   justify-content: flex-end;
 }
 #header .inner .top_nav_box .top_mypage li {
@@ -1500,6 +1504,7 @@ a:hover {
   #header .inner .top_nav_box .top_logo {
     display: flex;
     align-items: center;
+    justify-content: center;
     order: 2;
     height: 65px;
     z-index: 998;

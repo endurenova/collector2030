@@ -418,6 +418,7 @@
   }
   .ec-base-table.typeList th {
     border-bottom: 0;
+    font-size: 14px;
   }
   .ec-base-table.typeList td.subject {
     padding-left: 20px;

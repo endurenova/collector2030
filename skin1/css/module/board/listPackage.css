@@ -124,7 +124,89 @@
 .xans-board-listpackage .ec-base-table table td .comment:empty {
   margin: 0;
 }
+/* FAQ 페이지 전용 ---------------------------------------------------------------------- */
+.faq-table thead tr th:first-of-type {
+  padding: unset !important;
+}
+.faq-list {
+}
+.faq-item {
+  border-bottom: 1px solid var(--grayScale-N3);
+}
+.faq-item .faq-item__title {
+  display: flex;
+  flex-flow: nowrap;
+  color: var(--grayScale-N1);
+}
+.faq-item .faq-item__title .faq-title__type {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 10%;
+}
+.faq-item .faq-item__title .faq-title__question {
+  display: flex;
+  align-items: center;
+  width: 90%;
+}
+.faq-item .faq-item__answer {
+  display: none;
+  font-size: 14px;
+  font-weight: var(--font-weight-Medium);
+  color: var(--grayScale-N1-opa);
+}
+.faq-item .faq-item__answer.active {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  height: unset;
+}
+.faq-item .faq-item__answer .answer-space {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 90%;
+  margin-left: 10%;
+  padding: 1% 5% 1% 0.5%;
+  box-sizing: border-box;
+}
+.faq-item .faq-item__answer .answer-space > span {
+  margin-bottom: 1%;
+}
+.faq-item .faq-item__answer .answer-space .artwork-type {
+  display: block;
+}
+.faq-item .faq-item__answer .answer-space .accent {
+  font-weight: var(--font-weight-SemiBold);
+  text-decoration: underline;
+}
+.faq-item__title {
+  cursor: pointer;
+  width: 100%;
+  height: 45px;
+  font-weight: var(--font-weight-Medium);
+  font-size: 14px;
+  position: relative;
+  box-sizing: border-box;
+}
 
+.faq-item__title:after {
+  content: '';
+  display: inline-block;
+  width: 36px;
+  height: 30px;
+  position: absolute;
+  top: 50%;
+  right: 2%;
+  transform: translateY(-50%) rotate(180deg);
+  background: url(/SkinImg/img/expand_more_FILL0_wght400_GRAD0_opsz24.svg) no-repeat center center / contain;
+  transition: 0.35s;
+}
+
+.faq-item__title.active:after {
+  transform: translateY(-50%) rotate(0deg);
+}
+
+/* ---------------------------------------------------------------------- FAQ 페이지 전용 */
 /********************* Mobile / Tablet *********************/
 @media all and (max-width: 1024px) {
   .xans-board-listpackage .ec-base-button.gBottom {

@@ -3,49 +3,170 @@
 <!--@css(/layout/basic/css/main.css)-->
 <!--@import(/smart-banner/shop1/smart-banner-admin-RES00003.html)-->
 <section
-  class="section main_product_list"
-  data-ez-module="product-list/1"
-  data-ez-layout="grid4 list_gallery"
-  data-ez="contents-0kmfxtm-1"
-  style="margin-bottom: 120px"
+    class="section main_product_list"
+    data-ez-module="product-list/1"
+    data-ez-layout="grid4 list_gallery"
+    data-ez="contents-0kmfxtm-1"
+    style="margin-bottom: 120px"
 >
-  <ez-prop data-version="1.0.0">
-    <ez-var data-prop="layout" data-namespace="ez.module.product-list.layout" data-type="array">
-      <ez-item data-id="grid3" data-name="일반3단형(PC 3열/MOBILE 1열)"></ez-item>
-      <ez-item data-id="grid4" data-name="일반4단형(PC 4열/MOBILE 2열)"></ez-item>
-      <ez-item data-id="grid5" data-name="일반5단형(PC 5열/MOBILE 2열)"></ez-item>
-      <ez-item data-id="grid3 list_gallery" data-name="이미지강조3단형(PC 3열/MOBILE 1열)"></ez-item>
-      <ez-item data-id="grid4 list_gallery" data-name="이미지강조4단형(PC 4열/MOBILE 2열)"></ez-item>
-      <ez-item data-id="grid5 list_gallery" data-name="이미지강조5단형(PC 5열/MOBILE 2열)"></ez-item>
-    </ez-var>
-  </ez-prop>
+    <ez-prop data-version="1.0.0">
+        <ez-var data-prop="layout" data-namespace="ez.module.product-list.layout" data-type="array">
+            <ez-item data-id="grid3" data-name="일반3단형(PC 3열/MOBILE 1열)"></ez-item>
+            <ez-item data-id="grid4" data-name="일반4단형(PC 4열/MOBILE 2열)"></ez-item>
+            <ez-item data-id="grid5" data-name="일반5단형(PC 5열/MOBILE 2열)"></ez-item>
+            <ez-item data-id="grid3 list_gallery" data-name="이미지강조3단형(PC 3열/MOBILE 1열)"></ez-item>
+            <ez-item data-id="grid4 list_gallery" data-name="이미지강조4단형(PC 4열/MOBILE 2열)"></ez-item>
+            <ez-item data-id="grid5 list_gallery" data-name="이미지강조5단형(PC 5열/MOBILE 2열)"></ez-item>
+        </ez-var>
+    </ez-prop>
 
-  <div class="main_title ez-align-center" data-ez-role="ez-align" data-ez-align="center">
-    <!-- 이번주의 입고상품 타이틀 수정하는곳 -->
-    <div class="main_title_txt01" data-ez-role="title">NEW ARRIVALS</div>
-    <!-- <div class="main_title_txt02" data-ez-role="subtitle">컬렉터 2030에서 엄선한 새로운 작품을 먼저 선점해 보세요!</div> -->
-  </div>
-  <!-- //main_title -->
+    <div class="main_title ez-align-center" data-ez-role="ez-align" data-ez-align="center">
+        <!-- 이번주의 입고상품 타이틀 수정하는곳 -->
+        <div class="main_title_txt01" data-ez-role="title">NEW ARRIVALS</div>
+        <!-- <div class="main_title_txt02" data-ez-role="subtitle">컬렉터 2030에서 엄선한 새로운 작품을 먼저 선점해 보세요!</div> -->
+    </div>
+    <!-- //main_title -->
 
-  <div data-ez-holder="product_listmain">
-    <div module="product_listmain_1" class="ec-base-product">
-      <!--
+    <div data-ez-holder="product_listmain">
+        <div module="product_listmain_1" class="ec-base-product">
+            <!--
 				$count = 8
 				$basket_result = /product/add_basket.html
 				$basket_option = /product/basket_option.html
 				$moreview = no
 				$cache = yes
 			-->
-      <ul class="prdList grid4 list_gallery" data-ez-role="layout ez-discount-tag">
-        <!--@import(/product/list_product.html)-->
-      </ul>
+            <ul class="prdList grid4 list_gallery" data-ez-role="layout ez-discount-tag">
+                <!--@import(/product/list_product.html)-->
+            </ul>
+        </div>
+        <div module="product_listmore_1" class="more">
+            <a href="#none" onclick="{$more_action}" class="btnMore">More +</a>
+        </div>
     </div>
-    <div module="product_listmore_1" class="more">
-      <a href="#none" onclick="{$more_action}" class="btnMore">More +</a>
-    </div>
-  </div>
 </section>
-<section
+
+<section class="section main_product_category" data-ez-module="product-list-category/2" data-ez-layout="grid3_slide list_gallery" data-ez="contents-1geex3l-1">
+    <ez-prop data-version="1.0.0">
+        <ez-var data-prop="layout" data-namespace="ez.module.product-list-category.layout" data-type="array">
+            <ez-item data-id="grid3_slide" data-name="일반3단형(PC 3열/MOBILE 2열)"></ez-item>
+            <ez-item data-id="grid4_slide" data-name="일반4단형(PC 4열/MOBILE 2열)"></ez-item>
+            <ez-item data-id="grid5_slide" data-name="일반5단형(PC 5열/MOBILE 3열)"></ez-item>
+            <ez-item data-id="grid3_slide list_gallery" data-name="이미지강조3단형(PC 3열/MOBILE 2열)"></ez-item>
+            <ez-item data-id="grid4_slide list_gallery" data-name="이미지강조4단형(PC 4열/MOBILE 2열)"></ez-item>
+            <ez-item data-id="grid5_slide list_gallery" data-name="이미지강조5단형(PC 5열/MOBILE 3열)"></ez-item>
+        </ez-var>
+    </ez-prop>
+    <div class="main_product_inner">
+        <div class="main_title ez-align-left" data-ez-role="ez-align" data-ez-align="left">
+            <!-- 에디터가 직접 선정한 트랜드픽 타이틀 수정하는곳 -->
+            <div class="main_title_txt01" data-ez-role="title">Price Range</div>
+            <!-- <div class="main_title_txt02" data-ez-role="subtitle"></div> -->
+        </div>
+        <!-- //main_title -->
+        <ul class="main_product_tab" data-ez-role="tab-list">
+            <li data-ez-role="tab-item">
+                <button type="button" class="button" data-id="tabContent1" data-ez-role="name" data-name="~ ₩ 3,000,000">~ ₩ 3,000,000</button>
+            </li>
+            <li data-ez-role="tab-item">
+                <button type="button" class="button" data-id="tabContent2" data-ez-role="name" data-name="₩ 10,000,000">₩ 10,000,000</button>
+            </li>
+            <li data-ez-role="tab-item">
+                <button type="button" class="button" data-id="tabContent3" data-ez-role="name" data-name="₩ 30,000,000">₩ 30,000,000</button>
+            </li>
+            <li data-ez-role="tab-item">
+                <button type="button" class="button" data-id="tabContent4" data-ez-role="name" data-name="₩ 50,000,000 ~">₩ 50,000,000 ~</button>
+            </li>
+        </ul>
+        <!-- //main_product_tab -->
+    </div>
+    <!-- //main_product_inner -->
+
+    <div class="content_list" data-ez-role="content-list">
+        <div class="tabcontent" id="tabContent1" data-ez-role="content-item">
+            <div data-ez-holder="product_listmain">
+                <div module="product_listmain_1" class="ec-base-product swiper-container swiper03">
+                    <!--
+						$count = 100
+						$basket_result = /product/add_basket.html
+						$basket_option = /product/basket_option.html
+						$moreview = no
+						$cache = no
+					-->
+                    <ul
+                        class="prdList swiper-wrapper ez-discount-tag-off grid3_slide list_gallery"
+                        data-ez-role="layout ez-discount-tag"
+                        data-ez-discount-tag="off"
+                    >
+                        <!--@import(/product/list_product_slide.html)-->
+                    </ul>
+                    <div class="swiper-scrollbar swiper-scrollbar_swiper03"></div>
+                </div>
+            </div>
+        </div>
+        <!-- //tabContent1 -->
+
+        <div class="tabcontent" id="tabContent2" data-ez-role="content-item">
+            <div data-ez-holder="product_listmain">
+                <div module="product_listmain_2" class="ec-base-product swiper-container swiper03">
+                    <!--
+						$count = 100
+						$basket_result = /product/add_basket.html
+						$basket_option = /product/basket_option.html
+						$moreview = no
+						$cache = no
+					-->
+                    <ul class="prdList swiper-wrapper grid3_slide list_gallery" data-ez-role="layout ez-discount-tag">
+                        <!--@import(/product/list_product_slide.html)-->
+                    </ul>
+                    <div class="swiper-scrollbar swiper-scrollbar_swiper03"></div>
+                </div>
+            </div>
+        </div>
+        <!-- //tabContent2 -->
+
+        <div class="tabcontent" id="tabContent3" data-ez-role="content-item">
+            <div data-ez-holder="product_listmain">
+                <div module="product_listmain_3" class="ec-base-product swiper-container swiper03">
+                    <!--
+						$count = 100
+						$basket_result = /product/add_basket.html
+						$basket_option = /product/basket_option.html
+						$moreview = no
+						$cache = no
+					-->
+                    <ul class="prdList swiper-wrapper grid3_slide list_gallery" data-ez-role="layout ez-discount-tag">
+                        <!--@import(/product/list_product_slide.html)-->
+                    </ul>
+                    <div class="swiper-scrollbar swiper-scrollbar_swiper03"></div>
+                </div>
+            </div>
+        </div>
+        <!-- //tabContent3 -->
+
+        <div class="tabcontent" id="tabContent4" data-ez-role="content-item">
+            <div data-ez-holder="product_listmain">
+                <div module="product_listmain_4" class="ec-base-product swiper-container swiper03">
+                    <!--
+						$count = 100
+						$basket_result = /product/add_basket.html
+						$basket_option = /product/basket_option.html
+						$moreview = no
+						$cache = no
+					-->
+                    <ul class="prdList swiper-wrapper grid3_slide list_gallery" data-ez-role="layout ez-discount-tag">
+                        <!--@import(/product/list_product_slide.html)-->
+                    </ul>
+                    <div class="swiper-scrollbar swiper-scrollbar_swiper03"></div>
+                </div>
+            </div>
+        </div>
+        <!-- //tabContent4 -->
+    </div>
+    <!-- //content_list -->
+</section>
+
+<!-- <section
   class="section main_video ez-align-center"
   data-ez-module="video/1"
   data-ez-role="style.background"
@@ -69,375 +190,224 @@
         ></iframe>
       </div>
 
-      <!-- <div class="main_video_title">
+      <div class="main_video_title">
         비디오 타이틀 수정하는곳
         <div class="main_title_txt01" data-ez-role="title"></div>
         <div class="main_title_txt02" data-ez-role="desc"></div>
-      </div> -->
-      <!-- //main_video_title -->
+      </div>
     </div>
   </div>
-</section>
-<section
-  class="section main_image_text_gallery"
-  data-ez-module="image-gallery/2"
-  data-ez-role="style.background"
-  data-ez-item-length="3"
-  data-ez="contents-12yzxc0-1"
->
-  <ez-prop data-version="1.0.0">
-    <ez-var data-prop="image" data-namespace="ez.module.image-gallery.image">
-      <ez-item data-id="size" data-pc="480 480" data-mobile="480 480"></ez-item>
-    </ez-var>
-    <ez-var data-prop="display" data-namespace="ez.module.image-gallery.display">
-      <ez-item data-id="item" data-max="10"></ez-item>
-      <ez-item data-id="column" data-default="3" data-min="1" data-max="5"></ez-item>
-    </ez-var>
-    <ez-var data-prop="layout" data-namespace="ez.module.image-gallery.layout">
-      <ez-item data-id="mobile" data-default="slide">
-        <ez-item data-id="options" data-type="array">
-          <ez-item data-id="slide" data-name="슬라이드"></ez-item>
-          <ez-item data-id="more" data-name="더보기"></ez-item>
-          <ez-item data-id="none" data-name="사용안함"></ez-item>
-        </ez-item>
-      </ez-item>
-    </ez-var>
-  </ez-prop>
-  <div class="main_title ez-align-center" data-ez-role="ez-align" data-ez-align="center">
-    <!-- 라이프스타일 타이틀 수정하는곳 -->
-    <div class="main_title_txt01" data-ez-role="title">SPECIAL ARTWORKS</div>
-    <!-- <div class="main_title_txt02" data-ez-role="desc">컬렉터 2030에서만 볼 수 있는 특별한 작품</div> -->
-  </div>
-  <!-- //main_title -->
+</section> -->
 
-  <div class="main_3dan_banner ez-mobile-layout-slide" data-ez-role="ez-mobile-layout" data-ez-mobile-layout="slide">
-    <!-- 메인 3단배너 수정하는곳 -->
-    <ul data-ez-role="image-list ez-column" class="ez-column-3" data-ez-column="3">
-      <li data-ez-role="image-item ez-align">
-        <a data-ez-role="a" href="/category/%EC%BB%AC%EB%A0%89%ED%84%B0-%EC%97%90%EB%94%94%EC%85%98/32/" target="_self">
-          <picture>
-            <source
-              srcset="
-                https://ecimg.cafe24img.com/pg715b26588354090/col2030/web/upload/ezst/image/ez-image-contents-12yzxc0-1-005h4zv-3.jpg?v=1703234324455
-              "
-              media="(max-width: 1024px)"
-              data-ez-role="img-pc"
-              data-ez-eb="https://ecimg.cafe24img.com/pg715b26588354090/col2030/web/upload/ezst/image/ez-image-contents-12yzxc0-1-005h4zv-3.edibotbanner.json"
-            />
-            <img
-              src="
-                https://ecimg.cafe24img.com/pg715b26588354090/col2030/web/upload/ezst/image/ez-image-contents-12yzxc0-1-005h4zv-3.jpg?v=1703234324455
-              "
-              data-ez-role="img-mobile"
-            />
-          </picture>
-          <div class="main_3dan_banner_txt">
-            <div class="main_3dan_banner_txt01" data-ez-role="title" style="color: rgb(0, 0, 0)">프리미엄 라인</div>
-            <div class="main_banner_more" data-ez-role="desc">자세히 살펴보기</div>
-          </div>
-          <!--//main_3dan_banner_txt-->
-        </a>
-      </li>
-      <li data-ez-role="image-item ez-align">
-        <a data-ez-role="a" href="#" target="_self">
-          <picture>
-            <source
-              srcset="
-                https://ecimg.cafe24img.com/pg715b26588354090/col2030/web/upload/ezst/image/ez-image-contents-12yzxc0-1-19k36bj-3.jpg?v=1703234243387
-              "
-              media="(max-width: 1024px)"
-              data-ez-role="img-pc"
-              data-ez-eb="https://ecimg.cafe24img.com/pg715b26588354090/col2030/web/upload/ezst/image/ez-image-contents-12yzxc0-1-19k36bj-3.edibotbanner.json"
-            />
-            <img
-              src="
-                https://ecimg.cafe24img.com/pg715b26588354090/col2030/web/upload/ezst/image/ez-image-contents-12yzxc0-1-19k36bj-3.jpg?v=1703234243387
-              "
-              data-ez-role="img-mobile"
-            />
-          </picture>
-          <div class="main_3dan_banner_txt">
-            <div class="main_3dan_banner_txt01" data-ez-role="title" style="color: rgb(0, 0, 0)">컬렉터 에디션</div>
-            <div class="main_banner_more" data-ez-role="desc">자세히 살펴보기</div>
-          </div>
-          <!--//main_3dan_banner_txt-->
-        </a>
-      </li>
-      <li data-ez-role="image-item ez-align">
-        <a data-ez-role="a" href="/category/%EC%98%A4%EB%A6%AC%EC%A7%80%EB%84%90/44/" target="_self">
-          <picture>
-            <source
-              srcset="
-                https://ecimg.cafe24img.com/pg715b26588354090/col2030/web/upload/ezst/image/ez-image-contents-12yzxc0-1-1oql4ub-3.jpg?v=1703584891801
-              "
-              media="(max-width: 1024px)"
-              data-ez-role="img-pc"
-              data-ez-eb="https://ecimg.cafe24img.com/pg715b26588354090/col2030/web/upload/ezst/image/ez-image-contents-12yzxc0-1-1oql4ub-3.edibotbanner.json"
-            />
-            <img
-              src="
-                https://ecimg.cafe24img.com/pg715b26588354090/col2030/web/upload/ezst/image/ez-image-contents-12yzxc0-1-1oql4ub-3.jpg?v=1703584891801
-              "
-              data-ez-role="img-mobile"
-            />
-          </picture>
-          <div class="main_3dan_banner_txt">
-            <div class="main_3dan_banner_txt01" data-ez-role="title" 1>오리지널 원화</div>
-            <div class="main_banner_more" data-ez-role="desc">자세히 살펴보기</div>
-          </div>
-          <!--a-->
-        </a>
-      </li>
-    </ul>
-    <div class="main_image_text_gallery_more"><a href="#none" class="main_image_text_gallery_more_btn">더보기</a></div>
-  </div>
-  <!-- //main_3dan_banner -->
-</section>
 <section
-  class="section artist-videos"
-  data-ez-module="html/1"
-  data-ez-name="CUSTOM HTML"
-  data-ez-type="plain"
-  data-ez="contents-0z96adb-1"
+    class="section main_image_text_gallery"
+    data-ez-module="image-gallery/2"
+    data-ez-role="style.background"
+    data-ez-item-length="3"
+    data-ez="contents-12yzxc0-1"
 >
-  <!-- 아티스트 비디오 -->
-  <div class="main_title ez-align-center" data-ez-role="ez-align" data-ez-align="center">
-    <div class="main_title_txt01" data-ez-role="title">ARTIST VIDEOS</div>
-    <!-- <div class="main_title_txt02" data-ez-role="desc"></div> -->
-  </div>
-  <div class="artist-video-direction">
-    <span class="video-direction-left material-symbols-outlined"> arrow_circle_left </span>
-    <span class="video-direction-right material-symbols-outlined active"> arrow_circle_right </span>
-  </div>
-  <div class="artist-video-box">
-    <ul class="artist-video-list"></ul>
-  </div>
-</section>
-<section
-  class="section main_product_category"
-  data-ez-module="product-list-category/2"
-  data-ez-layout="grid3_slide list_gallery"
-  data-ez="contents-1geex3l-1"
->
-  <ez-prop data-version="1.0.0">
-    <ez-var data-prop="layout" data-namespace="ez.module.product-list-category.layout" data-type="array">
-      <ez-item data-id="grid3_slide" data-name="일반3단형(PC 3열/MOBILE 2열)"></ez-item>
-      <ez-item data-id="grid4_slide" data-name="일반4단형(PC 4열/MOBILE 2열)"></ez-item>
-      <ez-item data-id="grid5_slide" data-name="일반5단형(PC 5열/MOBILE 3열)"></ez-item>
-      <ez-item data-id="grid3_slide list_gallery" data-name="이미지강조3단형(PC 3열/MOBILE 2열)"></ez-item>
-      <ez-item data-id="grid4_slide list_gallery" data-name="이미지강조4단형(PC 4열/MOBILE 2열)"></ez-item>
-      <ez-item data-id="grid5_slide list_gallery" data-name="이미지강조5단형(PC 5열/MOBILE 3열)"></ez-item>
-    </ez-var>
-  </ez-prop>
-  <div class="main_product_inner">
-    <div class="main_title ez-align-left" data-ez-role="ez-align" data-ez-align="left">
-      <!-- 에디터가 직접 선정한 트랜드픽 타이틀 수정하는곳 -->
-      <div class="main_title_txt01" data-ez-role="title">Price Range</div>
-      <!-- <div class="main_title_txt02" data-ez-role="subtitle"></div> -->
+    <ez-prop data-version="1.0.0">
+        <ez-var data-prop="image" data-namespace="ez.module.image-gallery.image">
+            <ez-item data-id="size" data-pc="480 480" data-mobile="480 480"></ez-item>
+        </ez-var>
+        <ez-var data-prop="display" data-namespace="ez.module.image-gallery.display">
+            <ez-item data-id="item" data-max="10"></ez-item>
+            <ez-item data-id="column" data-default="3" data-min="1" data-max="5"></ez-item>
+        </ez-var>
+        <ez-var data-prop="layout" data-namespace="ez.module.image-gallery.layout">
+            <ez-item data-id="mobile" data-default="slide">
+                <ez-item data-id="options" data-type="array">
+                    <ez-item data-id="slide" data-name="슬라이드"></ez-item>
+                    <ez-item data-id="more" data-name="더보기"></ez-item>
+                    <ez-item data-id="none" data-name="사용안함"></ez-item>
+                </ez-item>
+            </ez-item>
+        </ez-var>
+    </ez-prop>
+    <div class="main_title ez-align-center" data-ez-role="ez-align" data-ez-align="center">
+        <!-- 라이프스타일 타이틀 수정하는곳 -->
+        <div class="main_title_txt01" data-ez-role="title">SPECIAL ARTWORKS</div>
+        <!-- <div class="main_title_txt02" data-ez-role="desc">컬렉터 2030에서만 볼 수 있는 특별한 작품</div> -->
     </div>
     <!-- //main_title -->
-    <ul class="main_product_tab" data-ez-role="tab-list">
-      <li data-ez-role="tab-item">
-        <button type="button" class="button" data-id="tabContent1" data-ez-role="name" data-name="~ ₩ 3,000,000">
-          ~ ₩ 3,000,000
-        </button>
-      </li>
-      <li data-ez-role="tab-item">
-        <button type="button" class="button" data-id="tabContent2" data-ez-role="name" data-name="₩ 10,000,000">
-          ₩ 10,000,000
-        </button>
-      </li>
-      <li data-ez-role="tab-item">
-        <button type="button" class="button" data-id="tabContent3" data-ez-role="name" data-name="₩ 30,000,000">
-          ₩ 30,000,000
-        </button>
-      </li>
-      <li data-ez-role="tab-item">
-        <button type="button" class="button" data-id="tabContent4" data-ez-role="name" data-name="₩ 50,000,000 ~">
-          ₩ 50,000,000 ~
-        </button>
-      </li>
-    </ul>
-    <!-- //main_product_tab -->
-  </div>
-  <!-- //main_product_inner -->
 
-  <div class="content_list" data-ez-role="content-list">
-    <div class="tabcontent" id="tabContent1" data-ez-role="content-item">
-      <div data-ez-holder="product_listmain">
-        <div module="product_listmain_1" class="ec-base-product swiper-container swiper03">
-          <!--
-						$count = 100
-						$basket_result = /product/add_basket.html
-						$basket_option = /product/basket_option.html
-						$moreview = no
-						$cache = no
-					-->
-          <ul
-            class="prdList swiper-wrapper ez-discount-tag-off grid3_slide list_gallery"
-            data-ez-role="layout ez-discount-tag"
-            data-ez-discount-tag="off"
-          >
-            <!--@import(/product/list_product_slide.html)-->
-          </ul>
-          <div class="swiper-scrollbar swiper-scrollbar_swiper03"></div>
-        </div>
-      </div>
-    </div>
-    <!-- //tabContent1 -->
-
-    <div class="tabcontent" id="tabContent2" data-ez-role="content-item">
-      <div data-ez-holder="product_listmain">
-        <div module="product_listmain_2" class="ec-base-product swiper-container swiper03">
-          <!--
-						$count = 100
-						$basket_result = /product/add_basket.html
-						$basket_option = /product/basket_option.html
-						$moreview = no
-						$cache = no
-					-->
-          <ul class="prdList swiper-wrapper grid3_slide list_gallery" data-ez-role="layout ez-discount-tag">
-            <!--@import(/product/list_product_slide.html)-->
-          </ul>
-          <div class="swiper-scrollbar swiper-scrollbar_swiper03"></div>
-        </div>
-      </div>
-    </div>
-    <!-- //tabContent2 -->
-
-    <div class="tabcontent" id="tabContent3" data-ez-role="content-item">
-      <div data-ez-holder="product_listmain">
-        <div module="product_listmain_3" class="ec-base-product swiper-container swiper03">
-          <!--
-						$count = 100
-						$basket_result = /product/add_basket.html
-						$basket_option = /product/basket_option.html
-						$moreview = no
-						$cache = no
-					-->
-          <ul class="prdList swiper-wrapper grid3_slide list_gallery" data-ez-role="layout ez-discount-tag">
-            <!--@import(/product/list_product_slide.html)-->
-          </ul>
-          <div class="swiper-scrollbar swiper-scrollbar_swiper03"></div>
-        </div>
-      </div>
-    </div>
-    <!-- //tabContent3 -->
-
-    <div class="tabcontent" id="tabContent4" data-ez-role="content-item">
-      <div data-ez-holder="product_listmain">
-        <div module="product_listmain_4" class="ec-base-product swiper-container swiper03">
-          <!--
-						$count = 100
-						$basket_result = /product/add_basket.html
-						$basket_option = /product/basket_option.html
-						$moreview = no
-						$cache = no
-					-->
-          <ul class="prdList swiper-wrapper grid3_slide list_gallery" data-ez-role="layout ez-discount-tag">
-            <!--@import(/product/list_product_slide.html)-->
-          </ul>
-          <div class="swiper-scrollbar swiper-scrollbar_swiper03"></div>
-        </div>
-      </div>
-    </div>
-    <!-- //tabContent4 -->
-  </div>
-  <!-- //content_list -->
-</section>
-<section
-  class="section main_map ez-align-left"
-  data-ez-module="map/1"
-  data-ez-align="left"
-  data-ez="contents-14r7dtv-1"
-  style="margin-bottom: 120px; display: none"
-  data-ez-display="hidden"
->
-  <ez-prop data-version="1.0.0">
-    <ez-var data-prop="image" data-namespace="ez.module.map.image">
-      <ez-item data-id="size" data-pc="830 520" data-mobile="830 520"></ez-item>
-    </ez-var>
-  </ez-prop>
-  <div class="main_map_banner">
-    <!-- 메인 지도 -->
-    <div class="wrap_banner_txt">
-      <div class="main_map_banner_txt01" data-ez-role="title" style="color: rgb(255, 255, 255)"></div>
-    </div>
-    <picture>
-      <source
-        srcset="/shop1/skin-skin1/SkinImg/img/main_map_pc.png?v=1702893836522"
-        media="(max-width: 1024px)"
-        data-ez-role="img-pc"
-      />
-      <img src="/shop1/skin-skin1/SkinImg/img/main_map_pc.png?v=1702893836522" data-ez-role="img-mobile" />
-    </picture>
-    <div class="main_map_banner_txt_box">
-      <div class="main_map_banner_txt">
-        <div class="map_txt" data-ez-role="desc" style="color: rgb(118, 118, 118)">
-          <p>
-            <strong><span style="color: rgb(0, 0, 0)">주소</span></strong>
-          </p>
-          <p>
-            <span
-              style="
-                color: rgb(26, 26, 26);
-                font-family: Jost, 'Noto Sans KR', Arial, sans-serif;
-                font-size: 13px;
-                font-style: normal;
-                font-variant-ligatures: normal;
-                font-variant-caps: normal;
-                font-weight: 300;
-                letter-spacing: -0.65px;
-                orphans: 2;
-                text-align: start;
-                text-indent: 0px;
-                text-transform: none;
-                widows: 2;
-                word-spacing: 0px;
-                -webkit-text-stroke-width: 0px;
-                white-space: normal;
-                background-color: rgb(249, 249, 249);
-                text-decoration-thickness: initial;
-                text-decoration-style: initial;
-                text-decoration-color: initial;
-                display: inline !important;
-                float: none;
+    <div class="main_3dan_banner ez-mobile-layout-slide" data-ez-role="ez-mobile-layout" data-ez-mobile-layout="slide">
+        <!-- 메인 3단배너 수정하는곳 -->
+        <ul data-ez-role="image-list ez-column" class="ez-column-3" data-ez-column="3">
+            <li data-ez-role="image-item ez-align">
+                <a data-ez-role="a" href="/category/%EC%BB%AC%EB%A0%89%ED%84%B0-%EC%97%90%EB%94%94%EC%85%98/32/" target="_self">
+                    <picture>
+                        <source
+                            srcset="
+                                https://ecimg.cafe24img.com/pg715b26588354090/col2030/web/upload/ezst/image/ez-image-contents-12yzxc0-1-005h4zv-3.jpg?v=1703234324455
+                            "
+                            media="(max-width: 1024px)"
+                            data-ez-role="img-pc"
+                            data-ez-eb="https://ecimg.cafe24img.com/pg715b26588354090/col2030/web/upload/ezst/image/ez-image-contents-12yzxc0-1-005h4zv-3.edibotbanner.json"
+                        />
+                        <img
+                            src="
+                https://ecimg.cafe24img.com/pg715b26588354090/col2030/web/upload/ezst/image/ez-image-contents-12yzxc0-1-005h4zv-3.jpg?v=1703234324455
               "
-              >서울특별시 강남구 도산대로99길 1층</span
-            >
-          </p>
-          <p><br /></p>
-          <p><br /></p>
-          <p>
-            <strong><span style="color: rgb(0, 0, 0)">운영시간</span></strong>
-          </p>
-          <p>운영시간 : 오전 10시 ~ 오후 10시</p>
-          <p><br /></p>
-        </div>
-        <!-- //map_txt -->
-        <div class="main_long_banner_link">
-          <span class="displaynone" data-ez-role="address">서울특별시 동작구 보라매로0길 00</span
-          ><a
-            data-ez-role="a"
-            href="https://www.google.com/maps/dir/서울특별시%20동작구%20보라매로0길%2000"
-            target="_blank"
-            >바로가기</a
-          >
-        </div>
-      </div>
-      <!-- //main_map_banner_txt -->
+                            data-ez-role="img-mobile"
+                        />
+                    </picture>
+                    <div class="main_3dan_banner_txt">
+                        <div class="main_3dan_banner_txt01" data-ez-role="title" style="color: rgb(0, 0, 0)">프리미엄 라인</div>
+                        <div class="main_banner_more" data-ez-role="desc">자세히 살펴보기</div>
+                    </div>
+                    <!--//main_3dan_banner_txt-->
+                </a>
+            </li>
+            <li data-ez-role="image-item ez-align">
+                <a data-ez-role="a" href="#" target="_self">
+                    <picture>
+                        <source
+                            srcset="
+                                https://ecimg.cafe24img.com/pg715b26588354090/col2030/web/upload/ezst/image/ez-image-contents-12yzxc0-1-19k36bj-3.jpg?v=1703234243387
+                            "
+                            media="(max-width: 1024px)"
+                            data-ez-role="img-pc"
+                            data-ez-eb="https://ecimg.cafe24img.com/pg715b26588354090/col2030/web/upload/ezst/image/ez-image-contents-12yzxc0-1-19k36bj-3.edibotbanner.json"
+                        />
+                        <img
+                            src="
+                https://ecimg.cafe24img.com/pg715b26588354090/col2030/web/upload/ezst/image/ez-image-contents-12yzxc0-1-19k36bj-3.jpg?v=1703234243387
+              "
+                            data-ez-role="img-mobile"
+                        />
+                    </picture>
+                    <div class="main_3dan_banner_txt">
+                        <div class="main_3dan_banner_txt01" data-ez-role="title" style="color: rgb(0, 0, 0)">컬렉터 에디션</div>
+                        <div class="main_banner_more" data-ez-role="desc">자세히 살펴보기</div>
+                    </div>
+                    <!--//main_3dan_banner_txt-->
+                </a>
+            </li>
+            <li data-ez-role="image-item ez-align">
+                <a data-ez-role="a" href="/category/%EC%98%A4%EB%A6%AC%EC%A7%80%EB%84%90/44/" target="_self">
+                    <picture>
+                        <source
+                            srcset="
+                                https://ecimg.cafe24img.com/pg715b26588354090/col2030/web/upload/ezst/image/ez-image-contents-12yzxc0-1-1oql4ub-3.jpg?v=1703584891801
+                            "
+                            media="(max-width: 1024px)"
+                            data-ez-role="img-pc"
+                            data-ez-eb="https://ecimg.cafe24img.com/pg715b26588354090/col2030/web/upload/ezst/image/ez-image-contents-12yzxc0-1-1oql4ub-3.edibotbanner.json"
+                        />
+                        <img
+                            src="
+                https://ecimg.cafe24img.com/pg715b26588354090/col2030/web/upload/ezst/image/ez-image-contents-12yzxc0-1-1oql4ub-3.jpg?v=1703584891801
+              "
+                            data-ez-role="img-mobile"
+                        />
+                    </picture>
+                    <div class="main_3dan_banner_txt">
+                        <div class="main_3dan_banner_txt01" data-ez-role="title" 1>오리지널 원화</div>
+                        <div class="main_banner_more" data-ez-role="desc">자세히 살펴보기</div>
+                    </div>
+                    <!--a-->
+                </a>
+            </li>
+        </ul>
+        <div class="main_image_text_gallery_more"><a href="#none" class="main_image_text_gallery_more_btn">더보기</a></div>
     </div>
-    <!-- //main_long_banner_txt -->
-  </div>
-  <!-- //main_map_banner -->
+    <!-- //main_3dan_banner -->
+</section>
+<section class="section artist-videos" data-ez-module="html/1" data-ez-name="CUSTOM HTML" data-ez-type="plain" data-ez="contents-0z96adb-1">
+    <!-- 아티스트 비디오 -->
+    <div class="main_title ez-align-center" data-ez-role="ez-align" data-ez-align="center">
+        <div class="main_title_txt01" data-ez-role="title">ARTIST VIDEOS</div>
+        <!-- <div class="main_title_txt02" data-ez-role="desc"></div> -->
+    </div>
+    <div class="artist-video-direction">
+        <span class="video-direction-left material-symbols-outlined"> arrow_circle_left </span>
+        <span class="video-direction-right material-symbols-outlined active"> arrow_circle_right </span>
+    </div>
+    <div class="artist-video-box">
+        <ul class="artist-video-list"></ul>
+    </div>
 </section>
 <section
-  id="instagramWidgetManual"
-  style="margin-left: 1%; margin-right: 1%; width: 98%; height: 250px"
-  data-ez="contents-1r3lbpb-1"
+    class="section main_map ez-align-left"
+    data-ez-module="map/1"
+    data-ez-align="left"
+    data-ez="contents-14r7dtv-1"
+    style="margin-bottom: 120px; display: none"
+    data-ez-display="hidden"
 >
-  <!--앱을 비활성화한 뒤 삽입한 코드를 직접 삭제해야 할 수도 있습니다.-->
-  <h1>인스타그램 자리</h1>
+    <ez-prop data-version="1.0.0">
+        <ez-var data-prop="image" data-namespace="ez.module.map.image">
+            <ez-item data-id="size" data-pc="830 520" data-mobile="830 520"></ez-item>
+        </ez-var>
+    </ez-prop>
+    <div class="main_map_banner">
+        <!-- 메인 지도 -->
+        <div class="wrap_banner_txt">
+            <div class="main_map_banner_txt01" data-ez-role="title" style="color: rgb(255, 255, 255)"></div>
+        </div>
+        <picture>
+            <source srcset="/shop1/skin-skin1/SkinImg/img/main_map_pc.png?v=1702893836522" media="(max-width: 1024px)" data-ez-role="img-pc" />
+            <img src="/shop1/skin-skin1/SkinImg/img/main_map_pc.png?v=1702893836522" data-ez-role="img-mobile" />
+        </picture>
+        <div class="main_map_banner_txt_box">
+            <div class="main_map_banner_txt">
+                <div class="map_txt" data-ez-role="desc" style="color: rgb(118, 118, 118)">
+                    <p>
+                        <strong><span style="color: rgb(0, 0, 0)">주소</span></strong>
+                    </p>
+                    <p>
+                        <span
+                            style="
+                                color: rgb(26, 26, 26);
+                                font-family: Jost, 'Noto Sans KR', Arial, sans-serif;
+                                font-size: 13px;
+                                font-style: normal;
+                                font-variant-ligatures: normal;
+                                font-variant-caps: normal;
+                                font-weight: 300;
+                                letter-spacing: -0.65px;
+                                orphans: 2;
+                                text-align: start;
+                                text-indent: 0px;
+                                text-transform: none;
+                                widows: 2;
+                                word-spacing: 0px;
+                                -webkit-text-stroke-width: 0px;
+                                white-space: normal;
+                                background-color: rgb(249, 249, 249);
+                                text-decoration-thickness: initial;
+                                text-decoration-style: initial;
+                                text-decoration-color: initial;
+                                display: inline !important;
+                                float: none;
+                            "
+                            >서울특별시 강남구 도산대로99길 1층</span
+                        >
+                    </p>
+                    <p><br /></p>
+                    <p><br /></p>
+                    <p>
+                        <strong><span style="color: rgb(0, 0, 0)">운영시간</span></strong>
+                    </p>
+                    <p>운영시간 : 오전 10시 ~ 오후 10시</p>
+                    <p><br /></p>
+                </div>
+                <!-- //map_txt -->
+                <div class="main_long_banner_link">
+                    <span class="displaynone" data-ez-role="address">서울특별시 동작구 보라매로0길 00</span
+                    ><a data-ez-role="a" href="https://www.google.com/maps/dir/서울특별시%20동작구%20보라매로0길%2000" target="_blank">바로가기</a>
+                </div>
+            </div>
+            <!-- //main_map_banner_txt -->
+        </div>
+        <!-- //main_long_banner_txt -->
+    </div>
+    <!-- //main_map_banner -->
+</section>
+<section id="instagramWidgetManual" style="margin-left: 1%; margin-right: 1%; width: 98%; height: 250px" data-ez="contents-1r3lbpb-1">
+    <!--앱을 비활성화한 뒤 삽입한 코드를 직접 삭제해야 할 수도 있습니다.-->
+    <h1>인스타그램 자리</h1>
 </section>
 <!--@define(cmc_log)-->
 <!--#ez="1/6"-->

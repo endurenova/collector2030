@@ -71,7 +71,9 @@ document.addEventListener('DOMContentLoaded', () => {
       const videoThumbnailList = document.querySelectorAll('.artist-video-thumbnail');
       const videoArrow = document.querySelectorAll('.artist-video-direction .material-symbols-outlined');
       const artistVideoModal = document.querySelector('.modal-artist-video');
-
+      modalVideoClear = () => {
+        artistVideoModal.querySelector('iframe').setAttribute('src', '');
+      };
       Array.from(videoThumbnailList).forEach((e, i) => {
         e.addEventListener('click', event => {
           event.preventDefault();
@@ -88,12 +90,14 @@ document.addEventListener('DOMContentLoaded', () => {
             event.preventDefault();
             artistVideoModal.classList.remove('on');
             document.body.style.overflow = 'visible';
+            modalVideoClear();
           });
           window.addEventListener('click', event => {
             // 모달 팝업 외부 클릭 시 이벤트 처리
             if (event.target == artistVideoModal) {
               artistVideoModal.classList.remove('on');
               document.body.style.overflow = 'visible';
+              modalVideoClear();
             }
           });
 
@@ -104,6 +108,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 artistVideoModal.classList.remove('on');
                 if (document.body.style.overflow == 'hidden') {
                   document.body.style.overflow == 'visible';
+                  modalVideoClear();
                 }
               }
             }
@@ -116,7 +121,6 @@ document.addEventListener('DOMContentLoaded', () => {
       const videoRightArrow = document.querySelector('.video-direction-right');
       checkArrowAbled = (listWidth, marginRight) => {
         const videoListWidth = Number(getComputedStyle(artistVideoList).getPropertyValue('width').split('px')[0]);
-        console.log(videoListWidth);
         if (videoListLocation == 0) {
           if (videoLeftArrow.classList.contains('active')) {
             videoLeftArrow.classList.remove('active');

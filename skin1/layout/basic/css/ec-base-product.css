@@ -80,9 +80,6 @@
   box-sizing: border-box;
   object-fit: contain;
   transition: 0.3s;
-  box-shadow: -3px 2px 25px -8px rgba(0, 0, 0, 0.51);
-  -webkit-box-shadow: -3px 2px 25px -8px rgba(0, 0, 0, 0.51);
-  -moz-box-shadow: -3px 2px 25px -8px rgba(0, 0, 0, 0.51);
 }
 .ec-base-product .prdList .icon__box {
   position: absolute;
@@ -1080,7 +1077,7 @@ svg .main-circ {
   .ec-base-product ul.grid5 > li {
     width: 50%;
   }
-  .ec-base-product .prdList:not(.grid4) {
+  .ec-base-product .prdList:not(.grid4, .grid3_slide) {
     margin: 0 -5px 0;
   }
   .ec-base-product .prdList .wish {
