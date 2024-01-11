@@ -1310,6 +1310,143 @@
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
 }
+/* 상세페이지 전용 ---------------------------------------------------------------------- */
+#prdDetail .xans-product-relation {
+  /* 관련 상품 */
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.purchase-img-box {
+  width: 100%;
+  margin: 100px auto 0;
+}
+.purchase-img-box .purchase-img-list {
+  margin: 0 auto;
+  width: fit-content;
+}
+.purchase-img-box .purchase-img-list li {
+  width: fit-content;
+}
+.purchase-img-box .purchase-img-list li:nth-of-type(3) {
+  margin-top: 500px;
+}
+.purchase-img-box .purchase-img-list li:nth-of-type(2) {
+  /* 작품 제목, 아티스트 이름 / 작업 방식 */
+  position: relative;
+}
+.purchase-img-box .purchase-img-list li:nth-of-type(2) .artwork-simple-info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  text-align: center;
+}
+.purchase-img-box .purchase-img-list li:nth-of-type(2) .artwork-simple-info h1 {
+  font-size: clamp(18px, 5vw, 48px);
+  color: var(--grayScale-N2);
+  line-height: 1.6;
+}
+.purchase-img-box .purchase-img-list li:nth-of-type(2) .artwork-simple-info p {
+  font-size: clamp(12px, 3.333vw, 24px);
+  font-weight: var(--font-weight-SemiBold);
+  color: var(--main-color);
+  line-height: 1.5;
+}
+.purchase-info-box {
+  width: 100%;
+  max-width: 1000px;
+  margin: 100px auto 0;
+}
+.purchase-info-list .purchase-info-item__box .purchase-info-item {
+  position: relative;
+  border-top: 1px solid var(--grayScale-N1);
+  line-height: 3;
+  cursor: pointer;
+}
+.purchase-info-list .purchase-info-item__box .purchase-info-item:after {
+  content: '';
+  display: inline-block;
+  width: 36px;
+  height: 30px;
+  position: absolute;
+  top: 50%;
+  right: 1%;
+  transform: translateY(-50%) rotate(180deg);
+  background: url(/SkinImg/img/expand_more_FILL0_wght400_GRAD0_opsz24.svg) no-repeat center center / contain;
+  transition: 0.35s;
+}
+.purchase-info-list .purchase-info-item__box .purchase-info-item.active:after {
+  transform: translateY(-50%) rotate(0deg);
+}
+.purchase-info-list .purchase-info-item__box .purchase-info-item .purchase-info-title {
+  font-size: 16px;
+  font-weight: var(--font-weight-SemiBold);
+  color: var(--grayScale-N1);
+}
+
+.purchase-info-list .purchase-info-item__box .purchase-info-item__description {
+  display: none;
+}
+.purchase-info-list .purchase-info-item__box .purchase-info-item__description.active {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  height: unset;
+}
+.purchase-info-list .purchase-info-item__box .purchase-info-item__description .description-space {
+  font-size: 14px;
+  color: var(--grayScale-N2);
+}
+.purchase-info-list .purchase-info-item__box .purchase-info-item__description .description-space ul {
+  padding: 0 6% 2% 1%;
+}
+.purchase-info-list .purchase-info-item__box .purchase-info-item__description .description-space ul li {
+  display: flex;
+  flex-flow: row;
+  line-height: 2;
+}
+.purchase-info-list
+  .purchase-info-item__box
+  .purchase-info-item__description
+  .description-space
+  ul
+  li
+  span:first-of-type {
+  white-space: nowrap;
+}
+.purchase-info-list
+  .purchase-info-item__box
+  .purchase-info-item__description
+  .description-space
+  ul
+  li
+  span:last-of-type {
+  text-indent: 0.2rem;
+}
+.purchase-info-list
+  .purchase-info-item__box
+  .purchase-info-item__description
+  .description-space
+  ul
+  li
+  strong:not(.delivery-refer) {
+  text-decoration: underline;
+}
+.purchase-info-list
+  .purchase-info-item__box
+  .purchase-info-item__description
+  .description-space
+  ul
+  li
+  > .delivery-refer {
+  display: block;
+  text-align: right;
+  width: 100%;
+  padding-top: 1%;
+  color: var(--grayScale-N1);
+}
+/* ---------------------------------------------------------------------- 상세페이지 전용 */
 
 /********************* Mobile  *********************/
 @media all and (max-width: 640px) {
@@ -1334,6 +1471,12 @@
 }
 /********************* Mobile / Tablet *********************/
 @media all and (max-width: 1024px) {
+  .purchase-info-list .purchase-info-item__box .purchase-info-item .purchase-info-title {
+    font-size: clamp(14px, 3.889vw, 16px);
+  }
+  .purchase-info-list .purchase-info-item__box .purchase-info-item__description .description-space {
+    font-size: clamp(12px, 3.333vw, 14px);
+  }
   .xans-product #prdDetail table {
     width: 90%;
   }

@@ -952,8 +952,9 @@ svg .main-circ {
     font-size: 18px !important;
   }
   .xans-product-detail .infoArea table > tbody > tr > th span,
-  .xans-product-detail .infoArea table > tbody > tr > td span {
-    font-size: clamp(14px, 3.889vw, 16px) !important;
+  .xans-product-detail .infoArea table > tbody > tr > td span,
+  .xans-product-detail .infoArea #totalProducts > table > tbody > tr > td:first-child {
+    font-size: clamp(12px, 3.333vw, 16px) !important;
   }
   .ec-base-product.xans-product-listmain-1 ul.prdList.grid4.list_gallery::-webkit-scrollbar {
     display: none;
