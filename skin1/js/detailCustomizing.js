@@ -7,9 +7,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const detailArea = document.querySelector('#prdDetail > div');
   simulatorBackground = () => {};
   purchaseInfoImg = () => {
-    const arttistName = document.querySelector('tr:nth-of-type(1) .xl63').textContent;
-    const artworkTitle = document.querySelector('tr:nth-of-type(2) .xl64').textContent;
-    const releaseDate = document.querySelector('tr:last-of-type .xl64').textContent;
     const purchaseImgAlt = [
       {
         path: 'top',
@@ -35,25 +32,45 @@ document.addEventListener('DOMContentLoaded', () => {
     );
     const purchaseImgList = document.querySelector('.purchase-img-list');
     purchaseImgAlt.forEach((e, i) => {
-      purchaseImgList.insertAdjacentHTML(
-        'beforeend',
-        `
-          <li>
-            <img src="/SkinImg/img/detail/product_detail_${e.path}.png" alt="${e.alt}" />
-          </li>
-        `,
-      );
+      if (i === 1) {
+        try {
+          const arttistName = document.querySelector('tr:nth-of-type(1) .xl63').textContent;
+          const artworkTitle = document.querySelector('tr:nth-of-type(2) .xl64').textContent;
+          const releaseDate = document.querySelector('tr:last-of-type .xl64').textContent;
+          purchaseImgList.insertAdjacentHTML(
+            'beforeend',
+            `
+            <li>
+              <img src="/SkinImg/img/detail/product_detail_${e.path}.png" alt="${e.alt}" />
+              <div class="artwork-simple-info">
+                <h1>${artworkTitle}</h1>
+                <p>${arttistName}&#32;&#47;&#32;${releaseDate}</p>
+              </div>
+            </li>
+          `,
+          );
+        } catch (e) {}
+      } else {
+        purchaseImgList.insertAdjacentHTML(
+          'beforeend',
+          `
+            <li>
+              <img src="/SkinImg/img/detail/product_detail_${e.path}.png" alt="${e.alt}" />
+            </li>
+          `,
+        );
+      }
     });
-    const detailInfo_1 = purchaseImgList.querySelector('li:nth-of-type(2)');
-    detailInfo_1.insertAdjacentHTML(
-      'beforeend',
-      `
-      <div class="artwork-simple-info">
-        <h1>${artworkTitle}</h1>
-        <p>${arttistName}&#32;&#47;&#32;${releaseDate}</p>
-      </div>
-    `,
-    );
+    // const detailInfo_1 = purchaseImgList.querySelector('li:nth-of-type(2)');
+    // detailInfo_1.insertAdjacentHTML(
+    //   'beforeend',
+    //   `
+    //   <div class="artwork-simple-info">
+    //     <h1>${artworkTitle}</h1>
+    //     <p>${arttistName}&#32;&#47;&#32;${releaseDate}</p>
+    //   </div>
+    // `,
+    // );
   };
   purchaseInfoAccordion = () => {
     const purchaseInfoText = [

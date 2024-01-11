@@ -671,22 +671,22 @@ ul.prdList.grid4.list_gallery > li:hover .icon__box {
 .main_product_category .main_product_inner .main_product_tab li.active .button::before {
   color: var(--grayScale-N5);
 }
-.main_product_category .main_product_inner .main_product_tab li:nth-child(1) .button::before {
+/* .main_product_category .main_product_inner .main_product_tab li:nth-child(1) .button::before {
   content: 'Down to';
   font-size: 14px;
-}
+} */
 .main_product_category .main_product_inner .main_product_tab li:nth-child(2) .button::before {
-  content: 'From 3,000,000 up to';
+  content: '3백만 원 이상';
   font-size: 14px;
 }
 .main_product_category .main_product_inner .main_product_tab li:nth-child(3) .button::before {
-  content: 'From 10,000,000 up to';
+  content: '1천만 원 이상';
   font-size: 14px;
 }
-.main_product_category .main_product_inner .main_product_tab li:nth-child(4) .button::before {
+/* .main_product_category .main_product_inner .main_product_tab li:nth-child(4) .button::before {
   content: 'From';
   font-size: 14px;
-}
+} */
 /* .main_product_category .main_product_inner .main_product_tab li .button:after {
   content: '';
   position: relative;
@@ -1161,7 +1161,6 @@ ul.prdList.grid4.list_gallery > li:hover .icon__box {
   .main_product_category .main_product_inner .main_product_tab li .button {
     font-size: 18px;
     line-height: 1;
-    font-weight: 300;
     color: var(--grayScale-N1);
     white-space: nowrap;
     letter-spacing: -0.01em;

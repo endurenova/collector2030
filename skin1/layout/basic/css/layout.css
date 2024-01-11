@@ -1066,7 +1066,7 @@ a:hover {
   width: 65px;
 }
 #right_quick > div .kakao-chat__btn::before {
-  content: '톡상담';
+  content: '톡채널';
   width: 0px;
   display: flex;
   position: absolute;
@@ -1082,7 +1082,6 @@ a:hover {
   transition: 0.3s;
 }
 #right_quick > div .kakao-chat__btn:hover::before {
-  content: '톡상담';
   font-weight: bold;
   align-items: center;
   font-size: 16px;
@@ -2021,7 +2020,6 @@ a:hover {
     width: 50px;
   }
   #right_quick > div .kakao-chat__btn::before {
-    content: '톡상담';
     display: flex;
     position: absolute;
     align-items: center;
@@ -2036,7 +2034,6 @@ a:hover {
     transition: 0.3s;
   }
   #right_quick > div .kakao-chat__btn:hover::before {
-    content: '톡상담';
     font-weight: bold;
     width: 100px;
     height: 40px;
