@@ -954,7 +954,9 @@ ul.prdList.grid4.list_gallery > li:hover .icon__box {
   color: var(--main-color);
   border: 1px solid var(--main-color);
 }
-
+.app-smart-popup {
+  top: 5% !important;
+}
 @media all and (min-width: 1025px) {
   /* 이미지&텍스트갤러리 */
   .main_image_text_gallery .main_3dan_banner ul.fs_medium li a .main_3dan_banner_txt {
@@ -1051,8 +1053,11 @@ ul.prdList.grid4.list_gallery > li:hover .icon__box {
     /* font-size: calc(13px + (14 - 13) * ((100vw - 370px) / (1480 - 370))); */
   }
   .slide_text_box {
-    width: 50%;
+    width: 80%;
     height: 40%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
   .slide_text_box .slide_text_area h1 {
     /* 메인슬라이드 타이틀 */
