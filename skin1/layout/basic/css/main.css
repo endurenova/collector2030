@@ -17,6 +17,7 @@
 }
 #container #contents > .section.main_product_category {
   display: flex;
+  display: none;
   flex-flow: row;
   align-items: center;
   justify-content: space-between;
@@ -955,7 +956,7 @@ ul.prdList.grid4.list_gallery > li:hover .icon__box {
   border: 1px solid var(--main-color);
 }
 .app-smart-popup {
-  top: 5% !important;
+  top: 2% !important;
 }
 @media all and (min-width: 1025px) {
   /* 이미지&텍스트갤러리 */

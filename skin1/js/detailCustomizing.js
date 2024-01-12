@@ -143,7 +143,16 @@ document.addEventListener('DOMContentLoaded', () => {
           });
           // 작품 걸어보기 작품 크기
           const artworkFrame = document.getElementById('virtualFrame');
-          artworkFrame.style.width = (Number(artworkWidth.split('cm')[0]) * 37.8) / 25 + 'px';
+          function detectMobileDevice(agent) {
+            const mobileRegex = [/Android/i, /iPhone/i, /iPad/i, /iPod/i, /BlackBerry/i, /Windows Phone/i];
+            return mobileRegex.some(mobile => agent.match(mobile));
+          }
+          const isMobile = detectMobileDevice(window.navigator.userAgent);
+          if (isMobile) {
+            artworkFrame.style.width = (Number(artworkWidth.split('cm')[0]) * 37.8) / 30 + 'px';
+          } else {
+            artworkFrame.style.width = (Number(artworkWidth.split('cm')[0]) * 37.8) / 30 + 'px';
+          }
 
           const virtualBackgroundList = document.querySelector('.background-selector__list').children,
             statusVirtualBackground = document.querySelector('.status-idx'),
