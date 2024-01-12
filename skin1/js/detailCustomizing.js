@@ -1,26 +1,44 @@
 document.addEventListener('DOMContentLoaded', () => {
   try {
-    const artistName = document.querySelector('.infoArea table tbody tr:nth-of-type(2) td');
-    const relatedProducts = document.querySelector('.relation_title');
+    const artistName = document.querySelector('.infoArea table tbody tr:nth-of-type(2) td'),
+      relatedProducts = document.querySelector('.relation_title');
     relatedProducts.innerHTML = `<span class="artist_relation_artworks">${artistName.textContent}의 다른 작품</span>`;
   } catch (e) {}
   const detailArea = document.querySelector('#prdDetail > div');
   simulatorBackground = () => {};
   purchaseInfoImg = () => {
     const purchaseImgAlt = [
-      {
-        path: 'top',
-        alt: 'Slogan',
-      },
-      {
-        path: 'info_1',
-        alt: 'Title & Artist',
-      },
-      {
-        path: 'bottom',
-        alt: 'Notice & Guide',
-      },
-    ];
+        {
+          path: 'top',
+          alt: 'Slogan',
+        },
+        {
+          path: 'info_1',
+          alt: 'Title & Artist',
+        },
+        {
+          path: 'bottom',
+          alt: 'Notice & Guide',
+        },
+      ],
+      simulateBackground = [
+        {
+          url: '/SkinImg/img/simulate/simulate_bg-thumbnail-0.jpg',
+          space: '거실 1',
+        },
+        {
+          url: '/SkinImg/img/simulate/simulate_bg-thumbnail-1.jpg',
+          space: '침실',
+        },
+        {
+          url: '/SkinImg/img/simulate/simulate_bg-thumbnail-2.jpg',
+          space: '다이닝룸',
+        },
+        {
+          url: '/SkinImg/img/simulate/simulate_bg-thumbnail-3.jpg',
+          space: '방',
+        },
+      ];
     detailArea.insertAdjacentHTML(
       'beforeend',
       `
@@ -34,9 +52,45 @@ document.addEventListener('DOMContentLoaded', () => {
     purchaseImgAlt.forEach((e, i) => {
       if (i === 1) {
         try {
-          const arttistName = document.querySelector('tr:nth-of-type(1) .xl63').textContent;
-          const artworkTitle = document.querySelector('tr:nth-of-type(2) .xl64').textContent;
-          const releaseDate = document.querySelector('tr:last-of-type .xl64').textContent;
+          // 작품명, 아티스트, 날짜
+          const arttistName = document.querySelector('tr .td-artist').textContent,
+            artworkTitle = document.querySelector('tr .td-title').textContent,
+            releaseDate = document.querySelector('tr .td-release').textContent;
+
+          // 작품 사이즈 디스플레이
+          const artworkImgSrc = document.querySelector('.prdImg .thumbnail img').src,
+            artworkSize = document.querySelector('tr .td-dimensions').textContent,
+            artworkWidth = artworkSize.split(' ')[0],
+            artworkHeight = artworkSize.split(' ')[2];
+
+          // 작품 걸어보기
+          const simulatorDisplay = `
+            <div class="artwork-simulation">
+              <h2>작품 걸어보기 영역 (작업중)</h2>
+              <div class="artwork-simulation__box">
+                <div class="virtual-background" style="background-image: url(/SkinImg/img/simulate/simulate_bg-0.jpg);">
+                  <img id="virtualFrame"src="${artworkImgSrc}" alt="artwork-image">
+                </div>
+                <div class="background-select__box">
+                  <h3>배경 선택</h3>
+                  <div class="background-selector__area">
+                    <div class="background-selector__wrap">
+                      <ul class="background-selector__list">
+                      </ul>
+                    </div>
+                    <div class="background-selector__btn">
+                      <span class="bg-select-btn bgs-left material-symbols-outlined"> arrow_circle_left </span>
+                      <span>
+                        <span class="status-idx"></span>&#32;&#47;&#32;<span class="total-idx"></span>
+                      </span>
+                      <span class="bg-select-btn bgs-right material-symbols-outlined active"> arrow_circle_right </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          `;
+
           purchaseImgList.insertAdjacentHTML(
             'beforeend',
             `
@@ -47,8 +101,55 @@ document.addEventListener('DOMContentLoaded', () => {
                 <p>${arttistName}&#32;&#47;&#32;${releaseDate}</p>
               </div>
             </li>
+            <li>
+              <div class="artwork-size-info">
+                <img class="show-size"src="${artworkImgSrc}" alt="artwork-image">
+                <span class="width-line">
+                  <span class="measure">${artworkWidth}</span>
+                </span>
+                <span class="height-line">
+                  <span class="measure">${artworkHeight}</span>
+                </span>
+              </div>
+            </li>
+            <li>
+              ${simulatorDisplay}
+            </li>
           `,
           );
+          const selectList = document.querySelector('.background-selector__list');
+          simulateBackground.forEach((e, i) => {
+            if (i === 0) {
+              selectList.insertAdjacentHTML(
+                'beforeend',
+                `            
+                  <li class="active">
+                    <img class="select-bg" src="${e.url}" alt="background-image-${i}">
+                    <span>${e.space}</span>
+                  </li>
+                `,
+              );
+            } else {
+              selectList.insertAdjacentHTML(
+                'beforeend',
+                `            
+                  <li>
+                    <img class="select-bg" src="${e.url}" alt="background-image-${i}">
+                    <span>${e.space}</span>
+                  </li>
+                `,
+              );
+            }
+          });
+          // 작품 걸어보기 작품 크기
+          const artworkFrame = document.getElementById('virtualFrame');
+          artworkFrame.style.width = (Number(artworkWidth.split('cm')[0]) * 37.8) / 25 + 'px';
+
+          const virtualBackgroundList = document.querySelector('.background-selector__list').children,
+            statusVirtualBackground = document.querySelector('.status-idx'),
+            totalVirtualBackground = document.querySelector('.total-idx');
+          statusVirtualBackground.textContent = 1;
+          totalVirtualBackground.textContent = virtualBackgroundList.length;
         } catch (e) {}
       } else {
         purchaseImgList.insertAdjacentHTML(
@@ -202,3 +303,198 @@ document.addEventListener('DOMContentLoaded', () => {
   purchaseInfoImg();
   purchaseInfoAccordion();
 });
+
+// <div class="artwork-detail-left-section">
+//   <h3 class="artwork-detail-left-section-title">작품 걸어보기</h3>
+//   <div class="artwork-detail-viewinroom">
+//     <div class="artwork-detail-viewinroom-left">
+//       <div
+//         class="artwork-detail-viewinroom-view"
+//         style="
+//           background-image: url('https://og-data.s3.amazonaws.com/static/pages/img/service/viewinroom/view_in_room_n_10.png');
+//           background-color: rgb(245, 245, 245);
+//         "
+//       >
+//         <img
+//           src="https://og-data.s3.amazonaws.com/media/artworks/half/A1400/A1400-0538.jpg"
+//           class="artwork-detail-viewinroom-view-img show"
+//           style="
+//             width: 15.9159%;
+//             transform: translate3d(-38px, -32.5px, 0px);
+//             cursor: move;
+//             touch-action: none;
+//             user-select: none;
+//           "
+//         />
+//         <div class="artwork-detail-viewinroom-view-foreground"></div>
+//       </div>
+//     </div>
+//     <div class="artwork-detail-viewinroom-right mode-color">
+//       <div class="artwork-detail-viewinroom-tab-menu">
+//         <button type="button" class="artwork-detail-viewinroom-tab-menu-button-space">공간</button>
+//         <button type="button" class="artwork-detail-viewinroom-tab-menu-button-color">배경색</button>
+//       </div>
+//       <h4 class="artwork-detail-viewinroom-h4">공간</h4>
+//       <div class="artwork-detail-viewinroom-spaces">
+//         <div class="artwork-detail-viewinroom-spaces-carousel owl-carousel owl-loaded owl-drag">
+//           <div class="owl-stage-outer">
+//             <div
+//               class="owl-stage"
+//               style="transform: translate3d(-611px, 0px, 0px); transition: all 0s ease 0s; width: 1748px"
+//             >
+//               <div class="owl-item" style="width: 79.333px; margin-right: 8px">
+//                 <div
+//                   class="artwork-detail-viewinroom-spaces-item"
+//                   data-index="0"
+//                   style="
+//                     background-image: url(https://og-data.s3.amazonaws.com/static/pages/img/service/viewinroom/thumb/view_in_room_n_1.jpg);
+//                   "
+//                 >
+//                   거실 1
+//                 </div>
+//               </div>
+//               <div class="owl-item" style="width: 79.333px; margin-right: 8px">
+//                 <div
+//                   class="artwork-detail-viewinroom-spaces-item"
+//                   data-index="1"
+//                   style="
+//                     background-image: url(https://og-data.s3.amazonaws.com/static/pages/img/service/viewinroom/thumb/view_in_room_n_2.jpg);
+//                   "
+//                 >
+//                   거실 2
+//                 </div>
+//               </div>
+//               <div class="owl-item" style="width: 79.333px; margin-right: 8px">
+//                 <div
+//                   class="artwork-detail-viewinroom-spaces-item"
+//                   data-index="2"
+//                   style="
+//                     background-image: url(https://og-data.s3.amazonaws.com/static/pages/img/service/viewinroom/thumb/view_in_room_n_3.jpg);
+//                   "
+//                 >
+//                   침실
+//                 </div>
+//               </div>
+//               <div class="owl-item" style="width: 79.333px; margin-right: 8px">
+//                 <div
+//                   class="artwork-detail-viewinroom-spaces-item"
+//                   data-index="3"
+//                   style="
+//                     background-image: url(https://og-data.s3.amazonaws.com/static/pages/img/service/viewinroom/thumb/view_in_room_n_4.jpg);
+//                   "
+//                 >
+//                   다이닝룸
+//                 </div>
+//               </div>
+//               <div class="owl-item" style="width: 79.333px; margin-right: 8px">
+//                 <div
+//                   class="artwork-detail-viewinroom-spaces-item"
+//                   data-index="4"
+//                   style="
+//                     background-image: url(https://og-data.s3.amazonaws.com/static/pages/img/service/viewinroom/thumb/view_in_room_n_5.jpg);
+//                   "
+//                 >
+//                   아이방
+//                 </div>
+//               </div>
+//               <div class="owl-item" style="width: 79.333px; margin-right: 8px">
+//                 <div
+//                   class="artwork-detail-viewinroom-spaces-item"
+//                   data-index="5"
+//                   style="
+//                     background-image: url(https://og-data.s3.amazonaws.com/static/pages/img/service/viewinroom/thumb/view_in_room_n_6.jpg);
+//                   "
+//                 >
+//                   복도 1
+//                 </div>
+//               </div>
+//               <div class="owl-item" style="width: 79.333px; margin-right: 8px">
+//                 <div
+//                   class="artwork-detail-viewinroom-spaces-item"
+//                   data-index="6"
+//                   style="
+//                     background-image: url(https://og-data.s3.amazonaws.com/static/pages/img/service/viewinroom/thumb/view_in_room_n_7.jpg);
+//                   "
+//                 >
+//                   복도 2
+//                 </div>
+//               </div>
+//               <div class="owl-item active" style="width: 79.333px; margin-right: 8px">
+//                 <div
+//                   class="artwork-detail-viewinroom-spaces-item"
+//                   data-index="7"
+//                   style="
+//                     background-image: url(https://og-data.s3.amazonaws.com/static/pages/img/service/viewinroom/thumb/view_in_room_n_8.jpg);
+//                   "
+//                 >
+//                   라운지
+//                 </div>
+//               </div>
+//               <div class="owl-item active" style="width: 79.333px; margin-right: 8px">
+//                 <div
+//                   class="artwork-detail-viewinroom-spaces-item"
+//                   data-index="8"
+//                   style="
+//                     background-image: url(https://og-data.s3.amazonaws.com/static/pages/img/service/viewinroom/thumb/view_in_room_n_9.jpg);
+//                   "
+//                 >
+//                   오피스 1
+//                 </div>
+//               </div>
+//               <div class="owl-item active" style="width: 79.333px; margin-right: 8px">
+//                 <div
+//                   class="artwork-detail-viewinroom-spaces-item selected"
+//                   data-index="9"
+//                   style="
+//                     background-image: url(https://og-data.s3.amazonaws.com/static/pages/img/service/viewinroom/thumb/view_in_room_n_10.jpg);
+//                   "
+//                 >
+//                   오피스 2
+//                 </div>
+//               </div>
+//             </div>
+//           </div>
+//           <div class="owl-nav">
+//             <button type="button" role="presentation" class="owl-prev"></button
+//             ><button type="button" role="presentation" class="owl-next disabled"></button>
+//           </div>
+//           <div class="owl-dots disabled"></div>
+//         </div>
+//         <div class="artwork-detail-viewinroom-spaces-counter">
+//           <span class="artwork-detail-viewinroom-spaces-counter-selected">10</span> / 10
+//         </div>
+//       </div>
+
+//       <h4 class="artwork-detail-viewinroom-h4">배경색</h4>
+//       <div class="artwork-detail-viewinroom-colors">
+//         <div
+//           class="artwork-detail-viewinroom-colors-item selected"
+//           style="background-color: #f5f5f5"
+//           data-name="white"
+//         ></div>
+//         <div
+//           class="artwork-detail-viewinroom-colors-item"
+//           style="background-color: #e6e6e6"
+//           data-name="light-grey"
+//         ></div>
+//         <div class="artwork-detail-viewinroom-colors-item" style="background-color: #ebe8d3" data-name="ivory"></div>
+//         <div
+//           class="artwork-detail-viewinroom-colors-item"
+//           style="background-color: #c6d2d9"
+//           data-name="light-blue"
+//         ></div>
+//         <div
+//           class="artwork-detail-viewinroom-colors-item dark"
+//           style="background-color: #acacab"
+//           data-name="grey"
+//         ></div>
+//         <div class="artwork-detail-viewinroom-colors-item dark" style="background-color: #8c110d" data-name="red"></div>
+//         <div
+//           class="artwork-detail-viewinroom-colors-item dark"
+//           style="background-color: #202020"
+//           data-name="dark-grey"
+//         ></div>
+//       </div>
+//     </div>
+//   </div>
+// </div>

@@ -2,9 +2,6 @@
   position: relative;
   margin: 0;
 }
-.xans-product-mobileimage ul {
-  background-color: var(--pallet-color-5);
-}
 .xans-product-mobileimage li {
   position: relative;
   vertical-align: middle !important;

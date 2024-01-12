@@ -2,8 +2,8 @@
   margin: 0 0 100px;
 }
 .productDetail img {
-  max-width: 100% !important;
-  height: auto !important;
+  /* max-width: 100% !important;
+  height: auto !important; */
 }
 
 .ec-base-fold .info {
