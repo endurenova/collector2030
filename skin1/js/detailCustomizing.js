@@ -21,24 +21,110 @@ document.addEventListener('DOMContentLoaded', () => {
           alt: 'Notice & Guide',
         },
       ],
-      simulateBackground = [
+      simulateBackground_0 = [
+        {
+          url: '/SkinImg/img/simulate/0-simulate_bg-thumbnail-0.jpg',
+          space: '거실 1',
+          top: '30%',
+          left: '50%',
+        },
+        {
+          url: '/SkinImg/img/simulate/0-simulate_bg-thumbnail-1.jpg',
+          space: '침실',
+          top: '30%',
+          left: '30%',
+        },
+        {
+          url: '/SkinImg/img/simulate/0-simulate_bg-thumbnail-2.jpg',
+          space: '다이닝룸',
+          top: '30%',
+          left: '30%',
+        },
+        {
+          url: '/SkinImg/img/simulate/0-simulate_bg-thumbnail-3.jpg',
+          space: '방',
+          top: '25%',
+          left: '35%',
+        },
+      ],
+      simulateBackground_1 = [
+        {
+          url: '/SkinImg/img/simulate/1-simulate_bg-thumbnail-0.jpg',
+          space: '방 1',
+          top: '25%',
+          left: '55%',
+        },
+        {
+          url: '/SkinImg/img/simulate/1-simulate_bg-thumbnail-1.jpg',
+          space: '방 2',
+          top: '25%',
+          left: '50%',
+        },
+        {
+          url: '/SkinImg/img/simulate/1-simulate_bg-thumbnail-2.jpg',
+          space: '거실',
+          top: '25%',
+          left: '50%',
+        },
+      ],
+      simulateBackground_2 = [
         {
           url: '/SkinImg/img/simulate/simulate_bg-thumbnail-0.jpg',
           space: '거실 1',
+          top: '30%',
+          left: '50%',
         },
         {
           url: '/SkinImg/img/simulate/simulate_bg-thumbnail-1.jpg',
           space: '침실',
+          top: '30%',
+          left: '30%',
         },
         {
           url: '/SkinImg/img/simulate/simulate_bg-thumbnail-2.jpg',
           space: '다이닝룸',
+          top: '30%',
+          left: '30%',
         },
         {
           url: '/SkinImg/img/simulate/simulate_bg-thumbnail-3.jpg',
           space: '방',
+          top: '25%',
+          left: '35%',
+        },
+      ],
+      simulateBackground_3 = [
+        {
+          url: '/SkinImg/img/simulate/simulate_bg-thumbnail-0.jpg',
+          space: '거실 1',
+          top: '30%',
+          left: '50%',
+        },
+        {
+          url: '/SkinImg/img/simulate/simulate_bg-thumbnail-1.jpg',
+          space: '침실',
+          top: '30%',
+          left: '30%',
+        },
+        {
+          url: '/SkinImg/img/simulate/simulate_bg-thumbnail-2.jpg',
+          space: '다이닝룸',
+          top: '30%',
+          left: '30%',
+        },
+        {
+          url: '/SkinImg/img/simulate/simulate_bg-thumbnail-3.jpg',
+          space: '방',
+          top: '25%',
+          left: '35%',
         },
       ];
+    const simulateBackgroundList = [
+      simulateBackground_0,
+      simulateBackground_1,
+      simulateBackground_2,
+      simulateBackground_3,
+    ];
     detailArea.insertAdjacentHTML(
       'beforeend',
       `
@@ -138,65 +224,78 @@ document.addEventListener('DOMContentLoaded', () => {
             </li>
           `,
           );
-          const selectList = document.querySelector('.background-selector__list');
-          simulateBackground.forEach((e, i) => {
-            if (i === 0) {
-              selectList.insertAdjacentHTML(
-                'beforeend',
-                `            
-                  <li class="active">
-                    <img class="select-bg" src="${e.url}" alt="background-image-${i}">
-                    <span>${e.space}</span>
-                  </li>
-                `,
-              );
-            } else {
-              selectList.insertAdjacentHTML(
-                'beforeend',
-                `            
-                  <li>
-                    <img class="select-bg" src="${e.url}" alt="background-image-${i}">
-                    <span>${e.space}</span>
-                  </li>
-                `,
-              );
-            }
-          });
-          const virtualBackground = document.querySelector('.virtual-background'),
-            virtualBackgroundList = document.querySelector('.background-selector__list').children,
-            virtualFrame = document.getElementById('virtualFrame'),
-            vitualBackgroundWidth = virtualBackground.clientWidth,
+          const selectList = document.querySelector('.background-selector__list'),
             statusVirtualBackground = document.querySelector('.status-idx'),
             totalVirtualBackground = document.querySelector('.total-idx');
+          let virtualBackgroundList;
+          setStatusIdx = () => {
+            statusVirtualBackground.textContent = 1;
+            totalVirtualBackground.textContent = virtualBackgroundList.length;
+          };
+          setBackgroundTone = simulateBackground => {
+            simulateBackground.forEach((e, i) => {
+              if (i === 0) {
+                selectList.insertAdjacentHTML(
+                  'beforeend',
+                  `            
+                    <li class="active">
+                      <img class="select-bg" src="${e.url}" alt="background-image-${i}">
+                      <span>${e.space}</span>
+                    </li>
+                  `,
+                );
+              } else {
+                selectList.insertAdjacentHTML(
+                  'beforeend',
+                  `            
+                    <li>
+                      <img class="select-bg" src="${e.url}" alt="background-image-${i}">
+                      <span>${e.space}</span>
+                    </li>
+                  `,
+                );
+              }
+            });
+            virtualBackgroundList = document.querySelector('.background-selector__list').children;
+            Array.from(virtualBackgroundList).forEach((e, i) => {
+              e.addEventListener('click', event => {
+                event.preventDefault();
+                Array.from(virtualBackgroundList).forEach(e => {
+                  e.classList.remove('active');
+                });
+                e.classList.add('active');
+                virtualFrame.style.top = simulateBackground[i].top;
+                virtualFrame.style.left = simulateBackground[i].left;
+                virtualBackground.style.backgroundImage = `url(${simulateBackground[i].url})`;
+                statusVirtualBackground.textContent = i + 1;
+              });
+            });
+          };
+          setBackgroundTone(simulateBackground_0);
+          setStatusIdx();
+          const toneList = document.querySelector('.tone-selector__list').children;
+          Array.from(toneList).forEach((e, i) => {
+            e.addEventListener('click', event => {
+              event.preventDefault();
+              Array.from(toneList).forEach(e => {
+                e.classList.remove('active');
+              });
+              e.classList.add('active');
+              selectList.innerHTML = '';
+              setBackgroundTone(simulateBackgroundList[i]);
+              virtualBackground.style.backgroundImage = `url(${simulateBackgroundList[i][0].url})`;
+              setStatusIdx();
+            });
+          });
+          const virtualBackground = document.querySelector('.virtual-background'),
+            virtualFrame = document.getElementById('virtualFrame'),
+            vitualBackgroundWidth = virtualBackground.clientWidth;
 
           // 작품 걸어보기 작품 크기
           // virtualFrame.style.width = (Number(artworkWidth.split('cm')[0]) * 37.8) / 30 + 'px';
           // console.log((Number(artworkWidth.split('cm')[0]) * 37.8) / 30 + 'px');
-          virtualFrame.style.width = (Number(artworkWidth.split('cm')[0]) * 37.8) / 30 + 'px';
-
-          statusVirtualBackground.textContent = 1;
-          totalVirtualBackground.textContent = virtualBackgroundList.length;
-          Array.from(virtualBackgroundList).forEach((e, i) => {
-            e.addEventListener('click', event => {
-              event.preventDefault();
-              Array.from(virtualBackgroundList).forEach(e => {
-                e.classList.remove('active');
-              });
-              e.classList.add('active');
-              if (i === 0 || i === 1) {
-                virtualFrame.style.top = '30%';
-                virtualFrame.style.left = '50%';
-              } else if (i === 2) {
-                virtualFrame.style.top = '30%';
-                virtualFrame.style.left = '30%';
-              } else if (i === 3) {
-                virtualFrame.style.top = '25%';
-                virtualFrame.style.left = '35%';
-              }
-              virtualBackground.style.backgroundImage = `url(/SkinImg/img/simulate/simulate_bg-${i}.jpg)`;
-              statusVirtualBackground.textContent = i + 1;
-            });
-          });
+          virtualFrame.style.width =
+            (Number(artworkWidth.split('cm')[0]) * 37.8) / (vitualBackgroundWidth * 0.06) + 'px';
 
           if (window.innerWidth > 767) {
             let movingX = 0;

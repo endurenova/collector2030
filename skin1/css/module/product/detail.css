@@ -1440,7 +1440,7 @@
   height: calc((140px * 3) + 26px);
   background-size: contain;
   background-repeat: no-repeat;
-  background-image: url(/SkinImg/img/simulate/simulate_bg-0.jpg);
+  background-image: url(/SkinImg/img/simulate/0-simulate_bg-0.jpg);
 }
 .artwork-simulation .virtual-background #virtualFrame {
   position: absolute;
