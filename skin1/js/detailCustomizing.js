@@ -71,19 +71,40 @@ document.addEventListener('DOMContentLoaded', () => {
                 <div class="virtual-background">
                   <img id="virtualFrame"src="${artworkImgSrc}" alt="artwork-image">
                 </div>
-                <div class="background-select__box">
-                  <h3>배경 선택</h3>
-                  <div class="background-selector__area">
-                    <div class="background-selector__wrap">
-                      <ul class="background-selector__list">
-                      </ul>
+                <div class="simulation-select__wrap">
+                  <div class="background-select__box">
+                    <h3>배경 선택</h3>
+                    <div class="background-selector__area">
+                      <div class="background-selector__wrap">
+                        <ul class="background-selector__list">
+                        </ul>
+                      </div>
+                      <div class="background-selector__btn">
+                        <span class="bg-select-btn bgs-left material-symbols-outlined"> arrow_circle_left </span>
+                        <span>
+                          <span class="status-idx"></span>&#32;&#47;&#32;<span class="total-idx"></span>
+                        </span>
+                        <span class="bg-select-btn bgs-right material-symbols-outlined active"> arrow_circle_right </span>
+                      </div>
                     </div>
-                    <div class="background-selector__btn">
-                      <span class="bg-select-btn bgs-left material-symbols-outlined"> arrow_circle_left </span>
-                      <span>
-                        <span class="status-idx"></span>&#32;&#47;&#32;<span class="total-idx"></span>
-                      </span>
-                      <span class="bg-select-btn bgs-right material-symbols-outlined active"> arrow_circle_right </span>
+                  </div>
+                  <div class="tone-select__box">
+                    <h3>톤 선택</h3>
+                    <div class="tone-selector__area">
+                      <ul class="tone-selector__list">
+                        <li class="active">
+                          <span class="tone-name">Achromatic</span>
+                        </li>
+                        <li>
+                          <span class="tone-name">Pastel</span>
+                        </li>
+                        <li>
+                          <span class="tone-name">Warm</span>
+                        </li>
+                        <li>
+                          <span class="tone-name">Cool</span>
+                        </li>
+                      </ul>
                     </div>
                   </div>
                 </div>
@@ -141,23 +162,6 @@ document.addEventListener('DOMContentLoaded', () => {
               );
             }
           });
-          // const artworkFrame = document.getElementById('virtualFrame');
-          // function detectMobileDevice(agent) {
-          //   const mobileRegex = [/Android/i, /iPhone/i, /iPad/i, /iPod/i, /BlackBerry/i, /Windows Phone/i];
-          //   return mobileRegex.some(mobile => agent.match(mobile));
-          // }
-          // const isMobile = detectMobileDevice(window.navigator.userAgent);
-          // if (isMobile) {
-          //   console.log('ismobile');
-          //   if (window.innerWidth >= 500) {
-          //     artworkFrame.style.width = (Number(artworkWidth.split('cm')[0]) * 37.8) / 30 + 'px';
-          //   } else {
-          //     artworkFrame.style.width = ((Number(artworkWidth.split('cm')[0]) * 37.8) / window.innerWidth) * 15 + 'px';
-          //   }
-          // } else {
-          //   artworkFrame.style.width = (Number(artworkWidth.split('cm')[0]) * 37.8) / 30 + 'px';
-          // }
-
           const virtualBackground = document.querySelector('.virtual-background'),
             virtualBackgroundList = document.querySelector('.background-selector__list').children,
             virtualFrame = document.getElementById('virtualFrame'),
@@ -167,7 +171,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
           // 작품 걸어보기 작품 크기
           // virtualFrame.style.width = (Number(artworkWidth.split('cm')[0]) * 37.8) / 30 + 'px';
-          console.log((Number(artworkWidth.split('cm')[0]) * 37.8) / 30 + 'px');
+          // console.log((Number(artworkWidth.split('cm')[0]) * 37.8) / 30 + 'px');
           virtualFrame.style.width = (Number(artworkWidth.split('cm')[0]) * 37.8) / 30 + 'px';
 
           statusVirtualBackground.textContent = 1;

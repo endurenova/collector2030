@@ -1451,10 +1451,17 @@
   -webkit-box-shadow: 5px 4px 18px -2px var(--grayScale-N1-opa);
   -moz-box-shadow: 5px 4px 18px -2px var(--grayScale-N1-opa);
 }
+.simulation-select__wrap {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+}
+.tone-select__box,
 .background-select__box {
   display: block;
   width: calc((140px * 3) + 26px);
 }
+.tone-select__box > h3,
 .background-select__box > h3 {
   font-size: 18px;
   color: var(--grayScale-N1);
@@ -1484,14 +1491,15 @@
   border: 1px solid var(--pallet-color-4);
   margin-right: 10px;
   transition: 0.2s;
-  opacity: 0.9;
+  opacity: 0.8;
   cursor: pointer;
   box-sizing: border-box;
 }
 .background-selector__list li:last-of-type {
   margin-right: 0;
 }
-.background-selector__list li.active {
+.background-selector__list li.active,
+.tone-selector__list li.active {
   border-color: var(--main-color);
   opacity: 1;
 }
@@ -1499,8 +1507,10 @@
   font-size: 14px;
   line-height: 2.6;
   color: var(--main-color);
+  font-weight: var(--font-weight-Medium);
 }
-.background-selector__list li.active span {
+.background-selector__list li.active span,
+.tone-selector__list li.active .tone-name {
   font-weight: var(--font-weight-SemiBold);
 }
 .background-selector__list li .select-bg {
@@ -1527,6 +1537,34 @@
 .background-selector__btn span:nth-of-type(2) {
   font-size: 14px;
   color: var(--grayScale-N1);
+}
+.tone-select__box {
+}
+.tone-select__box .tone-selector__area {
+}
+.tone-selector__list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.tone-selector__list li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 30px;
+  transition: 0.2s;
+  opacity: 0.8;
+  cursor: pointer;
+  box-sizing: border-box;
+  border-radius: 15px 15px;
+  border: 1px solid var(--pallet-color-4);
+}
+.tone-selector__list li .tone-name {
+  font-weight: var(--font-weight-Medium);
+  color: var(--main-color);
+  box-sizing: border-box;
 }
 /* 상품결제정보, 배송정보, 교환 및 반품정보 */
 .purchase-info-box {
@@ -2580,6 +2618,13 @@
   .background-selector__list li:hover span {
     font-weight: var(--font-weight-SemiBold);
   }
+  .tone-select__box .tone-selector__area .tone-selector__list li:hover {
+    border-color: var(--main-color);
+    opacity: 1;
+  }
+  .tone-select__box .tone-selector__area .tone-selector__list li:hover .ton-name {
+    font-weight: var(--font-weight-SemiBold);
+  }
   .xans-product-detail .infoArea td #btn_restock:hover:after {
     border: 1px solid #999;
   }
@@ -2939,9 +2984,13 @@
     width: calc((clamp(100px, 27.778vw, 140px) * 3) + 26px);
     height: calc((clamp(100px, 27.778vw, 140px) * 3) + 26px);
   }
+
+  .tone-select__box,
   .background-select__box {
     width: calc((clamp(100px, 27.778vw, 140px) * 3) + 26px);
   }
+
+  .tone-select__box > h3,
   .background-select__box > h3 {
     font-size: clamp(15px, 4.167vw, 18px);
   }
