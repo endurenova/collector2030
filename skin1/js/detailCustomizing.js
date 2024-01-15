@@ -283,6 +283,8 @@ document.addEventListener('DOMContentLoaded', () => {
               e.classList.add('active');
               selectList.innerHTML = '';
               setBackgroundTone(simulateBackgroundList[i]);
+              virtualFrame.style.top = simulateBackgroundList[i][0].top;
+              virtualFrame.style.left = simulateBackgroundList[i][0].left;
               virtualBackground.style.backgroundImage = `url(${simulateBackgroundList[i][0].url})`;
               setStatusIdx();
             });
