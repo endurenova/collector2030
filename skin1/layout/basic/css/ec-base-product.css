@@ -998,11 +998,12 @@ svg .main-circ {
     font-weight: var(--font-weight-Light);
   }
   ul.prdList.grid4.list_gallery .description .main_list_detail {
-    justify-content: center;
+    display: none;
+    /* justify-content: center;
     position: absolute;
     right: 0%;
     bottom: 2%;
-    border: none;
+    border: none; */
   }
   ul.prdList.grid4.list_gallery .description .main_list_detail span:first-child {
     font-size: 14px;

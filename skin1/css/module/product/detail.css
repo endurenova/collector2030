@@ -74,9 +74,6 @@
   padding: 2px 15px 2px 24px;
   vertical-align: top;
 }
-.xans-product-detail .infoArea .sizeGuide a:hover {
-  text-decoration: none;
-}
 .xans-product-detaildesign > table > tbody > tr:first-child {
   display: none;
 }
@@ -659,8 +656,8 @@
   border: 1px solid #e5e5e5;
   text-align: center;
 }
-#totalProducts table p:not(.product) .quantity_opt:focus,
-#totalProducts table p:not(.product) .quantity_opt:hover {
+#totalProducts .quantity input:focus,
+#totalProducts table p:not(.product) .quantity_opt:focus {
   border: 1px solid #e5e5e5;
 }
 #totalProducts table p:not(.product) img {
@@ -781,10 +778,6 @@
   border: 1px solid #e5e5e5;
   text-align: center;
   font-weight: var(--font-weight-SemiBold);
-}
-#totalProducts .quantity input:focus,
-#totalProducts .quantity input:hover {
-  border: 1px solid #e5e5e5;
 }
 #totalProducts .quantity img {
   position: absolute;
@@ -1325,6 +1318,7 @@
 .purchase-img-box .purchase-img-list {
   margin: 0 auto;
   width: 100%;
+  transform: translateX(0);
 }
 .purchase-img-box .purchase-img-list > li {
   margin: 0 auto;
@@ -1426,7 +1420,6 @@
   display: flex;
   flex-flow: column;
   width: 100%;
-  border: 1px solid #f0f;
   padding: 0 3%;
   margin-bottom: 100px;
   box-sizing: border-box;
@@ -1447,6 +1440,7 @@
   height: calc((140px * 3) + 26px);
   background-size: contain;
   background-repeat: no-repeat;
+  background-image: url(/SkinImg/img/simulate/simulate_bg-0.jpg);
 }
 .artwork-simulation .virtual-background #virtualFrame {
   position: absolute;
@@ -1465,8 +1459,6 @@
   font-size: 18px;
   color: var(--grayScale-N1);
   line-height: 2.4;
-}
-.background-select__box .background-selector__area {
 }
 .background-selector__area .background-selector__wrap {
   overflow-x: scroll;
@@ -1503,17 +1495,10 @@
   border-color: var(--main-color);
   opacity: 1;
 }
-.background-selector__list li:hover {
-  border-color: var(--main-color);
-  opacity: 1;
-}
 .background-selector__list li span {
   font-size: 14px;
   line-height: 2.6;
   color: var(--main-color);
-}
-.background-selector__list li:hover span {
-  font-weight: var(--font-weight-SemiBold);
 }
 .background-selector__list li.active span {
   font-weight: var(--font-weight-SemiBold);
@@ -1675,7 +1660,15 @@
     align-items: center;
     justify-content: center;
   }
+  .background-selector__area .background-selector__btn .bg-select-btn {
+    display: none;
+  }
+  .background-selector__area .background-selector__btn {
+    justify-content: center;
+    padding: 4% 0;
+  }
 }
+
 /********************* Mobile / Tablet *********************/
 @media all and (max-width: 1024px) {
   .purchase-info-list .purchase-info-item__box .purchase-info-item .purchase-info-title {
@@ -2176,9 +2169,6 @@
   display: inline-block;
   padding: 2px 5px;
 }
-.xans-product-detail .infoArea td #btn_restock:hover:after {
-  border: 1px solid #999;
-}
 
 /* quantity */
 #totalPrice {
@@ -2224,15 +2214,6 @@
   -o-transition: all 0.3s;
   transition: all 0.3s;
 }
-.xans-product-action .action_button .btnNormal:hover {
-  border: 1px solid var(--main-color-opa);
-  color: var(--main-color-opa);
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -ms-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
-}
 .xans-product-action .action_button .btnSubmit {
   flex: 2;
   height: 66px;
@@ -2247,15 +2228,6 @@
 }
 .xans-product-action .action_button [class^='btn'] + [class^='btn'] {
   margin-left: 12px;
-}
-.xans-product-action .action_button .btnSubmit:hover {
-  box-shadow: 0 15px 15px 1px rgb(0 0 0 / 13%);
-  -webkit-box-shadow: 0 15px 15px 1px rgb(0 0 0 / 13%);
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -ms-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
 }
 .xans-product-action .action_button .sub_sold {
   flex: 1;
@@ -2592,7 +2564,35 @@
   font-weight: 700;
   color: var(--grayScale-N1);
 }
+@media (hover: hover) {
+  .xans-product-detail .infoArea .sizeGuide a:hover {
+    text-decoration: none;
+  }
 
+  #totalProducts .quantity input:hover,
+  #totalProducts table p:not(.product) .quantity_opt:hover {
+    border: 1px solid #e5e5e5;
+  }
+  .background-selector__list li:hover {
+    border-color: var(--main-color);
+    opacity: 1;
+  }
+  .background-selector__list li:hover span {
+    font-weight: var(--font-weight-SemiBold);
+  }
+  .xans-product-detail .infoArea td #btn_restock:hover:after {
+    border: 1px solid #999;
+  }
+  .xans-product-action .action_button .btnNormal:hover {
+    border: 1px solid var(--main-color-opa);
+    color: var(--main-color-opa);
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+}
 @media all and (max-width: 1024px) {
   /* 상세페이지 */
   .path {

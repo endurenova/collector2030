@@ -66,9 +66,9 @@ document.addEventListener('DOMContentLoaded', () => {
           // 작품 걸어보기
           const simulatorDisplay = `
             <div class="artwork-simulation">
-              <h2>작품 걸어보기 영역 (작업중)</h2>
+              <h2>작품 걸어보기</h2>
               <div class="artwork-simulation__box">
-                <div class="virtual-background" style="background-image: url(/SkinImg/img/simulate/simulate_bg-0.jpg);">
+                <div class="virtual-background">
                   <img id="virtualFrame"src="${artworkImgSrc}" alt="artwork-image">
                 </div>
                 <div class="background-select__box">
@@ -141,24 +141,97 @@ document.addEventListener('DOMContentLoaded', () => {
               );
             }
           });
-          // 작품 걸어보기 작품 크기
-          const artworkFrame = document.getElementById('virtualFrame');
-          function detectMobileDevice(agent) {
-            const mobileRegex = [/Android/i, /iPhone/i, /iPad/i, /iPod/i, /BlackBerry/i, /Windows Phone/i];
-            return mobileRegex.some(mobile => agent.match(mobile));
-          }
-          const isMobile = detectMobileDevice(window.navigator.userAgent);
-          if (isMobile) {
-            artworkFrame.style.width = (Number(artworkWidth.split('cm')[0]) * 37.8) / 30 + 'px';
-          } else {
-            artworkFrame.style.width = (Number(artworkWidth.split('cm')[0]) * 37.8) / 30 + 'px';
-          }
+          // const artworkFrame = document.getElementById('virtualFrame');
+          // function detectMobileDevice(agent) {
+          //   const mobileRegex = [/Android/i, /iPhone/i, /iPad/i, /iPod/i, /BlackBerry/i, /Windows Phone/i];
+          //   return mobileRegex.some(mobile => agent.match(mobile));
+          // }
+          // const isMobile = detectMobileDevice(window.navigator.userAgent);
+          // if (isMobile) {
+          //   console.log('ismobile');
+          //   if (window.innerWidth >= 500) {
+          //     artworkFrame.style.width = (Number(artworkWidth.split('cm')[0]) * 37.8) / 30 + 'px';
+          //   } else {
+          //     artworkFrame.style.width = ((Number(artworkWidth.split('cm')[0]) * 37.8) / window.innerWidth) * 15 + 'px';
+          //   }
+          // } else {
+          //   artworkFrame.style.width = (Number(artworkWidth.split('cm')[0]) * 37.8) / 30 + 'px';
+          // }
 
-          const virtualBackgroundList = document.querySelector('.background-selector__list').children,
+          const virtualBackground = document.querySelector('.virtual-background'),
+            virtualBackgroundList = document.querySelector('.background-selector__list').children,
+            virtualFrame = document.getElementById('virtualFrame'),
+            vitualBackgroundWidth = virtualBackground.clientWidth,
             statusVirtualBackground = document.querySelector('.status-idx'),
             totalVirtualBackground = document.querySelector('.total-idx');
+
+          // 작품 걸어보기 작품 크기
+          // virtualFrame.style.width = (Number(artworkWidth.split('cm')[0]) * 37.8) / 30 + 'px';
+          console.log((Number(artworkWidth.split('cm')[0]) * 37.8) / 30 + 'px');
+          virtualFrame.style.width = (Number(artworkWidth.split('cm')[0]) * 37.8) / 30 + 'px';
+
           statusVirtualBackground.textContent = 1;
           totalVirtualBackground.textContent = virtualBackgroundList.length;
+          Array.from(virtualBackgroundList).forEach((e, i) => {
+            e.addEventListener('click', event => {
+              event.preventDefault();
+              Array.from(virtualBackgroundList).forEach(e => {
+                e.classList.remove('active');
+              });
+              e.classList.add('active');
+              if (i === 0 || i === 1) {
+                virtualFrame.style.top = '30%';
+                virtualFrame.style.left = '50%';
+              } else if (i === 2) {
+                virtualFrame.style.top = '30%';
+                virtualFrame.style.left = '30%';
+              } else if (i === 3) {
+                virtualFrame.style.top = '25%';
+                virtualFrame.style.left = '35%';
+              }
+              virtualBackground.style.backgroundImage = `url(/SkinImg/img/simulate/simulate_bg-${i}.jpg)`;
+              statusVirtualBackground.textContent = i + 1;
+            });
+          });
+
+          if (window.innerWidth > 767) {
+            let movingX = 0;
+            const oneMoving = 152;
+            const maximumRight = (virtualBackgroundList.length - 3) * -oneMoving; // 3 = showing item, 152 = item width(140) + marginRight(10 * 2) + border(2)
+            const leftBtn = document.querySelector('.bgs-left');
+            const rightBtn = document.querySelector('.bgs-right');
+
+            rightBtn.addEventListener('click', event => {
+              event.preventDefault();
+              if (movingX > maximumRight) {
+                movingX -= oneMoving;
+                selectList.style.transform = `translateX(${movingX}px)`;
+                if (movingX === maximumRight) {
+                  rightBtn.classList.remove('active');
+                }
+              }
+              if (movingX !== 0) {
+                if (!leftBtn.classList.contains('active')) {
+                  leftBtn.classList.add('active');
+                }
+              }
+            });
+            leftBtn.addEventListener('click', event => {
+              event.preventDefault();
+              if (movingX !== 0) {
+                movingX += oneMoving;
+                selectList.style.transform = `translateX(${movingX}px)`;
+                if (movingX === 0) {
+                  leftBtn.classList.remove('active');
+                }
+              }
+              if (movingX > maximumRight) {
+                if (!rightBtn.classList.contains('active')) {
+                  rightBtn.classList.add('active');
+                }
+              }
+            });
+          }
         } catch (e) {}
       } else {
         purchaseImgList.insertAdjacentHTML(
