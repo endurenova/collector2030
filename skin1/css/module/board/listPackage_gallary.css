@@ -242,6 +242,7 @@
 
 .boardList > .xans-board-8 > ul.artist-post__list > li {
   min-height: unset !important;
+  width: 25%;
 }
 .boardList > .xans-board-8 > ul.artist-post__list > li > a {
   display: block;
@@ -377,6 +378,7 @@ ul.artist-post__list .summary > span {
   .xans-board-listpackage-8 .xans-board-list-8 ul.horizontal-board-layout li {
     width: 50%;
   }
+  .boardList > .xans-board-8 > ul.artist-post__list > li,
   .xans-board-listpackage-8 .xans-board-list-8 li {
     width: 33.3334%;
   }
@@ -505,7 +507,8 @@ ul.artist-post__list .summary > span {
   } */
 }
 @media (max-width: 1024px) {
-  .xans-board-listpackage-8 .xans-board-list-8 li {
+  .xans-board-listpackage-8 .xans-board-list-8 li,
+  .boardList > .xans-board-8 > ul.artist-post__list > li {
     width: 50%;
   }
   .xans-board-listpackage-8 .xans-board-list-8 ul.horizontal-board-layout li {
@@ -516,16 +519,13 @@ ul.artist-post__list .summary > span {
   }
 }
 @media (max-width: 767px) {
-  .xans-board-listpackage-8 .xans-board-list-8 ul.horizontal-board-layout li {
-    width: 100%;
-  }
-  .xans-board-listpackage-8 .xans-board-list-8 .artist-post__list li {
-    width: 50%;
-  }
   .xans-board-listpackage-8 .xans-board-list-8 li {
     position: relative;
     width: 90%;
     /* margin: 0 auto 20%; */
+  }
+  .xans-board-listpackage-8 .xans-board-list-8 ul.horizontal-board-layout li {
+    width: 100%;
   }
   /* .xans-board-listpackage-8 .xans-board-list-8 ul:not(.horizontal-board-layout) li::after {
     content: '';
@@ -553,8 +553,8 @@ ul.artist-post__list .summary > span {
     font-size: var(--gallery-span-font-size-clamp);
   }
 }
-@media (max-width: 480px) {
-  .xans-board-listpackage-8 .xans-board-list-8 .artist-post__list li {
+@media (max-width: 680px) {
+  .boardList > .xans-board-8 > ul.artist-post__list > li {
     width: 100%;
   }
 }
