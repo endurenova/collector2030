@@ -193,7 +193,7 @@
 
   /* Table - typeWrite */
   .ec-base-table.typeWrite {
-    padding: 10px 0;
+    /* padding: 10px 0; */
   }
   .ec-base-table.typeWrite tr {
     display: block;
