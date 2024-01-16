@@ -42,13 +42,19 @@
   /* 800 Extra Bold (Ultra Bold) */
   /* 900 Black(Heavy) */
 
-  --gallery-title-font-size: 16px;
+  --gallery-title-font-size: 18px;
   --gallery-title-font-weight: var(--font-weight-SemiBold);
   --gallery-title-color: var(--grayScale-N1);
-  --gallery-span-font-size: 14px;
+  --gallery-span-font-size: 16px;
   --gallery-span-font-weight: var(--font-weight-Regular);
   --gallery-span-color: var(--main-color);
+  --gallery-sub-font-size: 14px;
+  --gallery-sub-font-weight: var(--font-weight-Regular);
+  --gallery-sub-color: var(--main-color);
 
+  --gallery-title-font-size-clamp: clamp(16px, 3.333vw, 18px); /* 767px ~ 480px까지 */
+  --gallery-span-font-size-clamp: clamp(14px, 2.917vw, 16px); /* 767px ~ 480px까지 */
+  --gallery-sub-font-size-clamp: clamp(12px, 2.5vw, 18px); /* 767px ~ 480px까지 */
   --quick-icon-shadow: 2px 2px 10px 0px var(--grayScale-N1-op);
 
   /* 

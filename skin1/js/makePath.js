@@ -7,6 +7,10 @@ document.addEventListener('DOMContentLoaded', () => {
       if (e.textContent === currentPath.textContent) {
         const mainCategory = e.closest('.header-menu').querySelector('.main-cate').textContent;
         pathInfo.innerHTML = `<a href='javascript:void(0);'>${mainCategory}</a>`;
+        if (currentPath.textContent === '작가 소개' || currentPath.textContent === '전시 소식') {
+          const postAuthorName = document.querySelector('.xans-board-read .description');
+          postAuthorName.style.display = 'none';
+        }
       }
     });
   } catch (e) {}

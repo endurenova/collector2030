@@ -693,7 +693,7 @@ span.noBorder input {
     margin: 0 16px;
   }
   .titleArea {
-    margin: 40px 16px 30px;
+    margin: 0px 5% 5%;
   }
 }
 
@@ -752,7 +752,7 @@ span.noBorder input {
     margin: 0 24px;
   }
   .titleArea {
-    margin: 40px 24px 30px;
+    margin: 0s 5% 3%;
   }
   .titleArea--middle {
     margin: 0;
@@ -771,11 +771,9 @@ span.noBorder input {
   .titleArea h2 {
     display: inline-block;
     color: var(--grayScale-N1);
-    color: var(--grayScale-N1);
     font-size: 30px;
   }
   .titleArea h3 {
-    color: var(--grayScale-N1);
     color: var(--grayScale-N1);
     font-size: 16px;
     font-weight: normal;
@@ -786,7 +784,6 @@ span.noBorder input {
   }
   .titleArea--middle h2 {
     color: var(--grayScale-N1);
-    color: var(--grayScale-N1);
     font-size: 16px;
     font-weight: normal;
   }
@@ -795,7 +792,6 @@ span.noBorder input {
     text-align: left;
   }
   .titleArea.titleArea--myshop h2 {
-    color: var(--grayScale-N1);
     color: var(--grayScale-N1);
     font-size: 16px;
     font-weight: normal;
