@@ -216,6 +216,9 @@
   font-size: 14px;
   width: 50%;
   box-sizing: border-box;
+  font-size: var(--gallery-span-font-size);
+  color: var(--gallery-span-color);
+  font-weight: var(--gallery-span-font-weight);
 }
 .xans-board-listpackage-8 .xans-board-list-8 li a .summary span.date {
   display: flex;
@@ -236,6 +239,49 @@
   margin: 0 0 20px;
   text-align: center;
 }
+/* 작가 소개 커스터마이징 ------------------------------------------------------------------------------------------ */
+.boardList > .xans-board-8 > ul.artist-post__list {
+}
+.boardList > .xans-board-8 > ul.artist-post__list > li {
+  min-height: unset !important;
+}
+.boardList > .xans-board-8 > ul.artist-post__list > li > a {
+  display: block;
+}
+
+.boardList > .xans-board-8 > ul.artist-post__list > li > a .thumbnail img {
+  object-fit: cover;
+  width: 100%;
+  padding: unset !important;
+}
+ul.artist-post__list .summary {
+  width: 100% !important;
+}
+ul.artist-post__list .summary .subject {
+  display: flex;
+  flex-flow: column;
+  align-items: unset !important;
+  border-top: 1px solid;
+  padding: 5%;
+  border: 1px solid var(--grayScale-N4);
+  border-top: none;
+}
+ul.artist-post__list .summary .subject > strong {
+  /* 작가 이름 */
+  font-size: var(--gallery-title-font-size);
+  color: var(--gallery-title-color);
+  font-weight: var(--gallery-title-font-weight);
+}
+ul.artist-post__list .summary .subject > span {
+  /* 작가 이름 영문 표기 */
+  display: flex;
+  flex-flow: column;
+}
+ul.artist-post__list .summary > span {
+  /* 작성자, 날짜 숨김 */
+  display: none !important;
+}
+/* ------------------------------------------------------------------------------------------ 작가 소개 커스터마이징 */
 
 /* 갤러리 커스터마이징 ------------------------------------------------------------------------------------------ */
 .xans-board-listpackage-8 .xans-board-list-8 ul.horizontal-board-layout {
@@ -282,14 +328,16 @@
   overflow: hidden;
   white-space: wrap;
   text-overflow: ellipsis;
-  font-size: 16px;
-  color: var(--grayScale-N1);
-  font-weight: var(--font-weight-SemiBold);
+  font-size: var(--gallery-title-font-size);
+  color: var(--gallery-title-color);
+  font-weight: var(--gallery-title-font-weight);
 }
 .xans-board-listpackage-8 .xans-board-list-8 ul.horizontal-board-layout li a .summary .subject span:nth-of-type(2) {
   /* 전시회 기간 */
   display: inline-block;
-  color: var(--main-color);
+  font-size: var(--gallery-span-font-size);
+  color: var(--gallery-span-color);
+  font-weight: var(--gallery-span-font-weight);
   margin-bottom: 4%;
 }
 .xans-board-listpackage-8 .xans-board-list-8 ul.horizontal-board-layout li a .summary .subject span:nth-of-type(3) {

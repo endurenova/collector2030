@@ -164,8 +164,6 @@ document.addEventListener('DOMContentLoaded', () => {
               artistVideoList.style.transform = `translateX(-${videoListLocation}px)`;
             }
           }
-          console.log(videoBoxWidth);
-          console.log(videoListLocation);
           checkArrowAbled(videoBoxWidth, videoItemMarginRight);
         });
       });

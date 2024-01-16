@@ -260,24 +260,31 @@
   overflow-x: scroll;
   padding-bottom: 20px;
 }
-.artist-video-box::-webkit-scrollbar,
+/* .artist-video-box::-webkit-scrollbar, */
 .ec-base-product .prdList::-webkit-scrollbar {
   /* 스크롤바의 너비 */
   width: 4px;
   height: 10px !important;
 }
-.artist-video-box::-webkit-scrollbar-thumb,
+/* .artist-video-box::-webkit-scrollbar-thumb, */
 .ec-base-product .prdList::-webkit-scrollbar-thumb {
   height: 2px !important; /* 스크롤바의 길이 */
   background: var(--main-color);
   border-radius: 10px;
 }
-.artist-video-box::-webkit-scrollbar-track,
+/* .artist-video-box::-webkit-scrollbar-track, */
 .ec-base-product .prdList::-webkit-scrollbar-track {
   height: 2px !important;
   background: #f6eee7;
   left: 0;
   width: 100%;
+}
+
+.artist-video-box::-webkit-scrollbar,
+.artist-video-box::-webkit-scrollbar-thumb,
+.artist-video-box::-webkit-scrollbar-track {
+  width: 0px !important;
+  height: 0px !important;
 }
 .ec-base-product:not(.xans-product-listmain-1) .prdList:not(.grid3_slide) {
   /* 상품 진열 리스트 */
