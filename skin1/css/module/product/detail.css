@@ -1503,11 +1503,14 @@
   border-color: var(--main-color);
   opacity: 1;
 }
-.background-selector__list li span {
+
+.background-selector__list li span,
+.tone-selector__list li .tone-name {
   font-size: 14px;
-  line-height: 2.6;
+  padding: 5% 0;
   color: var(--main-color);
-  font-weight: var(--font-weight-Medium);
+  font-weight: var(--font-weight-Regular);
+  box-sizing: border-box;
 }
 .background-selector__list li.active span,
 .tone-selector__list li.active .tone-name {
@@ -1538,33 +1541,25 @@
   font-size: 14px;
   color: var(--grayScale-N1);
 }
-.tone-select__box {
-}
-.tone-select__box .tone-selector__area {
-}
 .tone-selector__list {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 .tone-selector__list li {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100px;
+  width: 90px;
   height: 30px;
+  margin-right: 10px;
   transition: 0.2s;
   opacity: 0.8;
   cursor: pointer;
   box-sizing: border-box;
   border-radius: 15px 15px;
   border: 1px solid var(--pallet-color-4);
-}
-.tone-selector__list li .tone-name {
-  font-weight: var(--font-weight-Medium);
-  color: var(--main-color);
-  box-sizing: border-box;
 }
 /* 상품결제정보, 배송정보, 교환 및 반품정보 */
 .purchase-info-box {
@@ -2615,7 +2610,8 @@
     border-color: var(--main-color);
     opacity: 1;
   }
-  .background-selector__list li:hover span {
+  .background-selector__list li:hover span,
+  .tone-selector__list li:hover .tone-name {
     font-weight: var(--font-weight-SemiBold);
   }
   .tone-select__box .tone-selector__area .tone-selector__list li:hover {
@@ -2980,24 +2976,39 @@
   }
 }
 @media (max-width: 767px) {
+  .artwork-simulation {
+    margin-bottom: clamp(60px, 16.667vw, 100px);
+  }
   .artwork-simulation .virtual-background {
     width: calc((clamp(100px, 27.778vw, 140px) * 3) + 26px);
     height: calc((clamp(100px, 27.778vw, 140px) * 3) + 26px);
   }
-
   .tone-select__box,
   .background-select__box {
     width: calc((clamp(100px, 27.778vw, 140px) * 3) + 26px);
   }
-
   .tone-select__box > h3,
   .background-select__box > h3 {
     font-size: clamp(15px, 4.167vw, 18px);
   }
+  .background-selector__area .background-selector__btn {
+    padding: 3% 0;
+  }
   .background-selector__list li .select-bg {
     min-width: clamp(100px, 27.778vw, 140px);
   }
-  .background-selector__list li span {
+  .tone-selector__list {
+    justify-content: space-between;
+  }
+  .tone-selector__list li {
+    width: clamp(70px, 19.444vw, 90px);
+  }
+  .background-selector__btn span:nth-of-type(2),
+  .background-selector__list li span,
+  .tone-selector__list li .tone-name {
     font-size: clamp(12px, 3.333vw, 14px);
+  }
+  .purchase-info-box {
+    margin: clamp(60px, 16.667vw, 100px) auto 0;
   }
 }

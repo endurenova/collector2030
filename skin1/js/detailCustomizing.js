@@ -27,42 +27,49 @@ document.addEventListener('DOMContentLoaded', () => {
           space: '거실 1',
           top: '30%',
           left: '50%',
+          sizeRate: 0.09,
         },
         {
           url: '/SkinImg/img/simulate/0-simulate_bg-thumbnail-1.jpg',
           space: '거실 2',
           top: '30%',
           left: '50%',
+          sizeRate: 0.09,
         },
         {
           url: '/SkinImg/img/simulate/0-simulate_bg-thumbnail-2.jpg',
           space: '거실 3',
           top: '33%',
           left: '40%',
+          sizeRate: 0.09,
         },
         {
           url: '/SkinImg/img/simulate/0-simulate_bg-thumbnail-3.jpg',
           space: '침실',
           top: '30%',
           left: '50%',
+          sizeRate: 0.095,
         },
         {
           url: '/SkinImg/img/simulate/0-simulate_bg-thumbnail-4.jpg',
           space: '다이닝룸',
-          top: '30%',
+          top: '37%',
           left: '30%',
+          sizeRate: 0.09,
         },
         {
           url: '/SkinImg/img/simulate/0-simulate_bg-thumbnail-5.jpg',
           space: '방',
           top: '25%',
           left: '35%',
+          sizeRate: 0.09,
         },
         {
           url: '/SkinImg/img/simulate/0-simulate_bg-thumbnail-6.jpg',
           space: '복도',
           top: '35%',
           left: '60%',
+          sizeRate: 0.09,
         },
       ],
       simulateBackground_1 = [
@@ -70,31 +77,36 @@ document.addEventListener('DOMContentLoaded', () => {
           url: '/SkinImg/img/simulate/1-simulate_bg-thumbnail-0.jpg',
           space: '방 1',
           top: '25%',
-          left: '55%',
+          left: '60%',
+          sizeRate: 0.09,
         },
         {
           url: '/SkinImg/img/simulate/1-simulate_bg-thumbnail-1.jpg',
           space: '방 2',
           top: '25%',
-          left: '50%',
+          left: '51%',
+          sizeRate: 0.095,
         },
         {
           url: '/SkinImg/img/simulate/1-simulate_bg-thumbnail-2.jpg',
           space: '거실 1',
           top: '30%',
           left: '35%',
+          sizeRate: 0.09,
         },
         {
           url: '/SkinImg/img/simulate/1-simulate_bg-thumbnail-3.jpg',
           space: '거실 2',
           top: '30%',
           left: '50%',
+          sizeRate: 0.1,
         },
         {
           url: '/SkinImg/img/simulate/1-simulate_bg-thumbnail-4.jpg',
           space: '다이닝룸',
-          top: '25%',
-          left: '50%',
+          top: '28%',
+          left: '49%',
+          sizeRate: 0.09,
         },
       ],
       simulateBackground_2 = [
@@ -103,18 +115,21 @@ document.addEventListener('DOMContentLoaded', () => {
           space: '거실',
           top: '25%',
           left: '50%',
+          sizeRate: 0.095,
         },
         {
           url: '/SkinImg/img/simulate/2-simulate_bg-thumbnail-1.jpg',
           space: '방',
           top: '28%',
           left: '40%',
+          sizeRate: 0.09,
         },
         {
           url: '/SkinImg/img/simulate/2-simulate_bg-thumbnail-2.jpg',
           space: '다이닝룸',
           top: '25%',
           left: '50%',
+          sizeRate: 0.095,
         },
       ],
       simulateBackground_3 = [
@@ -123,18 +138,21 @@ document.addEventListener('DOMContentLoaded', () => {
           space: '거실 1',
           top: '30%',
           left: '50%',
+          sizeRate: 0.09,
         },
         {
           url: '/SkinImg/img/simulate/3-simulate_bg-thumbnail-1.jpg',
           space: '거실 2',
-          top: '36%',
-          left: '26%',
+          top: '38%',
+          left: '24%',
+          sizeRate: 0.1,
         },
         {
           url: '/SkinImg/img/simulate/3-simulate_bg-thumbnail-2.jpg',
           space: '거실 3',
           top: '30%',
           left: '35%',
+          sizeRate: 0.1,
         },
       ];
     const simulateBackgroundList = [
@@ -197,7 +215,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <div class="tone-selector__area">
                       <ul class="tone-selector__list">
                         <li class="active">
-                          <span class="tone-name">Achromatic</span>
+                          <span class="tone-name">Bright</span>
                         </li>
                         <li>
                           <span class="tone-name">Pastel</span>
@@ -342,6 +360,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 virtualFrame.style.top = simulateBackground[i].top;
                 virtualFrame.style.left = simulateBackground[i].left;
                 virtualBackground.style.backgroundImage = `url(${simulateBackground[i].url})`;
+                virtualFrame.style.width =
+                  ((Number(artworkWidth.split('cm')[0]) * 37.8 * vitualBackgroundWidth) / 1000) *
+                    simulateBackground[i].sizeRate +
+                  'px';
                 statusVirtualBackground.textContent = i + 1;
               });
             });
@@ -361,6 +383,10 @@ document.addEventListener('DOMContentLoaded', () => {
               virtualFrame.style.top = simulateBackgroundList[i][0].top;
               virtualFrame.style.left = simulateBackgroundList[i][0].left;
               virtualBackground.style.backgroundImage = `url(${simulateBackgroundList[i][0].url})`;
+              virtualFrame.style.width =
+                ((Number(artworkWidth.split('cm')[0]) * 37.8 * vitualBackgroundWidth) / 1000) *
+                  simulateBackgroundList[i][0].sizeRate +
+                'px';
               setStatusIdx();
             });
           });
@@ -369,10 +395,10 @@ document.addEventListener('DOMContentLoaded', () => {
             vitualBackgroundWidth = virtualBackground.clientWidth;
 
           // 작품 걸어보기 작품 크기
-          // virtualFrame.style.width = (Number(artworkWidth.split('cm')[0]) * 37.8) / 30 + 'px';
-          // console.log((Number(artworkWidth.split('cm')[0]) * 37.8) / 30 + 'px');
           virtualFrame.style.width =
-            (Number(artworkWidth.split('cm')[0]) * 37.8) / (vitualBackgroundWidth * 0.064) + 'px';
+            ((Number(artworkWidth.split('cm')[0]) * 37.8 * vitualBackgroundWidth) / 1000) *
+              simulateBackgroundList[0][0].sizeRate +
+            'px';
         } catch (e) {}
       } else {
         purchaseImgList.insertAdjacentHTML(
