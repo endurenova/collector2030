@@ -42,7 +42,7 @@ code {
   font-size: 13px;
   font-family: 'Montserrat', 'Noto Sans KR', Arial, sans-serif;
   color: var(--grayScale-N1);
-  background: #fff;
+  background: var(--grayScale-W);
 }
 body {
   min-width: 360px;
@@ -161,7 +161,7 @@ a:active {
   margin: 0 auto;
   padding: 67px 0;
   text-align: center;
-  background: #fff;
+  background: var(--grayScale-W);
 }
 #progressPaybarView .box .txt {
   margin: 8px 0 36px;
@@ -205,7 +205,7 @@ a:active {
   height: auto;
   padding: 10px 0;
   background: #c4122f;
-  color: #fff;
+  color: var(--grayScale-W);
   z-index: 100;
 }
 
@@ -219,7 +219,7 @@ a:active {
   z-index: 99;
   width: 100%;
   height: 100%;
-  background: #fff;
+  background: var(--grayScale-W);
   opacity: 0.8;
   filter: alpha(opacity=80);
 }

@@ -1,3 +1,12 @@
 /* base */
-.ec-base-box { padding:14px; margin:14px; border:1px solid #d5d5d5; line-height:1.6; color:#757575; background:#fff; }
-.ec-base-box.center { text-align:center; }
+.ec-base-box {
+  padding: 14px;
+  margin: 14px;
+  border: 1px solid #d5d5d5;
+  line-height: 1.6;
+  color: var(--grayScale-N3);
+  background: #fff;
+}
+.ec-base-box.center {
+  text-align: center;
+}

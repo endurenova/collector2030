@@ -28,7 +28,7 @@
   border-spacing: 0;
   border-collapse: collapse;
   line-height: 1.5;
-  background-color: #fff;
+  background-color: var(--grayScale-W);
 }
 .xans-product-sizeguide .guideBoard.pants {
   margin-top: 10px;

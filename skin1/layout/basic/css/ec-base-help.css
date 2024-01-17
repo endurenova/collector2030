@@ -5,7 +5,7 @@ ul.ec-base-help li {
   padding: 1px 0 1px 22px;
   font-size: 12px;
   line-height: 19px;
-  color: #6d6d6d;
+  color: var(--grayScale-N4);
   text-align: left;
   background: url('//img.echosting.cafe24.com/skin/skin/common/ico_info.svg') no-repeat 0 0;
 }
@@ -23,7 +23,7 @@ div.ec-base-help > h3 {
 }
 div.ec-base-help .inner {
   padding: 20px;
-  border: 1px solid #e5e5e5;
+  border: 1px solid var(--pallet-color-1);
   border-top: 1px solid var(--grayScale-N1);
 }
 div.ec-base-help h4 {
@@ -42,7 +42,7 @@ div.ec-base-help ol {
 }
 div.ec-base-help p,
 div.ec-base-help li {
-  color: #6d6d6d;
+  color: var(--grayScale-N4);
   font-size: 12px;
   line-height: 21px;
 }
@@ -59,7 +59,7 @@ div.ec-base-help ul li:before {
   margin: 7px 9px 0 -12px;
   vertical-align: top;
   border-radius: 50%;
-  background: #6d6d6d;
+  background: var(--grayScale-N4);
 }
 
 /********************* Mobile / Tablet *********************/

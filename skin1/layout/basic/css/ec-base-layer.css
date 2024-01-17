@@ -28,14 +28,14 @@ h3 {
 .ec-base-layer {
   z-index: 1001;
   border: 1px solid var(--grayScale-N1);
-  background: #fff;
+  background: var(--grayScale-W);
   box-sizing: border-box;
 }
 .ec-base-layer .header {
   margin: 0 20px;
   padding: 20px 0;
   color: var(--grayScale-N1);
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid var(--pallet-color-1);
 }
 .ec-base-layer > .header > h1,
 .ec-base-layer > .header > h3,

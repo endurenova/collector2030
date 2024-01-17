@@ -226,7 +226,7 @@
   bottom: 0;
   right: 0;
   padding: 9% 3% 6% 9%;
-  background: #fff;
+  background: var(--grayScale-W);
   text-align: left;
 }
 .main_image_text_gallery .main_3dan_banner ul li a .main_3dan_banner_txt .main_3dan_banner_txt01 {
@@ -296,8 +296,8 @@
 }
 .main_video .main_video_title .main_title_txt02 {
   font-size: 16px;
-  font-weight: 300;
-  color: #777777;
+  font-weight: var(--font-weight-Light);
+  color: var(--grayScale-N3);
   line-height: 1.8;
   text-align: center;
   margin-top: 5px;
@@ -425,19 +425,19 @@
 }
 .main_text .main_long_banner .main_long_banner_txt .main_long_banner_txt02 {
   font-size: 14px;
-  font-weight: 300;
-  color: #777777;
+  font-weight: var(--font-weight-Light);
+  color: var(--grayScale-N3);
   line-height: 1.5;
 }
 .main_text .main_long_banner .main_text_link a {
   display: inline-block;
   font-size: 16px;
-  font-weight: 300;
+  font-weight: var(--font-weight-Light);
   line-height: 1;
   padding: 0 0 5px 0;
   margin-top: 30px;
-  border-bottom: 1px solid #777;
-  color: #777;
+  border-bottom: 1px solid var(--grayScale-N3);
+  color: var(--grayScale-N3);
 }
 .main_text.ez-align-left {
   align-items: start;
@@ -534,7 +534,7 @@ ul.prdList.grid4.list_gallery .description .heart-mark {
 ul.prdList.grid4.list_gallery .description .spec > li:last-child span {
   font-weight: var(--font-weight-Bold);
   font-size: 20px !important;
-  color: #fff !important;
+  color: var(--grayScale-W) !important;
   line-height: 1.5;
 } /* 메인페이지 NEW ARRIVALS 작가명 */
 
@@ -550,7 +550,7 @@ ul.prdList.grid4.list_gallery .description .name span {
   overflow: hidden;
   text-overflow: ellipsis;
   font-size: 24px !important;
-  color: #fff !important;
+  color: var(--grayScale-W) !important;
   line-height: 1.5;
 } /* 메인페이지 NEW ARRIVALS 작품명 */
 
@@ -562,7 +562,7 @@ ul.prdList.grid4.list_gallery .description .main_list_detail {
   align-items: center;
   box-sizing: border-box;
   border: 1px solid var(--grayScale-N5);
-  color: #fff;
+  color: var(--grayScale-W);
   padding: 2% 4.5%;
   width: 105px;
   border-radius: 6px;
@@ -666,7 +666,7 @@ ul.prdList.grid4.list_gallery > li:hover .icon__box {
 .main_product_category .main_product_inner .main_product_tab li .button::before {
   font-size: 14px;
   line-height: 1.5;
-  font-weight: 300;
+  font-weight: var(--font-weight-Light);
   color: var(--grayScale-N2);
 }
 .main_product_category .main_product_inner .main_product_tab li.active .button::before {
@@ -866,7 +866,7 @@ ul.prdList.grid4.list_gallery > li:hover .icon__box {
   display: flex;
   align-items: center;
   position: relative;
-  background: #f9f9f9;
+  background: var(--grayScale-N5);
 }
 .main_map .main_map_banner picture {
   overflow: hidden;
@@ -904,14 +904,14 @@ ul.prdList.grid4.list_gallery > li:hover .icon__box {
   font-size: 40px;
   font-weight: var(--font-weight-Medium);
   line-height: 50px;
-  color: #fff;
+  color: var(--grayScale-W);
   letter-spacing: -0.01em;
 }
 .main_map .main_map_banner .main_map_banner_txt_box .main_map_banner_txt .map_txt {
   font-size: 16px;
-  font-weight: 400;
+  font-weight: var(--font-weight-Regular);
   line-height: 26px;
-  color: #767676;
+  color: var(--grayScale-N3);
 }
 .main_map.ez-align-left .main_map_banner .main_map_banner_txt_box {
   align-items: flex-start;
@@ -941,7 +941,7 @@ ul.prdList.grid4.list_gallery > li:hover .icon__box {
   font-weight: var(--font-weight-Medium);
   line-height: 1;
   border: 1px solid var(--main-color);
-  color: #fff;
+  color: var(--grayScale-W);
   padding: 13px 35px;
   background: var(--main-color);
   transition: all 0.3s;
@@ -951,7 +951,7 @@ ul.prdList.grid4.list_gallery > li:hover .icon__box {
   -ms-transition: all 0.3s;
 }
 .main_map .main_map_banner .main_map_banner_txt_box .main_long_banner_link a:hover {
-  background-color: #fff;
+  background-color: var(--grayScale-W);
   color: var(--main-color);
   border: 1px solid var(--main-color);
 }
@@ -1296,9 +1296,9 @@ ul.prdList.grid4.list_gallery > li:hover .icon__box {
     width: 100%;
   }
   .main_map .main_map_banner .main_map_banner_txt_box .main_long_banner_link a {
-    font-weight: 400;
+    font-weight: var(--font-weight-Regular);
     line-height: 1;
-    color: #fff;
+    color: var(--grayScale-W);
   }
 }
 @media all and (max-width: 960px) {

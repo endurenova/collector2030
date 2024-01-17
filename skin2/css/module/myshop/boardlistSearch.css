@@ -1,3 +1,12 @@
-.xans-myshop-boardlistsearch { padding:15px 0 20px; color:#2e2e2e; font-size:12px; text-align:center;}
-.xans-myshop-boardlistsearch #search { width:162px; }
-.xans-myshop-boardlistsearch .boardSearch { display:block; }
+.xans-myshop-boardlistsearch {
+  padding: 15px 0 20px;
+  color: var(--grayScale-N2);
+  font-size: 12px;
+  text-align: center;
+}
+.xans-myshop-boardlistsearch #search {
+  width: 162px;
+}
+.xans-myshop-boardlistsearch .boardSearch {
+  display: block;
+}

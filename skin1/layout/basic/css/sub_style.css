@@ -61,7 +61,7 @@
   height: 60px;
   font-size: 16px;
   text-align: center;
-  color: #fff;
+  color: var(--grayScale-W);
   background-color: #f87126;
   line-height: 1;
   border-radius: 50%;
@@ -122,7 +122,7 @@
   color: #d0ac88;
   font-style: italic;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: var(--font-weight-Medium);
   white-space: nowrap;
   text-align: center;
   line-height: 1;
@@ -171,7 +171,7 @@
   display: none;
 }
 .ec-base-product .prdList .thumbnail .likeButton strong {
-  font-weight: 400;
+  font-weight: var(--font-weight-Regular);
   padding: 0px 0 0 3px;
   margin-bottom: 1px;
   font-size: 10px;
@@ -180,7 +180,7 @@
 .ec-base-product .prdList .thumbnail .likeButton.selected {
   top: 5%;
   opacity: 1;
-  border-bottom: 1px solid #222;
+  border-bottom: 1px solid var(--grayScale-N2);
 }
 .ec-base-product .prdList > li:hover .thumbnail .likeButton {
   position: absolute;
@@ -199,7 +199,7 @@
   height: 60px;
   font-size: 20px;
   text-align: center;
-  color: #fff;
+  color: var(--grayScale-W);
   line-height: 1;
   border-radius: 50%;
   display: flex;
@@ -210,7 +210,7 @@
 .ec-base-product .prdList .thumbnail .sale_box span {
   margin-top: 5px;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: var(--font-weight-Medium);
 }
 .ec-base-product .prdList.ez-discount-tag-off .thumbnail .sale_box {
   display: none;
@@ -283,12 +283,12 @@
 }
 .ec-base-tab.typeMenu li a {
   font-size: 16px;
-  font-weight: 300;
-  color: #767676;
+  font-weight: var(--font-weight-Light);
+  color: var(--grayScale-N3);
 }
 .ec-base-tab.typeMenu li a.button {
   font-size: 18px;
-  color: #8a8a8a;
+  color: var(--grayScale-N4);
   line-height: 1;
   padding: 23px 25px 20px 0px;
   margin: 0 40px 0 0;
@@ -296,7 +296,7 @@
 }
 .ec-base-tab.typeMenu li.selected a.button {
   color: #d0ac88;
-  background-color: #fff;
+  background-color: var(--grayScale-W);
 }
 .ec-base-tab.typeMenu ul > li {
   height: auto;
@@ -325,10 +325,10 @@
 }
 .ec-base-tab.typeMenu ul > li > ul > li a {
   font-size: 14px;
-  font-weight: 300;
+  font-weight: var(--font-weight-Light);
   display: inline-block;
   padding: 2px 5px 2px 5px;
-  color: #888888;
+  color: var(--grayScale-N3);
 }
 .ec-base-tab.typeMenu ul > li > ul > li a:hover {
   color: #d0ac88;
@@ -359,7 +359,7 @@
   margin: 0;
 }
 .xans-project-package .menuCategory > li > a {
-  font-weight: 400;
+  font-weight: var(--font-weight-Regular);
 }
 
 /* 로그인 */
@@ -375,7 +375,7 @@
 .login input[type='password'] {
   height: 48px;
   margin-bottom: 8px;
-  border: 1px solid #e3e3e3;
+  border: 1px solid var(--grayScale-N4);
 }
 .xans-member-login .wrap_security {
   display: flex;
@@ -412,7 +412,7 @@
 }
 .xans-member-login .login__button .wrap_login_btn div {
   margin: 16px 0 0;
-  color: #8a8a8a;
+  color: var(--grayScale-N4);
   text-align: center;
 }
 
@@ -433,7 +433,7 @@
   width: 100%;
   max-width: 400px;
   height: 232px;
-  border: 1px solid #e3e3e3;
+  border: 1px solid var(--grayScale-N4);
   box-sizing: border-box;
   margin-left: auto;
   margin-right: auto;
@@ -447,13 +447,13 @@
 }
 .xans-member-login .login__util div:nth-child(1) {
   font-size: 18px;
-  font-weight: 700;
+  font-weight: var(--font-weight-Bold);
   color: var(--grayScale-N1);
 }
 .xans-member-login .login__util div:nth-child(2) {
   margin: 8px 0 23px 0;
   font-size: 14px;
-  color: #8a8a8a;
+  color: var(--grayScale-N4);
 }
 .xans-member-login .login__util div:nth-child(3) {
   width: 152px;
@@ -467,7 +467,7 @@
   width: 100%;
   height: 100%;
   font-size: 16px;
-  font-weight: 700;
+  font-weight: var(--font-weight-Bold);
   color: var(--grayScale-N1);
   line-height: 56px;
 }
@@ -479,7 +479,7 @@
 .xans-member-login .login__sns .sns_h {
   margin: 0 0 24px;
   font-size: 16px;
-  font-weight: 700;
+  font-weight: var(--font-weight-Bold);
   text-align: center;
 }
 .xans-member-login .login__sns .wrap_sns_log {
@@ -494,11 +494,11 @@
   padding: 0 24px;
   margin: 0 0 8px 0 !important;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: var(--font-weight-Regular);
   color: var(--grayScale-N1);
-  background-color: #fff;
+  background-color: var(--grayScale-W);
   text-align: right;
-  border: 1px solid #e3e3e3;
+  border: 1px solid var(--grayScale-N4);
   box-sizing: border-box;
   line-height: 1.5;
   display: flex;
@@ -551,18 +551,18 @@
 .login input[type='password'] {
   height: 48px;
   margin-bottom: 8px;
-  border: 1px solid #e3e3e3;
+  border: 1px solid var(--grayScale-N4);
 }
 .xans-myshop-orderhistorynologin .txt_nonmem_check {
   margin: 40px 0 8px;
   font-size: 16px;
-  font-weight: 700;
+  font-weight: var(--font-weight-Bold);
   color: var(--grayScale-N1);
 }
 .xans-myshop-orderhistorynologin .txtInfo {
   margin: 0px 0 24px;
   font-size: 14px;
-  color: #8a8a8a;
+  color: var(--grayScale-N4);
 }
 .xans-myshop-orderhistorynologin .login__button {
   margin: 0;
@@ -756,7 +756,7 @@
 .xans-member-join .agreeAll {
   margin: 0 0 24px;
   padding: 0 0 24px;
-  border-bottom: 1px solid #e8e8e8;
+  border-bottom: 1px solid var(--pallet-color-5);
 }
 .xans-member-join .agreeAll h3 {
   margin: 0 0 24px;
@@ -765,7 +765,7 @@
   border-bottom: 3px solid var(--grayScale-N1);
 }
 .xans-member-join .agreeAll label {
-  font-weight: 700;
+  font-weight: var(--font-weight-Bold);
   color: var(--grayScale-N1);
 }
 .xans-member-join label.check {
@@ -774,7 +774,7 @@
 .xans-member-join .additional {
   margin: 24px 0 0;
   padding: 24px 0 0;
-  border-top: 1px solid #e8e8e8;
+  border-top: 1px solid var(--pallet-color-5);
 }
 .xans-member-join .additional li {
   font-size: 14px;
@@ -808,7 +808,7 @@
 }
 .xans-member-join .ec-base-table.typeWrite th[scope*='row'] {
   padding-left: 16px;
-  font-weight: 400;
+  font-weight: var(--font-weight-Regular);
   font-size: 14px;
   color: var(--grayScale-N1);
 }
@@ -918,14 +918,14 @@
 .xans-member-joincomplete .joinComplete {
   width: auto;
   padding: 40px 100px;
-  border: 1px solid #e3e3e3;
+  border: 1px solid var(--grayScale-N4);
 }
 .xans-member-joincomplete .member_icon {
   margin: 0 0 16px;
 }
 .xans-member-joincomplete .joinComplete .desc {
   font-size: 20px;
-  font-weight: 700;
+  font-weight: var(--font-weight-Bold);
   color: var(--grayScale-N1);
 }
 .xans-member-joincomplete .joinComplete .memberSpecial strong {
@@ -933,10 +933,10 @@
   color: var(--grayScale-N1);
 }
 .xans-member-joincomplete .joinComplete .memberSpecial p strong {
-  font-weight: 400;
+  font-weight: var(--font-weight-Regular);
 }
 .xans-member-joincomplete .ec-base-box.typeMember.gMessage {
-  border-color: #e8e8e8;
+  border-color: var(--pallet-color-5);
 }
 .xans-member-joincomplete .joinComplete .ec-base-box .ec-base-desc dt {
   font-size: 14px;
@@ -977,12 +977,12 @@
   max-width: 720px;
   margin: 0 auto;
   display: block;
-  border: 1px solid #e3e3e3;
+  border: 1px solid var(--grayScale-N4);
   text-align: center;
 }
 .xans-myshop-asyncbenefit .benefit {
   display: block;
-  border: 1px solid #e3e3e3;
+  border: 1px solid var(--grayScale-N4);
   text-align: center;
 }
 .xans-myshop-asyncbenefit .benefit .user,
@@ -992,7 +992,7 @@
 }
 .xans-myshop-asyncbenefit .benefit .user {
   padding: 40px 0;
-  border-bottom: 1px solid #e3e3e3;
+  border-bottom: 1px solid var(--grayScale-N4);
 }
 .xans-myshop-asyncbenefit .benefit .user .user__thumbnail {
   display: block;
@@ -1007,7 +1007,7 @@
   display: block;
   margin: 16px 0 8px;
   font-size: 20px;
-  font-weight: 700;
+  font-weight: var(--font-weight-Bold);
   color: var(--grayScale-N1);
 }
 .xans-myshop-asyncbenefit .benefit .user .user__info p strong {
@@ -1035,7 +1035,7 @@
 .xans-member-edit .ec-base-table.typeWrite th[scope*='row'] {
   padding: 10px 16px;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: var(--font-weight-Regular);
 }
 .xans-member-edit .ec-base-table.typeWrite .ec-address input[type='text'],
 .xans-member-edit .ec-base-table.typeWrite .ec-address select,
@@ -1168,7 +1168,7 @@
 
 /* 마이페이지 회원간편정보 */
 .xans-myshop-asyncbankbook {
-  border: 1px solid #e3e3e3;
+  border: 1px solid var(--grayScale-N4);
   margin: 0 auto;
   box-sizing: border-box;
 }
@@ -1197,12 +1197,12 @@
 }
 .xans-myshop-asyncbankbook .xans-myshop-asyncbenefit .user .user__info .txtEm1 {
   font-size: 20px;
-  font-weight: 700;
+  font-weight: var(--font-weight-Bold);
   color: var(--grayScale-N1);
 }
 .xans-myshop-asyncbankbook .xans-myshop-asyncbenefit .user .user__info .user__data {
   font-size: 14px;
-  color: #6a6a6a;
+  color: var(--grayScale-N3);
   white-space: nowrap;
 }
 .xans-myshop-asyncbankbook .xans-myshop-asyncbenefit .user .user__info .user__data span {
@@ -1221,7 +1221,7 @@
   top: 0;
   height: 100%;
   margin: 0;
-  background: #e3e3e3;
+  background: var(--grayScale-N4);
 }
 .xans-myshop-asyncbankbook .thumb {
   width: 32px;
@@ -1244,9 +1244,9 @@
 }
 .myshopArea .ec-base-prdEmpty {
   border-top: 2px solid var(--grayScale-N1);
-  border-bottom: 1px solid #e6e6e6;
+  border-bottom: 1px solid var(--pallet-color-5);
   font-size: 16px;
-  color: #9a9a9a;
+  color: var(--grayScale-N4);
   padding: 64px 0;
   display: flex;
   flex-direction: column;
@@ -1256,7 +1256,7 @@
   margin-bottom: 16px;
 }
 .myshopArea .titleArea--myshop h2 {
-  font-weight: 700;
+  font-weight: var(--font-weight-Bold);
 }
 div.ec-base-help {
   margin: 50px 0 0;
@@ -1292,13 +1292,13 @@ div.ec-base-help ul {
   font-size: 14px;
 }
 .xans-myshop-orderstate .state__cs li strong {
-  font-weight: 400;
+  font-weight: var(--font-weight-Regular);
 }
 
 /* 마이페이지 배송주소록 관리 */
 .xans-myshop-addrlist .ec-base-table .message {
   font-size: 16px;
-  color: #9a9a9a;
+  color: var(--grayScale-N4);
   padding: 64px 0;
   float: none;
   text-align: center;
@@ -1356,9 +1356,9 @@ div.ec-base-help ul {
 
 /* 마이페이지 정기배송 관리 */
 .xans-myshop-orderregularmanagelist .message {
-  border-bottom: 1px solid #e6e6e6;
+  border-bottom: 1px solid var(--pallet-color-5);
   font-size: 16px;
-  color: #9a9a9a;
+  color: var(--grayScale-N4);
   padding: 64px 0;
   text-align: center;
 }
@@ -1375,11 +1375,11 @@ div.ec-base-help ul {
   overflow: hidden;
   padding: 20px 0 20px 15px;
   font-size: 13px;
-  background-color: #f6f6f6;
+  background-color: var(--pallet-color-5);
   border-top: 2px solid var(--grayScale-N1);
 }
 .xans-myshop-orderregularmanagelist .order h3 a {
-  font-weight: 400;
+  font-weight: var(--font-weight-Regular);
 }
 .xans-myshop-orderregularmanagelist .order .prdBox .thumbnail {
   width: 120px;
@@ -1396,7 +1396,7 @@ div.ec-base-help ul {
   padding: 10px 20px;
 }
 .xans-myshop-orderregularpg .ec-base-box {
-  border: 1px solid #e5e5e5;
+  border: 1px solid var(--pallet-color-1);
   border-top: 2px solid var(--grayScale-N1);
 }
 .xans-myshop-orderregularmanagedetaillist .colOrder {
@@ -1408,10 +1408,10 @@ div.ec-base-help ul {
 .xans-myshop-orderregularmanagedetaillist h3.title {
   padding-bottom: 16px;
   border-bottom: 2px solid var(--grayScale-N1);
-  font-weight: 500;
+  font-weight: var(--font-weight-Medium);
 }
 .xans-myshop-orderregularmanagedetaillist .ec-base-table {
-  border-top: 1px solid #e5e5e5;
+  border-top: 1px solid var(--pallet-color-1);
 }
 .xans-myshop-orderregularmanagedetaillist .prdBox .thumbnail {
   width: 120px;
@@ -1469,7 +1469,7 @@ div.ec-base-help ul {
 .myshop_recommender .invite {
   margin: 0;
   padding: 50px 0;
-  border: 1px solid #e3e3e3;
+  border: 1px solid var(--grayScale-N4);
   border-top: 0;
   text-align: center;
 }
@@ -1484,14 +1484,14 @@ div.ec-base-help ul {
   max-width: 450px;
   width: 100%;
   height: 40px;
-  border: 1px solid #e3e3e3 !important;
-  color: #111;
+  border: 1px solid var(--grayScale-N4) !important;
+  color: var(--grayScale-N1);
 }
 .myshop_recommender .invite ul {
   margin: 15px 0 0;
   font-size: 14px;
   line-height: 1.5;
-  color: #6a6a6a;
+  color: var(--grayScale-N3);
 }
 .myshop_recommender .invite .btnNormal {
   display: inline-block;
@@ -1500,10 +1500,10 @@ div.ec-base-help ul {
   padding: 0 10px;
   font-size: 14px;
   line-height: 40px;
-  color: #111;
+  color: var(--grayScale-N1);
   cursor: pointer;
   vertical-align: middle;
-  border: 1px solid #e3e3e3;
+  border: 1px solid var(--grayScale-N4);
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -1516,11 +1516,11 @@ div.ec-base-help ul {
   font-size: 16px;
 }
 .xans-order-basketpackage .title.subTitle h4 {
-  background-color: #f9f9f9;
+  background-color: var(--grayScale-N5);
   font-size: 16px;
 }
 .xans-order-basketpackage .ec-base-prdInfo {
-  border-bottom: 1px solid #e8e8e8;
+  border-bottom: 1px solid var(--pallet-color-5);
 }
 .xans-order-basketpackage .ec-base-prdInfo .btnDelete {
   top: 33px;
@@ -1540,7 +1540,7 @@ div.ec-base-help ul {
   margin: 35px 0 0 37px;
   padding: 10px 16px 13px;
   width: 100%;
-  background-color: #f9f9f9;
+  background-color: var(--grayScale-N5);
   font-size: 14px;
 }
 .xans-order-basketpackage .ec-base-prdInfo .optionGroup .name {
@@ -1566,7 +1566,7 @@ div.ec-base-help ul {
 .xans-order-basketpackage .ec-base-prdInfo.gCheck .quantity .label {
   flex: 1;
   font-size: 14px;
-  color: #7a7a7a;
+  color: var(--grayScale-N3);
 }
 .xans-order-basketpackage .ec-base-prdInfo.gCheck .quantity .ec-base-qty {
   width: 123px;
@@ -1599,7 +1599,7 @@ div.ec-base-help ul {
   align-items: center;
   width: 100%;
   margin: 0 0 24px 37px;
-  border-top: 1px solid #e8e8e8;
+  border-top: 1px solid var(--pallet-color-5);
 }
 .xans-order-basketpackage .ec-base-prdInfo.gCheck .sumPrice .label {
   flex: 1;
@@ -1617,7 +1617,7 @@ div.ec-base-help ul {
   flex: 1;
   height: auto;
   padding: 16px 20px;
-  font-weight: 400;
+  font-weight: var(--font-weight-Regular);
 }
 .xans-order-basketpackage .ec-base-prdInfo .buttonGroup [class^='btn'] + [class^='btn'] {
   margin-left: 8px;
@@ -1626,18 +1626,18 @@ div.ec-base-help ul {
   margin: 0 0 40px 0;
   font-size: 14px;
   padding: 24px;
-  border-bottom: 1px solid #e8e8e8;
+  border-bottom: 1px solid var(--pallet-color-5);
 }
 .xans-order-basketpackage .summary .title h5 {
   font-size: 14px;
 }
 .xans-order-basketpackage .summary strong {
-  font-weight: 400;
+  font-weight: var(--font-weight-Regular);
 }
 .xans-order-basketpackage .ec-base-button a {
   height: 50px;
   padding: 17px 20px;
-  font-weight: 400;
+  font-weight: var(--font-weight-Regular);
   font-size: 14px;
 }
 .xans-order-basketpackage .cart-total {
@@ -1665,13 +1665,13 @@ div.ec-base-help ul {
 }
 .xans-order-basketpackage .totalSummary__item .data strong {
   font-size: 16px;
-  font-weight: 400;
+  font-weight: var(--font-weight-Regular);
   color: var(--grayScale-N1);
 }
 .xans-order-basketpackage .totalSummary .total {
   margin-top: 30px;
   padding-top: 30px;
-  border-top: 1px solid #e8e8e8;
+  border-top: 1px solid var(--pallet-color-5);
 }
 .xans-order-basketpackage .totalSummary .total .title {
   font-size: 16px;
@@ -1682,9 +1682,9 @@ div.ec-base-help ul {
 }
 .xans-order-basketpackage .ec-base-prdEmpty {
   border-top: 0;
-  border-bottom: 1px solid #e6e6e6;
+  border-bottom: 1px solid var(--pallet-color-5);
   font-size: 16px;
-  color: #9a9a9a;
+  color: var(--grayScale-N4);
   padding: 14px 0 64px;
   display: flex;
   flex-direction: column;
@@ -1699,12 +1699,12 @@ div.ec-base-help ul {
 
 /* 예치금 */
 .xans-myshop-historylist h3 {
-  font-weight: 500;
+  font-weight: var(--font-weight-Medium);
 }
 .xans-myshop-deposithistorylist .ec-base-table .message {
-  border-bottom: 1px solid #e6e6e6;
+  border-bottom: 1px solid var(--pallet-color-5);
   font-size: 16px;
-  color: #9a9a9a;
+  color: var(--grayScale-N4);
   padding: 64px 0;
 }
 .xans-myshop-deposithistorylist .ec-base-table .message svg {
@@ -1719,7 +1719,7 @@ div.ec-base-help ul {
   padding: 25px 20px;
 }
 .xans-myshop-likeproductlist .ec-base-table td strong {
-  font-weight: 500;
+  font-weight: var(--font-weight-Medium);
 }
 .xans-myshop-likeproductlist .ec-base-table td .icon {
   display: none;
@@ -1731,18 +1731,18 @@ div.ec-base-help ul {
   width: 120px !important;
 }
 .xans-myshop-likeproductlist .ec-base-table .message {
-  border-bottom: 1px solid #e6e6e6;
+  border-bottom: 1px solid var(--pallet-color-5);
   font-size: 16px;
-  color: #9a9a9a;
+  color: var(--grayScale-N4);
   padding: 64px 0;
 }
 .xans-myshop-likeproductlist .ec-base-table .message svg {
   margin: 0 auto 16px auto;
 }
 .xans-myshop-likecategorylist .ec-base-table .message {
-  border-bottom: 1px solid #e6e6e6;
+  border-bottom: 1px solid var(--pallet-color-5);
   font-size: 16px;
-  color: #9a9a9a;
+  color: var(--grayScale-N4);
   padding: 64px 0;
 }
 .xans-myshop-likecategorylist .ec-base-table .message svg {
@@ -1787,9 +1787,9 @@ div.ec-base-help ul {
   padding: 64px 0;
   flex-direction: column;
   align-items: center;
-  border-bottom: 1px solid #e6e6e6;
+  border-bottom: 1px solid var(--pallet-color-5);
   font-size: 16px;
-  color: #9a9a9a;
+  color: var(--grayScale-N4);
   display: none;
 }
 .myshop_boardlist_empty svg {
@@ -1828,8 +1828,8 @@ div.ec-base-help ul {
   margin: 0 0 5px 0;
 }
 .xans-board-inquiryhead .information .price {
-  font-weight: 400;
-  color: #111;
+  font-weight: var(--font-weight-Regular);
+  color: var(--grayScale-N1);
 }
 .xans-board-inquiryview .ec-base-table th {
   padding: 14px 27px;
@@ -2062,13 +2062,13 @@ div.ec-base-help ul {
 }
 @media all and (min-width: 1025px) {
   .ec-base-product ul.list_gallery .description .name a span {
-    color: #fff;
+    color: var(--grayScale-W);
   }
   .ec-base-product ul.list_gallery .description .spec > li span {
-    color: #ececec;
+    color: var(--grayScale-N5);
   }
   .ec-base-product ul.list_gallery .description .spec > li:last-child span {
-    color: #fff;
+    color: var(--grayScale-W);
   }
 }
 @media screen and (max-width: 1024px) {
@@ -2437,8 +2437,8 @@ div.ec-base-help ul {
   /* 마이페이지 회원간편정보 */
   .xans-myshop-asyncbankbook {
     border: 0;
-    border-top: 1px solid #e3e3e3;
-    border-bottom: 1px solid #e3e3e3;
+    border-top: 1px solid var(--grayScale-N4);
+    border-bottom: 1px solid var(--grayScale-N4);
     width: 108%;
     margin-left: -4%;
     box-sizing: border-box;
@@ -2495,7 +2495,7 @@ div.ec-base-help ul {
     font-size: 14px;
   }
   .xans-myshop-orderstate .state__cs li strong {
-    font-weight: 400;
+    font-weight: var(--font-weight-Regular);
     font-size: 14px;
   }
 
@@ -2516,7 +2516,7 @@ div.ec-base-help ul {
   }
   .myshopArea .xans-myshop-main .menu li a {
     font-size: 14px;
-    color: #6a6a6a;
+    color: var(--grayScale-N3);
     padding: 0;
   }
   .myshopArea .xans-myshop-main .menu li a:after {
@@ -2546,7 +2546,7 @@ div.ec-base-help ul {
 
   /* 마이페이지 배송주소록 관리 */
   .xans-myshop-addrlist a[class^='btnEm'] {
-    color: #fff !important;
+    color: var(--grayScale-W) !important;
   }
   .xans-myshop-addrlist .ec-base-table {
     border-top: 2px solid var(--grayScale-N1);
@@ -2646,7 +2646,7 @@ div.ec-base-help ul {
   }
   .xans-myshop-orderregularmanagedetaillist .ec-base-table.typeWrite th,
   .xans-myshop-orderregularmanagedetaillist .ec-base-table.typeWrite td {
-    border-bottom: 1px solid #e5e5e5;
+    border-bottom: 1px solid var(--pallet-color-1);
     display: table-cell;
     padding: 14px 20px;
   }
@@ -2729,7 +2729,7 @@ div.ec-base-help ul {
     margin: 0;
     padding: 25px 0;
     border: 0;
-    border-bottom: 1px solid #e3e3e3;
+    border-bottom: 1px solid var(--grayScale-N4);
     width: 108%;
     margin-left: -4%;
   }
@@ -2741,8 +2741,8 @@ div.ec-base-help ul {
     max-width: auto;
     width: 60%;
     height: 40px;
-    border: 1px solid #e3e3e3 !important;
-    color: #111;
+    border: 1px solid var(--grayScale-N4) !important;
+    color: var(--grayScale-N1);
   }
   .myshop_recommender .invite ul {
     margin: 10px 0 0;
@@ -2826,8 +2826,8 @@ div.ec-base-help ul {
   .xans-myshop-deposithistorylist h3 {
     padding: 19px 15px;
     line-height: 1.5;
-    background: #f6f6f6;
-    font-weight: 500;
+    background: var(--pallet-color-5);
+    font-weight: var(--font-weight-Medium);
   }
   .xans-myshop-deposithistorylist .item {
     margin-top: 25px;
@@ -2836,13 +2836,13 @@ div.ec-base-help ul {
     border: 0;
   }
   .xans-myshop-deposithistorylist .ec-base-table th {
-    background: #fff;
-    color: #6d6d6d;
+    background: var(--grayScale-W);
+    color: var(--grayScale-N4);
   }
   .xans-myshop-deposithistorylist .message {
-    border-bottom: 1px solid #e6e6e6;
+    border-bottom: 1px solid var(--pallet-color-5);
     font-size: 16px;
-    color: #9a9a9a;
+    color: var(--grayScale-N4);
     padding: 64px 0;
     text-align: center;
   }
@@ -2964,7 +2964,7 @@ div.ec-base-help ul {
     margin-left: 0 !important;
   }
   .xans-board-inquiryform .titleArea--middle {
-    background: #fff;
+    background: var(--grayScale-W);
     padding: 27px 0 0;
   }
 
@@ -3066,7 +3066,7 @@ div.ec-base-help ul {
   /* 상품진열 5단 슬라이드 */
   .ec-base-product ul.grid5_slide .description {
     min-height: 100px;
-    border: 0px solid #f6f6f6;
+    border: 0px solid var(--pallet-color-5);
   }
 
   /* 상품진열 뱃지(목록 추천상품) */

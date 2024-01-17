@@ -4,8 +4,8 @@
 
 .xans-myshop-orderhistorydetail .summary {
   padding: 20px;
-  border-bottom: 1px solid #e5e5e5;
-  background: #f9f9f9;
+  border-bottom: 1px solid var(--pallet-color-1);
+  background: var(--grayScale-N5);
 }
 .xans-myshop-orderhistorydetail .summary .title {
   margin: 0 0 10px;
@@ -36,7 +36,7 @@
 .xans-myshop-orderhistorydetail .ec-base-table .map img {
   margin-top: 5px;
   max-width: 100%;
-  border: 1px solid #e8e8e8;
+  border: 1px solid var(--pallet-color-5);
   vertical-align: middle;
 }
 .xans-myshop-orderhistorydetail .ec-base-table td.state [class^='btn'] {
@@ -44,7 +44,7 @@
 }
 .xans-myshop-orderhistorydetail .ec-base-table tbody + tbody tr:first-child th,
 .xans-myshop-orderhistorydetail .ec-base-table tbody + tbody tr:first-child td {
-  border-top: 1px solid #e9e9e9;
+  border-top: 1px solid var(--pallet-color-5);
 }
 .xans-myshop-orderhistorydetail .ec-base-table thead + tbody tr:first-child th,
 .xans-myshop-orderhistorydetail .ec-base-table thead + tbody tr:first-child td {
@@ -53,7 +53,7 @@
 .xans-myshop-orderhistorydetail .productList .subTitle {
   padding: 20px 16px;
   font-size: 13px;
-  background: #f6f6f6;
+  background: var(--pallet-color-5);
 }
 .xans-myshop-orderhistorydetail .productList {
   padding: 0;
@@ -62,7 +62,7 @@
   display: table;
   table-layout: fixed;
   width: 100%;
-  border-top: 1px solid #e9e9e9;
+  border-top: 1px solid var(--pallet-color-5);
 }
 .xans-myshop-orderhistorydetail .productList > ul > li:first-child {
   border-top: 0;
@@ -90,7 +90,7 @@
 .xans-myshop-orderhistorydetail .productList .option {
   display: block;
   margin: 10px 0 0;
-  color: #7d7d7d;
+  color: var(--grayScale-N3);
 }
 .xans-myshop-orderhistorydetail .productList .productName {
   display: block;
@@ -104,7 +104,7 @@
 }
 .xans-myshop-orderhistorydetail .total .amount {
   display: block;
-  color: #7d7d7d;
+  color: var(--grayScale-N3);
   line-height: 20px;
 }
 .xans-myshop-orderhistorydetail .coupon li {
@@ -121,14 +121,14 @@
   background: var(--grayScale-N1);
 }
 .xans-myshop-orderhistorydetail .customer {
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid var(--pallet-color-1);
   line-height: 20px;
 }
 
 .xans-myshop-orderhistorydetailrefundnew .ec-base-table.total {
   position: relative;
   z-index: 1;
-  border: 1px solid #777;
+  border: 1px solid var(--grayScale-N3);
 }
 .xans-myshop-orderhistorydetailrefundnew .ec-base-table.total table {
   margin: 0;
@@ -162,7 +162,7 @@
 .xans-myshop-orderhistorydetail .totalDetail .content p {
   margin: 5px 0 20px;
   font-size: 16px;
-  font-weight: bold;
+  font-weight: var(--font-weight-Bold);
   text-align: right;
 }
 .csDetail .content {
@@ -176,18 +176,18 @@
   background: #fff8f5;
 }
 .csDetail .prdInfo h2 {
-  color: #353535;
+  color: var(--grayScale-N2);
   font-size: 12px;
 }
 .csDetail .prdInfo p,
 .csDetail .prdInfo ul > li {
   margin: 9px 0 5px;
-  color: #757575;
+  color: var(--grayScale-N3);
   line-height: 16px;
 }
 .csDetail .prdInfo ul > li > strong {
   display: block;
-  color: #353535;
+  color: var(--grayScale-N2);
 }
 .csDetail .csArea {
   margin: 0 0 20px;

@@ -2,12 +2,12 @@
 .xans-board-title .title {
   min-height: 30px;
   margin: 10px 0 20px;
-  border-bottom: 1px solid #e8e8e8;
+  border-bottom: 1px solid var(--pallet-color-5);
 }
 .xans-board-title .title h2 {
   display: inline-block;
   padding: 0 0 0 12px;
-  color: #2e2e2e;
+  color: var(--grayScale-N2);
   font-size: 16px;
   background: url('//img.echosting.cafe24.com/skin/base/layout/ico_heading.gif') 0 50% no-repeat;
 }
@@ -15,7 +15,7 @@
   display: inline-block;
   margin: 0 0 0 6px;
   padding: 0 0 0 10px;
-  color: #939393;
+  color: var(--grayScale-N4);
   vertical-align: bottom;
   background: url('//img.echosting.cafe24.com/skin/base/common/ico_bar.gif') no-repeat 0 0;
 }
@@ -28,7 +28,7 @@
   padding: 0 0 60px;
   margin: -10px 0 0;
   overflow: hidden;
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid var(--pallet-color-1);
 }
 .xans-board-listpackage-8 .boardSort {
   display: flex;
@@ -62,8 +62,8 @@
 .xans-board-listheader-8 li a {
   display: block;
   font-size: 14px;
-  color: #6d6d6d;
-  border-bottom: 1px solid #e0e0e0;
+  color: var(--grayScale-N4);
+  border-bottom: 1px solid var(--pallet-color-5);
   padding: 20px 15px;
 }
 .xans-board-listheader-8 li a svg.icon {
@@ -121,13 +121,13 @@
 .xans-board-listpackage-8 .xans-board-notice-8 li a .summary,
 .xans-board-listpackage-8 .xans-board-fixed-8 li a .summary {
   display: block;
-  color: #6d6d6d;
+  color: var(--grayScale-N4);
 }
 .xans-board-listpackage-8 .xans-board-notice-8 li a .summary .subject,
 .xans-board-listpackage-8 .xans-board-fixed-8 li a .summary .subject {
   display: block;
   margin: 16px 0 8px;
-  font-weight: bold;
+  font-weight: var(--font-weight-Bold);
   color: var(--grayScale-N1) 000;
 }
 .xans-board-listpackage-8 .xans-board-notice-8 li a .summary span,
@@ -143,7 +143,7 @@
 .xans-board-listpackage-8 .xans-board-notice-8 li a .summary em,
 .xans-board-listpackage-8 .xans-board-fixed-8 li a .summary em {
   display: inline-block;
-  color: #6d6d6d;
+  color: var(--grayScale-N4);
   font-style: normal;
   margin-right: 6px;
   vertical-align: top;
@@ -238,23 +238,38 @@
   margin: 0 0 20px;
   text-align: center;
 }
-/* 작가 소개 커스터마이징 ------------------------------------------------------------------------------------------ */
+/* 작가 소개, 컬렉터 스토리 커스터마이징 ------------------------------------------------------------------------------------------ */
 
+.boardList > .xans-board-8 > ul.collector-story__list > li,
 .boardList > .xans-board-8 > ul.artist-post__list > li {
   min-height: unset !important;
   width: 25%;
 }
+
+.boardList > .xans-board-8 > ul.collector-story__list > li > a,
 .boardList > .xans-board-8 > ul.artist-post__list > li > a {
   display: block;
 }
-
+.boardList > .xans-board-8 > ul.collector-story__list > li > a .thumbnail {
+  border-radius: 5% 5%;
+  overflow: hidden;
+}
+.boardList > .xans-board-8 > ul.collector-story__list > li > a .thumbnail img,
 .boardList > .xans-board-8 > ul.artist-post__list > li > a .thumbnail img {
   object-fit: cover;
   width: 100%;
   padding: unset !important;
 }
+ul.collector-story__list .summary,
 ul.artist-post__list .summary {
   width: 100% !important;
+}
+
+ul.collector-story__list .summary {
+  display: flex;
+  flex-flow: column;
+  align-items: unset !important;
+  padding: 5% 2%;
 }
 ul.artist-post__list .summary .subject {
   display: flex;
@@ -265,12 +280,14 @@ ul.artist-post__list .summary .subject {
   border: 1px solid var(--grayScale-N4);
   border-top: none;
 }
+ul.collector-story__list .summary .subject > strong,
 ul.artist-post__list .summary .subject > strong {
   /* 작가 이름 */
   font-size: var(--gallery-title-font-size);
   color: var(--gallery-title-color);
   font-weight: var(--gallery-title-font-weight);
 }
+ul.collector-story__list .summary .subject > span,
 ul.artist-post__list .summary .subject > span {
   /* 작가 이름 영문 표기 */
   display: flex;
@@ -280,7 +297,7 @@ ul.artist-post__list .summary > span {
   /* 작성자, 날짜 숨김 */
   display: none !important;
 }
-/* ------------------------------------------------------------------------------------------ 작가 소개 커스터마이징 */
+/* ------------------------------------------------------------------------------------------ 작가 소개, 컬렉터 스토리 커스터마이징 */
 
 /* 갤러리 커스터마이징 ------------------------------------------------------------------------------------------ */
 .xans-board-listpackage-8 .xans-board-list-8 ul.horizontal-board-layout {
@@ -378,12 +395,15 @@ ul.artist-post__list .summary > span {
   .xans-board-listpackage-8 .xans-board-list-8 ul.horizontal-board-layout li {
     width: 50%;
   }
+  .boardList > .xans-board-8 > ul.collector-story__list > li,
   .boardList > .xans-board-8 > ul.artist-post__list > li,
   .xans-board-listpackage-8 .xans-board-list-8 li {
     width: 33.3334%;
   }
+
+  ul.collector-story__list .summary .subject > strong,
   ul.artist-post__list .summary .subject > strong {
-    /* 작가 이름 */
+    /* 컬렉터 스토리 제목, 작가 이름 */
     font-size: var(--gallery-title-font-size);
     color: var(--gallery-title-color);
     font-weight: var(--gallery-title-font-weight);
@@ -401,12 +421,12 @@ ul.artist-post__list .summary > span {
   .xans-board-listpackage-8 .boardList {
     margin: 0;
     padding: 0 0 60px;
-    border-bottom: 1px solid #e5e5e5;
+    border-bottom: 1px solid var(--pallet-color-1);
   }
   .xans-board-listpackage-8 .boardSort {
     display: block;
     margin: 0;
-    border-bottom: 1px solid #e5e5e5;
+    border-bottom: 1px solid var(--pallet-color-1);
     padding: 0 0 20px;
   }
   .xans-board-listpackage-8 .boardSort .xans-board-category-8 {
@@ -508,6 +528,7 @@ ul.artist-post__list .summary > span {
 }
 @media (max-width: 1024px) {
   .xans-board-listpackage-8 .xans-board-list-8 li,
+  .boardList > .xans-board-8 > ul.collector-story__list > li,
   .boardList > .xans-board-8 > ul.artist-post__list > li {
     width: 50%;
   }
@@ -541,6 +562,7 @@ ul.artist-post__list .summary > span {
     margin: 0 auto;
   }
   .xans-board-listpackage-8 .xans-board-list-8 ul.horizontal-board-layout li a .summary .subject strong,
+  ul.collector-story__list .summary .subject > strong,
   ul.artist-post__list .summary .subject > strong {
     /* 전시 이름, 작가 이름 */
     font-size: var(--gallery-title-font-size-clamp);
@@ -548,12 +570,14 @@ ul.artist-post__list .summary > span {
   .xans-board-listpackage-8 .xans-board-list-8 ul.horizontal-board-layout li a .summary .subject span:nth-of-type(1),
   .xans-board-listpackage-8 .xans-board-list-8 ul.horizontal-board-layout li a .summary .subject span:nth-of-type(2),
   .xans-board-listpackage-8 .xans-board-list-8 ul.horizontal-board-layout li a .summary .subject span:nth-of-type(3),
+  ul.collector-story__list .summary .subject > span,
   ul.artist-post__list .summary .subject > span {
     /* 작가 이름 영문 표기 */
     font-size: var(--gallery-span-font-size-clamp);
   }
 }
 @media (max-width: 680px) {
+  .boardList > .xans-board-8 > ul.collector-story__list > li,
   .boardList > .xans-board-8 > ul.artist-post__list > li {
     width: 100%;
   }

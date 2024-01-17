@@ -7,19 +7,19 @@
 .ec-base-product .title h2 {
   font-weight: normal;
   font-size: 30px;
-  color: #2e2e2e;
+  color: var(--grayScale-N2);
   text-align: center;
 }
 .ec-base-product .title h3 {
   font-weight: normal;
-  color: #2e2e2e;
+  color: var(--grayScale-N2);
   text-align: center;
 }
 .ec-base-product img {
   vertical-align: middle;
 }
 .ec-base-product a[href^='/product/detail.html'] > img {
-  border: 1px solid #ececec;
+  border: 1px solid var(--grayScale-N5);
 }
 
 .ec-base-product:not(.xans-product-listmain) .prdList {
@@ -35,7 +35,7 @@
 .ec-base-product .prdList:not(.grid3_slide, .grid4) > li {
   display: inline-block;
   margin: 0 0 18px;
-  color: #757575;
+  color: var(--grayScale-N3);
   vertical-align: top;
 }
 .ec-base-product .prdList .chk {
@@ -195,8 +195,8 @@
   display: block;
   position: relative;
   font-size: 14px;
-  font-weight: 500;
-  color: #fff;
+  font-weight: var(--font-weight-Medium);
+  color: var(--grayScale-W);
   background-color: transparent;
   box-sizing: border-box;
   cursor: pointer;
@@ -666,7 +666,7 @@ svg .main-circ {
   /* 상품 진열 리스트 */
   width: 24%;
   box-sizing: border-box;
-  /* border: 1px solid #000; */
+  /* border: 1px solid var(--grayScale-N1); */
 }
 .ec-base-product ul.grid5 > li {
   width: 20%;
@@ -721,7 +721,7 @@ svg .main-circ {
   font-size: 16px;
 }
 .ec-base-product .spec .summary {
-  color: #6d6d6d;
+  color: var(--grayScale-N4);
   font-size: 12px;
 }
 .ec-base-product .spec .color {
@@ -735,7 +735,7 @@ svg .main-circ {
   width: 10px;
   height: 10px;
   margin: 0 2px 2px 0;
-  border: 1px solid #e3e3e3;
+  border: 1px solid var(--grayScale-N4);
   font-size: 0;
   line-height: 0;
 }
@@ -752,20 +752,20 @@ svg .main-circ {
   display: block;
   margin: 0 0 12px;
   padding: 0 35px 0 0;
-  font-weight: bold;
-  color: #2e2e2e;
+  font-weight: var(--font-weight-Bold);
+  color: var(--grayScale-N2);
 }
 .ec-base-product .layerDiscountPeriod .content p {
   margin: 2px 0 0;
   font-size: 11px;
   line-height: 16px;
-  color: #757575;
+  color: var(--grayScale-N3);
   letter-spacing: -1px;
 }
 .ec-base-product .layerDiscountPeriod .content p strong {
   font-weight: normal;
   font-size: 12px;
-  color: #2e2e2e;
+  color: var(--grayScale-N2);
 }
 .ec-base-product .layerDiscountPeriod .content p strong span {
   font-size: 11px;
@@ -802,7 +802,7 @@ svg .main-circ {
   position: absolute;
   z-index: 100;
   border: 1px solid var(--grayScale-N1);
-  background: #fff;
+  background: var(--grayScale-W);
 }
 .differentialShipping h3.title {
   height: 60px;
@@ -811,13 +811,13 @@ svg .main-circ {
   font-size: 16px;
   color: var(--grayScale-N1);
   box-sizing: border-box;
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid var(--pallet-color-1);
 }
 .differentialShipping .content {
   padding: 12px 18px 14px 18px;
   border-top: 0;
   text-align: center;
-  background: #fff;
+  background: var(--grayScale-W);
 }
 .differentialShipping .close {
   position: absolute;
@@ -857,7 +857,7 @@ svg .main-circ {
   display: none;
 }
 .differentialShipping .content ul {
-  color: #757575;
+  color: var(--grayScale-N3);
   line-height: 25px;
 }
 .differentialShipping .content li {
@@ -869,7 +869,7 @@ svg .main-circ {
 }
 .differentialShipping .content li span {
   float: right;
-  color: #2e2e2e;
+  color: var(--grayScale-N2);
 }
 .differentialShipping .content .info {
   margin: 7px 0 0;

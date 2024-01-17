@@ -3,7 +3,7 @@
 }
 
 .xans-board-write-9 .file td {
-  color: #7d7d7d;
+  color: var(--grayScale-N3);
 }
 .xans-board-write-9 .file label {
   color: var(--grayScale-N1);
@@ -14,7 +14,7 @@
 
 ul.info {
   margin: 20px 0 0;
-  color: #707070;
+  color: var(--grayScale-N3);
   line-height: 1.5;
 }
 ul.info li + li {

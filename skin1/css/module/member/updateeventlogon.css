@@ -30,6 +30,6 @@
 @media all and (min-width: 1025px) {
   .xans-member-updateeventlogon {
     padding: 30px;
-    background-color: #f6f6f6;
+    background-color: var(--pallet-color-5);
   }
 }

@@ -7,7 +7,7 @@
   max-height: 600px;
 }
 .xans-member-join .joinConfirm .content p {
-  color: #353535;
+  color: var(--grayScale-N2);
 }
 .xans-member-join .joinConfirm .content p strong {
   color: var(--grayScale-N1);

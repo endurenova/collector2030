@@ -29,7 +29,7 @@
   font-style: normal;
 }
 .xans-board-modify .file td {
-  color: #7d7d7d;
+  color: var(--grayScale-N3);
 }
 .xans-board-modify .file label {
   color: var(--grayScale-N1);

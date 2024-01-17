@@ -7,7 +7,7 @@
   margin-left: 4px;
 }
 .xans-board-reply .file td {
-  color: #7d7d7d;
+  color: var(--grayScale-N3);
 }
 .xans-board-reply .file label {
   color: var(--grayScale-N1);
@@ -73,7 +73,7 @@
     padding: 0;
   }
   .reply_all .ec-base-table.typeWrite .reply_all_th {
-    background-color: #f6f6f6;
+    background-color: var(--pallet-color-5);
     padding: 12px 15px;
   }
   .reply_all .ec-base-table.typeWrite .reply_all_td {
@@ -87,12 +87,12 @@
     padding: 0;
   }
   .xans-board-commentpackage .ec-base-table.typeWrite th {
-    background-color: #f6f6f6;
+    background-color: var(--pallet-color-5);
     padding: 12px 15px;
   }
   .xans-board-commentpackage .ec-base-table.typeWrite td {
     padding: 10px 0px 10px 15px;
-    border-bottom: 1px solid #e5e5e5;
+    border-bottom: 1px solid var(--pallet-color-1);
   }
   .xans-board-commentpackage .ec-base-table.typeWrite td span.txtInfo {
     width: auto;

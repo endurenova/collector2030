@@ -544,20 +544,20 @@ function ifmore() {
       }
     });
   }, 200);
-  setTimeout(function () {
-    jQuery('.ec-base-product .prdList .icon__box .cart').each(function () {
-      if (jQuery(this).find('img').hasClass('ec-admin-icon')) {
-        jQuery(this).closest('li').find('.cart-icon').addClass('checked'); // 카트아이콘
-      }
-    });
-    jQuery('.ec-base-product .prdList .icon__box .cart').click(function () {
-      if (jQuery(this).find('img').hasClass('ec-admin-icon')) {
-        jQuery(this).closest('li').find('.cart-icon').addClass('checked'); // 카트아이콘
-      } else {
-        jQuery(this).closest('li').find('.cart-icon').removeClass('checked'); // 카트아이콘
-      }
-    });
-  }, 200);
+  // setTimeout(function () {
+  //   jQuery('.ec-base-product .prdList .icon__box .cart').each(function () {
+  //     if (jQuery(this).find('img').hasClass('ec-admin-icon')) {
+  //       jQuery(this).closest('li').find('.cart-icon').addClass('checked'); // 카트아이콘
+  //     }
+  //   });
+  //   jQuery('.ec-base-product .prdList .icon__box .cart').click(function () {
+  //     if (jQuery(this).find('img').hasClass('ec-admin-icon')) {
+  //       jQuery(this).closest('li').find('.cart-icon').addClass('checked'); // 카트아이콘
+  //     } else {
+  //       jQuery(this).closest('li').find('.cart-icon').removeClass('checked'); // 카트아이콘
+  //     }
+  //   });
+  // }, 200);
 
   jQuery('.ec-base-product .prdList > li').each(function () {
     /* 상품진열 장바구니 사용안할시 숨김 */

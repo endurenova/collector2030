@@ -11,7 +11,7 @@
   border-radius: 2px;
   letter-spacing: normal;
   box-sizing: border-box;
-  background-color: #fff;
+  background-color: var(--grayScale-W);
   -webkit-box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.15);
   -moz-box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.15);
   box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.15);
@@ -22,10 +22,10 @@
   font-size: 15px;
   color: var(--grayScale-N1);
   line-height: 43px;
-  background: #fff;
+  background: var(--grayScale-W);
 }
 .ec-base-tooltip ul {
-  color: #757575;
+  color: var(--grayScale-N3);
 }
 .ec-base-tooltip ul li {
   font-size: 13px;
@@ -60,13 +60,13 @@
   margin: 0 5px 0 0;
   width: 3px;
   height: 3px;
-  background: #666;
+  background: var(--grayScale-N3);
   vertical-align: middle;
 }
 .ec-base-tooltip table th,
 .ec-base-tooltip table td {
   padding: 8px 10px 7px 10px;
-  border: 1px solid #e8e8e8;
+  border: 1px solid var(--pallet-color-5);
   line-height: 1.5em;
 }
 .ec-base-tooltip table th {
@@ -90,7 +90,7 @@
 }
 .ec-base-tooltip table .info {
   padding: 0;
-  color: #757575;
+  color: var(--grayScale-N3);
 }
 .ec-base-tooltip table p.info:before,
 .ec-base-tooltip table ul.info li:before {
@@ -99,7 +99,7 @@
   margin: 0 3px 0 0;
   width: 4px;
   height: 1px;
-  background: #757575;
+  background: var(--grayScale-N3);
   vertical-align: middle;
 }
 .ec-base-tooltip .info {
@@ -118,7 +118,7 @@
   width: 0;
   height: 0;
   border: solid transparent;
-  border-left-color: #333;
+  border-left-color: var(--grayScale-N2);
   border-width: 2px 0 2px 2px;
   vertical-align: middle;
 }
@@ -197,7 +197,7 @@
 .ec-base-tooltip .edge:after {
   left: 1px;
   margin: 2px 0 0;
-  border-bottom-color: #fff;
+  border-bottom-color: var(--grayScale-W);
   border-width: 0 4px 4px 4px;
 }
 /* typeUpper */
@@ -237,7 +237,7 @@
   height: 0;
   margin: -3px 0 0;
   border-left: 5px solid transparent;
-  border-top: 5px solid #fff;
+  border-top: 5px solid var(--grayScale-W);
   border-right: 5px solid transparent;
 }
 .ec-base-tooltip.typeUpper .edge {
@@ -252,7 +252,7 @@
 .ec-base-tooltip.typeUpper .edge:after {
   left: 1px;
   margin: 0 0 -4px;
-  border-top-color: #fff;
+  border-top-color: var(--grayScale-W);
   border-width: 4px 4px 0 4px;
 }
 
@@ -279,7 +279,7 @@
   margin: 0 5px 0 0;
   width: 3px;
   height: 3px;
-  background: #666;
+  background: var(--grayScale-N3);
   vertical-align: middle;
 }
 .shippingFee .wrap table + h4 {
@@ -290,12 +290,12 @@
   font-size: 13px;
 }
 .shippingFee .wrap table {
-  background: #fff;
+  background: var(--grayScale-W);
 }
 .shippingFee .wrap th,
 .shippingFee .wrap td {
   padding: 7px;
-  border: 1px solid #d5d5d5;
+  border: 1px solid #var(--grayScale-N4);
 }
 .shippingFee .wrap th {
   width: 80px;
@@ -306,7 +306,7 @@
 }
 .shippingFee .wrap .info {
   margin: 0;
-  color: #7d7d7d;
+  color: var(--grayScale-N3);
 }
 
 /********************* Mobile / Tablet *********************/
@@ -339,7 +339,7 @@
     letter-spacing: 0;
     text-align: center;
     white-space: nowrap;
-    color: #fff;
+    color: var(--grayScale-W);
     background-color: var(--grayScale-N1);
   }
 }

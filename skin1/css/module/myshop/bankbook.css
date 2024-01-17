@@ -18,7 +18,7 @@
   position: absolute;
   right: 0;
   width: 1px;
-  background: #e5e5e5;
+  background: var(--pallet-color-1);
   vertical-align: middle;
 }
 .xans-myshop-asyncbankbook .thumb {
@@ -27,15 +27,15 @@
 .xans-myshop-asyncbankbook .title {
   display: block;
   font-weight: normal;
-  color: #6d6d6d;
+  color: var(--grayScale-N4);
   box-sizing: border-box;
 }
 
 /********************* Mobile / Tablet *********************/
 @media all and (max-width: 1024px) {
   .xans-myshop-asyncbankbook {
-    border-top: 1px solid #e5e5e5;
-    border-bottom: 1px solid #e5e5e5;
+    border-top: 1px solid var(--pallet-color-1);
+    border-bottom: 1px solid var(--pallet-color-1);
   }
   .xans-myshop-asyncbankbook li {
     width: 33%;
@@ -44,7 +44,7 @@
   .xans-myshop-asyncbankbook .xans-myshop-asyncbenefit {
     flex: auto;
     width: 100%;
-    border-bottom: 1px solid #e5e5e5;
+    border-bottom: 1px solid var(--pallet-color-1);
   }
   .xans-myshop-asyncbankbook .xans-myshop-asyncbenefit .group {
     display: none;
@@ -67,13 +67,13 @@
   }
   .xans-myshop-asyncbankbook .user__info {
     font-size: 15px;
-    font-weight: bold;
+    font-weight: var(--font-weight-Bold);
   }
   .xans-myshop-asyncbankbook .user__data {
     display: block;
     margin: 8px 0 0;
     font-size: 14px;
-    color: #6d6d6d;
+    color: var(--grayScale-N4);
     font-weight: normal;
   }
   .xans-myshop-asyncbankbook .thumb {
@@ -85,7 +85,7 @@
     display: block;
     font-size: 14px;
     line-height: 1;
-    font-weight: bold;
+    font-weight: var(--font-weight-Bold);
   }
   .xans-myshop-asyncbankbook .title {
     margin: 7px 0 0;
@@ -97,7 +97,7 @@
 @media all and (min-width: 1025px) {
   .xans-myshop-asyncbankbook {
     border-top: 1px solid var(--grayScale-N1);
-    border-bottom: 1px solid #e5e5e5;
+    border-bottom: 1px solid var(--pallet-color-1);
   }
   .xans-myshop-asyncbankbook li {
     flex: 1;
@@ -119,7 +119,7 @@
   .xans-myshop-asyncbankbook .data {
     font-size: 15px;
     line-height: 30px;
-    font-weight: bold;
+    font-weight: var(--font-weight-Bold);
   }
   .xans-myshop-asyncbankbook .title {
     margin: 2px 0 0;

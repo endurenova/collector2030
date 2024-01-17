@@ -14,8 +14,8 @@ body { background:none; !important;}
 #product_detail_option_layer .boardWrite td select { width:100%; }
 #product_detail_option_layer .boardWrite input[type="text"],
 #product_detail_option_layer .boardWrite input[type="password"] { margin-bottom:2px; }
-#product_detail_option_layer .boardWrite .name { margin:0; padding:14px; color:#2e2e2e; font-weight:bold; font-size:13px; line-height:1.25em; }
-#product_detail_option_layer .boardWrite #ul_file_option li { margin:4px 0 0; color:#757575; font-size:11px; }
+#product_detail_option_layer .boardWrite .name { margin:0; padding:14px; color:var(--grayScale-N2); font-weight:bold; font-size:13px; line-height:1.25em; }
+#product_detail_option_layer .boardWrite #ul_file_option li { margin:4px 0 0; color:var(--grayScale-N3); font-size:11px; }
 #product_detail_option_layer .boardWrite #ul_file_option .btnDelete { overflow:hidden; display:inline-block; text-indent:-999px; width:21px; height:20px; border:0; cursor:pointer; background:url("//img.echosting.cafe24.com/skin/mobile/product/btn_delete.png") no-repeat 0 0; background-size:100% 100%; }
 
 /* Set */
@@ -35,7 +35,7 @@ body { background:none; !important;}
 #product_detail_option_layer .productSet .product .byte strong { color:#1b87d4; }
 #product_detail_option_layer .productSet .product .option th,
 #product_detail_option_layer .productSet .product .option td { height:auto; font-size:12px; line-height:1.25; }
-#product_detail_option_layer .productSet .product .option th { padding:7px 7px 7px 0; font-weight:normal; text-align:left; color:#757575; }
+#product_detail_option_layer .productSet .product .option th { padding:7px 7px 7px 0; font-weight:normal; text-align:left; color:var(--grayScale-N3); }
 #product_detail_option_layer .productSet .product .option td { padding:0; }
 #product_detail_option_layer .productSet .product .option td select { width:100%; }
 #product_detail_option_layer .productSet .product .option td .fText { width:45%; padding:3px; }
@@ -48,7 +48,7 @@ body { background:none; !important;}
 #product_detail_option_layer .productSet .quantity.set { padding:14px 14px; border-top:1px solid #ccc; background:#fff; }
 #product_detail_option_layer .productSet .quantity.set dt,
 #product_detail_option_layer .productSet .quantity.set dd { display:inline-block; vertical-align:middle; }
-#product_detail_option_layer .productSet .quantity.set dt { width:75px; font-size:13px; color:#757575; }
+#product_detail_option_layer .productSet .quantity.set dt { width:75px; font-size:13px; color:var(--grayScale-N3); }
 #product_detail_option_layer .productSet td img { width:26px; vertical-align:middle; cursor:pointer; }
 #product_detail_option_layer .productSet .selectButton { margin:14px 0 0; width:100%; text-align:right; }
 

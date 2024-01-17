@@ -22,6 +22,7 @@
   --grayScale-N3: #999999;
   --grayScale-N4: #cccccc;
   --grayScale-N5: #f3f3f3;
+  --grayScale-W: #ffffff;
 
   --font-weight-Thin: 100;
   --font-weight-ExtraLight: 200;
@@ -44,7 +45,7 @@
 
   --gallery-title-font-size: 18px;
   --gallery-title-font-weight: var(--font-weight-SemiBold);
-  --gallery-title-color: var(--grayScale-N1);
+  --gallery-title-color: var(--grayScale-N2);
   --gallery-span-font-size: 16px;
   --gallery-span-font-weight: var(--font-weight-Regular);
   --gallery-span-color: var(--main-color);
@@ -84,7 +85,7 @@
 @font-face {
   font-family: 'Pretendard-Regular';
   src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
-  font-weight: 400;
+  font-weight: var(--font-weight-Regular);
   font-style: normal;
 }
 

@@ -4,7 +4,7 @@
 }
 .xans-gift-list .giftInfo {
   padding: 10px;
-  font-weight: bold;
+  font-weight: var(--font-weight-Bold);
 }
 .xans-gift-list .giftInfo:before {
   display: inline-block;
@@ -18,7 +18,7 @@
 .xans-gift-list .xans-gift-second {
   margin-top: 40px;
   padding-top: 40px;
-  border-top: 1px solid #868686;
+  border-top: 1px solid var(--grayScale-N4);
 }
 .xans-gift-list .xans-gift-second:first-child {
   border-top: 0;
@@ -57,7 +57,7 @@
 }
 .xans-gift-list .xans-gift-third span {
   margin: 5px 0 0;
-  color: #2e2e2e;
+  color: var(--grayScale-N2);
 }
 .xans-gift-list .xans-gift-third .point {
   color: var(--grayScale-N1);

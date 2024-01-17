@@ -6,7 +6,7 @@ a.xans-search-form {
 .xans-search-form .searchbox {
   margin: 21px 0 20px;
   padding: 45px 0;
-  background: #fff;
+  background: var(--grayScale-W);
 }
 .xans-search-form .searchbox fieldset {
   width: 486px;
@@ -15,7 +15,7 @@ a.xans-search-form {
 }
 .xans-search-form .searchbox .item {
   margin: 8px 0 0;
-  color: #353535;
+  color: var(--grayScale-N2);
   line-height: 20px;
 }
 .xans-search-form .searchbox .item:after {
@@ -48,12 +48,12 @@ a.xans-search-form {
   float: left;
   min-width: 55px;
   padding: 0 10px 0 0;
-  color: #6b6b6b;
+  color: var(--grayScale-N1-opa);
 }
 .xans-search-form .searchbox .popular p a {
   margin: 0 3px 0 0;
   padding: 0 0 0 8px;
-  color: #757575;
+  color: var(--grayScale-N3);
   background: url('//img.echosting.cafe24.com/skin/base/product/bg_popular_search.gif') no-repeat 0 3px;
 }
 .xans-search-form .searchbox .popular p a:first-child {
@@ -114,7 +114,7 @@ a.xans-search-form {
 /* searchResult */
 .xans-search-form .searchResult {
   overflow: hidden;
-  border: 1px solid #d7d5d5;
+  border: 1px solid var(--pallet-color-5);
   text-align: right;
   line-height: 38px;
 }
@@ -130,7 +130,7 @@ a.xans-search-form {
 .xans-search-form .searchResult .listType li {
   display: inline;
   padding: 0 6px 0 10px;
-  color: #2e2e2e;
+  color: var(--grayScale-N2);
   cursor: pointer;
   background: url('//img.echosting.cafe24.com/skin/base/product/bg_result_type.gif') no-repeat 0 50%;
 }

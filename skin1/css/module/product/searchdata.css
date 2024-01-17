@@ -28,7 +28,7 @@
   width: 100%;
   border: 1px solid #565960;
   text-align: left;
-  background: #fff;
+  background: var(--grayScale-W);
 }
 .xans-product-searchdata .searchField fieldset .autoDrop li a {
   display: block;
@@ -39,14 +39,14 @@
 .xans-product-searchdata .searchField fieldset .autoDrop li a:hover,
 .xans-product-searchdata .searchField fieldset .autoDrop li.selected a {
   text-decoration: none;
-  color: #fff;
+  color: var(--grayScale-W);
   background: #a1a4ae;
 }
 .xans-product-searchdata .searchField fieldset .btnSearchOption {
   margin: 0 0 0 7px;
   padding: 3px 14px 3px 0;
   vertical-align: middle;
-  color: #2e2e2e;
+  color: var(--grayScale-N2);
   font-size: 12px;
   letter-spacing: -1px;
   outline: 0;
@@ -58,7 +58,7 @@
   height: 54px;
   outline: 0;
   font-size: 18px;
-  background: #fff;
+  background: var(--grayScale-W);
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -81,7 +81,7 @@
   padding: 6px 10px;
   word-break: break-all;
   word-wrap: break-word;
-  color: #545454;
+  color: var(--grayScale-N1-opa);
   background: #f4f4f4;
 }
 .xans-product-searchdata .searchField .btnDelete {
@@ -100,7 +100,7 @@
 .xans-product-searchdata .xans-product-searchconditiondata {
   position: relative;
   padding: 2px 8px 9px 127px;
-  border: 1px solid #d7d5d5;
+  border: 1px solid var(--pallet-color-5);
   font-size: 0;
   line-height: 0;
 }
@@ -123,7 +123,7 @@
   color: #508bed;
   word-break: break-all;
   word-wrap: break-word;
-  background: #fff;
+  background: var(--grayScale-W);
   box-sizing: unset;
   -moz-box-sizing: unset;
   -webkit-box-sizing: unset;
@@ -159,7 +159,7 @@
   text-align: left;
   outline: 0;
   line-height: 20px;
-  color: #525252;
+  color: var(--grayScale-N1-opa);
   background: url('//img.echosting.cafe24.com/skin/base/product/btn_refresh.gif') no-repeat 0 0;
 }
 .xans-product-searchdata .xans-product-searchconditiondata .btnRefresh:after {
@@ -187,7 +187,7 @@
   display: inline-block;
   padding: 3px 5px;
   border: 1px solid #cbcbcb;
-  color: #525252;
+  color: var(--grayScale-N1-opa);
   font-size: 11px;
   font-weight: normal;
   border-radius: 10px;
@@ -210,7 +210,7 @@
   word-break: break-all;
   word-wrap: break-word;
   text-decoration: underline;
-  color: #525252;
+  color: var(--grayScale-N1-opa);
   font-size: 11px;
   line-height: 14px;
 }
@@ -218,13 +218,13 @@
 .xans-product-searchdata .searchResult {
   padding: 40px 0 0;
   overflow: hidden;
-  border-top: 1px solid #e0e0e0;
+  border-top: 1px solid var(--pallet-color-5);
   text-align: right;
   line-height: 38px;
 }
 .xans-product-searchdata .searchResult .record {
   float: left;
-  color: #7d7d7d;
+  color: var(--grayScale-N3);
 }
 .xans-product-searchdata .searchResult .record strong {
   display: inline-block;
@@ -251,7 +251,7 @@
 .xans-product-searchdata .searchResult .xans-product-searchorderby li {
   display: inline;
   padding: 0 6px 0 10px;
-  color: #2e2e2e;
+  color: var(--grayScale-N2);
   cursor: pointer;
   background: url('//img.echosting.cafe24.com/skin/base/product/bg_result_type.gif') no-repeat 0 50%;
 }
@@ -281,7 +281,7 @@
 }
 .xans-product-searchdata .noData .subDesc {
   font-size: 12px;
-  color: #7d7d7d;
+  color: var(--grayScale-N3);
   line-height: 22px;
 }
 .xans-product-searchdata .noData > strong {
@@ -310,7 +310,7 @@
 .searchOption .boardWrite {
   position: relative;
   margin: 10px 0 0;
-  color: #353535;
+  color: var(--grayScale-N2);
   line-height: 1.4;
 }
 .searchOption .boardWrite:first-child {
@@ -381,7 +381,7 @@
     margin: 0 10px 0 0;
     color: var(--grayScale-N1);
     font-size: 14px;
-    font-weight: bold;
+    font-weight: var(--font-weight-Bold);
   }
   .xans-product-searchdata .searchField .keywordArea .list li a {
     font-size: 14px;
@@ -397,14 +397,14 @@
   width: 230px;
   bottom: 0;
   border-right: 1px solid #c6cbd6;
-  color: #2e2e2e;
+  color: var(--grayScale-N2);
   background: #f3f3f3;
 }
 #searchSticky.searchData {
   z-index: 100;
   width: 180px;
   margin: -15px 0 0;
-  background: #fff;
+  background: var(--grayScale-W);
 }
 #searchSticky.sticky {
   position: fixed;
@@ -420,7 +420,7 @@
   padding: 0 7px 0 9px;
   width: 27px;
   outline: 0;
-  color: #e5e5e5;
+  color: var(--pallet-color-1);
   font-size: 12px;
   background: url('//img.echosting.cafe24.com/skin/base/product/btn_search_sidebar.png') no-repeat 0 0;
 }
@@ -491,7 +491,7 @@
   text-align: center;
   font-family: arial, sans-serif;
   font-size: 18px;
-  color: #131313;
+  color: var(--grayScale-N1);
 }
 #searchSticky.searchData .searchArea > .title {
   border-bottom: 1px solid #565960;
@@ -504,7 +504,7 @@
   margin: 0 0 30px 0;
 }
 .searchData .xans-product-searchfilterlist {
-  border-bottom: 1px solid #d5d5d5;
+  border-bottom: 1px solid #var(--grayScale-N4);
 }
 .searchData .xans-product-searchfilterlist .title {
   position: relative;
@@ -545,7 +545,7 @@
   overflow-y: auto;
   max-height: 100px;
   border: 1px solid #dfdfdf;
-  background: #fff;
+  background: var(--grayScale-W);
 }
 #searchSticky.searchData .xans-product-searchfilterlist .check .xans-product-filterform {
   overflow: hidden;
@@ -555,14 +555,14 @@
 #searchSidebar.searchData .xans-product-searchfilterlist .check li {
   margin: 0 10px 7px 27px;
   line-height: 14px;
-  color: #525252;
+  color: var(--grayScale-N1-opa);
   word-break: break-all;
   word-wrap: break-word;
 }
 #searchSticky.searchData .xans-product-searchfilterlist .check li {
   margin: 0 10px 9px 27px;
   line-height: 14px;
-  color: #525252;
+  color: var(--grayScale-N1-opa);
   word-break: break-all;
   word-wrap: break-word;
 }
@@ -573,7 +573,7 @@
   padding-top: 7px;
 }
 .searchData .xans-product-searchfilterlist .check li.disabled {
-  color: #d7d7d8;
+  color: #var(--grayScale-N4);
 }
 .searchData .xans-product-searchfilterlist .check li label {
   cursor: pointer;
@@ -619,18 +619,18 @@
   outline: 0;
   font-size: 12px;
   line-height: 16px;
-  color: #525252;
+  color: var(--grayScale-N1-opa);
   word-break: break-all;
   word-wrap: break-word;
-  background: #fff;
+  background: var(--grayScale-W);
 }
 .searchData .xans-product-searchfilterlist .button li:hover button {
   border-color: #508bed;
   color: #508bed;
 }
 .searchData .xans-product-searchfilterlist .button li.disabled button {
-  border-color: #d7d7d8;
-  color: #d7d7d8;
+  border-color: #var(--grayScale-N4);
+  color: #var(--grayScale-N4);
   cursor: default;
 }
 .searchData .xans-product-searchfilterlist .button li.selected button {
@@ -657,7 +657,7 @@
 .searchData .xans-product-searchfilterlist .button.full li.disabled button {
   position: relative;
   margin-top: -1px;
-  border-top: 1px solid #d7d7d8;
+  border-top: 1px solid #var(--grayScale-N4);
 }
 .searchData .xans-product-searchfilterlist .button.full li.selected button {
   position: relative;
@@ -841,9 +841,9 @@
 #searchContent th {
   padding: 13px 18px;
   border-top: 1px solid #dfdfdf;
-  border-right: 1px solid #d7d5d5;
+  border-right: 1px solid var(--pallet-color-5);
   font-size: 12px;
-  color: #2e2e2e;
+  color: var(--grayScale-N2);
   text-align: left;
   text-transform: uppercase;
   vertical-align: top;
@@ -873,10 +873,10 @@
   line-height: 0;
   color: transparent;
   text-indent: -150%;
-  background: #fff url('//img.echosting.cafe24.com/skin/base/product/btn_search_extend.png') no-repeat 50%;
+  background: var(--grayScale-W) url('//img.echosting.cafe24.com/skin/base/product/btn_search_extend.png') no-repeat 50%;
 }
 #searchContent tr.selected .btnExtend {
-  background: #fff url('//img.echosting.cafe24.com/skin/base/product/btn_search_fold.png') no-repeat 50%;
+  background: var(--grayScale-W) url('//img.echosting.cafe24.com/skin/base/product/btn_search_fold.png') no-repeat 50%;
 }
 #searchContent tr .cell {
   position: relative;
@@ -930,12 +930,12 @@
   height: 23px;
   padding: 0 7px;
   line-height: 24px;
-  color: #525252;
+  color: var(--grayScale-N1-opa);
   cursor: pointer;
   vertical-align: top;
 }
 #searchContent tr .check li.disabled label {
-  color: #d7d7d8;
+  color: #var(--grayScale-N4);
   cursor: default;
 }
 
@@ -1011,18 +1011,18 @@
   height: 23px;
   padding: 0 7px;
   line-height: 24px;
-  color: #525252;
+  color: var(--grayScale-N1-opa);
   cursor: pointer;
   vertical-align: top;
   background: transparent;
 }
 #searchContent tr .button li.selected button {
   border-radius: 23px;
-  color: #fff;
+  color: var(--grayScale-W);
   background: #508bed;
 }
 #searchContent tr .button li.disabled button {
-  color: #d7d7d8;
+  color: #var(--grayScale-N4);
   cursor: default;
   outline: 0;
 }
@@ -1042,7 +1042,7 @@
   outline: 0;
   font-size: 12px;
   line-height: 23px;
-  color: #525252;
+  color: var(--grayScale-N1-opa);
   word-break: break-all;
   word-wrap: break-word;
   letter-spacing: -0.06em;
@@ -1053,8 +1053,8 @@
   color: #508bed;
 }
 #searchContent tr .button.full li.disabled button {
-  border-color: #d7d7d8;
-  color: #d7d7d8;
+  border-color: #var(--grayScale-N4);
+  color: #var(--grayScale-N4);
   cursor: default;
 }
 #searchContent tr .button.full li.selected button {
@@ -1096,7 +1096,7 @@
   border: 1px solid #b4b4b4;
   border-radius: 2px;
   line-height: 24px;
-  color: #2e2e2e;
+  color: var(--grayScale-N2);
   text-align: center;
   vertical-align: top;
 }
@@ -1175,7 +1175,7 @@
   padding: 0 44px 0 8px;
   box-sizing: border-box;
   border-radius: 2px;
-  border: 1px solid #d8d8d8;
+  border: 1px solid var(--grayScale-N4);
 }
 .searchData .btnResearch {
   overflow: hidden;
@@ -1184,7 +1184,7 @@
   top: 1px;
   width: 34px;
   height: 32px;
-  border-left: 1px solid #d8d8d8;
+  border-left: 1px solid var(--grayScale-N4);
   font-size: 1px;
   line-height: 0;
   color: transparent;
@@ -1197,15 +1197,15 @@
   top: 33px;
   z-index: 10;
   width: 100%;
-  border: 1px solid #d8d8d8;
+  border: 1px solid var(--grayScale-N4);
   box-sizing: border-box;
-  background: #fff;
+  background: var(--grayScale-W);
 }
 .searchData .suggest li {
   overflow: hidden;
   height: 28px;
   padding: 0 8px;
-  color: #525252;
+  color: var(--grayScale-N1-opa);
   line-height: 30px;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -1243,9 +1243,9 @@
   border: 1px solid #b4b4b4;
   border-radius: 2px;
   line-height: 24px;
-  color: #2e2e2e;
+  color: var(--grayScale-N2);
   vertical-align: top;
-  background: #fff;
+  background: var(--grayScale-W);
 }
 #searchContent .suggest ul {
   display: none;
@@ -1255,13 +1255,13 @@
   width: 257px;
   border: 1px solid #d9d9d9;
   box-sizing: border-box;
-  background: #fff;
+  background: var(--grayScale-W);
 }
 #searchContent .suggest li {
   overflow: hidden;
   height: 28px;
   padding: 0 8px;
-  color: #525252;
+  color: var(--grayScale-N1-opa);
   line-height: 30px;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -1276,11 +1276,11 @@
 /* 쇼핑큐레이션 220303 */
 #searchContent .searchArea {
   border: 0;
-  border-top: 1px solid #111;
+  border-top: 1px solid var(--grayScale-N1);
   border-bottom: 1px solid #eee;
 }
 #searchContent .searchArea th {
-  background-color: #fff;
+  background-color: var(--grayScale-W);
   border-right: 0;
   vertical-align: middle;
 }

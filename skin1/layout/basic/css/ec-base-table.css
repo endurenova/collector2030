@@ -51,11 +51,11 @@
   vertical-align: middle;
 }
 .ec-base-table th {
-  border-bottom: 1px solid #e5e5e5;
-  background-color: #f6f6f6;
+  border-bottom: 1px solid var(--pallet-color-1);
+  background-color: var(--pallet-color-5);
 }
 .ec-base-table td {
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid var(--pallet-color-1);
 }
 .ec-base-table th img.icon,
 .ec-base-table td img.icon {
@@ -79,9 +79,9 @@
 /* Table - Empty */
 .ec-base-table .message {
   padding: 56px 0;
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid var(--pallet-color-1);
   text-align: center;
-  color: #6d6d6d;
+  color: var(--grayScale-N4);
 }
 
 /* Table - typeWrite */
@@ -154,7 +154,7 @@
   height: 40px;
   font-size: 13px;
   box-sizing: border-box;
-  border: 1px solid #bcbcbc;
+  border: 1px solid var(--grayScale-N4);
   line-height: 1;
   font-weight: normal;
   text-decoration: none;
@@ -164,7 +164,7 @@
   text-align: center;
   white-space: nowrap;
   color: var(--grayScale-N1);
-  background-color: #fff;
+  background-color: var(--grayScale-W);
 }
 .ec-base-table.typeWrite .ec-address-area select {
   display: block;
@@ -273,7 +273,7 @@
     display: block;
     position: relative;
     padding: 20px 8px 19px;
-    border-bottom: 1px solid #e5e5e5;
+    border-bottom: 1px solid var(--pallet-color-1);
     text-align: left;
   }
   .ec-base-table.typeList tr:after {
@@ -291,7 +291,7 @@
     color: var(--grayScale-N2);
   }
   .ec-base-table.typeList td a {
-    color: #6d6d6d;
+    color: var(--grayScale-N4);
   }
   .ec-base-table.typeList td.chk {
     box-sizing: border-box;

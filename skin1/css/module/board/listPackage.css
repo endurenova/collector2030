@@ -24,7 +24,7 @@
   display: block;
   font-size: 14px;
   color: var(--grayScale-N2);
-  border-bottom: 1px solid #e0e0e0;
+  border-bottom: 1px solid var(--pallet-color-5);
   padding: 20px 15px;
 }
 .xans-board-listheader-8.ec-base-tab li a svg.icon {
@@ -218,7 +218,7 @@
   .xans-board-listpackage .ec-base-tab.typeMenu {
     margin: 0;
     padding: 0 2px;
-    border-bottom: 1px solid #e0e0e0;
+    border-bottom: 1px solid var(--pallet-color-5);
   }
   .xans-board-listpackage .ec-base-tab.typeMenu .button {
     margin: 0;

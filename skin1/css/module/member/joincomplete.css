@@ -3,7 +3,7 @@
   text-align: center;
 }
 .xans-member-joincomplete .joinComplete {
-  border: 1px solid #e5e5e5;
+  border: 1px solid var(--pallet-color-1);
   padding: 50px 24px;
 }
 .xans-member-joincomplete .joinComplete .desc {
@@ -13,8 +13,8 @@
 
 .xans-member-joincomplete .joinComplete .ec-base-box {
   border: 0;
-  border-top: 1px solid #e5e5e5;
-  border-bottom: 1px solid #e5e5e5;
+  border-top: 1px solid var(--pallet-color-1);
+  border-bottom: 1px solid var(--pallet-color-1);
   padding: 20px 0 20px;
 }
 .xans-member-joincomplete .joinComplete .ec-base-box .information {
@@ -42,7 +42,7 @@
 
 .xans-member-joincomplete .joinComplete .memberSpecial {
   line-height: 1.5;
-  color: #6d6d6d;
+  color: var(--grayScale-N4);
   padding: 20px 0;
 }
 .xans-member-joincomplete .joinComplete .memberSpecial ul {
@@ -56,7 +56,7 @@
   color: var(--grayScale-N1) 000;
 }
 .xans-member-joincomplete .joinComplete .memberSpecial strong.price {
-  color: #6d6d6d;
+  color: var(--grayScale-N4);
 }
 
 .xans-member-joincomplete .joinComplete .memberAge {
@@ -74,7 +74,7 @@
 }
 .xans-member-joincomplete .joinComplete .memberAge {
   margin-top: 20px;
-  color: #6d6d6d;
+  color: var(--grayScale-N4);
   line-height: 1.5;
 }
 .xans-member-joincomplete .joinComplete .memberAge strong {

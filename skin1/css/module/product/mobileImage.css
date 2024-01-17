@@ -32,7 +32,7 @@
     border: 0;
     border-radius: 13px;
     cursor: pointer;
-    background-color: #fff;
+    background-color: var(--grayScale-W);
     opacity: 0.5;
   }
   .ec-base-paginate.typeSwipe button.circle.selected {

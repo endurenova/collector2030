@@ -10,7 +10,7 @@
   font-style: normal;
 }
 .xans-product-listcompare .prdName {
-  color: #2e2e2e;
+  color: var(--grayScale-N2);
 }
 .xans-product-listcompare .optionName {
   display: block;
@@ -40,12 +40,12 @@
   height: 30px;
   line-height: 28px;
   margin-left: -1px;
-  border: 1px solid #e5e5e5;
+  border: 1px solid var(--pallet-color-1);
   text-align: center;
 }
 .xans-product-listcompare .quantity input:focus,
 .xans-product-listcompare .quantity input:hover {
-  border: 1px solid #e5e5e5;
+  border: 1px solid var(--pallet-color-1);
 }
 .xans-product-listcompare .quantity img {
   position: absolute;
@@ -69,7 +69,7 @@
 .xans-product-listcompare .quantity a {
   width: 30px;
   height: 30px;
-  border: 1px solid #e5e5e5;
+  border: 1px solid var(--pallet-color-1);
   box-sizing: border-box;
 }
 .xans-product-listcompare .quantity a:before {
@@ -94,7 +94,7 @@
 
 .xans-product-listcompare ul.item {
   margin: 3px 0 0;
-  color: #757575;
+  color: var(--grayScale-N3);
 }
 .xans-product-listcompare ul.item li {
   margin: 2px 0 0;

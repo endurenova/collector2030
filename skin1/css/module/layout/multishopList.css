@@ -6,7 +6,7 @@
   height: 0;
   padding: 11px 23px;
   border: 1px solid var(--grayScale-N1);
-  background: #fff;
+  background: var(--grayScale-W);
 }
 .xans-layout-multishoplist.list > ul li {
   position: relative;
@@ -48,7 +48,7 @@
     line-height: 38px;
     font-size: 16px;
     text-align: left;
-    background: #fff;
+    background: var(--grayScale-W);
     border-bottom: 1px solid var(--grayScale-N1);
   }
   .xans-layout-multishoplist.list .icon {
@@ -97,7 +97,7 @@
     line-height: 28px;
     font-size: 12px;
     text-align: left;
-    background: #fff;
+    background: var(--grayScale-W);
   }
   .xans-layout-multishoplist.list .icon {
     position: absolute;

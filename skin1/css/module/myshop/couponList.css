@@ -1,7 +1,7 @@
 /* 리스트 */
 .xans-myshop-couponlist .contents {
   display: none;
-  background-color: #f9f9f9;
+  background-color: var(--grayScale-N5);
 }
 .xans-myshop-couponlist tr.selected .contents {
   display: table-cell;
@@ -70,17 +70,17 @@
 }
 .xans-myshop-couponlist .title h3 {
   float: left;
-  color: #353535;
+  color: var(--grayScale-N2);
   font-size: 12px;
 }
 .xans-myshop-couponlist .title p {
   float: right;
-  color: #757575;
+  color: var(--grayScale-N3);
 }
 
 .xans-myshop-couponlist .ec-base-table table td {
   border-bottom: 0;
-  border-top: 1px solid #e5e5e5;
+  border-top: 1px solid var(--pallet-color-1);
 }
 .xans-myshop-couponlist .ec-base-table table .selected td {
   border-top: 0;
@@ -105,7 +105,7 @@
     height: auto;
     text-align: left;
     border-top: 0;
-    border-bottom: 1px solid #e5e5e5;
+    border-bottom: 1px solid var(--pallet-color-1);
   }
   .xans-myshop-couponlist .ec-base-table table td.contents {
     display: none;
@@ -122,8 +122,8 @@
   .xans-myshop-couponlist .ec-base-table table td.coupon_name {
     padding: 19px 20px;
     line-height: 1.5;
-    background: #f6f6f6;
-    font-weight: 500;
+    background: var(--pallet-color-5);
+    font-weight: var(--font-weight-Medium);
   }
   .xans-myshop-couponlist .layer .display_tablet_only {
     font-size: 13px;

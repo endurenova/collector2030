@@ -10,7 +10,7 @@
 
   .xans-myshop-main .subTitle {
     padding: 27px 16px 12px;
-    background: #f6f6f6;
+    background: var(--pallet-color-5);
   }
   .xans-myshop-main h3 {
     color: var(--grayScale-N1);
@@ -21,7 +21,7 @@
     border-top: 1px solid var(--grayScale-N1);
   }
   .xans-myshop-main .menu li {
-    border-bottom: 1px solid #e5e5e5;
+    border-bottom: 1px solid var(--pallet-color-1);
   }
   .xans-myshop-main .menu li a {
     position: relative;
@@ -39,8 +39,8 @@
     width: 10px;
     height: 10px;
     margin: 18px auto 0;
-    border-left: 1px solid #929292;
-    border-bottom: 1px solid #929292;
+    border-left: 1px solid var(--grayScale-N3);
+    border-bottom: 1px solid var(--grayScale-N3);
     -webkit-transform: rotate(-135deg);
     transform: rotate(-135deg);
   }
@@ -78,14 +78,14 @@
     color: var(--grayScale-N1);
     font-size: 18px;
     font-weight: normal;
-    font-weight: bold;
+    font-weight: var(--font-weight-Bold);
   }
   .xans-myshop-main .menu li {
     margin: 16px 0 0;
   }
   .xans-myshop-main .menu li a {
     display: block;
-    color: #6d6d6d;
+    color: var(--grayScale-N4);
     font-size: 14px;
     text-decoration: none;
   }

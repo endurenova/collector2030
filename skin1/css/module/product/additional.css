@@ -7,7 +7,7 @@
 }
 
 .ec-base-fold .info {
-  color: #6d6d6d;
+  color: var(--grayScale-N4);
   line-height: 22px;
 }
 .ec-base-fold .content {
@@ -29,12 +29,12 @@
 .xans-product-additional .noAccess,
 .xans-product-additional .nodata {
   padding: 56px 0;
-  color: #6d6d6d;
+  color: var(--grayScale-N4);
   text-align: center;
 }
 .xans-product-additional .minor {
   padding: 56px 0;
-  color: #6d6d6d;
+  color: var(--grayScale-N4);
   line-height: 14px;
   text-align: center;
 }
@@ -53,7 +53,7 @@
   line-height: 22px;
   text-align: left;
   color: var(--grayScale-N1);
-  background: #f9f9f9;
+  background: var(--grayScale-N5);
 }
 .xans-product-additional .view .alert {
   margin: 0 0 10px;
@@ -78,12 +78,12 @@
   margin: 0 0 0 15px;
 }
 .xans-product-additional .boardComment {
-  background: #f6f6f6;
+  background: var(--pallet-color-5);
 }
 .xans-product-additional .boardComment li {
   position: relative;
   overflow: hidden;
-  border-top: 1px solid #e0e0e0;
+  border-top: 1px solid var(--pallet-color-5);
   text-align: left;
   line-height: 14px;
 }
@@ -94,8 +94,8 @@
   overflow: hidden;
   width: 9px;
   height: 11px;
-  border-left: 1px solid #a7a7a7;
-  border-bottom: 1px solid #a7a7a7;
+  border-left: 1px solid var(--grayScale-N4);
+  border-bottom: 1px solid var(--grayScale-N4);
 }
 .xans-product-additional .boardComment .commentInfo .name {
   color: var(--grayScale-N1);
@@ -104,31 +104,31 @@
   margin: 0 20px;
   line-height: 17px;
   vertical-align: top;
-  color: #6d6d6d;
+  color: var(--grayScale-N4);
 }
 .xans-product-additional .boardComment .comment {
   margin: 17px 0 0;
   line-height: 18px;
-  color: #545454;
+  color: var(--grayScale-N1-opa);
   word-break: break-all;
 }
 .xans-product-additional .boardComment .replyArea {
   margin: -1px 0 0;
-  border-top: 1px solid #e0e0e0;
-  background: #f6f6f6;
+  border-top: 1px solid var(--pallet-color-5);
+  background: var(--pallet-color-5);
 }
 .xans-product-additional .boardComment .replyArea .commentSecret {
   margin-right: 30px;
 }
 .xans-product-additional .memoCont {
   text-align: left;
-  border-top: 1px solid #e5e5e5;
-  background: #f6f6f6;
+  border-top: 1px solid var(--pallet-color-1);
+  background: var(--pallet-color-5);
 }
 .xans-product-additional .writeForm {
   position: relative;
-  border: 1px solid #a7a7a7;
-  background: #fff;
+  border: 1px solid var(--grayScale-N4);
+  background: var(--grayScale-W);
 }
 .xans-product-additional .writeForm:before {
   content: '';
@@ -137,13 +137,13 @@
   overflow: hidden;
   width: 9px;
   height: 11px;
-  border-left: 1px solid #a7a7a7;
-  border-bottom: 1px solid #a7a7a7;
+  border-left: 1px solid var(--grayScale-N4);
+  border-bottom: 1px solid var(--grayScale-N4);
 }
 .xans-product-additional .writeForm textarea {
   width: 100%;
   height: 148px;
-  border-bottom: 1px solid #e0e0e0;
+  border-bottom: 1px solid var(--pallet-color-5);
 }
 .xans-product-additional .writeForm .name {
   display: inline-block;
@@ -171,7 +171,7 @@
   font-style: normal;
 }
 .xans-product-additional .memoCont .captcha {
-  border-top: 1px solid #e0e0e0;
+  border-top: 1px solid var(--pallet-color-5);
 }
 .xans-product-additional .memoCont .captcha img {
   vertical-align: middle;
@@ -245,7 +245,7 @@
   .xans-product-additional .writeForm .infoForm .label {
     display: block;
     margin: 0 0 7px;
-    color: #a7a7a7;
+    color: var(--grayScale-N4);
   }
   .xans-product-additional .writeForm .infoForm input {
     width: 100%;
@@ -258,7 +258,7 @@
     line-height: 45px;
   }
   .xans-product-additional .writeForm .ctrl a {
-    color: #fff;
+    color: var(--grayScale-W);
   }
   .xans-product-additional .memoCont .byteRating {
     padding: 16px;

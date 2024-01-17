@@ -53,7 +53,7 @@ input[type='checkbox']:checked::-ms-check {
 
 /* ec-base-step */
 .ec-base-step li {
-  color: #8a8a8a;
+  color: var(--grayScale-N4);
 }
 .ec-base-step .selected {
   color: var(--grayScale-N1);
@@ -68,7 +68,7 @@ a[class^='btnNormal'] {
 [class^='btnSubmit'],
 a[class^='btnSubmit'] {
   background: var(--grayScale-N1);
-  color: #fff;
+  color: var(--grayScale-W);
 }
 [class^='btnNormal']:not(.disabled):hover,
 [class^='btnNormal']:not(.disabled).selected {
@@ -80,7 +80,7 @@ a[class^='btnSubmit'] {
   border-top: 2px solid var(--grayScale-N1);
 }
 .ec-base-table th {
-  font-weight: 400;
+  font-weight: var(--font-weight-Regular);
 }
 .ec-base-paginate.typeList li a {
   font-size: 14px;
@@ -91,14 +91,14 @@ a[class^='btnSubmit'] {
   border-bottom: 1px solid var(--grayScale-N1);
 }
 .ec-base-tab.typeNav .menu li a {
-  background: #fff;
+  background: var(--grayScale-W);
   border: 0;
-  color: #8a8a8a;
+  color: var(--grayScale-N4);
   min-width: 170px;
 }
 .ec-base-tab.typeNav .menu li.selected a {
   border: 1px solid var(--grayScale-N1);
-  font-weight: 400;
+  font-weight: var(--font-weight-Regular);
 }
 .ec-base-tab.typeNav .menu li.selected a:after {
   bottom: -2px;

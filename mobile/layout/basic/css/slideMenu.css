@@ -27,7 +27,7 @@ background: linear-gradient(#f7f7f7,#eff0f0,#e8e9e9); /* Standard syntax */
 #aside .membership { padding:0 14px 11px; }
 #aside .membership li { display:inline-block; margin:0 15px 0 0; padding:10px 0 0; }
 #aside .membership li a { color:#508bed; }
-#aside .membership li.like a { color:#000; }
+#aside .membership li.like a { color:var(--grayScale-N1); }
 #aside .membership li.like a span { color:#508bed; }
 #aside .xans-myshop-main { background-color:#4a5164; }
 #aside .xans-myshop-main a {

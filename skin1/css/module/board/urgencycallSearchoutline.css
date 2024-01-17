@@ -13,7 +13,7 @@
 }
 .xans-mall-urgencycallsearchoutline .urgencyProduct .ec-base-table input {
   width: 340px;
-  font-weight: bold;
+  font-weight: var(--font-weight-Bold);
 }
 .xans-mall-urgencycallsearchoutline .ec-base-table .scroll {
   overflow: auto;

@@ -23,7 +23,7 @@
 
 ul.info {
   margin: 20px 0 0;
-  color: #707070;
+  color: var(--grayScale-N3);
   line-height: 1.5;
 }
 ul.info li + li {
@@ -41,7 +41,7 @@ ul.info li {
   font-style: normal;
 }
 .xans-board-write .file td {
-  color: #7d7d7d;
+  color: var(--grayScale-N3);
 }
 .xans-board-write .file label {
   color: var(--grayScale-N1);

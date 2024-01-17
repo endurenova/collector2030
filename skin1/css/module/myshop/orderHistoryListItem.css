@@ -5,14 +5,14 @@
   overflow: hidden;
   padding: 20px 0 20px 15px;
   font-size: 13px;
-  background-color: #f6f6f6;
+  background-color: var(--pallet-color-5);
   border-top: 1px solid var(--grayScale-N1);
 }
 .xans-myshop-orderhistorylistitem .order:first-child .order__number {
   margin-top: 0;
 }
 .xans-myshop-orderhistorylistitem .order__number .date {
-  font-weight: bold;
+  font-weight: var(--font-weight-Bold);
 }
 .xans-myshop-orderhistorylistitem .btnDetail {
   position: absolute;
@@ -37,7 +37,7 @@
   text-align: right;
 }
 .xans-myshop-orderhistorylistitem .ec-base-prdInfo .payDetail strong {
-  font-weight: 400;
+  font-weight: var(--font-weight-Regular);
 }
 .xans-myshop-orderhistorylistitem .ec-base-prdInfo .payDetail .title:before {
   content: ' = ';
@@ -65,7 +65,7 @@
     padding: 18px 16px;
     line-height: 26px;
     font-size: 12px;
-    border-top: 1px solid #e5e5e5;
+    border-top: 1px solid var(--pallet-color-1);
   }
   .xans-myshop-orderhistorylistitem .ec-base-prdInfo .payDetail .title {
     font-size: 14px;
@@ -75,7 +75,7 @@
     display: none;
   }
   .xans-myshop-orderhistorylistitem .ec-base-prdInfo .payDetail .title .gRight strong {
-    font-weight: 700;
+    font-weight: var(--font-weight-Bold);
   }
   .xans-myshop-orderhistorylistitem .ec-base-prdInfo .payDetail .contents {
     word-break: keep-all;

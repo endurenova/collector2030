@@ -13,7 +13,7 @@
 }
 .ec-base-tab .menu li a {
   display: inline-block;
-  color: #6d6d6d;
+  color: var(--grayScale-N4);
   text-decoration: none;
   outline: 0;
   text-align: center;
@@ -31,24 +31,24 @@
 /* typeNav */
 .ec-base-tab.typeNav .menu {
   margin: 0 0 20px;
-  border-bottom: 1px solid #868686;
-  background: #fff;
+  border-bottom: 1px solid var(--grayScale-N4);
+  background: var(--grayScale-W);
 }
 .ec-base-tab.typeNav .menu li {
-  background: #f6f6f6;
+  background: var(--pallet-color-5);
 }
 .ec-base-tab.typeNav .menu li a {
-  border: 1px solid #e5e5e5;
+  border: 1px solid var(--pallet-color-1);
   border-bottom: 0;
-  color: #545454;
-  background: #f6f6f6;
+  color: var(--grayScale-N1-opa);
+  background: var(--pallet-color-5);
 }
 .ec-base-tab.typeNav .menu li.selected a {
   position: relative;
-  border-color: #868686;
+  border-color: var(--grayScale-N4);
   color: var(--grayScale-N1);
-  font-weight: bold;
-  background: #fff;
+  font-weight: var(--font-weight-Bold);
+  background: var(--grayScale-W);
 }
 .ec-base-tab.typeNav .menu li.selected a:after {
   content: '';
@@ -59,7 +59,7 @@
   right: 0;
   width: 100%;
   height: 1px;
-  background: #fff;
+  background: var(--grayScale-W);
 }
 /* typeMenu */
 .ec-base-tab.typeMenu {
@@ -79,7 +79,7 @@
 }
 .ec-base-tab.typeMenu li a {
   line-height: 30px;
-  color: #6d6d6d;
+  color: var(--grayScale-N4);
 }
 .ec-base-tab.typeMenu .button {
   display: inline-block;
@@ -88,7 +88,7 @@
 }
 .ec-base-tab.typeMenu .button.active {
   position: relative;
-  font-weight: bold;
+  font-weight: var(--font-weight-Bold);
   color: var(--grayScale-N1);
 }
 .ec-base-tab.typeMenu .button.active::after {
@@ -115,7 +115,7 @@
   display: inline-block;
   width: 7px;
   height: 7px;
-  border: 1px solid #6d6d6d;
+  border: 1px solid var(--grayScale-N4);
   border-left: 0;
   border-bottom: 0;
   transform: rotate(45deg);
@@ -126,9 +126,9 @@
   top: 35px;
   left: 0;
   display: inline-block;
-  border: 1px solid #e5e5e5;
+  border: 1px solid var(--pallet-color-1);
   padding: 15px 0 15px 20px;
-  background-color: #fff;
+  background-color: var(--grayScale-W);
 }
 .ec-base-tab.typeMenu ul > li > ul > li {
   position: static;
@@ -176,7 +176,7 @@
   /* typeNav */
   .ec-base-tab.typeNav .menu {
     display: flex;
-    border-bottom: 1px solid #868686;
+    border-bottom: 1px solid var(--grayScale-N4);
   }
   .ec-base-tab.typeNav .menu li {
     flex: 1;

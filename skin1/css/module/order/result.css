@@ -6,7 +6,7 @@
   width: 380px;
   margin: 45px auto 0;
   padding: 0 0 10px 130px;
-  color: #353535;
+  color: var(--grayScale-N2);
   line-height: 1.5;
   background: url('//img.echosting.cafe24.com/skin/base/order/bg_result.png') no-repeat 0 10px;
 }
@@ -22,7 +22,7 @@
 .xans-order-result .orderInfo p a {
   color: #008bcc;
   text-decoration: underline;
-  font-weight: bold;
+  font-weight: var(--font-weight-Bold);
 }
 .xans-order-result .orderInfo li strong {
   font-size: 14px;
@@ -34,7 +34,7 @@
   margin: 40px 0 10px 10px;
 }
 .xans-order-result .title h3 {
-  color: #353535;
+  color: var(--grayScale-N2);
   font-size: 12px;
 }
 .xans-order-result .orderListArea .title {
@@ -49,7 +49,7 @@
 .xans-order-result .ec-base-table td .map img {
   margin-top: 5px;
   max-width: 100%;
-  border: 1px solid #e8e8e8;
+  border: 1px solid var(--pallet-color-5);
   vertical-align: middle;
 }
 
@@ -70,18 +70,18 @@
 .xans-order-result .ec-base-table td div.option,
 .xans-order-result .ec-base-table td ul.option > li {
   margin: 9px 0 0;
-  color: #757575;
+  color: var(--grayScale-N3);
   line-height: 16px;
 }
 .xans-order-result .ec-base-table td ul.option > li > strong {
   display: block;
-  color: #353535;
+  color: var(--grayScale-N2);
 }
 .xans-order-result .ec-base-table td div.option span.file a,
 .xans-order-result .ec-base-table td ul.option > li > span.file a {
   margin: 0 0 0 4px;
   padding: 0 0 0 11px;
-  color: #757575;
+  color: var(--grayScale-N3);
   text-decoration: underline;
   background: url('//img.echosting.cafe24.com/skin/base/common/ico_file.gif') no-repeat 0 2px;
 }
@@ -96,10 +96,10 @@
 }
 .xans-order-result .totalArea .ec-base-table.total table {
   z-index: 2;
-  border-color: #777;
+  border-color: var(--grayScale-N3);
 }
 .xans-order-result .totalArea .ec-base-table.total th {
-  background: #fbfafa;
+  background: var(--pallet-color-5);
 }
 .xans-order-result .totalArea .ec-base-table.total td {
   height: 58px;
@@ -118,21 +118,21 @@
   margin: -2px 0 0;
 }
 .xans-order-result .totalArea .ec-base-table tr.sum td {
-  font-weight: bold;
-  background: #fbfafa;
+  font-weight: var(--font-weight-Bold);
+  background: var(--pallet-color-5);
 }
 
 .xans-order-result .totalDetail {
   display: none;
   width: 300px;
-  color: #757575;
+  color: var(--grayScale-N3);
 }
 .xans-order-result .totalDetail .content p {
   margin: 0 0 8px;
   padding: 0 0 10px;
   color: #008bcc;
   font-size: 16px;
-  font-weight: bold;
+  font-weight: var(--font-weight-Bold);
   text-align: right;
   border-bottom: 1px dotted #b0b1b3;
 }

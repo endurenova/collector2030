@@ -21,7 +21,7 @@
   line-height: 34px;
   font-size: 13px;
   visibility: visible;
-  color: #6a6a6a;
+  color: var(--grayScale-N3);
   border-right: 1px solid #d9d9d9;
 }
 .xans-layout-categorysupplylist.titleArea .xans-mall-supplysearch #searchSupply {
@@ -31,8 +31,8 @@
   border: 0;
   line-height: 32px;
   font-size: 13px;
-  color: #111;
-  background: #fff;
+  color: var(--grayScale-N1);
+  background: var(--grayScale-W);
 }
 .xans-layout-categorysupplylist.ec-base-tab.typeMenu ul > li > ul > li ul.xans-layout-fourth li {
   padding-right: 15px !important;
@@ -45,7 +45,7 @@
     margin: 0 auto 20px;
     padding: 20px 0;
     position: relative;
-    border-bottom: 1px solid #e8e8e8;
+    border-bottom: 1px solid var(--pallet-color-5);
     text-align: left;
   }
   .xans-layout-categorysupplylist.titleArea .xans-mall-supplysearch {

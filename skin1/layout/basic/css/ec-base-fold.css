@@ -40,7 +40,7 @@
 }
 .ec-base-fold > .contents {
   display: none;
-  background: #fff;
+  background: var(--grayScale-W);
 }
 .ec-base-fold .ec-base-fold {
   border-width: 1px 0 0;
@@ -136,7 +136,7 @@
   }
   /* ec-base-table */
   .ec-base-fold.theme1 .ec-base-table.typeList {
-    border-color: #e5e5e5;
+    border-color: var(--pallet-color-1);
   }
 }
 

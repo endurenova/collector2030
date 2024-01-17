@@ -2,7 +2,7 @@
   margin: 0 0 40px;
 }
 .xans-myshop-summary.ec-base-box.gHalf {
-  border: 1px solid #e5e5e5;
+  border: 1px solid var(--pallet-color-1);
   border-top: 1px solid var(--grayScale-N1);
   padding: 0;
 }
@@ -21,7 +21,7 @@
 }
 .xans-myshop-summary ul li {
   padding: 20px 16px;
-  border-top: 1px solid #e5e5e5;
+  border-top: 1px solid var(--pallet-color-1);
   line-height: 1.5;
   vertical-align: top;
   box-sizing: border-box;
@@ -46,7 +46,7 @@
 .xans-myshop-unavaillist h3 {
   padding: 19px 15px;
   line-height: 1.5;
-  background: #f6f6f6;
+  background: var(--pallet-color-5);
 }
 .xans-myshop-unavaillist h3 .number {
   display: inline-block;
@@ -61,10 +61,10 @@
 .xans-myshop-unavaillist .item table th,
 .xans-myshop-unavaillist .item table td {
   line-height: 1.5;
-  background: #fff;
+  background: var(--grayScale-W);
 }
 .xans-myshop-unavaillist .item table th {
-  color: #6d6d6d;
+  color: var(--grayScale-N4);
   text-align: left;
   font-weight: normal;
 }
@@ -95,7 +95,7 @@
     display: block;
     width: 1px;
     height: auto;
-    background-color: #e5e5e5;
+    background-color: var(--pallet-color-1);
   }
   .xans-myshop-summary + .ec-base-tab.typeNav .menu {
     margin: 0 0 50px;
