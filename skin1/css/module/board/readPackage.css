@@ -112,6 +112,91 @@
   margin: 0 auto;
   max-width: 100%;
 }
+/* 작가 소개 커스터마이징 ---------------------------------------------------------------------------------------------------- */
+.detail.read-artist .hidden {
+  display: none;
+}
+.detail.read-artist .fr-view.fr-view-article p:not(.read-artist__title) {
+  line-height: 1.6;
+}
+.detail.read-artist .fr-view.fr-view-article p:not(.read-artist__title),
+.detail.read-artist .fr-view.fr-view-article p:not(.read-artist__title) span {
+  font-family: 'Montserrat', 'Noto Sans KR', Arial, sans-serif !important;
+  font-size: 16px !important;
+  color: var(--grayScale-N1);
+}
+.detail.read-artist {
+}
+.read-artist__title {
+  display: flex;
+  flex-flow: column;
+  margin: 1% 0 2%;
+}
+.read-artist__title strong {
+  font-size: 24px;
+}
+.read-artist__title span {
+  font-size: 18px;
+  font-weight: var(--font-weight-Medium);
+  color: var(--main-color);
+}
+.detail.read-artist > img {
+  margin: unset !important;
+  width: 360px;
+  border-radius: 10%;
+}
+.read-artist__slide-box {
+  position: relative;
+  width: 100%;
+  height: 360px;
+  margin: 60px 0;
+  overflow: hidden;
+}
+.read-artist__slide-box .read-artist__slide-wrap {
+  position: relative;
+  width: 100%;
+  height: inherit;
+  margin: 0 auto !important;
+  padding: 0 !important;
+  /* overflow-x: scroll; */
+  overflow: hidden;
+}
+.read-artist__slide-wrap::-webkit-scrollbar {
+  display: none;
+}
+.read-artist__slide-wrap::-webkit-scrollbar-button {
+  display: none;
+}
+.read-artist__slide-wrap::-webkit-scrollbar-thumb {
+  display: none;
+}
+.read-artist__slide-list {
+  display: flex;
+  flex-flow: row nowrap;
+  /* position: absolute; */
+  width: fit-content !important;
+  height: inherit;
+  margin: unset !important;
+  padding: unset !important;
+}
+.read-artist__slide-list li {
+  width: 25%;
+  margin-right: 10px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.read-artist__slide-list li:last-of-type {
+  margin-right: 0;
+}
+
+.read-artist__slide-list li img {
+  max-width: unset !important;
+  height: 100%;
+}
+.xans-board-read .ec-base-table .detail.read-artist ul {
+  padding: unset !important;
+}
+/* ---------------------------------------------------------------------------------------------------- 작가 소개 커스터마이징 */
 .xans-board-read .ec-base-table .attach {
   position: relative;
   padding: 20px 0;

@@ -2361,8 +2361,8 @@
 }
 .relation .relation_title {
   padding: 50px 0 15px;
-  font-size: 28px;
-  font-weight: var(--font-weight-Medium);
+  font-size: 24px;
+  font-weight: var(--font-weight-SemiBold);
   line-height: 1;
   color: var(--grayScale-N1);
   letter-spacing: -0.025em;
