@@ -1345,13 +1345,12 @@
   box-sizing: border-box;
 }
 .artist-info-box .artist-info .artist-info__description strong {
-  font-size: 18px;
+  font-size: 16px;
   color: var(--grayScale-N2);
-  font-weight: var(--font-weight-SemiBold);
-  line-height: 1;
+  line-height: 1.2;
 }
 .artist-info-box .artist-info .artist-info__description span {
-  font-size: 16px;
+  font-size: 14px;
   color: var(--main-color);
   font-weight: var(--font-weight-Medium);
 }
