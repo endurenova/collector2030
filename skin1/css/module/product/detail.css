@@ -166,6 +166,7 @@
 .xans-product #prdDetail table tbody tr {
   display: flex;
   flex-flow: row;
+  align-items: flex-start;
 }
 .xans-product #prdDetail table tbody tr th,
 .xans-product #prdDetail table tbody tr td {
@@ -1753,7 +1754,7 @@
     font-size: clamp(12px, 2.5vw, 14px);
   }
   .xans-product #prdDetail table {
-    width: 90%;
+    width: 100%;
   }
   .xans-product-detail .imgArea {
     margin: 0 0 28px;
@@ -2826,7 +2827,7 @@
   }
   .xans-product-additional .productDetail {
     width: 100%;
-    margin: 0 auto;
+    margin: 30px auto 0;
   }
   .xans-product-action .action_button {
     flex-wrap: wrap;
