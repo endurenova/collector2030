@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
   try {
     const artistName = document.querySelector('.infoArea table tbody tr:nth-of-type(2) td'),
       relatedProducts = document.querySelector('.relation_title');
-    relatedProducts.innerHTML = `<span class="artist_relation_artworks">${artistName.textContent}의 다른 작품</span>`;
+    relatedProducts.innerHTML = `<span class="artist_relation_artworks">작가의 다른 작품</span>`;
   } catch (e) {}
   const detailArea = document.querySelector('#prdDetail > div');
   simulatorBackground = () => {};

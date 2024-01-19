@@ -41,7 +41,7 @@
 
 /* Table */
 .ec-base-table {
-  border-top: 1px solid var(--grayScale-N1);
+  border-top: 1px solid var(--main-color);
 }
 .ec-base-table th,
 .ec-base-table td {

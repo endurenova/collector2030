@@ -77,7 +77,7 @@ a[class^='btnSubmit'] {
 
 /* Table */
 .ec-base-table {
-  border-top: 2px solid var(--grayScale-N1);
+  border-top: 2px solid var(--main-color);
 }
 .ec-base-table th {
   font-weight: var(--font-weight-Regular);

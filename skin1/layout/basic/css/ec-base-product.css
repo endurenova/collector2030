@@ -396,7 +396,7 @@
 }
 .ec-base-product:not(.xans-product-listmain-1) .prdList:not(.grid3_slide) .description .name a {
   /* 상품 진열 리스트 */
-  color: var(--grayScale-N1);
+  color: var(--grayScale-N2);
   /* font-size: 13px; */
 }
 .ec-base-product:not(.xans-product-listmain-1) .prdList:not(.grid3_slide) .description span.grid {
@@ -958,10 +958,23 @@ svg .main-circ {
     /* 상품 작품명 */
     font-size: 18px !important;
   }
+  #contents
+    > .xans-element-.xans-product.xans-product-detail.section
+    > .detailArea
+    > .infoArea
+    > .xans-element-.xans-product.xans-product-detaildesign
+    > table
+    > tbody
+    > tr:nth-child(2)
+    > th::after,
   .xans-product-detail .infoArea table > tbody > tr > th span,
   .xans-product-detail .infoArea table > tbody > tr > td span,
-  .xans-product-detail .infoArea #totalProducts > table > tbody > tr > td:first-child {
+  .xans-product-detail .infoArea #totalProducts > table > tbody > tr > td:first-child,
+  .artist-info-box .artist-info .artist-info__description strong {
     font-size: clamp(12px, 3.333vw, 16px) !important;
+  }
+  .artist-info-box .artist-info .artist-info__description span {
+    font-size: clamp(11px, 3.056vw, 14px) !important;
   }
   .ec-base-product.xans-product-listmain-1 ul.prdList.grid4.list_gallery::-webkit-scrollbar {
     display: none;

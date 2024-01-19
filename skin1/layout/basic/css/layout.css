@@ -528,7 +528,7 @@ a:hover {
   max-width: 400px;
   max-height: 80px;
   object-fit: contain;
-  padding: 6%;
+  padding: 8%;
 }
 #header .inner .top_nav_box .top_mypage {
   display: flex;

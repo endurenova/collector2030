@@ -5,7 +5,7 @@
 .xans-product-detail .headingArea h1 {
   display: inline;
   font-size: 20px;
-  line-height: 30px;
+  line-height: 1.4;
   vertical-align: middle;
 }
 .xans-product-detail .headingArea .icon_img {
@@ -123,7 +123,7 @@
   content: '작가명';
   display: inline-block;
   font-size: 16px;
-  font-weight: var(--font-weight-Bold);
+  font-weight: var(--font-weight-SemiBold);
 }
 .xans-product-detail .infoArea table > tbody > tr > th span,
 .xans-product-detail .infoArea table > tbody > tr > td span {
@@ -131,7 +131,7 @@
   font-size: 16px !important;
 }
 .xans-product-detail .infoArea table > tbody > tr > th span {
-  font-weight: var(--font-weight-Bold) !important;
+  font-weight: var(--font-weight-SemiBold) !important;
   color: var(--grayScale-N2) !important;
 }
 .xans-product-detail .infoArea table > tbody > tr > td span {
@@ -141,21 +141,21 @@
 }
 .xans-product-detail .infoArea table > tbody > tr:nth-of-type(2) > td span {
   /* 작가명 td */
-  font-weight: var(--font-weight-Bold) !important;
+  font-weight: var(--font-weight-SemiBold) !important;
 }
 .xans-product-detail .infoArea table > tbody > tr:nth-of-type(3) > th span {
   /* 가격란 th */
-  font-weight: var(--font-weight-Bold) !important;
+  font-weight: var(--font-weight-SemiBold) !important;
   color: var(--grayScale-N1) !important;
 }
 .xans-product-detail .infoArea table > tbody > tr:nth-of-type(3) > td span {
   /* 가격란 td */
-  font-weight: var(--font-weight-Bold) !important;
+  font-weight: var(--font-weight-SemiBold) !important;
   color: var(--main-color) !important;
 }
 .xans-product-detail .infoArea table > tbody > tr > td span #span_product_price_text {
   /* 상품 상세 페이지 금액 */
-  font-weight: var(--font-weight-Bold) !important;
+  font-weight: var(--font-weight-SemiBold) !important;
   color: var(--main-color) !important;
 }
 .xans-product #prdDetail table {
@@ -190,6 +190,7 @@
   display: flex;
   align-items: center;
   width: 70%;
+  padding-left: 3%;
   color: var(--grayScale-N2);
   font-weight: var(--font-weight-Medium);
   word-break: keep-all;
@@ -1347,6 +1348,7 @@
 .artist-info-box .artist-info .artist-info__description strong {
   font-size: 16px;
   color: var(--grayScale-N2);
+  font-weight: var(--font-weight-SemiBold);
   line-height: 1.2;
 }
 .artist-info-box .artist-info .artist-info__description span {
@@ -1381,13 +1383,13 @@
   text-align: center;
 }
 .purchase-img-box .purchase-img-list > li:nth-of-type(2) .artwork-simple-info h1 {
-  font-size: clamp(18px, 5vw, 48px);
+  font-size: clamp(20px, 4.167vw, 36px);
   color: var(--grayScale-N2);
   line-height: 1.6;
 }
 .purchase-img-box .purchase-img-list > li:nth-of-type(2) .artwork-simple-info p {
-  font-size: clamp(12px, 3.333vw, 24px);
-  font-weight: var(--font-weight-SemiBold);
+  font-size: clamp(16px, 2.917vw, 20px);
+  font-weight: var(--font-weight-Medium);
   color: var(--main-color);
   line-height: 1.5;
 }
@@ -1726,6 +1728,7 @@
     padding: unset;
   }
   .artwork-simulation > h2 {
+    font-size: clamp(18px, 5vw, 24px);
     text-align: center;
   }
   .artwork-simulation .virtual-background {
@@ -2091,14 +2094,14 @@
 }
 
 .xans-product-detail .infoArea #totalProducts > table > tbody {
-  background: var(--pallet-color-3);
+  background: var(--pallet-color-5);
 }
 .xans-product-detail .infoArea #totalProducts > table > tbody > tr:first-child > td {
   border: none;
 }
 .xans-product-detail .infoArea #totalProducts > table > tbody > tr > td:first-child {
   /* 상품 상세페이지 상품명 */
-  color: var(--grayScale-N1);
+  color: var(--grayScale-N2);
   font-size: 16px;
   width: 40%;
   padding: 30px 10px 30px 25px;
@@ -2113,7 +2116,6 @@
 }
 .xans-product-detail .infoArea #totalProducts > table > tbody > tr > td:first-child .product {
   font-size: 14px;
-  color: var(--grayScale-N1);
 }
 .xans-product-detail .infoArea #totalProducts table .right {
   padding-right: 25px;
@@ -2493,13 +2495,13 @@
 }
 .swiper-container.relation_slide ul > li .description .price {
   font-size: 16px;
-  font-weight: var(--font-weight-SemiBold);
+  font-weight: var(--font-weight-Medium);
   margin-top: 10px;
   color: var(--main-color);
 }
 
 .ec-base-product:not(.xans-product-listmain-1) .prdList:not(.grid3_slide) .description .name a {
-  font-weight: var(--font-weight-Medium);
+  font-weight: var(--font-weight-SemiBold);
 }
 /* 게시판 */
 .board_title {
@@ -2708,9 +2710,6 @@
     width: 108%;
     margin-left: -4%;
   }
-  .xans-product-detail .headingArea h1 {
-    font-size: 21px;
-  }
   .xans-product-detail .infoArea {
     width: 100%;
     margin: 0;
@@ -2723,11 +2722,7 @@
     background: var(--grayScale-W);
   }
   .xans-product-detail .infoArea #totalProducts > table > tbody > tr > td:first-child {
-    width: 60%;
     padding: 15px 10px 15px 15px;
-  }
-  .xans-product-detail .infoArea #totalProducts > table > tbody > tr > td:first-child .product {
-    color: var(--grayScale-N1);
   }
   .xans-product-detail .infoArea #totalProducts table .right {
     padding: 0px 10px;
@@ -2875,7 +2870,7 @@
   /* 관련상품 */
   .relation .relation_title {
     padding: 50px 0 5px;
-    font-size: 23px;
+    font-size: clamp(18px, 5vw, 24px);
   }
   .relation .swiper-pagination-bullet {
     width: 8px;
@@ -3023,6 +3018,9 @@
   }
 }
 @media (max-width: 767px) {
+  .xans-product-detail .headingArea h1 {
+    font-size: clamp(18px, 3.75vw, 20px);
+  }
   .artwork-simulation {
     margin-bottom: clamp(60px, 16.667vw, 100px);
   }
@@ -3036,7 +3034,7 @@
   }
   .tone-select__box > h3,
   .background-select__box > h3 {
-    font-size: clamp(15px, 4.167vw, 18px);
+    font-size: clamp(14px, 3.889vw, 18px);
   }
   .background-selector__area .background-selector__btn {
     padding: 3% 0;
