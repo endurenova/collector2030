@@ -1340,8 +1340,8 @@
   display: flex;
   flex-flow: column;
   justify-content: center;
-  width: 180px;
-  padding-left: 6%;
+  width: fit-content;
+  padding-left: 3%;
   box-sizing: border-box;
 }
 .artist-info-box .artist-info .artist-info__description strong {
@@ -1353,9 +1353,6 @@
   font-size: 14px;
   color: var(--main-color);
   font-weight: var(--font-weight-Medium);
-}
-.artist-info-box .artist-info .artist-info__description span:nth-of-type(2) {
-  font-size: 14px;
 }
 .purchase-img-box {
   width: 100%;
