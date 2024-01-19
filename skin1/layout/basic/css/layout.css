@@ -1125,6 +1125,7 @@ a:hover {
   right: 0%;
   transform: translate(0%, -50%);
   box-sizing: border-box;
+  z-index: 1;
 }
 .artist-video-direction .material-symbols-outlined {
   font-size: 48px;

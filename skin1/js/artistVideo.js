@@ -46,7 +46,6 @@ document.addEventListener('DOMContentLoaded', () => {
         },
       ];
 
-      const artistVideoBox = document.querySelector('.artist-video-box');
       const artistVideoList = document.querySelector('.artist-video-list');
 
       artistVideoInfo.forEach(e => {
@@ -69,7 +68,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
       const videoItem = artistVideoList.querySelector('li');
       const videoThumbnailList = document.querySelectorAll('.artist-video-thumbnail');
-      const videoArrow = document.querySelectorAll('.artist-video-direction .material-symbols-outlined');
       const artistVideoModal = document.querySelector('.modal-artist-video');
       modalVideoClear = () => {
         artistVideoModal.querySelector('iframe').setAttribute('src', '');
@@ -116,56 +114,44 @@ document.addEventListener('DOMContentLoaded', () => {
         });
       });
 
-      let videoListLocation = 0;
       const videoLeftArrow = document.querySelector('.video-direction-left');
       const videoRightArrow = document.querySelector('.video-direction-right');
-      checkArrowAbled = (listWidth, marginRight) => {
-        const videoListWidth = Number(getComputedStyle(artistVideoList).getPropertyValue('width').split('px')[0]);
-        if (videoListLocation == 0) {
-          if (videoLeftArrow.classList.contains('active')) {
-            videoLeftArrow.classList.remove('active');
+
+      const videoItemWidth = Number(getComputedStyle(videoItem).getPropertyValue('width').split('px')[0]);
+      const videoItemMarginRight = Number(getComputedStyle(videoItem).getPropertyValue('margin-right').split('px')[0]);
+      const videoSlideList = artistVideoList.children;
+      const oneMoving = videoItemWidth + videoItemMarginRight;
+      const maximumRight = (videoSlideList.length - 3) * -oneMoving;
+      let movingX = 0;
+      videoRightArrow.addEventListener('click', event => {
+        event.preventDefault();
+        if (movingX > maximumRight) {
+          movingX -= oneMoving;
+          if (movingX === maximumRight) {
+            videoRightArrow.classList.remove('active');
           }
-        } else {
+        }
+        if (movingX !== 0) {
           if (!videoLeftArrow.classList.contains('active')) {
             videoLeftArrow.classList.add('active');
           }
         }
-        if (videoListLocation == listWidth + marginRight) {
-          if (videoRightArrow.classList.contains('active')) {
-            videoRightArrow.classList.remove('active');
+        artistVideoList.style.transform = `translateX(${movingX}px)`;
+      });
+      videoLeftArrow.addEventListener('click', event => {
+        event.preventDefault();
+        if (movingX !== 0) {
+          movingX += oneMoving;
+          artistVideoList.style.transform = `translateX(${movingX}px)`;
+          if (movingX === 0) {
+            videoLeftArrow.classList.remove('active');
           }
-        } else {
+        }
+        if (movingX > maximumRight) {
           if (!videoRightArrow.classList.contains('active')) {
             videoRightArrow.classList.add('active');
           }
         }
-      };
-      Array.from(videoArrow).forEach(e => {
-        e.addEventListener('click', event => {
-          event.preventDefault();
-          const videoBoxWidth = Number(getComputedStyle(artistVideoBox).getPropertyValue('width').split('px')[0]);
-          const videoItemWidth = Number(
-            getComputedStyle(videoThumbnailList[0]).getPropertyValue('width').split('px')[0],
-          );
-          const videoItemMarginRight = Number(
-            getComputedStyle(videoItem).getPropertyValue('margin-right').split('px')[0],
-          );
-
-          const movingDistance = videoItemWidth + videoItemMarginRight;
-          if (videoListLocation !== videoBoxWidth + videoItemMarginRight) {
-            if (event.target.classList.contains('video-direction-right')) {
-              videoListLocation += movingDistance;
-              artistVideoList.style.transform = `translateX(-${videoListLocation}px)`;
-            }
-          }
-          if (videoListLocation !== 0) {
-            if (event.target.classList.contains('video-direction-left')) {
-              videoListLocation -= movingDistance;
-              artistVideoList.style.transform = `translateX(-${videoListLocation}px)`;
-            }
-          }
-          checkArrowAbled(videoBoxWidth, videoItemMarginRight);
-        });
       });
     }
   } catch (e) {}

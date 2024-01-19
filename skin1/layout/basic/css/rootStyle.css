@@ -71,13 +71,20 @@
   --item-margin-right-pc: 20px;
   --item-margin-right-portable: 10px;
 
+  --item-row-6-width-pc-max1480: calc((1480px - var(--item-margin-right-pc) * 5) / 6);
+  --item-row-6-width-pc: calc((90vw - var(--item-margin-right-pc) * 5) / 6);
   --item-row-4-width-pc-max1480: calc((1480px - var(--item-margin-right-pc) * 3) / 4);
   --item-row-4-width-pc: calc((90vw - var(--item-margin-right-pc) * 3) / 4);
   --item-row-3-width-pc-max1480: calc((1480px - var(--item-margin-right-pc) * 2) / 3);
+  --item-row-34-3-height-pc-max1480: calc(var(--item-row-3-width-pc-max1480) / 4 * 3);
   --item-row-3-width-pc: calc((90vw - var(--item-margin-right-pc) * 2) / 3);
+  --item-row-34-3-height-pc: calc(var(--item-row-3-width-pc) / 4 * 3);
   --item-row-3-width-portable: calc((90vw - var(--item-margin-right-portable) * 2) / 3);
+  --item-row-34-3-height-portable: calc(var(--item-row-3-width-portable) / 4 * 3);
   --item-row-2-width-portable: calc((90vw - var(--item-margin-right-portable)) / 2);
+  --item-row-34-2-height-portable: calc(var(--item-row-2-width-portable) / 4 * 3);
   --item-row-1-width-portable: 90vw;
+  --item-row-34-1-height-portable: calc(var(--item-row-1-width-portable) / 4 * 3);
 
   height: calc((90vw - 40px) / 3 / 3 * 2);
 }

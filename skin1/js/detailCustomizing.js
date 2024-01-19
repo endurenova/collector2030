@@ -175,7 +175,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if (i === 1) {
         try {
           // 작품명, 아티스트, 날짜
-          const arttistName = document.querySelector('tr .td-artist').textContent,
+          const artistName = document.querySelector('tr .td-artist').textContent,
             artworkTitle = document.querySelector('tr .td-title').textContent,
             releaseDate = document.querySelector('tr .td-release').textContent;
 
@@ -233,7 +233,6 @@ document.addEventListener('DOMContentLoaded', () => {
               </div>
             </div>
           `;
-
           purchaseImgList.insertAdjacentHTML(
             'beforeend',
             `
@@ -241,7 +240,7 @@ document.addEventListener('DOMContentLoaded', () => {
               <img src="/SkinImg/img/detail/product_detail_${e.path}.png" alt="${e.alt}" />
               <div class="artwork-simple-info">
                 <h1>${artworkTitle}</h1>
-                <p>${arttistName}&#32;&#47;&#32;${releaseDate}</p>
+                <p>${artistName}&#32;&#47;&#32;${releaseDate}</p>
               </div>
             </li>
             <li>
@@ -260,6 +259,31 @@ document.addEventListener('DOMContentLoaded', () => {
             </li>
           `,
           );
+
+          fetch('/js/artistThumbnail.json')
+            .then(res => res.json())
+            .then(data =>
+              data.forEach(e1 => {
+                if (e1['name'] === artistName) {
+                  document.querySelector('.guideArea').insertAdjacentHTML(
+                    'afterend',
+                    `
+                      <div class="artist-info-box">
+                        <a class="artist-info" href="https://collector2030.com${e1['url']}">
+                          <div class="artist-info__thumbnail">
+                            <img src="${e1['thumbnailImg']}" alt="${e1['nameStrong']}">
+                          </div>
+                          <div class="artist-info__description">
+                            <strong>${e1['nameSpan']}</strong>
+                            <span>${e1['jobs']} Collections</span>
+                          </div>
+                        </a>
+                      </div>
+                    `,
+                  );
+                }
+              }),
+            );
           const selectList = document.querySelector('.background-selector__list'),
             statusVirtualBackground = document.querySelector('.status-idx'),
             totalVirtualBackground = document.querySelector('.total-idx'),
@@ -495,7 +519,7 @@ document.addEventListener('DOMContentLoaded', () => {
         `,
       },
     ];
-    detailArea.insertAdjacentHTML(
+    document.querySelector('.productDetail').insertAdjacentHTML(
       'beforeend',
       `
       <div class='purchase-info-box'>
@@ -541,4 +565,28 @@ document.addEventListener('DOMContentLoaded', () => {
   };
   purchaseInfoImg();
   purchaseInfoAccordion();
+
+  // json 저장용
+  // const artistName = document.querySelector('.infoArea table tbody tr:nth-of-type(2) td');
+  // let makeJson = {
+  //   name: artistName.textContent,
+  //   prdName: [],
+  //   prdUrl: [],
+  //   prdImg: [],
+  //   prdAlt: [],
+  //   prdPrice: [],
+  // };
+  // const ids = document.querySelectorAll('.prdList__item');
+  // console.log(ids.length);
+  // ids.forEach((e, i) => {
+  //   makeJson['prdName'].push(e.querySelector('.description .name > a').textContent);
+  //   makeJson['prdUrl'].push(e.querySelector('.thumbnail > a').getAttribute('href'));
+  //   makeJson['prdImg'].push(e.querySelector('.thumbnail > a >img').getAttribute('src'));
+  //   makeJson['prdAlt'].push(e.querySelector('.thumbnail > a >img').getAttribute('alt'));
+  //   makeJson['prdPrice'].push(e.querySelector('.description .prdPrice').textContent);
+  //   if (i + 1 === ids.length) {
+  //     let json = JSON.stringify(makeJson);
+  //     alert(json);
+  //   }
+  // });
 });

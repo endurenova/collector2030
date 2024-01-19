@@ -113,6 +113,12 @@
   max-width: 100%;
 }
 /* 작가 소개 커스터마이징 ---------------------------------------------------------------------------------------------------- */
+.read-artist__slide__section {
+  margin: 5% auto;
+}
+.detail.read-artist {
+  padding: unset !important;
+}
 .detail.read-artist .hidden {
   display: none;
 }
@@ -124,8 +130,6 @@
   font-family: 'Montserrat', 'Noto Sans KR', Arial, sans-serif !important;
   font-size: 16px !important;
   color: var(--grayScale-N1);
-}
-.detail.read-artist {
 }
 .read-artist__title {
   display: flex;
@@ -145,56 +149,139 @@
   width: 360px;
   border-radius: 10%;
 }
+.read-artist__slide__section {
+  position: relative;
+  display: flex;
+  flex-flow: column;
+}
+.read-artist__slide__section .artist-video-direction {
+  top: 0;
+}
 .read-artist__slide-box {
   position: relative;
   width: 100%;
-  height: 360px;
-  margin: 60px 0;
-  overflow: hidden;
-}
-.read-artist__slide-box .read-artist__slide-wrap {
-  position: relative;
-  width: 100%;
-  height: inherit;
+  height: var(--item-row-34-3-height-pc-max1480);
   margin: 0 auto !important;
   padding: 0 !important;
-  /* overflow-x: scroll; */
-  overflow: hidden;
-}
-.read-artist__slide-wrap::-webkit-scrollbar {
-  display: none;
-}
-.read-artist__slide-wrap::-webkit-scrollbar-button {
-  display: none;
-}
-.read-artist__slide-wrap::-webkit-scrollbar-thumb {
-  display: none;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  box-sizing: border-box;
 }
 .read-artist__slide-list {
   display: flex;
+  position: absolute;
+  bottom: 0;
   flex-flow: row nowrap;
-  /* position: absolute; */
+  align-items: end;
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.3s;
   width: fit-content !important;
   height: inherit;
   margin: unset !important;
   padding: unset !important;
 }
+.detail.read-artist .relation .relation_slide {
+  overflow-x: scroll;
+}
+.detail.read-artist .relation .relation_slide::-webkit-scrollbar,
+.read-artist__slide-box::-webkit-scrollbar {
+  display: none;
+}
+.detail.read-artist .relation .relation_slide::-webkit-scrollbar-button,
+.read-artist__slide-box::-webkit-scrollbar-button {
+  display: none;
+}
+.detail.read-artist .relation .relation_slide::-webkit-scrollbar-thumb,
+.read-artist__slide-box::-webkit-scrollbar-thumb {
+  display: none;
+}
 .read-artist__slide-list li {
-  width: 25%;
-  margin-right: 10px;
+  margin-right: var(--item-margin-right-pc);
   box-sizing: border-box;
-  overflow: hidden;
 }
 .read-artist__slide-list li:last-of-type {
   margin-right: 0;
 }
-
 .read-artist__slide-list li img {
+  width: var(--item-row-3-width-pc-max1480);
   max-width: unset !important;
-  height: 100%;
 }
 .xans-board-read .ec-base-table .detail.read-artist ul {
   padding: unset !important;
+}
+.detail.read-artist .relation .relation_title {
+  padding: unset !important;
+}
+.detail.read-artist .prdList {
+  transition: 0.3s;
+}
+.detail.read-artist .prdList li {
+  width: var(--item-row-6-width-pc-max1480) !important;
+  height: unset !important;
+}
+
+.detail.read-artist .relation-direction.artist-video-direction {
+  top: 4%;
+}
+.detail.read-artist .prdList__item .thumbnail {
+  width: var(--item-row-6-width-pc-max1480) !important;
+  height: var(--item-row-6-width-pc-max1480) !important;
+}
+.detail.read-artist .prdList__item .thumbnail > a {
+  width: 100%;
+  height: 100%;
+}
+.detail.read-artist .prdList__item .thumbnail > a > img {
+  max-width: 80% !important;
+}
+@media (max-width: calc(1480px / 9 * 10)) {
+  .read-artist__slide-box {
+    height: var(--item-row-34-3-height-pc);
+  }
+  .read-artist__slide-list li img {
+    width: var(--item-row-3-width-pc) !important;
+  }
+}
+
+@media (max-width: 1280px) {
+  .read-artist__slide-box {
+    height: var(--item-row-34-2-height-portable);
+  }
+  .read-artist__slide-list li {
+    margin-right: var(--item-margin-right-portable);
+  }
+  .read-artist__slide-list li img {
+    width: var(--item-row-2-width-portable) !important;
+  }
+}
+
+@media (max-width: 1024px) {
+  .read-artist__slide-box {
+    height: var(--item-row-34-2-height-portable);
+  }
+  .read-artist__slide-list li {
+    margin-right: var(--item-margin-right-portable);
+  }
+  .read-artist__slide-list li img {
+    width: var(--item-row-2-width-portable) !important;
+  }
+}
+@media (max-width: 767px) {
+  .read-artist__title {
+    margin: 2% 0 3%;
+  }
+  .read-artist__slide-box {
+    height: var(--item-row-34-1-height-portable);
+  }
+
+  .read-artist__slide-list li img {
+    width: var(--item-row-1-width-portable) !important;
+  }
+}
+@media (max-width: 480px) {
+  .detail.read-artist > img {
+    margin: 0 auto !important;
+  }
 }
 /* ---------------------------------------------------------------------------------------------------- 작가 소개 커스터마이징 */
 .xans-board-read .ec-base-table .attach {

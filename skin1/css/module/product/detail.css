@@ -74,9 +74,17 @@
   padding: 2px 15px 2px 24px;
   vertical-align: top;
 }
+
+.xans-product-detaildesign {
+  /* display: flex; */
+}
+.xans-product-detaildesign > table {
+  /* width: 60%; */
+}
 .xans-product-detaildesign > table > tbody > tr:first-child {
   display: none;
 }
+
 .xans-product-detail .infoArea table {
   border: 0;
   margin: 10px 0 0;
@@ -1311,6 +1319,45 @@
   max-width: 1000px;
   margin: 0 auto;
 }
+.artist-info-box {
+  margin: 3% auto;
+}
+.artist-info-box .artist-info {
+  display: flex;
+  flex-flow: row nowrap;
+  height: 64px;
+}
+.artist-info-box .artist-info .artist-info__thumbnail {
+}
+.artist-info-box .artist-info .artist-info__thumbnail img {
+  display: block;
+  width: 64px;
+  height: 64px;
+  border-radius: 15%;
+  margin: 0 auto;
+}
+.artist-info-box .artist-info .artist-info__description {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  width: 180px;
+  padding-left: 6%;
+  box-sizing: border-box;
+}
+.artist-info-box .artist-info .artist-info__description strong {
+  font-size: 18px;
+  color: var(--grayScale-N2);
+  font-weight: var(--font-weight-SemiBold);
+  line-height: 1;
+}
+.artist-info-box .artist-info .artist-info__description span {
+  font-size: 16px;
+  color: var(--main-color);
+  font-weight: var(--font-weight-Medium);
+}
+.artist-info-box .artist-info .artist-info__description span:nth-of-type(2) {
+  font-size: 14px;
+}
 .purchase-img-box {
   width: 100%;
   max-width: 1000px;
@@ -2038,7 +2085,7 @@
   margin: 0;
 }
 .xans-product-detail .infoArea #totalProducts {
-  margin: 50px 0 0;
+  /* margin: 50px 0 0; */
 }
 .xans-product-detail .infoArea #totalProducts .option_product {
   background: #faf7f3;
@@ -2085,19 +2132,22 @@
   align-items: center;
   justify-content: flex-end;
   padding: 50px 0 50px;
-  font-size: 20px;
+  font-size: clamp(16px, 1.563vw, 20px);
   font-weight: var(--font-weight-Medium);
   letter-spacing: -0.05em;
   color: var(--grayScale-N1);
   border: none;
+  line-height: 1.6;
 }
 .xans-product-detail .infoArea #totalPrice .total {
   display: flex;
   align-items: center;
+
+  width: clamp(150px, 14.648vw, 200px);
 }
 .xans-product-detail .infoArea #totalPrice .total strong {
-  margin: 0 5px 0 20px;
-  font-size: 28px;
+  margin: 0 3% 0 7%;
+  font-size: clamp(20px, 1.953vw, 28px);
   font-weight: var(--font-weight-Medium);
   letter-spacing: -0.05em;
   color: var(--main-color);
