@@ -73,6 +73,10 @@ document.addEventListener('DOMContentLoaded', () => {
       const oneMoving = imgItemWidth + imgItemMarginRight;
       const maximumRight = (imgSlideList.length - 3) * -oneMoving;
       let movingX = 0;
+      if (maximumRight === 0) {
+        artistWorkLeftBtn.classList.remove('active');
+        artistWorkrightBtn.classList.remove('active');
+      }
       artistWorkrightBtn.addEventListener('click', event => {
         event.preventDefault();
         if (movingX > maximumRight) {
@@ -168,7 +172,10 @@ document.addEventListener('DOMContentLoaded', () => {
               );
               const oneMoving2 = relationItemWidth + relationItemMarginRight;
               const maximumRight2 = (relationItemList.children.length - 6) * -oneMoving2;
-
+              if (maximumRight2 === 0) {
+                relationPrdRightBtn.classList.remove('active');
+                relationPrdLeftBtn.classList.remove('active');
+              }
               let movingX2 = 0;
               relationPrdRightBtn.addEventListener('click', event => {
                 event.preventDefault();
