@@ -26,6 +26,10 @@ body {
   margin: 0 auto;
 }
 #container #contents {
+  display: flex;
+  position: relative;
+  flex-flow: column;
+  box-sizing: border-box;
   margin: 0 auto;
   float: none;
   padding: 0;

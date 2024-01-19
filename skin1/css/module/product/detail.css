@@ -159,7 +159,7 @@
   color: var(--main-color) !important;
 }
 .xans-product #prdDetail table {
-  max-width: 1000px;
+  max-width: 800px;
   width: 100%;
   margin: 0 auto;
 }
@@ -1359,7 +1359,7 @@
 .purchase-img-box {
   width: 100%;
   max-width: 1000px;
-  margin: 100px auto 0;
+  margin: 60px auto 0;
 }
 .purchase-img-box .purchase-img-list {
   margin: 0 auto;
@@ -1704,11 +1704,6 @@
 
 /********************* Mobile  *********************/
 @media all and (max-width: 640px) {
-  .xans-product-detail .imgArea .prdImg img {
-  }
-  .xans-product #prdDetail table {
-    width: 95% !important;
-  }
   .xans-product #prdDetail table tbody tr th,
   .xans-product #prdDetail table tbody tr td {
     /* 상품 상세 페이지 상세 정보 */
@@ -1752,10 +1747,10 @@
 /********************* Mobile / Tablet *********************/
 @media all and (max-width: 1024px) {
   .purchase-info-list .purchase-info-item__box .purchase-info-item .purchase-info-title {
-    font-size: clamp(14px, 3.889vw, 16px);
+    font-size: clamp(14px, 2.917vw, 16px);
   }
   .purchase-info-list .purchase-info-item__box .purchase-info-item__description .description-space {
-    font-size: clamp(12px, 3.333vw, 14px);
+    font-size: clamp(12px, 2.5vw, 14px);
   }
   .xans-product #prdDetail table {
     width: 90%;
@@ -2129,7 +2124,7 @@
 .xans-product-detail .infoArea #totalPrice {
   align-items: center;
   justify-content: flex-end;
-  padding: 50px 0 50px;
+  padding: 30px 0;
   font-size: clamp(16px, 1.563vw, 20px);
   font-weight: var(--font-weight-Medium);
   letter-spacing: -0.05em;
@@ -2140,12 +2135,10 @@
 .xans-product-detail .infoArea #totalPrice .total {
   display: flex;
   align-items: center;
-
-  width: clamp(150px, 14.648vw, 200px);
 }
 .xans-product-detail .infoArea #totalPrice .total strong {
   margin: 0 3% 0 7%;
-  font-size: clamp(20px, 1.953vw, 28px);
+  font-size: clamp(20px, 1.953vw, 24px);
   font-weight: var(--font-weight-Medium);
   letter-spacing: -0.05em;
   color: var(--main-color);
@@ -2278,6 +2271,7 @@
 /* 구매버튼 */
 .xans-product-additional.section {
   /* margin: 0 auto 120px; */
+  width: 100%;
   margin: 120px auto;
   max-width: 1280px !important;
 }
@@ -2327,7 +2321,7 @@
 /* 상세페이지 탭 */
 .tabProduct_box {
   height: 61px;
-  margin: 0 auto 90px;
+  margin: 0 auto 60px;
 }
 .tabProduct {
   margin: 0 auto;
@@ -2337,17 +2331,16 @@
 .tabProduct ul {
   margin: 0 auto;
   display: flex;
-  justify-content: center;
-  max-width: 800px;
+  justify-content: space-between;
+  max-width: 1000px;
+  width: 100%;
 }
 .tabProduct li {
-  width: 24%;
   padding: 0;
   border: 0;
   text-align: center;
 }
 .tabProduct li:last-child {
-  width: 28%;
   padding: 0;
   border: 0;
   text-align: center;
@@ -2690,7 +2683,7 @@
   }
   .xans-product-detail {
     padding: 0;
-    margin-bottom: 50px;
+    margin-bottom: 30px !important;
   }
   .xans-product-detail .detailArea {
     flex-flow: column;
@@ -2764,9 +2757,8 @@
     background: var(--grayScale-N1);
   }
   .xans-product-detail .infoArea #totalPrice {
-    padding: 10px 0 26px;
     font-size: 16px;
-    color: #323232;
+    color: var(--grayScale-N2);
   }
   .xans-product-detail .infoArea #totalPrice .total {
     display: flex;
@@ -2833,7 +2825,8 @@
     margin: 0px auto 50px;
   }
   .xans-product-additional .productDetail {
-    margin: 0 0 40px;
+    width: 100%;
+    margin: 0 auto;
   }
   .xans-product-action .action_button {
     flex-wrap: wrap;
@@ -2913,7 +2906,7 @@
   /* 상세페이지 탭 */
   .tabProduct_box {
     height: 54px;
-    margin: 0 auto 40px;
+    margin: unset !important;
   }
   .tabProduct {
     margin: 0 auto;
@@ -2923,15 +2916,8 @@
     width: 90%;
     margin: 0 auto;
   }
-  .tabProduct ul {
-    justify-content: space-around;
-  }
   .tabProduct li {
-    width: 22%;
     padding: 0;
-  }
-  .tabProduct li:last-child {
-    width: 34%;
   }
   .tabProduct li a {
     position: relative;
