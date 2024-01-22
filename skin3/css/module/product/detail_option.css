@@ -130,7 +130,7 @@ body {
 #product_detail_option_layer .productSet .information .name .info {
   display: inline-block;
   font-size: 12px;
-  color: #7d7d7d;
+  color: var(--grayScale-N3);
 }
 #product_detail_option_layer .productSet .information .price .del {
   font-weight: normal;
@@ -270,11 +270,11 @@ body {
 }
 #product_detail_option_layer .xans-product-option .value {
   margin: 10px 0 0;
-  color: #868686;
+  color: var(--grayScale-N4);
   word-break: break-all;
 }
 #product_detail_option_layer .xans-product-option .value .ec-product-value {
-  color: #868686;
+  color: var(--grayScale-N4);
 }
 #product_detail_option_layer .xans-product-option .ec-product-button li {
   position: relative;
@@ -282,8 +282,8 @@ body {
   display: inline-block;
   margin: 0 5px 3px 0;
   vertical-align: top;
-  border: 1px solid #e0e0e0;
-  background: #fff;
+  border: 1px solid var(--pallet-color-5);
+  background: var(--grayScale-W);
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -336,7 +336,7 @@ body {
   width: 100%;
   height: 100%;
   cursor: not-allowed;
-  color: #a9a9a9;
+  color: var(--grayScale-N4);
 }
 #product_detail_option_layer .xans-product-option .ec-product-button .ec-product-soldout a span:before {
   content: '';
@@ -347,7 +347,7 @@ body {
   width: 100px;
   height: 1px;
   margin: 25px 0px 0 -50px;
-  background: #e0e0e0;
+  background: var(--pallet-color-5);
   -webkit-transform: rotate(-45deg);
   -transform: rotate(-45deg-);
 }
@@ -358,7 +358,7 @@ body {
   display: inline-block;
   width: 100%;
   height: 100%;
-  color: #a9a9a9;
+  color: var(--grayScale-N4);
 }
 #product_detail_option_layer .xans-product-option .ec-product-button .ec-product-disabled a span:before {
   content: '';
@@ -385,7 +385,7 @@ body {
 }
 #product_detail_option_layer .xans-product-option .ec-product-radio .ec-product-disabled,
 #product_detail_option_layer .xans-product-option .ec-product-radio .ec-product-soldout {
-  color: #d7d7d7;
+  color: #var(--grayScale-N4);
 }
 #product_detail_option_layer .xans-product-option .ec-base-qty .single-quantity-input {
   width: 45px;
@@ -480,7 +480,7 @@ body {
   text-align: center;
 }
 #totalProducts table .right {
-  font-weight: bold;
+  font-weight: var(--font-weight-Bold);
   text-align: right;
 }
 #totalProducts thead th {
@@ -507,7 +507,7 @@ body {
 }
 #totalProducts tbody td .product span {
   font-weight: normal;
-  color: #7d7d7d;
+  color: var(--grayScale-N3);
   line-height: 18px;
 }
 #totalProducts tbody td .product span.soldOut {
@@ -681,18 +681,18 @@ body {
   padding: 15px;
   font-size: 15px;
   vertical-align: middle;
-  background: #f9f9f9;
+  background: var(--grayScale-N5);
 }
 #product_detail_option_layer .totalPrice .title {
   font-weight: normal;
 }
 #product_detail_option_layer .totalPrice .total {
-  color: #7d7d7d;
+  color: var(--grayScale-N3);
   font-size: 13px;
 }
 #product_detail_option_layer .totalPrice .total strong {
   color: var(--grayScale-N1);
-  color: var(--font-color-primary);
+  color: var(--grayScale-N1);
   font-size: 15px;
 }
 #product_detail_option_layer .totalPrice .total em {

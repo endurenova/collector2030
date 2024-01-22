@@ -27,7 +27,7 @@
 .xans-myshop-asyncbankbook .title {
   display: block;
   font-weight: normal;
-  color: #6d6d6d;
+  color: var(--grayScale-N4);
   box-sizing: border-box;
 }
 
@@ -67,13 +67,13 @@
   }
   .xans-myshop-asyncbankbook .user__info {
     font-size: 15px;
-    font-weight: bold;
+    font-weight: var(--font-weight-Bold);
   }
   .xans-myshop-asyncbankbook .user__data {
     display: block;
     margin: 8px 0 0;
     font-size: 14px;
-    color: #6d6d6d;
+    color: var(--grayScale-N4);
     font-weight: normal;
   }
   .xans-myshop-asyncbankbook .thumb {
@@ -85,7 +85,7 @@
     display: block;
     font-size: 14px;
     line-height: 1;
-    font-weight: bold;
+    font-weight: var(--font-weight-Bold);
   }
   .xans-myshop-asyncbankbook .title {
     margin: 7px 0 0;
@@ -119,7 +119,7 @@
   .xans-myshop-asyncbankbook .data {
     font-size: 15px;
     line-height: 30px;
-    font-weight: bold;
+    font-weight: var(--font-weight-Bold);
   }
   .xans-myshop-asyncbankbook .title {
     margin: 2px 0 0;

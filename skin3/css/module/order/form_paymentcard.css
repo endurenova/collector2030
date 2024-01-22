@@ -36,20 +36,20 @@
   font-size: 12px;
   text-decoration: none;
   color: var(--grayScale-N1);
-  background-color: #fff;
+  background-color: var(--grayScale-W);
 }
 .ec-order-payment-card .pgBanner img {
   max-width: 100%;
   height: auto;
 }
 .ec-order-payment-card .paymentAgree {
-  border: 1px solid #d7d5d5;
+  border: 1px solid var(--pallet-color-5);
 }
 .ec-order-payment-card .paymentAgree .all {
   position: relative;
   padding: 10px 70px 10px 10px;
-  font-weight: bold;
-  background: #fbfafa;
+  font-weight: var(--font-weight-Bold);
+  background: var(--pallet-color-5);
 }
 .ec-order-payment-card .btnToggle {
   position: absolute;
@@ -57,7 +57,7 @@
   right: 10px;
   font-size: 12px;
   line-height: 18px;
-  color: #707070;
+  color: var(--grayScale-N3);
   outline: 0;
   background: none;
 }
@@ -73,7 +73,7 @@
 .ec-order-payment-card .paymentAgree .detail {
   display: none;
   padding: 10px 20px;
-  border-top: 1px solid #e9e9e9;
+  border-top: 1px solid var(--pallet-color-5);
 }
 .ec-order-payment-card .paymentAgree.selected .detail {
   display: block;

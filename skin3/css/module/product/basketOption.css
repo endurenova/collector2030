@@ -25,7 +25,7 @@
 }
 .xans-product-basketoption .btnArea {
   overflow: hidden;
-  background: #fff;
+  background: var(--grayScale-W);
   padding: 30px 30px 30px 27px;
   margin: 0;
   position: relative;
@@ -44,7 +44,7 @@
   overflow-x: hidden;
   max-height: 210px;
   height: 210px;
-  background: #fff;
+  background: var(--grayScale-W);
   border-bottom: 1px solid #dedcdc;
 }
 .xans-product-basketoption .layInner p {
@@ -59,7 +59,7 @@
   margin: 0 0 20px;
 }
 .xans-product-basketoption th {
-  background: #fff;
+  background: var(--grayScale-W);
   color: var(--grayScale-N1);
   font-weight: normal;
   padding: 5px 0;

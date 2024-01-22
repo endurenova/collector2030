@@ -14,7 +14,7 @@
 }
 .xans-product-recommmail .infomation .price {
   margin: 5px 0 0;
-  font-weight: bold;
+  font-weight: var(--font-weight-Bold);
   font-size: 14px;
 }
 

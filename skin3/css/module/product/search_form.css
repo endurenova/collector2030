@@ -6,7 +6,7 @@ a.xans-search-form {
 .xans-search-form .searchbox {
   margin: 21px 0 20px;
   padding: 45px 0;
-  background: #fff;
+  background: var(--grayScale-W);
 }
 .xans-search-form .searchbox fieldset {
   width: 486px;
@@ -15,7 +15,7 @@ a.xans-search-form {
 }
 .xans-search-form .searchbox .item {
   margin: 8px 0 0;
-  color: #353535;
+  color: var(--grayScale-N2);
   line-height: 20px;
 }
 .xans-search-form .searchbox .item:after {
@@ -48,7 +48,7 @@ a.xans-search-form {
   float: left;
   min-width: 55px;
   padding: 0 10px 0 0;
-  color: #6b6b6b;
+  color: var(--grayScale-N1-opa);
 }
 .xans-search-form .searchbox .popular p a {
   margin: 0 3px 0 0;
@@ -114,7 +114,7 @@ a.xans-search-form {
 /* searchResult */
 .xans-search-form .searchResult {
   overflow: hidden;
-  border: 1px solid #d7d5d5;
+  border: 1px solid var(--pallet-color-5);
   text-align: right;
   line-height: 38px;
 }

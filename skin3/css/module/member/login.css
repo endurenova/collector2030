@@ -20,7 +20,7 @@
   margin: 0 0 10px;
 }
 .login__security {
-  margin: 10px 0 30px;
+  margin: 18px 0 0;
   font-size: 13px;
 }
 .login__security .secret {
@@ -56,7 +56,7 @@
   height: 17px;
   margin: 0 8px 0 12px;
   vertical-align: top;
-  background: #e0e0e0;
+  background: var(--pallet-color-5);
 }
 .login__util li a {
   color: var(--grayScale-N2);
@@ -68,7 +68,7 @@
   margin: 25px 9px 0 0;
   padding: 25px 0 0 0;
   color: var(--grayScale-N3);
-  border-top: 1px solid #e9e9e9;
+  border-top: 1px solid var(--pallet-color-5);
 }
 .login__link a {
   position: absolute;
@@ -91,7 +91,7 @@
   text-align: center;
   height: 50px;
   line-height: 50px;
-  font-weight: bold;
+  font-weight: var(--font-weight-Bold);
   text-decoration: none;
   box-sizing: border-box;
   background-size: 20px 0;
@@ -104,26 +104,26 @@
   background: #fee500 url('//img.echosting.cafe24.com/skin/skin/member/ico_kakao.svg') no-repeat 20px 15px;
 }
 .login__sns .btnNaver {
-  color: #fff;
+  color: var(--grayScale-W);
   background: #1ec800 url('//img.echosting.cafe24.com/skin/skin/member/ico_naver.svg') no-repeat 20px 15px;
 }
 .login__sns .btnFacebook {
-  color: #fff;
+  color: var(--grayScale-W);
   background: #1877f2 url('//img.echosting.cafe24.com/skin/skin/member/ico_facebook.svg') no-repeat 20px 15px;
 }
 .login__sns .btnLine {
-  color: #fff;
+  color: var(--grayScale-W);
   background: #00c300 url('//img.echosting.cafe24.com/skin/skin/member/ico_line.svg') no-repeat 20px 15px;
 }
 .login__sns .btnGoogle {
   color: var(--grayScale-N1);
-  border: 1px solid #bcbcbc;
-  background: #fff url('//img.echosting.cafe24.com/skin/skin/member/ico_google.svg') no-repeat 20px 15px;
+  border: 1px solid var(--grayScale-N4);
+  background: var(--grayScale-W) url('//img.echosting.cafe24.com/skin/skin/member/ico_google.svg') no-repeat 20px 15px;
 }
 .login__sns .btnApple {
   color: var(--grayScale-N1);
   border: 1px solid var(--grayScale-N1);
-  background: #fff url('//img.echosting.cafe24.com/skin/skin/member/ico_apple.svg') no-repeat 20px 13px;
+  background: var(--grayScale-W) url('//img.echosting.cafe24.com/skin/skin/member/ico_apple.svg') no-repeat 20px 13px;
 }
 
 /********************* PC *********************/

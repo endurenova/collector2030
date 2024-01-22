@@ -1,4 +1,4 @@
 .xans-product-basketadd .content p {
-  font-weight: bold;
+  font-weight: var(--font-weight-Bold);
   color: var(--grayScale-N2);
 }

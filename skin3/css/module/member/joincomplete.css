@@ -8,7 +8,7 @@
 }
 .xans-member-joincomplete .joinComplete .desc {
   font-size: 16px;
-  color: #000000;
+  color: var(--grayScale-N1) 000;
 }
 
 .xans-member-joincomplete .joinComplete .ec-base-box {
@@ -42,7 +42,7 @@
 
 .xans-member-joincomplete .joinComplete .memberSpecial {
   line-height: 1.5;
-  color: #6d6d6d;
+  color: var(--grayScale-N4);
   padding: 20px 0;
 }
 .xans-member-joincomplete .joinComplete .memberSpecial ul {
@@ -53,10 +53,10 @@
   text-align: left;
 }
 .xans-member-joincomplete .joinComplete .memberSpecial strong {
-  color: #000000;
+  color: var(--grayScale-N1) 000;
 }
 .xans-member-joincomplete .joinComplete .memberSpecial strong.price {
-  color: #6d6d6d;
+  color: var(--grayScale-N4);
 }
 
 .xans-member-joincomplete .joinComplete .memberAge {
@@ -69,16 +69,16 @@
 
 .xans-member-joincomplete .joinComplete .memberEmail {
   margin-top: 20px;
-  color: #000000;
+  color: var(--grayScale-N1) 000;
   line-height: 1.5;
 }
 .xans-member-joincomplete .joinComplete .memberAge {
   margin-top: 20px;
-  color: #6d6d6d;
+  color: var(--grayScale-N4);
   line-height: 1.5;
 }
 .xans-member-joincomplete .joinComplete .memberAge strong {
-  color: #000000;
+  color: var(--grayScale-N1) 000;
 }
 
 /********************* PC *********************/

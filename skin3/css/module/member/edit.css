@@ -3,7 +3,7 @@
   margin: -13px 0 0;
   line-height: 1;
   text-align: right;
-  color: var(--font-color-base);
+  color: var(--grayScale-N1);
 }
 .xans-member-edit .required:before {
   display: none;
@@ -82,7 +82,7 @@
   height: 152px;
   margin: 20px 0 0;
   padding: 20px;
-  color: #6d6d6d;
+  color: var(--grayScale-N4);
   font-size: 12px;
   line-height: 20px;
   border: 1px solid var(--pallet-color-1);

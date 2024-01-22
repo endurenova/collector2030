@@ -1,7 +1,7 @@
 /* 리스트 */
 .xans-myshop-couponlist .contents {
   display: none;
-  background-color: #f9f9f9;
+  background-color: var(--grayScale-N5);
 }
 .xans-myshop-couponlist tr.selected .contents {
   display: table-cell;
@@ -70,7 +70,7 @@
 }
 .xans-myshop-couponlist .title h3 {
   float: left;
-  color: #353535;
+  color: var(--grayScale-N2);
   font-size: 12px;
 }
 .xans-myshop-couponlist .title p {
@@ -123,7 +123,7 @@
     padding: 19px 20px;
     line-height: 1.5;
     background: var(--pallet-color-5);
-    font-weight: 500;
+    font-weight: var(--font-weight-Medium);
   }
   .xans-myshop-couponlist .layer .display_tablet_only {
     font-size: 13px;

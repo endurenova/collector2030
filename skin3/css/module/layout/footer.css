@@ -18,10 +18,10 @@
 .xans-layout-footer .info__address span {
   display: inline-block;
   padding: 0 25px 0 0;
-  color: #6d6d6d;
+  color: var(--grayScale-N4);
 }
 .xans-layout-footer .info__address span a {
-  color: #6d6d6d;
+  color: var(--grayScale-N4);
 }
 .xans-layout-footer .sns a {
   overflow: hidden;
@@ -37,7 +37,7 @@
   vertical-align: top;
 }
 .xans-layout-footer .copyright {
-  color: #6d6d6d;
+  color: var(--grayScale-N4);
 }
 .xans-layout-footer .hosting {
   color: var(--grayScale-N1);
@@ -73,7 +73,7 @@
     margin: 10px 0 0;
     font-size: 12px;
     line-height: 20px;
-    color: #6d6d6d;
+    color: var(--grayScale-N4);
   }
   .xans-layout-footer .copyright {
     margin: 10px 0 0;
@@ -93,7 +93,7 @@
   .xans-layout-footer .info__customer {
     margin: 0 -24px;
     padding: 30px 24px;
-    border-top: 1px solid #e0e0e0;
+    border-top: 1px solid var(--pallet-color-5);
   }
   .xans-layout-footer .info__customer .heading {
     position: relative;
@@ -162,7 +162,7 @@
     margin: 14px 0 0;
     font-size: 15px;
     line-height: 30px;
-    color: #6d6d6d;
+    color: var(--grayScale-N4);
   }
   .xans-layout-footer .copyright {
     margin: 20px 0 0;
@@ -212,14 +212,14 @@
     margin: 14px 0 0;
     font-size: 14px;
     line-height: 30px;
-    color: #6d6d6d;
+    color: var(--grayScale-N4);
   }
   .xans-layout-footer .info__community a {
     display: block;
     margin: 2px 0;
     padding: 6px 0;
     font-size: 14px;
-    color: #6d6d6d;
+    color: var(--grayScale-N4);
   }
   .xans-layout-footer .sns {
     position: absolute;

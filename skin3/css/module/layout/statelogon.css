@@ -8,7 +8,7 @@
   color: var(--grayScale-N3);
 }
 .xans-layout-statelogon .myinfo strong {
-  color: #353535;
+  color: var(--grayScale-N2);
 }
 .xans-layout-statelogon .myinfo a {
   padding: 0 4px 0 10px;
@@ -32,8 +32,8 @@
 .xans-layout-statelogon > a .count span {
   height: 14px;
   padding: 1px 8px 1px 0;
-  font-weight: bold;
-  color: #fff;
+  font-weight: var(--font-weight-Bold);
+  color: var(--grayScale-W);
   font-size: 11px;
   line-height: 14px;
   vertical-align: top;

@@ -24,11 +24,11 @@
 }
 .xans-product-restockemail .value {
   margin: 10px 0 0;
-  color: #868686;
+  color: var(--grayScale-N4);
   word-break: break-all;
 }
 .xans-product-restockemail .value .ec-product-value {
-  color: #868686;
+  color: var(--grayScale-N4);
 }
 .xans-product-restockemail .ec-product-button li {
   position: relative;
@@ -36,8 +36,8 @@
   display: inline-block;
   margin: 0 5px 3px 0;
   vertical-align: top;
-  border: 1px solid #e0e0e0;
-  background: #fff;
+  border: 1px solid var(--pallet-color-5);
+  background: var(--grayScale-W);
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -93,7 +93,7 @@
   width: 100%;
   height: 100%;
   cursor: not-allowed;
-  color: #a9a9a9;
+  color: var(--grayScale-N4);
 }
 .xans-product-restockemail .ec-product-button .ec-product-soldout a span:before {
   content: '';
@@ -104,7 +104,7 @@
   width: 100px;
   height: 1px;
   margin: 25px 0px 0 -50px;
-  background: #e0e0e0;
+  background: var(--pallet-color-5);
   -webkit-transform: rotate(-45deg);
   -transform: rotate(-45deg-);
 }
@@ -115,7 +115,7 @@
   display: inline-block;
   width: 100%;
   height: 100%;
-  color: #a9a9a9;
+  color: var(--grayScale-N4);
 }
 .xans-product-restockemail .ec-product-button .ec-product-disabled a span:before {
   content: '';
@@ -142,7 +142,7 @@
 }
 .xans-product-restockemail .ec-product-radio .ec-product-disabled,
 .xans-product-restockemail .ec-product-radio .ec-product-soldout {
-  color: #d7d7d7;
+  color: #var(--grayScale-N4);
 }
 
 .xans-product-restockemail .information .optionWrap ul li select {

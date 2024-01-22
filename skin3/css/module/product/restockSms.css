@@ -27,11 +27,11 @@
   float: left;
 }
 .xans-product-restocksms .information .optionWrap ul li .option .value {
-  color: #767479;
+  color: var(--grayScale-N3);
   word-break: break-all;
 }
 .xans-product-restocksms .information .optionWrap ul li .option .value .ec-product-value {
-  color: #363437;
+  color: var(--grayScale-N2);
 }
 .xans-product-restocksms .information .optionWrap ul li .option .ec-product-button li {
   position: relative;
@@ -39,8 +39,8 @@
   display: inline-block;
   margin: 0 5px 3px 0;
   vertical-align: top;
-  border: 1px solid #d7d7d7;
-  background: #fff;
+  border: 1px solid #var(--grayScale-N4);
+  background: var(--grayScale-W);
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -124,7 +124,7 @@
   width: 100%;
   height: 100%;
   cursor: not-allowed;
-  color: #d7d7d7;
+  color: #var(--grayScale-N4);
 }
 .xans-product-restocksms
   .information
@@ -144,7 +144,7 @@
   width: 100%;
   height: 100%;
   color: var(--grayScale-N1);
-  background: #555;
+  background: var(--grayScale-N1-opa);
   filter: alpha(opacity=30);
   opacity: 0.3;
 }
@@ -166,7 +166,7 @@
 }
 .xans-product-restocksms .information .optionWrap ul li .option .ec-product-radio .ec-product-disabled,
 .xans-product-restocksms .information .optionWrap ul li .option .ec-product-radio .ec-product-soldout {
-  color: #d7d7d7;
+  color: #var(--grayScale-N4);
 }
 
 .xans-product-restocksms .information .optionWrap .optionBox {
@@ -188,7 +188,7 @@
 
 .xans-product-restocksms .smsArea {
   margin: 17px 0 0;
-  color: #353535;
+  color: var(--grayScale-N2);
   line-height: 18px;
 }
 .xans-product-restocksms .smsArea p {

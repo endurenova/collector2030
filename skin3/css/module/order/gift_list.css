@@ -4,7 +4,7 @@
 }
 .xans-gift-list .giftInfo {
   padding: 10px;
-  font-weight: bold;
+  font-weight: var(--font-weight-Bold);
 }
 .xans-gift-list .giftInfo:before {
   display: inline-block;
@@ -18,7 +18,7 @@
 .xans-gift-list .xans-gift-second {
   margin-top: 40px;
   padding-top: 40px;
-  border-top: 1px solid #868686;
+  border-top: 1px solid var(--grayScale-N4);
 }
 .xans-gift-list .xans-gift-second:first-child {
   border-top: 0;

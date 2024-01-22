@@ -7,7 +7,7 @@
     font-size: 27px;
     line-height: 1;
     color: var(--grayScale-N1);
-    font-weight: bold;
+    font-weight: var(--font-weight-Bold);
     text-decoration: none;
     font-style: normal;
   }
@@ -28,7 +28,7 @@
   .xans-layout-logotop a {
     font-size: 35px;
     color: var(--grayScale-N1);
-    font-weight: bold;
+    font-weight: var(--font-weight-Bold);
     text-decoration: none;
     font-style: normal;
   }

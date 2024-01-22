@@ -9,7 +9,7 @@
   border-top: 1px solid var(--grayScale-N1);
 }
 .xans-myshop-orderoldhistorylist .order .date {
-  font-weight: bold;
+  font-weight: var(--font-weight-Bold);
 }
 .xans-myshop-orderoldhistorylist .btnDetail {
   position: absolute;

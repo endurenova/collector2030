@@ -13,7 +13,7 @@
   padding: 34px 24px 14px;
   border: 1px solid #565960;
   color: var(--grayScale-N2);
-  background: #fff;
+  background: var(--grayScale-W);
 }
 .xans-product-optionpreview .prdOption li {
   padding: 6px 0 7px;

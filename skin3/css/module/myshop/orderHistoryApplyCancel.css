@@ -9,11 +9,11 @@
   border-top: 1px solid var(--grayScale-N1);
 }
 .xans-myshop-orderhistoryapplycancel .order__number .date {
-  font-weight: bold;
+  font-weight: var(--font-weight-Bold);
 }
 
 .xans-myshop-orderhistoryapplycancel .ec-base-table.typeList .xans-myshop-products .multiDelivery {
-  background-color: #fbfafa;
+  background-color: var(--pallet-color-5);
   vertical-align: middle;
   padding: 10px 20px 10px 40px;
 }

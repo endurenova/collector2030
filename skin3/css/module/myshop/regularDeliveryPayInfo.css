@@ -5,7 +5,7 @@
 .regularDeliveryPayInfo > .title {
   margin: 0 0 20px;
   font-size: 12px;
-  color: #353535;
+  color: var(--grayScale-N2);
 }
 .regularDeliveryPayInfo .ec-base-box .information {
   float: left;
@@ -24,7 +24,7 @@
 .regularDeliveryPayInfo .ec-base-box .information .status {
   position: relative;
   padding: 0 15px;
-  font-weight: bold;
+  font-weight: var(--font-weight-Bold);
   color: #2f8cce;
 }
 .regularDeliveryPayInfo .ec-base-box .information .info {

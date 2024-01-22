@@ -1,6 +1,6 @@
 .xans-order-dcinfo {
   margin: 20px 0;
-  color: #353535;
+  color: var(--grayScale-N2);
   line-height: 1.5;
 }
 .xans-order-dcinfo h3 {

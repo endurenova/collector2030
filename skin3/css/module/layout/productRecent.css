@@ -39,5 +39,5 @@
 .xans-layout-productrecent .player .icon {
   display: block;
   margin: 0 auto;
-  border-color: #7d7d7d;
+  border-color: var(--grayScale-N3);
 }

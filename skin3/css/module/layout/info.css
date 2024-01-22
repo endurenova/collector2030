@@ -13,13 +13,13 @@
 }
 .xans-layout-info li {
   margin: 4px 0 0;
-  color: #494949;
+  color: var(--grayScale-N2);
 }
 .xans-layout-info li strong {
   display: inline-block;
   width: 20%;
   vertical-align: top;
-  color: #949494;
+  color: var(--grayScale-N3);
   font-weight: normal;
 }
 .xans-layout-info li.tel {

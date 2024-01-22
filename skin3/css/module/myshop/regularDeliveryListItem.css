@@ -2,7 +2,7 @@
   margin: 40px 0 10px 10px;
 }
 .xans-myshop-orderregularmanagelist .title h3 {
-  color: #353535;
+  color: var(--grayScale-N2);
   font-size: 12px;
 }
 .xans-myshop-orderregularmanagelist.ec-base-table td .line {
@@ -25,7 +25,7 @@
 }
 .xans-myshop-orderregularmanagelist.ec-base-table td.product ul.option > li > strong {
   display: block;
-  color: #353535;
+  color: var(--grayScale-N2);
 }
 .xans-myshop-orderregularmanagelist.ec-base-table td.product div.option span.file a,
 .xans-myshop-orderregularmanagelist.ec-base-table td.product ul.option > li > span.file a {

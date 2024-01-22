@@ -16,7 +16,7 @@
 .xans-order-basketpackage .summary {
   padding: 20px;
   border-bottom: 1px solid var(--pallet-color-1);
-  background: #f9f9f9;
+  background: var(--grayScale-N5);
 }
 .xans-order-basketpackage .summary .title h5 {
   font-size: 13px;
@@ -34,7 +34,7 @@
   text-align: right;
   padding: 14px;
   font-size: 13px;
-  border-bottom: 1px solid #d5d5d5;
+  border-bottom: 1px solid #var(--grayScale-N4);
 }
 .xans-order-basketpackage .xans-order-weight .totalWeight span {
   display: inline-block;
@@ -64,7 +64,7 @@
   display: flex;
   justify-content: space-between;
   margin: 10px 0 0;
-  color: #6d6d6d;
+  color: var(--grayScale-N4);
 }
 .xans-order-basketpackage .totalSummary__item .title {
   font-size: 13px;

@@ -4,9 +4,9 @@
 .xans-order-layerbasket.content .totalCount {
   padding: 15px 0 10px;
   margin: 0 20px 15px;
-  border-bottom: 1px solid #ececec;
+  border-bottom: 1px solid var(--grayScale-N5);
   font-size: 14px;
-  font-weight: bold;
+  font-weight: var(--font-weight-Bold);
 }
 .xans-order-layerbasket.content .totalCount strong {
   color: #008bcc;
@@ -70,7 +70,7 @@
   color: var(--grayScale-N3);
 }
 .xans-order-layerbasket.content ul.prdList ul li.price {
-  font-weight: bold;
+  font-weight: var(--font-weight-Bold);
   color: var(--grayScale-N1);
 }
 .xans-order-layerbasket.content ul.prdList .strike {

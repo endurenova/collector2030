@@ -25,5 +25,5 @@
   background: none;
 }
 .xans-layout-myshop a {
-  color: #222;
+  color: var(--grayScale-N2);
 }

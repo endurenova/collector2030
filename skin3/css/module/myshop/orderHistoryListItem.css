@@ -12,7 +12,7 @@
   margin-top: 0;
 }
 .xans-myshop-orderhistorylistitem .order__number .date {
-  font-weight: bold;
+  font-weight: var(--font-weight-Bold);
 }
 .xans-myshop-orderhistorylistitem .btnDetail {
   position: absolute;
@@ -37,7 +37,7 @@
   text-align: right;
 }
 .xans-myshop-orderhistorylistitem .ec-base-prdInfo .payDetail strong {
-  font-weight: 400;
+  font-weight: var(--font-weight-Regular);
 }
 .xans-myshop-orderhistorylistitem .ec-base-prdInfo .payDetail .title:before {
   content: ' = ';
@@ -75,7 +75,7 @@
     display: none;
   }
   .xans-myshop-orderhistorylistitem .ec-base-prdInfo .payDetail .title .gRight strong {
-    font-weight: 700;
+    font-weight: var(--font-weight-Bold);
   }
   .xans-myshop-orderhistorylistitem .ec-base-prdInfo .payDetail .contents {
     word-break: keep-all;

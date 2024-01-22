@@ -9,7 +9,7 @@
   border-radius: 10px;
   line-height: 18px;
   font-size: 12px;
-  color: #fff;
+  color: var(--grayScale-W);
   background-color: #009ffa;
 }
 .xans-myshop-orderregularmanagedetaillist .icoDown {
@@ -31,7 +31,7 @@
   left: 5px;
   width: 4px;
   height: 4px;
-  background-color: #fff;
+  background-color: var(--grayScale-W);
 }
 .xans-myshop-orderregularmanagedetaillist .icoDown:after {
   content: '';
@@ -43,7 +43,7 @@
   height: 0;
   border-left: 4px solid transparent;
   border-right: 4px solid transparent;
-  border-top: 4px solid #fff;
+  border-top: 4px solid var(--grayScale-W);
 }
 .xans-myshop-orderregularmanagedetaillist .datepicker {
   position: relative;

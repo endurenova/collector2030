@@ -7,7 +7,7 @@
 .xans-myshop-asyncbenefit .benefit .user,
 .xans-myshop-asyncbenefit .benefit .description {
   font-size: 14px;
-  color: #6d6d6d;
+  color: var(--grayScale-N4);
 }
 .xans-myshop-asyncbenefit .benefit .description p + p {
   margin: 5px 0 0;
@@ -34,8 +34,8 @@
   display: inline-block;
   margin: 0 0 5px 0;
   font-size: 15px;
-  font-weight: bold;
-  color: var(--font-color-primary);
+  font-weight: var(--font-weight-Bold);
+  color: var(--grayScale-N1);
 }
 
 .xans-myshop-asyncbenefit .thumbnail img {

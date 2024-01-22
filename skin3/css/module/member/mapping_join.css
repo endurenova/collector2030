@@ -20,7 +20,7 @@
   padding: 15px;
   font-size: 12px;
   line-height: 16px;
-  font-weight: 700;
+  font-weight: var(--font-weight-Bold);
   text-align: center;
   box-sizing: border-box;
 }
@@ -62,18 +62,18 @@
   flex: none;
 }
 .xans-member-joinmapping .ec-base-button .btnNormal {
-  font-weight: 400;
+  font-weight: var(--font-weight-Regular);
 }
 .xans-member-joinmapping .ec-base-box.typeThin {
   margin: 0 0 20px;
   padding: 0;
-  border-color: #d5d5d5;
+  border-color: #var(--grayScale-N4);
 }
 .xans-member-joinmapping .boxTitle {
   margin: 6px 0 20px;
   font-size: 14px;
   line-height: 1.5;
-  font-weight: 400;
+  font-weight: var(--font-weight-Regular);
 }
 .xans-member-joinmapping .boxTitle em {
   font-style: normal;

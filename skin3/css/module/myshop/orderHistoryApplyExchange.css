@@ -9,11 +9,11 @@
   border-top: 1px solid var(--grayScale-N1);
 }
 .xans-myshop-orderhistoryapplyexchange .order__number .date {
-  font-weight: bold;
+  font-weight: var(--font-weight-Bold);
 }
 .xans-myshop-orderhistoryapplyexchange .productSelect {
   border-bottom: 1px solid var(--pallet-color-1);
-  background: #f9f9f9;
+  background: var(--grayScale-N5);
 }
 .xans-myshop-orderhistoryapplyexchange .exchangeProduct {
   border-top: 1px solid var(--grayScale-N1);
@@ -29,7 +29,7 @@
 }
 
 .xans-myshop-orderhistoryapplyexchange .ec-base-table.typeList .xans-myshop-products .multiDelivery {
-  background-color: #fbfafa;
+  background-color: var(--pallet-color-5);
   vertical-align: middle;
   padding: 10px 20px 10px 40px;
 }

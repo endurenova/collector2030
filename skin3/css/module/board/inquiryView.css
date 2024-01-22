@@ -9,7 +9,7 @@
 }
 .xans-board-inquiryhead .information .price {
   font-size: 14px;
-  font-weight: bold;
+  font-weight: var(--font-weight-Bold);
   color: #008bcc;
 }
 .xans-board-inquiryhead .information .button {
@@ -40,7 +40,7 @@
   list-style: disc;
 }
 .xans-board-inquiryview .ec-base-table .attach a {
-  color: #8f8f8f;
+  color: var(--grayScale-N3);
 }
 .xans-board-inquiryview .ec-base-table .attach a:hover {
   text-decoration: underline;

@@ -1,5 +1,5 @@
 .xans-product-normalmenu {
-  border-top: 1px solid #e0e0e0;
+  border-top: 1px solid var(--pallet-color-5);
 }
 .xans-product-normalmenu .function {
   overflow: hidden;
@@ -9,14 +9,14 @@
 .xans-product-normalmenu .function .btnCompare {
   display: inline-block;
   padding: 0 12px;
-  border-left: 1px solid #d7d5d5;
+  border-left: 1px solid var(--pallet-color-5);
 }
 .xans-product-normalmenu .function .btnCompare:hover {
   text-decoration: none;
 }
 .xans-product-normalmenu .prdCount {
   float: left;
-  color: #7d7d7d;
+  color: var(--grayScale-N2);
 }
 .xans-product-normalmenu .prdCount strong {
   margin-left: 8px;
@@ -84,14 +84,14 @@
 }
 .product_top_image {
   max-width: 1480px !important;
-  width: 92%;
+  width: 90%;
   margin: 0 auto;
   padding: 20px 0;
   text-align: center;
 }
 .xans-product-headcategory.titleArea.section {
   max-width: 1480px !important;
-  width: 92%;
+  width: 90%;
   margin: 0 auto;
   padding: 45px 0 30px;
 }
@@ -106,7 +106,7 @@
   margin: 0;
   padding-top: 20px;
   font-size: 30px;
-  font-weight: 500;
+  font-weight: var(--font-weight-Medium);
   line-height: 1;
   color: var(--grayScale-N1);
   letter-spacing: -0.001em;
@@ -123,9 +123,9 @@
 .listpage_title span {
   display: block;
   font-size: 14px;
-  font-weight: 300;
+  font-weight: var(--font-weight-Light);
   line-height: 1;
-  color: #888;
+  color: var(--grayScale-N3);
   margin-top: 12px;
 }
 .listpage_title.ez-align-left {
@@ -198,19 +198,19 @@
     width: 100%;
   }
   .xans-product-normalpackage {
-    width: 92%;
+    width: 90%;
     margin: 0 auto;
   }
 
   /* 상품분류 추천상품 */
   .xans-product-listrecommend {
-    width: 92%;
+    width: 90%;
     padding: 0 0 50px;
   }
 
   /* 상품분류 신상품 */
   .xans-product-listnew {
-    width: 92%;
+    width: 90%;
     padding: 0 0 50px;
   }
 }
@@ -222,7 +222,7 @@
     width: 155px;
     padding: 0 30px 0 15px;
     font-size: 13px;
-    border: 1px solid #e0e0e0;
+    border: 1px solid var(--pallet-color-5);
     box-sizing: border-box;
     outline: none;
   }

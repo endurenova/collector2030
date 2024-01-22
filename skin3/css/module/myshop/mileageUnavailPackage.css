@@ -61,10 +61,10 @@
 .xans-myshop-unavaillist .item table th,
 .xans-myshop-unavaillist .item table td {
   line-height: 1.5;
-  background: #fff;
+  background: var(--grayScale-W);
 }
 .xans-myshop-unavaillist .item table th {
-  color: #6d6d6d;
+  color: var(--grayScale-N4);
   text-align: left;
   font-weight: normal;
 }

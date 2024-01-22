@@ -31,8 +31,8 @@ img {
 }
 body {
   font: 12px Dotum, AppleGothic, sans-serif;
-  color: #333;
-  background: #fff;
+  color: var(--grayScale-N2);
+  background: var(--grayScale-W);
 }
 caption {
   display: none;
@@ -49,7 +49,7 @@ li {
 }
 .xans-estimate-print strong {
   display: block;
-  color: #353535;
+  color: var(--grayScale-N2);
 }
 .xans-estimate-print ul {
   float: left;
@@ -73,10 +73,10 @@ li {
   width: 80px;
   height: 80px;
   padding: 54px 2px 4px;
-  font-weight: bold;
+  font-weight: var(--font-weight-Bold);
   font-size: 12px;
   line-height: 18px;
-  color: #fff;
+  color: var(--grayScale-W);
   text-decoration: none;
   text-align: center;
   vertical-align: middle;
@@ -127,7 +127,7 @@ li {
 .xans-estimate-estimateinfo th,
 .xans-estimate-estimateinfo td {
   padding: 4px 2px;
-  border: 1px solid #999;
+  border: 1px solid var(--grayScale-N3);
 }
 .xans-estimate-estimateinfo p {
   padding: 0 0 5px;
@@ -169,6 +169,6 @@ ul.sale .title {
   }
   table th {
     text-align: center;
-    border: 1px solid #999;
+    border: 1px solid var(--grayScale-N3);
   }
 }
