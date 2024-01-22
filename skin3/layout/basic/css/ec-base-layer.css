@@ -28,7 +28,7 @@ h3 {
 .ec-base-layer {
   z-index: 1001;
   border: 1px solid var(--grayScale-N1);
-  background: #fff;
+  background: var(--grayScale-W);
   box-sizing: border-box;
 }
 .ec-base-layer .header {

@@ -1,5 +1,4 @@
 @charset "utf-8";
-
 /* **************************** //필수 CSS 수정 및 삭제 불가 **************************** */
 
 /* tag reset */
@@ -32,6 +31,7 @@ td,
 img {
   margin: 0;
   padding: 0;
+  word-break: keep-all;
 }
 html {
   width: 100%;
@@ -40,11 +40,9 @@ html {
 body,
 code {
   font-size: 13px;
-  font-family: Arial, 'Apple SD Gothic Neo', 'Noto Sans Regular', '맑은 고딕', 'malgun gothic', '돋움', 'dotum',
-    sans-serif;
+  font-family: 'Montserrat', 'Noto Sans KR', Arial, sans-serif;
   color: var(--grayScale-N1);
-  color: var(--font-color-base);
-  background: #fff;
+  background: var(--grayScale-W);
 }
 body {
   min-width: 360px;
@@ -60,6 +58,9 @@ img,
 fieldset {
   border: none;
   vertical-align: top;
+}
+img {
+  object-fit: contain;
 }
 table {
   width: 100%;
@@ -79,17 +80,15 @@ input,
 select,
 textarea {
   font-size: 100%;
-  font-family: Arial, 'Apple SD Gothic Neo', 'Noto Sans Regular', '맑은 고딕', 'malgun gothic', '돋움', 'dotum',
-    sans-serif;
+  font-family: 'Montserrat', 'Noto Sans KR', Arial, sans-serif;
   color: var(--grayScale-N1);
-  color: var(--font-color-base);
+  color: var(--grayScale-N1);
   vertical-align: middle;
   border-radius: 0;
   box-sizing: border-box;
 }
 button {
-  font-family: Arial, 'Apple SD Gothic Neo', 'Noto Sans Regular', '맑은 고딕', 'malgun gothic', '돋움', 'dotum',
-    sans-serif;
+  font-family: 'Montserrat', 'Noto Sans KR', Arial, sans-serif;
   overflow: visible;
   padding: 0;
   margin: 0;
@@ -103,7 +102,7 @@ hr.layout {
 a {
   text-decoration: none;
   color: var(--grayScale-N1);
-  color: var(--font-color-base);
+  color: var(--grayScale-N1);
 }
 a:hover {
   text-decoration: underline;
@@ -162,7 +161,7 @@ a:active {
   margin: 0 auto;
   padding: 67px 0;
   text-align: center;
-  background: #fff;
+  background: var(--grayScale-W);
 }
 #progressPaybarView .box .txt {
   margin: 8px 0 36px;
@@ -206,7 +205,7 @@ a:active {
   height: auto;
   padding: 10px 0;
   background: #c4122f;
-  color: #fff;
+  color: var(--grayScale-W);
   z-index: 100;
 }
 
@@ -220,7 +219,7 @@ a:active {
   z-index: 99;
   width: 100%;
   height: 100%;
-  background: #fff;
+  background: var(--grayScale-W);
   opacity: 0.8;
   filter: alpha(opacity=80);
 }
@@ -234,15 +233,8 @@ a:active {
   text-indent: -150%;
   white-space: nowrap;
 }
-
-/* IE Not Supoorted */
-:root {
-  --font-color-base: var(--grayScale-N1);
-  --font-color-heading: var(--grayScale-N1);
-  --font-color-primary: var(--grayScale-N1);
-  --font-color-secondary: #ef441f;
-  --font-color-warn: #ec2a1d;
-  --font-color-success: #0985df;
+.top_logo {
+  font-family: 'MinervaMorden-Black';
 }
 
 /* **************************** 필수 CSS 수정 및 삭제 불가 **************************** */

@@ -10,7 +10,7 @@
 		<path d="M40,15.84c13.23,0,24,10.77,24,24s-10.77,24-24,24s-24-10.77-24-24S26.77,15.84,40,15.84 M40,14.84
 			c-13.81,0-25,11.19-25,25s11.19,25,25,25s25-11.19,25-25S53.81,14.84,40,14.84L40,14.84z"/>
 	</g>
-	<polyline fill-rule="evenodd" fill="none" stroke="#000000" stroke-miterlimit="10" points="37.38,47.88 45.38,39.88 37.3,31.8 	
+	<polyline fill-rule="evenodd" fill="none" stroke="#1d1611" stroke-miterlimit="10" points="37.38,47.88 45.38,39.88 37.3,31.8 	
 		"/>
 </g>
 </svg>

@@ -40,7 +40,7 @@
 }
 .ec-base-fold > .contents {
   display: none;
-  background: #fff;
+  background: var(--grayScale-W);
 }
 .ec-base-fold .ec-base-fold {
   border-width: 1px 0 0;
@@ -103,6 +103,9 @@
   margin-top: 30px;
 }
 
+.detail_guide .ec-base-fold.theme1:nth-of-type(2) {
+  margin-top: 0;
+}
 /* ec-base-table */
 .ec-base-fold.theme1.gBottomLine > .contents .ec-base-table,
 .ec-base-fold.theme1.gBottomLine .ec-base-fold > .contents .ec-base-table {
@@ -114,6 +117,10 @@
   .ec-base-fold.theme1.gMargin {
     margin-left: 16px;
     margin-right: 16px;
+  }
+
+  .detail_guide .ec-base-fold.theme1:nth-of-type(2) {
+    margin-top: 30px;
   }
   .ec-base-fold.theme1 > .title {
     padding: 0 16px;

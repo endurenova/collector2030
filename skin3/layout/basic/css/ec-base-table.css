@@ -41,7 +41,7 @@
 
 /* Table */
 .ec-base-table {
-  border-top: 1px solid var(--grayScale-N1);
+  border-top: 1px solid var(--main-color);
 }
 .ec-base-table th,
 .ec-base-table td {
@@ -81,7 +81,7 @@
   padding: 56px 0;
   border-bottom: 1px solid var(--pallet-color-1);
   text-align: center;
-  color: #6d6d6d;
+  color: var(--grayScale-N4);
 }
 
 /* Table - typeWrite */
@@ -154,7 +154,7 @@
   height: 40px;
   font-size: 13px;
   box-sizing: border-box;
-  border: 1px solid #bcbcbc;
+  border: 1px solid var(--grayScale-N4);
   line-height: 1;
   font-weight: normal;
   text-decoration: none;
@@ -164,7 +164,7 @@
   text-align: center;
   white-space: nowrap;
   color: var(--grayScale-N1);
-  background-color: #fff;
+  background-color: var(--grayScale-W);
 }
 .ec-base-table.typeWrite .ec-address-area select {
   display: block;
@@ -193,7 +193,7 @@
 
   /* Table - typeWrite */
   .ec-base-table.typeWrite {
-    padding: 10px 0;
+    /* padding: 10px 0; */
   }
   .ec-base-table.typeWrite tr {
     display: block;
@@ -288,10 +288,10 @@
     padding: 3px 8px;
     border-bottom: 0;
     text-align: left;
-    color: #6d6d6d;
+    color: var(--grayScale-N2);
   }
   .ec-base-table.typeList td a {
-    color: #6d6d6d;
+    color: var(--grayScale-N4);
   }
   .ec-base-table.typeList td.chk {
     box-sizing: border-box;
@@ -308,7 +308,7 @@
     box-sizing: border-box;
   }
   .ec-base-table.typeList td.subject a {
-    color: var(--grayScale-N1);
+    color: var(--grayScale-N1) !important;
   }
   .ec-base-table.typeList.gThumb td.thumb {
     overflow: hidden;
@@ -418,6 +418,7 @@
   }
   .ec-base-table.typeList th {
     border-bottom: 0;
+    font-size: 14px;
   }
   .ec-base-table.typeList td.subject {
     padding-left: 20px;
