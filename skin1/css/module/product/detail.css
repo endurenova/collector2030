@@ -1947,9 +1947,6 @@
 /** 아키테이블_style 210906 **/
 
 /* 상세페이지 */
-.path {
-  max-width: 1280px !important;
-}
 .xans-product-detail {
   max-width: 1280px !important;
   margin-bottom: 80px;

@@ -15,13 +15,6 @@
   position: relative;
   max-width: 1480px;
 }
-#container #contents > .section.main_product_category {
-  display: flex;
-  display: none;
-  flex-flow: row;
-  align-items: center;
-  justify-content: space-between;
-}
 .slide_text_box {
   display: flex;
   flex-flow: column;
@@ -74,6 +67,22 @@
   padding: 1%;
   box-sizing: border-box;
 }
+.swiper-container-circle {
+  margin-bottom: 120px;
+}
+.main-slide-pagination {
+  bottom: 5% !important;
+}
+.main-slide-pagination .swiper-pagination-bullet {
+  margin: 0 0.5% !important;
+  width: 12px;
+  height: 12px;
+  opacity: 0.5 !important;
+}
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: var(--pallet-color-1) !important;
+  opacity: 1 !important;
+}
 /* 메인 타이틀 */
 .main_title {
   margin-bottom: 50px;
@@ -124,6 +133,7 @@
 }
 /* 아티스트 비디오 */
 .artist-videos {
+  max-width: 1480px;
   position: relative;
   box-sizing: border-box;
 }
@@ -473,7 +483,7 @@
 
 /* 메인페이지 NEW ARRIVALS ------------------------------------------------------------ */
 ul.prdList.grid4.list_gallery > li {
-  width: var(--item-row-4-width-pc-max1480);
+  width: var(--item-row-4-width-pc-max1480) !important;
   margin-right: var(--item-margin-right-pc);
 }
 ul.prdList.grid4.list_gallery > li:last-of-type {
@@ -622,6 +632,14 @@ ul.prdList.grid4.list_gallery > li:hover .icon__box {
   max-width: 1480px !important;
   width: 90%;
   padding: 0;
+}
+
+.main_product_category {
+  display: flex;
+  display: none;
+  flex-flow: row;
+  align-items: center;
+  justify-content: space-between;
 }
 .main_product_category .main_title {
   margin: 0 0 60px;
@@ -1145,10 +1163,6 @@ ul.prdList.grid4.list_gallery > li:hover .icon__box {
   ul.prdList.grid4.list_gallery > li {
     width: var(--item-row-3-width-portable) !important;
     margin-right: var(--item-margin-right-portable) !important;
-  }
-  /* 메인 탭상품 상품진열 */
-  .main_product_category {
-    display: block;
   }
   .main_product_category .main_product_inner {
     justify-content: space-between;

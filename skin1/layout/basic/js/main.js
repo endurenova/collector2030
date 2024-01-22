@@ -27,7 +27,52 @@ jQuery(document).ready(function () {
       },
     },
   });
-
+  var artistVideo = new Swiper('.artist-video-box', {
+    slidesPerView: 3,
+    breakpoints: {
+      1280: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 10,
+      },
+      767: {
+        slidesPerView: 2,
+        spaceBetween: 10,
+      },
+      480: {
+        slidesPerView: 1,
+        spaceBetween: 10,
+      },
+    },
+  });
+  const listMain_1 = document.querySelector('.product_listmain_1-swiper > .swiper-wrapper').children;
+  Array.from(listMain_1).forEach(e => {
+    e.classList.add('swiper-slide');
+  });
+  var newArrivals = new Swiper('.product_listmain_1-swiper', {
+    slidesPerView: 4,
+    breakpoints: {
+      1280: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 10,
+      },
+      767: {
+        slidesPerView: 2,
+        spaceBetween: 10,
+      },
+      480: {
+        slidesPerView: 1,
+        spaceBetween: 10,
+      },
+    },
+  });
   /* 메인 탭상품 슬라이드 */
   var swiper03 = new Swiper('.swiper03', {
     roundLengths: true,
