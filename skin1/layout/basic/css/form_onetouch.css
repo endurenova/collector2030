@@ -1,5 +1,5 @@
 /** form_onetouch_style **/
-
+@import url(/layout/basic/css/rootStyle.css);
 /* 원터치 주문서 셀렉트박스 화살표 삭제 ie11 - 정환 */
 select::-ms-expand {
   display: none;
@@ -12,6 +12,8 @@ select::-ms-expand {
   color: var(--grayScale-N1);
 }
 #userStyle #mCafe24Order .btnSubmit {
-  background-color: var(--grayScale-N1) !important;
-  border: 1px solid var(--grayScale-N1) !important;
+  background-color: var(--grayScale-N1);
+}
+#orderFixItem.ec-base-button.gFull [class*='btn'] {
+  background-color: #3971ff !important;
 }

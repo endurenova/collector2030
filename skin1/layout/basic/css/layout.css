@@ -284,12 +284,11 @@ a:hover {
 #header .inner .toparea .toparea_shoppinginfo .xans-layout-shoppinginfo li a {
   color: var(--grayScale-N2);
   font-size: 13px;
-  font-weight: var(--font-weight-Light);
 }
 #header .inner .toparea .toparea_shoppinginfo .xans-layout-shoppinginfo li a strong {
   color: var(--main-color);
   font-size: 13px;
-  font-weight: var(--font-weight-Light);
+  font-weight: var(--font-weight-SemiBold);
 }
 #header .inner .toparea .toparea_shoppinginfo .xans-layout-shoppinginfo li a:hover,
 #header .inner .toparea .toparea_shoppinginfo .xans-layout-shoppinginfo li a:hover strong {
@@ -1255,6 +1254,14 @@ a:hover {
   color: var(--grayScale-N5);
   font-variation-settings: 'FILL' 1, 'wght' 300, 'GRAD' 0, 'opsz' 24;
 }
+.toss-payments-banner {
+  display: flex;
+  justify-content: flex-end;
+}
+.toss-payments-banner .banner-box {
+  cursor: pointer;
+}
+
 @media all and (max-width: 1680px) {
   /* 최상단 배너 */
   .main_top_banner .top_banner_box_inner .top_banner_text a {

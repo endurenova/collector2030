@@ -241,12 +241,12 @@
           </td>
           <td class="subject left txtBreak">
             <p class="product">{$product_name}</p>
-            {$icon_re}{$icon_lock}<a href="{$link_board_detail}" style="{$link_color}" class="{$block_content_class}"
-              >{$subject}</a
-            >{$icon_file}<span class="comment">{$comment_count}</span>{$icon_new}<span
-              style="width: 100vw; height: 100vh"
-              >{$icon_hit}</span
-            >
+            {$icon_re}{$icon_lock}
+            <a href="{$link_board_detail}" style="{$link_color}" class="{$block_content_class}"> {$subject} </a>
+            {$icon_file}
+            <span class="comment">{$comment_count}</span>
+            {$icon_new}
+            <span style="width: 100vw; height: 100vh">{$icon_hit}</span>
           </td>
           <td class="{$category_display|display}">{$category_name}</td>
           <td>{$member_icon}{$writer}</td>
@@ -312,3 +312,5 @@
   <span class="ec-base-help">{$board_function_help|replace:*,}</span>
 </div>
 <!-- // Admin only -->
+
+<script src="/js/reviewCustom.js"></script>
