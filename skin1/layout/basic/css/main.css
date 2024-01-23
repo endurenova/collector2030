@@ -14,6 +14,7 @@
 #container #contents > .section {
   position: relative;
   max-width: 1480px;
+  width: 100%;
 }
 .slide_text_box {
   display: flex;
@@ -134,11 +135,12 @@
 /* 아티스트 비디오 */
 .artist-videos {
   max-width: 1480px;
+  margin: 0 auto;
   position: relative;
   box-sizing: border-box;
 }
 .xans-smart-banner-admin,
-.artist-videos,
+/* .artist-videos, */
 .main_product_list,
 .main_image_text_gallery,
 .main_video,
@@ -1111,10 +1113,24 @@ ul.prdList.grid4.list_gallery > li:hover .icon__box {
   .main_product_category,
   .main_map {
     width: 90%;
+  }
+  .xans-smart-banner-admin,
+  /* .artist-videos, */
+  .main_product_list,
+  .main_image_text_gallery,
+  .main_video,
+  .main_product_slide,
+  .main_text,
+  .main_product_category,
+  .main_map {
     margin-bottom: 80px !important;
     margin: 0 auto 80px;
   }
-
+  .main-slide-pagination .swiper-pagination-bullet {
+    margin: 0 1% !important;
+    width: 10px;
+    height: 10px;
+  }
   /* 메인 텍스트배너 */
   .main_text {
     width: 90%;
@@ -1336,7 +1352,7 @@ ul.prdList.grid4.list_gallery > li:hover .icon__box {
 }
 @media all and (max-width: 767px) {
   .xans-smart-banner-admin,
-  .artist-videos,
+  /* .artist-videos, */
   .main_product_list,
   .main_image_text_gallery,
   .main_video,
@@ -1345,6 +1361,9 @@ ul.prdList.grid4.list_gallery > li:hover .icon__box {
   .main_product_category,
   .main_map {
     margin-bottom: 50px !important;
+    margin: 0 auto 50px;
+  }
+  .swiper-container-circle {
     margin: 0 auto 50px;
   }
   .slide_text_box {

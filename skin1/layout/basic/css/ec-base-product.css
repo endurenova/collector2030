@@ -257,7 +257,6 @@
   display: flex;
   flex-flow: row nowrap;
   width: 100%;
-  padding-bottom: 20px;
 }
 /* .artist-video-box::-webkit-scrollbar, */
 .ec-base-product .prdList::-webkit-scrollbar {
@@ -985,7 +984,7 @@ svg .main-circ {
     display: none;
   }
   .ec-base-product.xans-product-listmain-1 ul.prdList.grid4.list_gallery > li {
-    width: var(--item-row-3-width-portable) !important;
+    width: var(--item-row-3-width-portable);
   }
 
   ul.prdList.grid4.list_gallery .thumbnail {

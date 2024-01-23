@@ -429,7 +429,7 @@ body.expand {
 }
 #aside .navigation-menu__category #slide_add_category li.selected .sub_cate01 a.view {
   font-size: 14px;
-  color: var(--grayScale-N3);
+  color: var(--grayScale-N2);
 }
 #aside .navigation-menu__category #slide_add_category li.selected .sub_cate01 ul {
   padding: 0 0 0 20px;
@@ -562,7 +562,6 @@ body.expand {
     display: block;
     padding: 10px 36px 10px 0;
     font-size: 15px;
-    font-weight: var(--font-weight-Light);
     text-decoration: none;
     word-break: keep-all;
     word-wrap: break-word;

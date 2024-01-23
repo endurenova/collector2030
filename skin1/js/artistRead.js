@@ -91,6 +91,16 @@ document.addEventListener('DOMContentLoaded', () => {
       jQuery(document).ready(function () {
         var swiper01 = new Swiper('.read-artist__slide-box', {
           slidesPerView: 3,
+          breakpoints: {
+            1280: {
+              slidesPerView: 2,
+              spaceBetween: 10,
+            },
+            767: {
+              slidesPerView: 1,
+              spaceBetween: 10,
+            },
+          },
         });
       });
     }

@@ -7,13 +7,15 @@
     </div>
 
     <div class="navigation-menu__member" data-ez-group="top-util-menu" data-ez-role="list">
-      <a data-ez-item="join" module="Layout_statelogoff" href="/member/agreement.html">회원가입</a>
-      <a data-ez-item="login" module="Layout_statelogoff" href="/member/login.html">로그인</a>
-      <a data-ez-item="modify" module="Layout_stateLogon" href="/member/modify.html">내정보수정</a>
-      <a data-ez-item="logout" module="Layout_stateLogon" href="{$action_logout}">로그아웃</a>
-      <a data-ez-item="order" href="/myshop/order/list.html">주문조회</a>
       <a data-ez-item="mypage" module="Layout_stateLogon" href="/myshop/index.html">마이페이지</a>
-      <a data-ez-item="recent" href="/product/recent_view_product.html">최근본상품</a>
+      <a data-ez-item="order" href="/myshop/order/list.html">주문조회</a>
+      <a data-ez-item="login" module="Layout_statelogoff" href="/member/login.html">로그인</a>
+      <a data-ez-item="join" module="Layout_statelogoff" href="/member/agreement.html">회원가입</a>
+      <a data-ez-item="modify" module="Layout_stateLogon" href="/member/modify.html">내정보수정</a>
+
+      <a data-ez-item="logout" module="Layout_stateLogon" href="{$action_logout}">로그아웃</a>
+
+      <!-- <a data-ez-item="recent" href="/product/recent_view_product.html">최근본상품</a> -->
     </div>
     <!-- //navigation_state -->
 
@@ -29,7 +31,7 @@
           <li>
             <a href="javascript:void(0);" class="view">Artworks</a>
             <ul class="sub_cate01">
-              <li><a href="#" class="view">전체</a></li>
+              <li><a href="/category/%EC%A0%84%EC%B2%B4/53/" class="view">전체</a></li>
               <li>
                 <a
                   href="/category/%ED%94%84%EB%A6%AC%EB%AF%B8%EC%97%84-%EA%B3%A0%EA%B0%80-%EC%9E%91%ED%90%88/58/"
