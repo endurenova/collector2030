@@ -134,9 +134,3 @@
     margin: 0 24px;
   }
 }
-
-/** 아키테이블_style 210820 **/
-#container #contents {
-  width: 100% !important;
-  max-width: 100% !important;
-}

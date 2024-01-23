@@ -178,6 +178,9 @@ a[class^='btnBasic'] {
   position: absolute;
   right: 0;
 }
+.gRight a.btnSubmitFix.disable {
+  background-color: var(--grayScale-N4);
+}
 .ec-base-button .text {
   margin: 0 6px 0 10px;
   color: var(--grayScale-N2);
