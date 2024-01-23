@@ -2,6 +2,9 @@
 .xans-product-detail .headingArea {
   position: relative;
 }
+.headingArea .icon img[alt='품절'].sold-out {
+  display: none;
+}
 .xans-product-detail .headingArea h1 {
   display: inline;
   font-size: 20px;
@@ -91,6 +94,9 @@
   font-size: 13px;
   line-height: 1.4;
 }
+.product_detail_table.sold-out {
+  display: none;
+}
 .xans-product-detail .infoArea table:not(.product_detail_table) th {
   font-weight: normal;
   width: 106px;
@@ -157,6 +163,9 @@
   /* 상품 상세 페이지 금액 */
   font-weight: var(--font-weight-SemiBold) !important;
   color: var(--main-color) !important;
+}
+.xans-product-detail .infoArea table > tbody > tr > td span #span_product_price_text.sold-out {
+  text-decoration: line-through;
 }
 .xans-product #prdDetail table {
   max-width: 800px;
@@ -953,7 +962,10 @@
 #totalPrice .total em {
   font-style: normal;
 }
-
+#totalPrice .sold-out {
+  color: var(--main-color);
+  font-weight: var(--font-weight-SemiBold);
+}
 /* 바로구매 시 옵션영역 */
 #mCafe24Order .product_detail #totalProducts tbody.option_products tr.option_product td .quantity {
   padding: 0 24px;

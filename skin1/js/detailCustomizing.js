@@ -1,8 +1,20 @@
 document.addEventListener('DOMContentLoaded', () => {
   try {
     const artistName = document.querySelector('.infoArea table tbody tr:nth-of-type(2) td'),
-      relatedProducts = document.querySelector('.relation_title');
+      relatedProducts = document.querySelector('.relation_title'),
+      checkSoldOut = document.querySelector('.headingArea');
     relatedProducts.innerHTML = `<span class="artist_relation_artworks">작가의 다른 작품</span>`;
+    if (checkSoldOut.querySelector('img')) {
+      const soldOutBadge = checkSoldOut.querySelector('img');
+      if (soldOutBadge.getAttribute('alt') === '품절') {
+        soldOutBadge.classList.add('sold-out');
+        document.querySelector('#totalPrice').innerHTML = "<span class='sold-out'>SOLD OUT</span>";
+        document.querySelector('#span_product_price_text').classList.add('sold-out');
+        document.querySelector('.product_detail_table').classList.add('sold-out');
+      }
+    } else {
+      console.log('fff');
+    }
   } catch (e) {}
   const detailArea = document.querySelector('#prdDetail > div');
   simulatorBackground = () => {};
@@ -48,7 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
           space: '침실',
           top: '30%',
           left: '50%',
-          sizeRate: 0.095,
+          sizeRate: 0.085,
         },
         {
           url: '/SkinImg/img/simulate/0-simulate_bg-thumbnail-4.jpg',
@@ -78,13 +90,13 @@ document.addEventListener('DOMContentLoaded', () => {
           space: '방 1',
           top: '25%',
           left: '60%',
-          sizeRate: 0.09,
+          sizeRate: 0.085,
         },
         {
           url: '/SkinImg/img/simulate/1-simulate_bg-thumbnail-1.jpg',
           space: '방 2',
           top: '25%',
-          left: '51%',
+          left: '51.5%',
           sizeRate: 0.095,
         },
         {
@@ -99,7 +111,7 @@ document.addEventListener('DOMContentLoaded', () => {
           space: '거실 2',
           top: '30%',
           left: '50%',
-          sizeRate: 0.1,
+          sizeRate: 0.07,
         },
         {
           url: '/SkinImg/img/simulate/1-simulate_bg-thumbnail-4.jpg',
@@ -138,21 +150,21 @@ document.addEventListener('DOMContentLoaded', () => {
           space: '거실 1',
           top: '30%',
           left: '50%',
-          sizeRate: 0.09,
+          sizeRate: 0.08,
         },
         {
           url: '/SkinImg/img/simulate/3-simulate_bg-thumbnail-1.jpg',
           space: '거실 2',
           top: '38%',
           left: '24%',
-          sizeRate: 0.1,
+          sizeRate: 0.07,
         },
         {
           url: '/SkinImg/img/simulate/3-simulate_bg-thumbnail-2.jpg',
           space: '거실 3',
           top: '30%',
           left: '35%',
-          sizeRate: 0.1,
+          sizeRate: 0.07,
         },
       ];
     const simulateBackgroundList = [
