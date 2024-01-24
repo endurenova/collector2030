@@ -786,6 +786,7 @@ a:hover {
   align-items: flex-start;
   justify-content: space-between;
   width: 100%;
+  margin-bottom: 2%;
 }
 #footer .inner .inner_b {
   display: flex;
@@ -2055,6 +2056,7 @@ a:hover {
     margin-top: 3%;
   }
   #footer .inner .inner_t .info_middle .bt_info_flex {
+    flex-flow: column;
     margin-bottom: 0;
   }
   #footer .info_middle .wrap_cs {
@@ -2161,7 +2163,7 @@ a:hover {
     margin: 0%;
   }
   #footer .inner .inner_t .info_middle .bt_info {
-    width: 60%;
+    width: 100%;
   }
   #footer .inner .inner_t .info_middle .wrap_cs {
     width: 40%;
@@ -2287,18 +2289,11 @@ a:hover {
   #footer .inner .inner_t .info_middle .wrap_cs {
     width: 100%;
   }
-
-  #footer .inner .inner_t .info_middle .bt_info {
-    width: 100%;
-  }
   #footer .info_middle {
     display: none;
   }
   #footer .inner .inner_t .info_middle .bt_tel span {
     margin-bottom: 3px;
-  }
-  #footer .inner .inner_t .info_middle .bt_info_flex {
-    flex-flow: column-reverse wrap;
   }
   #footer .inner .inner_t .info_middle .wrap_cs {
     margin-bottom: 3%;
