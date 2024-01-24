@@ -1233,7 +1233,7 @@
   width: calc(90% - 280px);
   max-width: calc(1480px - 280px) !important;
   padding: 0 0 0 280px !important;
-  margin: 0 auto !important;
+  margin: 40px auto !important;
   min-height: 630px;
 }
 .myshopArea.section_full {

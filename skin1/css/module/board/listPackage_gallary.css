@@ -264,7 +264,13 @@ ul.collector-story__list .summary,
 ul.artist-post__list .summary {
   width: 100% !important;
 }
+.artist-post__list .thumbnail {
+  height: fit-content !important;
+}
 
+.artist-post__list .thumbnail img {
+  object-fit: contain;
+}
 ul.collector-story__list .summary {
   display: flex;
   flex-flow: column;

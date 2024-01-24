@@ -1,3 +1,52 @@
+try {
+  function detectMobileDevice(agent) {
+    const mobileRegex = [/Android/i, /iPhone/i, /iPad/i, /iPod/i, /BlackBerry/i, /Windows Phone/i];
+    return mobileRegex.some(mobile => agent.match(mobile));
+  }
+  const isMobile = detectMobileDevice(window.navigator.userAgent);
+  if (!isMobile) {
+    document.documentElement.style.setProperty(
+      '--item-row-6-width-pc-max1480',
+      'calc((1480px - var(--item-margin-right-pc) * 5) / 6 - 17px)',
+    );
+    document.documentElement.style.setProperty(
+      '--item-row-6-width-pc',
+      ' calc((90vw - var(--item-margin-right-pc) * 5) / 6 - 17px)',
+    );
+    document.documentElement.style.setProperty(
+      '--item-row-5-width-pc-max1480',
+      'calc((1480px - var(--item-margin-right-pc) * 4) / 5 - 17px)',
+    );
+    document.documentElement.style.setProperty(
+      '--item-row-5-width-pc',
+      ' calc((90vw - var(--item-margin-right-pc) * 4) / 5 - 17px)',
+    );
+    document.documentElement.style.setProperty(
+      '--item-row-4-width-pc-max1480',
+      'calc((1480px - var(--item-margin-right-pc) * 3) / 4 - 17px)',
+    );
+    document.documentElement.style.setProperty(
+      '--item-row-4-width-pc',
+      'calc((90vw - var(--item-margin-right-pc) * 3) / 4 - 17px)',
+    );
+    document.documentElement.style.setProperty(
+      '--item-row-3-width-pc-max1480',
+      'calc((1480px - var(--item-margin-right-pc) * 2) / 3 - 17px)',
+    );
+    document.documentElement.style.setProperty(
+      '--item-row-3-width-pc',
+      'calc((90vw - var(--item-margin-right-pc) * 2) / 3 - 17px)',
+    );
+    document.documentElement.style.setProperty(
+      '--item-row-3-width-portable',
+      'calc((90vw - var(--item-margin-right-portable) * 2) / 3 - 17px)',
+    );
+    document.documentElement.style.setProperty(
+      '--item-row-2-width-portable',
+      ' calc((90vw - var(--item-margin-right-portable)) / 2) / 3 - 17px)',
+    );
+  }
+} catch (e) {}
 document.addEventListener('DOMContentLoaded', () => {
   try {
     const pathInfo = document.querySelector('.path ol li:nth-of-type(2)');
