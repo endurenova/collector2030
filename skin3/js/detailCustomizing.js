@@ -1,165 +1,37 @@
 document.addEventListener('DOMContentLoaded', () => {
   try {
     const artistName = document.querySelector('.infoArea table tbody tr:nth-of-type(2) td'),
-      relatedProducts = document.querySelector('.relation_title');
+      relatedProducts = document.querySelector('.relation_title'),
+      checkSoldOut = document.querySelector('.headingArea');
     relatedProducts.innerHTML = `<span class="artist_relation_artworks">작가의 다른 작품</span>`;
+    if (checkSoldOut.querySelector('img')) {
+      const soldOutBadge = checkSoldOut.querySelector('img');
+      if (soldOutBadge.getAttribute('alt') === '품절') {
+        soldOutBadge.classList.add('sold-out');
+        document.querySelector('#totalPrice').innerHTML = "<span class='sold-out'>SOLD OUT</span>";
+        document.querySelector('#span_product_price_text').classList.add('sold-out');
+        document.querySelector('.product_detail_table').classList.add('sold-out');
+      }
+    } else {
+      console.log('fff');
+    }
   } catch (e) {}
   const detailArea = document.querySelector('#prdDetail > div');
   simulatorBackground = () => {};
   purchaseInfoImg = () => {
     const purchaseImgAlt = [
-        {
-          path: 'top',
-          alt: 'Slogan',
-        },
-        {
-          path: 'info_1',
-          alt: 'Title & Artist',
-        },
-        {
-          path: 'bottom',
-          alt: 'Notice & Guide',
-        },
-      ],
-      simulateBackground_0 = [
-        {
-          url: '/SkinImg/img/simulate/0-simulate_bg-thumbnail-0.jpg',
-          space: '거실 1',
-          top: '30%',
-          left: '50%',
-          sizeRate: 0.09,
-        },
-        {
-          url: '/SkinImg/img/simulate/0-simulate_bg-thumbnail-1.jpg',
-          space: '거실 2',
-          top: '30%',
-          left: '50%',
-          sizeRate: 0.09,
-        },
-        {
-          url: '/SkinImg/img/simulate/0-simulate_bg-thumbnail-2.jpg',
-          space: '거실 3',
-          top: '33%',
-          left: '40%',
-          sizeRate: 0.09,
-        },
-        {
-          url: '/SkinImg/img/simulate/0-simulate_bg-thumbnail-3.jpg',
-          space: '침실',
-          top: '30%',
-          left: '50%',
-          sizeRate: 0.095,
-        },
-        {
-          url: '/SkinImg/img/simulate/0-simulate_bg-thumbnail-4.jpg',
-          space: '다이닝룸',
-          top: '37%',
-          left: '30%',
-          sizeRate: 0.09,
-        },
-        {
-          url: '/SkinImg/img/simulate/0-simulate_bg-thumbnail-5.jpg',
-          space: '방',
-          top: '25%',
-          left: '35%',
-          sizeRate: 0.09,
-        },
-        {
-          url: '/SkinImg/img/simulate/0-simulate_bg-thumbnail-6.jpg',
-          space: '복도',
-          top: '35%',
-          left: '60%',
-          sizeRate: 0.09,
-        },
-      ],
-      simulateBackground_1 = [
-        {
-          url: '/SkinImg/img/simulate/1-simulate_bg-thumbnail-0.jpg',
-          space: '방 1',
-          top: '25%',
-          left: '60%',
-          sizeRate: 0.09,
-        },
-        {
-          url: '/SkinImg/img/simulate/1-simulate_bg-thumbnail-1.jpg',
-          space: '방 2',
-          top: '25%',
-          left: '51%',
-          sizeRate: 0.095,
-        },
-        {
-          url: '/SkinImg/img/simulate/1-simulate_bg-thumbnail-2.jpg',
-          space: '거실 1',
-          top: '30%',
-          left: '35%',
-          sizeRate: 0.09,
-        },
-        {
-          url: '/SkinImg/img/simulate/1-simulate_bg-thumbnail-3.jpg',
-          space: '거실 2',
-          top: '30%',
-          left: '50%',
-          sizeRate: 0.1,
-        },
-        {
-          url: '/SkinImg/img/simulate/1-simulate_bg-thumbnail-4.jpg',
-          space: '다이닝룸',
-          top: '28%',
-          left: '49%',
-          sizeRate: 0.09,
-        },
-      ],
-      simulateBackground_2 = [
-        {
-          url: '/SkinImg/img/simulate/2-simulate_bg-thumbnail-0.jpg',
-          space: '거실',
-          top: '25%',
-          left: '50%',
-          sizeRate: 0.095,
-        },
-        {
-          url: '/SkinImg/img/simulate/2-simulate_bg-thumbnail-1.jpg',
-          space: '방',
-          top: '28%',
-          left: '40%',
-          sizeRate: 0.09,
-        },
-        {
-          url: '/SkinImg/img/simulate/2-simulate_bg-thumbnail-2.jpg',
-          space: '다이닝룸',
-          top: '25%',
-          left: '50%',
-          sizeRate: 0.095,
-        },
-      ],
-      simulateBackground_3 = [
-        {
-          url: '/SkinImg/img/simulate/3-simulate_bg-thumbnail-0.jpg',
-          space: '거실 1',
-          top: '30%',
-          left: '50%',
-          sizeRate: 0.09,
-        },
-        {
-          url: '/SkinImg/img/simulate/3-simulate_bg-thumbnail-1.jpg',
-          space: '거실 2',
-          top: '38%',
-          left: '24%',
-          sizeRate: 0.1,
-        },
-        {
-          url: '/SkinImg/img/simulate/3-simulate_bg-thumbnail-2.jpg',
-          space: '거실 3',
-          top: '30%',
-          left: '35%',
-          sizeRate: 0.1,
-        },
-      ];
-    const simulateBackgroundList = [
-      simulateBackground_0,
-      simulateBackground_1,
-      simulateBackground_2,
-      simulateBackground_3,
+      {
+        path: 'top',
+        alt: 'Slogan',
+      },
+      {
+        path: 'info_1',
+        alt: 'Title & Artist',
+      },
+      {
+        path: 'bottom',
+        alt: 'Notice & Guide',
+      },
     ];
     detailArea.insertAdjacentHTML(
       'beforeend',
@@ -349,6 +221,7 @@ document.addEventListener('DOMContentLoaded', () => {
               }
             });
           }
+
           setBackgroundTone = simulateBackground => {
             simulateBackground.forEach((e, i) => {
               if (i === 0) {
@@ -372,6 +245,7 @@ document.addEventListener('DOMContentLoaded', () => {
                   `,
                 );
               }
+              setStatusIdx();
             });
             virtualBackgroundList = document.querySelector('.background-selector__list').children;
             Array.from(virtualBackgroundList).forEach((e, i) => {
@@ -392,8 +266,11 @@ document.addEventListener('DOMContentLoaded', () => {
               });
             });
           };
-          setBackgroundTone(simulateBackground_0);
-          setStatusIdx();
+
+          fetch('/js/simulatorBackground.json')
+            .then(res => res.json())
+            .then(data => setBackgroundTone(data[0]));
+
           const toneList = document.querySelector('.tone-selector__list').children;
           Array.from(toneList).forEach((e, i) => {
             e.addEventListener('click', event => {
@@ -403,15 +280,19 @@ document.addEventListener('DOMContentLoaded', () => {
               });
               e.classList.add('active');
               selectList.innerHTML = '';
-              setBackgroundTone(simulateBackgroundList[i]);
-              virtualFrame.style.top = simulateBackgroundList[i][0].top;
-              virtualFrame.style.left = simulateBackgroundList[i][0].left;
-              virtualBackground.style.backgroundImage = `url(${simulateBackgroundList[i][0].url})`;
-              virtualFrame.style.width =
-                ((Number(artworkWidth.split('cm')[0]) * 37.8 * vitualBackgroundWidth) / 1000) *
-                  simulateBackgroundList[i][0].sizeRate +
-                'px';
-              setStatusIdx();
+
+              fetch('/js/simulatorBackground.json')
+                .then(res => res.json())
+                .then(data => {
+                  setBackgroundTone(data[i]);
+                  virtualFrame.style.top = data[i][0].top;
+                  virtualFrame.style.left = data[i][0].left;
+                  virtualBackground.style.backgroundImage = `url(${data[i][0].url})`;
+                  virtualFrame.style.width =
+                    ((Number(artworkWidth.split('cm')[0]) * 37.8 * vitualBackgroundWidth) / 1000) *
+                      data[i][0].sizeRate +
+                    'px';
+                });
             });
           });
           const virtualBackground = document.querySelector('.virtual-background'),
@@ -419,10 +300,14 @@ document.addEventListener('DOMContentLoaded', () => {
             vitualBackgroundWidth = virtualBackground.clientWidth;
 
           // 작품 걸어보기 작품 크기
-          virtualFrame.style.width =
-            ((Number(artworkWidth.split('cm')[0]) * 37.8 * vitualBackgroundWidth) / 1000) *
-              simulateBackgroundList[0][0].sizeRate +
-            'px';
+          fetch('/js/simulatorBackground.json')
+            .then(res => res.json())
+            .then(
+              data =>
+                (virtualFrame.style.width =
+                  ((Number(artworkWidth.split('cm')[0]) * 37.8 * vitualBackgroundWidth) / 1000) * data[0][0].sizeRate +
+                  'px'),
+            );
         } catch (e) {}
       } else {
         purchaseImgList.insertAdjacentHTML(

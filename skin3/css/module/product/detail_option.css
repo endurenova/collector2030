@@ -525,6 +525,9 @@ body {
   vertical-align: top;
   box-sizing: border-box;
 }
+#totalProducts tbody > tr > td.sold-out {
+  display: none;
+}
 #totalProducts .quantity input {
   width: 45px;
   height: 30px;

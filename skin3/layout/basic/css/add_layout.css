@@ -168,9 +168,11 @@
   /* 풀사이즈 */
   #contents > .section {
     max-width: 1480px;
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
+    width: 100%;
+    /* width: 90%; */
+    /* margin-left: auto;
+    margin-right: auto; */
   }
   .section_full {
     width: 100% !important;

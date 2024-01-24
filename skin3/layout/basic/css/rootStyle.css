@@ -73,6 +73,8 @@
 
   --item-row-6-width-pc-max1480: calc((1480px - var(--item-margin-right-pc) * 5) / 6);
   --item-row-6-width-pc: calc((90vw - var(--item-margin-right-pc) * 5) / 6);
+  --item-row-5-width-pc-max1480: calc((1480px - var(--item-margin-right-pc) * 4) / 5);
+  --item-row-5-width-pc: calc((90vw - var(--item-margin-right-pc) * 4) / 5);
   --item-row-4-width-pc-max1480: calc((1480px - var(--item-margin-right-pc) * 3) / 4);
   --item-row-4-width-pc: calc((90vw - var(--item-margin-right-pc) * 3) / 4);
   --item-row-3-width-pc-max1480: calc((1480px - var(--item-margin-right-pc) * 2) / 3);
@@ -88,14 +90,6 @@
 
   height: calc((90vw - 40px) / 3 / 3 * 2);
 }
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@font-face {
-  font-family: 'Pretendard-Regular';
-  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
-  font-weight: var(--font-weight-Regular);
-  font-style: normal;
-}
-
 @font-face {
   font-family: 'Montserrat';
   src: url('../font/Montserrat-VariableFont_wght.ttf');
@@ -122,4 +116,3 @@
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');

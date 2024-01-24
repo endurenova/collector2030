@@ -257,8 +257,6 @@
   display: flex;
   flex-flow: row nowrap;
   width: 100%;
-  overflow-x: scroll;
-  padding-bottom: 20px;
 }
 /* .artist-video-box::-webkit-scrollbar, */
 .ec-base-product .prdList::-webkit-scrollbar {
@@ -316,7 +314,7 @@
   height: 560px;
   margin-right: 1.333%;
 }
-.ec-base-product:not(.xans-product-listmain-1) .prdList:not(.grid3_slide) > li:nth-of-type(4n) {
+.ec-base-product:not(.xans-product-listmain-1) .prdList:not(.grid3_slide) > li:nth-of-type(4n):not(.swiper-slide) {
   margin-right: 0;
 }
 .ec-base-product:not(.xans-product-listmain-1) .prdList:not(.grid3_slide) .prdList__item {
@@ -373,7 +371,11 @@
 .ec-base-product:not(.xans-product-listmain-1) .prdList:not(.grid3_slide) .description .main_list_detail {
   display: none;
 }
-.ec-base-product:not(.xans-product-listmain-1) .prdList:not(.grid3_slide) .description .icon .icon_img[alt*='품절'] {
+.ec-base-product:not(.xans-product-listmain-1)
+  .prdList:not(.grid3_slide)
+  .description
+  .icon
+  .icon_img[alt*='Out-of-stock'] {
   /* 품절 이미지 안보이게 */
   display: none;
   position: relative;

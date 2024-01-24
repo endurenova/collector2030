@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
         artistVideoList.insertAdjacentHTML(
           'beforeend',
           `
-      <li>
+      <li class="swiper-slide">
         <div class="artist-video-thumbnail" data-video-idx="${e.idx}">
           <img src="/SkinImg/img/${e.thumbnail}" alt="${e.artist} thumbnail" />
           <span class="play_btn material-symbols-outlined"> play_circle </span>

@@ -14,6 +14,7 @@
   color: var(--grayScale-N2);
 }
 .titleArea .desc {
+  color: var(--grayScale-N3);
   font-weight: var(--font-weight-Regular);
 }
 .xans-project-package .title {

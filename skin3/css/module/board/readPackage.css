@@ -154,13 +154,9 @@
   display: flex;
   flex-flow: column;
 }
-.read-artist__slide__section .artist-video-direction {
-  top: 0;
-}
 .read-artist__slide-box {
   position: relative;
   width: 100%;
-  height: var(--item-row-34-3-height-pc-max1480);
   margin: 0 auto !important;
   padding: 0 !important;
   overflow-x: scroll;
@@ -195,13 +191,6 @@
 .read-artist__slide-box::-webkit-scrollbar-thumb {
   display: none;
 }
-.read-artist__slide-list li {
-  margin-right: var(--item-margin-right-pc);
-  box-sizing: border-box;
-}
-.read-artist__slide-list li:last-of-type {
-  margin-right: 0;
-}
 .read-artist__slide-list li img {
   width: var(--item-row-3-width-pc-max1480);
   max-width: unset !important;
@@ -220,9 +209,6 @@
   height: unset !important;
 }
 
-.detail.read-artist .relation-direction.artist-video-direction {
-  top: 4%;
-}
 .detail.read-artist .prdList__item .thumbnail {
   width: var(--item-row-6-width-pc-max1480) !important;
   height: var(--item-row-6-width-pc-max1480) !important;

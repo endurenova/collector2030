@@ -1,44 +1,117 @@
 <aside id="aside" module="layout_slidePackage" data-ez="contents-04f55sr-1">
-    <!--@css(/layout/basic/css/slideMenu.css)-->
-	<!--@js(/layout/basic/js/slide_menu.js)-->
-    <nav class="navigation-menu" role="navigation">
+  <!--@css(/layout/basic/css/slideMenu.css)-->
+  <!--@js(/layout/basic/js/slide_menu.js)-->
+  <nav class="navigation-menu" role="navigation">
+    <div class="top_logo" module="Layout_LogoTop">
+      <a href="/"><img src="/SkinImg/img/logo/collector2030_logo_black.svg" alt="{$mall_name}" /></a>
+    </div>
 
-		<div class="top_logo" module="Layout_LogoTop"><a href="/">{$mall_name}</a></div>
+    <div class="navigation-menu__member" data-ez-group="top-util-menu" data-ez-role="list">
+      <a data-ez-item="mypage" module="Layout_stateLogon" href="/shop2/myshop/index.html">My page</a>
+      <a data-ez-item="order" href="/shop2/myshop/order/list.html">Order Info</a>
+      <a data-ez-item="login" module="Layout_statelogoff" href="/shop2/member/login.html">Login</a>
+      <a data-ez-item="join" module="Layout_statelogoff" href="/shop2/member/agreement.html">Join</a>
+      <a data-ez-item="modify" module="Layout_stateLogon" href="/shop2/member/modify.html">Modify</a>
 
-        <div class="navigation-menu__member" data-ez-group="top-util-menu" data-ez-role="list">
-			<a data-ez-item="join" module="Layout_statelogoff" href="/member/agreement.html">회원가입</a>
-			<a data-ez-item="login" module="Layout_statelogoff" href="/member/login.html">로그인</a>
-			<a data-ez-item="modify" module="Layout_stateLogon" href="/member/modify.html">내정보수정</a>
-			<a data-ez-item="logout" module="Layout_stateLogon" href="{$action_logout}">로그아웃</a>
-			<a data-ez-item="order" href="/myshop/order/list.html">주문조회</a>
-			<a data-ez-item="mypage" module="Layout_stateLogon" href="/myshop/index.html">마이페이지</a>
-			<a data-ez-item="recent" href="/product/recent_view_product.html">최근본상품</a>
-        </div><!-- //navigation_state -->
+      <a data-ez-item="logout" module="Layout_stateLogon" href="{$action_logout}">Logout</a>
 
-		<div data-ez-module="menu-side/1"><div id="slideCateList" class="navigation-menu__category">
-  <ul id="slide_add_category"><li><a href="/category/Collector-2030/24/" class="view">Collector 2030</a></li><li><a href="/category/Artworks/25/" class="view">Artworks</a></li><li><a href="/category/Artists/26/" class="view">Artists</a></li><li><a href="/category/Magazine/27/" class="view">Magazine</a></li><li><a href="/category/Community/28/" class="view">Community</a></li></ul>
-  </div></div><!-- //menu-side/1 -->
+      <!-- <a data-ez-item="recent" href="/product/recent_view_product.html">최근본상품</a> -->
+    </div>
+    <!-- //navigation_state -->
 
-        <div module="Layout_BoardInfo" class="navigation-menu__board">
-            <div class="title">고객센터<button type="button" class="icoCategory">펼침</button></div>
-            <ul class="categoryList">
-                <li class="menu"><a href="{$link_board_list}">{$board_name}</a> {$board_adult_icon}</li>
-                <li class="menu"><a href="{$link_board_list}">{$board_name}</a> {$board_adult_icon}</li>
+    <div data-ez-module="menu-side/1">
+      <div id="slideCateList" class="navigation-menu__category">
+        <ul id="slide_add_category">
+          <li>
+            <a href="javascript:void(0);" class="view">Collector 2030</a>
+            <ul class="sub_cate01">
+              <li><a href="/shop2/shopinfo/company.html" class="view">About Collector</a></li>
             </ul>
-        </div><!-- //tab_community -->
+          </li>
+          <li>
+            <a href="javascript:void(0);" class="view">Artworks</a>
+            <ul class="sub_cate01">
+              <li><a href="/shop2/category/%EC%A0%84%EC%B2%B4/53/" class="view">All</a></li>
+              <li>
+                <a
+                  href="/shop2/category/%ED%94%84%EB%A6%AC%EB%AF%B8%EC%97%84-%EA%B3%A0%EA%B0%80-%EC%9E%91%ED%90%88/58/"
+                  class="view"
+                  >Premium Artwors</a
+                >
+              </li>
+              <li>
+                <a href="/shop2/category/%EC%BB%AC%EB%A0%89%ED%84%B0-%EC%97%90%EB%94%94%EC%85%98/32/" class="view"
+                  >Hand Painting</a
+                >
+              </li>
+              <li>
+                <a href="/shop2/category/%ED%94%84%EB%A6%B0%ED%8A%B8-%EC%97%90%EB%94%94%EC%85%98/33/" class="view"
+                  >Print Edition</a
+                >
+              </li>
+              <li><a href="/shop2/category/%EC%98%A4%EB%A6%AC%EC%A7%80%EB%84%90/44/" class="view">Original</a></li>
+              <li><a href="/shop2/category/%EC%A1%B0%ED%98%95%EB%AC%BC/45/" class="view">Sculpture</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="javascript:void(0);" class="view">Artists</a>
+            <ul class="sub_cate01">
+              <li><a href="/shop2/board/%EC%9E%91%EA%B0%80-%EC%86%8C%EA%B0%9C/12/" class="view">Introduce</a></li>
+              <li><a href="/shop2/board/%EC%9E%91%EA%B0%80-%EA%B3%B5%EB%AA%A8/1002/" class="view">Recruitment</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="javascript:void(0);" class="view">Magazine</a>
+            <ul class="sub_cate01">
+              <li>
+                <a href="/shop2/board/%EC%BB%AC%EB%A0%89%ED%84%B0-%EC%8A%A4%ED%86%A0%EB%A6%AC/8/" class="view"
+                  >Collector Story</a
+                >
+              </li>
+              <li><a href="/shop2/board/%EC%A0%84%EC%8B%9C-%EC%86%8C%EC%8B%9D/13/" class="view">Exhibition</a></li>
+              <li><a href="/shop2/board/%EB%AF%B8%EB%94%94%EC%96%B4/14/" class="view">Media</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="javascript:void(0);" class="view">Community</a>
+            <ul class="sub_cate01">
+              <li><a href="/shop2/board/%EA%B3%B5%EC%A7%80%EC%82%AC%ED%95%AD/1/" class="view">Notice</a></li>
+              <li>
+                <a href="/shop2/board/%EB%89%B4%EC%8A%A4%EC%9D%B4%EB%B2%A4%ED%8A%B8/15/" class="view">News/Event</a>
+              </li>
+              <li><a href="/shop2/board/%EB%A6%AC%EB%B7%B0/4/" class="view">Review</a></li>
+              <li><a href="/shop2/board/FAQ/3/" class="view">FAQ</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- //menu-side/1 -->
 
-		<div module="Layout_multishopList">
-			<button type="button" class="toggle">{$current_language} <i aria-hidden="true" class="icon icoArrowBottom"></i></button>
-			<ul module="Layout_multishopListitem">
-				<li class="{$selected_class}">
-					<a href="//{$shop_domain}/">{$locale_language}</a>
-				</li>
-				<li class="{$selected_class}">
-					<a href="//{$shop_domain}/">{$locale_language}</a>
-				</li>
-			</ul>
-		</div>
-    </nav>
-    <button type="button" class="btnClose"><img src="/SkinImg/img/sldiebar_close.svg" alt="닫기"></button>
+    <!-- <div module="Layout_BoardInfo" class="navigation-menu__board">
+      <div class="title">고객센터<button type="button" class="icoCategory">펼침</button></div>
+      <ul class="categoryList">
+        <li class="menu"><a href="{$link_board_list}">{$board_name}</a> {$board_adult_icon}</li>
+        <li class="menu"><a href="{$link_board_list}">{$board_name}</a> {$board_adult_icon}</li>
+      </ul>
+    </div> -->
+    <!-- //tab_community -->
+
+    <div module="Layout_multishopList">
+      <button type="button" class="toggle">
+        {$current_language} <i aria-hidden="true" class="icon icoArrowBottom"></i>
+      </button>
+      <ul module="Layout_multishopListitem">
+        <li class="{$selected_class}">
+          <a href="//{$shop_domain}/">{$locale_language}</a>
+        </li>
+        <li class="{$selected_class}">
+          <a href="//{$shop_domain}/">{$locale_language}</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <button type="button" class="btnClose"><img src="/SkinImg/img/sldiebar_close.svg" alt="닫기" /></button>
+  <!--@js(/js/checkDevice.js)-->
 </aside>
-<!--#ez="1/2"-->
+<!--#ez="1/4"-->
