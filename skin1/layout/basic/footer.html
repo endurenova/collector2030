@@ -33,21 +33,21 @@
     <a href="#wrap" title="화면 최상단으로 이동하기"><!--@import(/svg/icon-quick-arrow.html)--></a>
   </div>
 </div>
-<div class="section toss-payments-banner">
+<!-- <div class="section toss-payments-banner">
   <div class="banner-box">
     <script language="javascript" src="https://pgweb.uplus.co.kr/WEB_SERVER/js/escrowValid.js"></script>
     <a onclick="goValidEscrow('CF_col2030b31e');">
       <img src="/SkinImg/img/img_mark01.png" width="240" height="이미지세로사이즈" border="0" style="cursor: hand" />
     </a>
   </div>
-</div>
-<!-- <div
+</div> -->
+<div
   class="footer_margin"
   data-ez="module-0vlm03h-1"
   data-ez-module="user-defined/1"
   data-ez-name="USER DEFINED"
   data-ez-type="plain"
-></div> -->
+></div>
 <footer id="footer" class="layout01" data-ez-layout="layout01" data-ez="contents-1ohjtwy-1">
   <ez-prop data-version="1.0.0">
     <ez-var data-prop="layout" data-namespace="ez.layout.footer.layout" data-type="array">
@@ -78,28 +78,55 @@
   </div>
   <!-- //right_quick -->
   <div class="inner" module="Layout_footer">
+    <div class="inner_w">
+      <div class="bt_util" data-ez-group="shortcut">
+        <div data-ez-role="title" style="display: none">바로가기</div>
+        <ul data-ez-role="list">
+          <li data-ez-item="company"><a href="/shopinfo/company.html">회사소개</a></li>
+          <li data-ez-item="agreement"><a href="/member/mall_agreement.html">이용약관</a></li>
+          <li data-ez-item="privacy">
+            <a href="/member/privacy.html">개인정보처리방침</a>
+          </li>
+          <li data-ez-item="guide"><a href="/shopinfo/guide.html">이용안내</a></li>
+        </ul>
+      </div>
+    </div>
     <div class="inner_t">
       <div class="info_top">
         <div class="bt_logo" module="Layout_LogoBottom">
           <a href="/"><img src="/SkinImg/img/logo/collector2030_logo_white.svg" alt="{$mall_name}" /></a>
         </div>
-        <div class="sns_icon" data-ez-group="sns" data-ez-role="list">
-          <!-- <div class="bt_title" data-ez-role="title">SNS</div> -->
-          <a data-ez-item="instagram" href="https://instagram.com/collector_2030" target="_blank">
-            <img src="/SkinImg/img/icon/ft-icon-instagram.svg" alt="" />
-          </a>
-          <a data-ez-item="youtube" href="https://youtube.com/@Collector_2030" target="_blank">
-            <img src="/SkinImg/img/icon/ft-icon-youtube.svg" alt="" />
-          </a>
-          <a data-ez-item="facebook" href="https://facebook.com/" target="_blank">
-            <img src="/SkinImg/img/icon/ft-icon-facebook.svg" alt="" />
-          </a>
-          <a data-ez-item="kakao" href="https://pf.kakao.com/_YvvxfG" target="_blank" style>
-            <img src="/SkinImg/img/icon/ft-icon-kakao.svg" alt="" />
-          </a>
 
-          <!-- <a data-ez-item="twitter" href="https://twitter.com/" target="_blank">twitter</a> -->
-          <!-- <a data-ez-item="blog" href="https://blog.naver.com/" target="_blank">blog</a> -->
+        <div class="wrap_cs">
+          <div module="Layout_Info" class="cs_center_txt" data-ez-group="cs">
+            <div class="bt_title" data-ez-role="title">CS CENTER</div>
+            <div data-ez-role="list">
+              <div data-ez-item="phone" class="bt_tel"><span data-ez-role="value">{$phone}</span></div>
+              <div data-ez-item="runtime" class="bt_time">
+                <!-- <strong>CS운영시간</strong> -->
+                <span data-ez-role="value">{$runtime}</span>
+              </div>
+              <!-- <div data-ez-item="email" class="bt_mail"><strong>E-MAIL</strong><span data-ez-role="value">{$inquiry_email}</span></div> -->
+            </div>
+            <div class="sns_icon" data-ez-group="sns" data-ez-role="list">
+              <!-- <div class="bt_title" data-ez-role="title">SNS</div> -->
+              <a data-ez-item="instagram" href="https://instagram.com/collector_2030" target="_blank">
+                <img src="/SkinImg/img/icon/ft-icon-instagram.svg" alt="" />
+              </a>
+              <a data-ez-item="youtube" href="https://youtube.com/@Collector_2030" target="_blank">
+                <img src="/SkinImg/img/icon/ft-icon-youtube.svg" alt="" />
+              </a>
+              <a data-ez-item="facebook" href="https://facebook.com/" target="_blank">
+                <img src="/SkinImg/img/icon/ft-icon-facebook.svg" alt="" />
+              </a>
+              <a data-ez-item="kakao" href="https://pf.kakao.com/_YvvxfG" target="_blank" style>
+                <img src="/SkinImg/img/icon/ft-icon-kakao.svg" alt="" />
+              </a>
+
+              <!-- <a data-ez-item="twitter" href="https://twitter.com/" target="_blank">twitter</a> -->
+              <!-- <a data-ez-item="blog" href="https://blog.naver.com/" target="_blank">blog</a> -->
+            </div>
+          </div>
         </div>
         <!-- //bt_util -->
       </div>
@@ -143,18 +170,8 @@
             <!-- //bt_info_list -->
           </div>
           <!-- //bt_info -->
+          <span class="info_middle-toggle">BUSINESS INFO</span>
           <div class="wrap_cs">
-            <div class="bank_txt" data-ez-group="bank">
-              <div data-ez-role="title" class="bt_title">BANK INFO</div>
-              <!-- <div class="bt_title_sub"><strong>무통장 계좌정보</strong></div> -->
-              <div data-ez-role="list">
-                <div data-ez-role="item">
-                  <span data-ez-role="bank_name">NH농협 301-0338-7781-91</span>
-                  <!-- <span data-ez-role="account_number">3010338778191</span> -->
-                  <span data-ez-role="account_name">예금주: 주식회사 컬렉터2030</span>
-                </div>
-              </div>
-            </div>
             <div module="Layout_Info" class="cs_center_txt" data-ez-group="cs">
               <div class="bt_title" data-ez-role="title">CS CENTER</div>
               <div data-ez-role="list">
@@ -165,70 +182,50 @@
                 </div>
                 <!-- <div data-ez-item="email" class="bt_mail"><strong>E-MAIL</strong><span data-ez-role="value">{$inquiry_email}</span></div> -->
               </div>
+              <div class="sns_icon" data-ez-group="sns" data-ez-role="list">
+                <!-- <div class="bt_title" data-ez-role="title">SNS</div> -->
+                <a data-ez-item="instagram" href="https://instagram.com/collector_2030" target="_blank">
+                  <img src="/SkinImg/img/icon/ft-icon-instagram.svg" alt="" />
+                </a>
+                <a data-ez-item="youtube" href="https://youtube.com/@Collector_2030" target="_blank">
+                  <img src="/SkinImg/img/icon/ft-icon-youtube.svg" alt="" />
+                </a>
+                <a data-ez-item="facebook" href="https://facebook.com/" target="_blank">
+                  <img src="/SkinImg/img/icon/ft-icon-facebook.svg" alt="" />
+                </a>
+                <a data-ez-item="kakao" href="https://pf.kakao.com/_YvvxfG" target="_blank" style>
+                  <img src="/SkinImg/img/icon/ft-icon-kakao.svg" alt="" />
+                </a>
+
+                <!-- <a data-ez-item="twitter" href="https://twitter.com/" target="_blank">twitter</a> -->
+                <!-- <a data-ez-item="blog" href="https://blog.naver.com/" target="_blank">blog</a> -->
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-
     <div class="inner_b">
       <div class="bt_copyright">Copyright © {$mall_name}. All Rights Reserved.</div>
       <!-- //bt_copyright -->
-      <div class="bt_dummy">
-        <div class="bt_escrow" data-ez-escrow style="display: none">
-          <!-- 구매안전서비스 배너 -->
-          <a href="#" data-ez-link="#link">
-            <img src="/SkinImg/img/bt_ew_allat.png" class="bt_ew_allat" alt="올앳" data-ez-escrow-id="allat" />
-            <img src="/SkinImg/img/bt_ew_iniapy.png" class="bt_ew_iniapy" alt="이니시스" data-ez-escrow-id="inicis" />
-            <img src="/SkinImg/img/bt_ew_kcp.png" class="bt_ew_kcp" alt="NHN한국사이버결제" data-ez-escrow-id="kcp" />
-            <img src="/SkinImg/img/bt_ew_kicc.png" class="bt_ew_kicc" alt="한국정보통신" data-ez-escrow-id="kicc" />
-            <img src="/SkinImg/img/bt_ew_ksnet.png" class="bt_ew_ksnet" alt="케이에스넷" data-ez-escrow-id="ksnet" />
-            <img
-              src="/SkinImg/img/bt_ew_nice.png"
-              class="bt_ew_nice"
-              alt="나이스페이먼츠"
-              data-ez-escrow-id="nicepay"
-            />
-            <img
-              src="/SkinImg/img/bt_ew_payments.png"
-              class="bt_ew_payments"
-              alt="토스페이먼츠"
-              data-ez-escrow-id="dacom"
-            />
-            <img
-              src="/SkinImg/img/bt_ew_settle.png"
-              class="bt_ew_settle"
-              alt="세틀뱅크"
-              data-ez-escrow-id="settlebank"
-            />
-            <img
-              src="/SkinImg/img/bt_ew_smartro.png"
-              class="bt_ew_smartro"
-              alt="스마트로"
-              data-ez-escrow-id="smartro"
-            />
-            <span
-              >고객님은 안전거래를 위해 결제시 저희 쇼핑몰에서 가입한 구매안전 서비스를 이용하실 수 있습니다.
-              [서비스가입정보확인]</span
-            >
-          </a>
-        </div>
-        <!-- //bt_escrow -->
+      <div class="bt_escrow" data-ez-escrow>
+        <!-- 구매안전서비스 배너 -->
+        <img
+          src="/SkinImg/img/TossPayments_Logo_Simple_Secondary_White.png"
+          class="bt_ew_payments"
+          alt="토스페이먼츠"
+          data-ez-escrow-id="dacom"
+        />
+        <script language="javascript" src="https://pgweb.uplus.co.kr/WEB_SERVER/js/escrowValid.js"></script>
+        <span>
+          고객님은 안전거래를 위해 결제시 저희 쇼핑몰에서 가입한 구매안전 서비스를 이용하실 수 있습니다.
+          <a onclick="goValidEscrow('CF_col2030b31e');" data-ez-link="#link">[서비스가입정보확인]</a>
+        </span>
       </div>
-      <!-- //bt_dummy -->
-      <div class="bt_util" data-ez-group="shortcut">
-        <div data-ez-role="title" style="display: none">바로가기</div>
-        <ul data-ez-role="list">
-          <li data-ez-item="company"><a href="/shopinfo/company.html">회사소개</a></li>
-          <li data-ez-item="agreement"><a href="/member/mall_agreement.html">이용약관</a></li>
-          <li data-ez-item="privacy">
-            <a href="/member/privacy.html">개인정보처리방침</a>
-          </li>
-          <li data-ez-item="guide"><a href="/shopinfo/guide.html">이용안내</a></li>
-        </ul>
-      </div>
+      <!-- //bt_escrow -->
     </div>
   </div>
   <!-- //inner -->
 </footer>
+
 <!--#ez="1/8"-->

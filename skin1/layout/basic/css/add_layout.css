@@ -24,10 +24,10 @@
     margin: 0;
     width: 46%;
   }
-  #footer.layout02 .inner_b .bt_util ul {
+  #footer.layout02 .inner_w .bt_util ul {
     justify-content: flex-start;
   }
-  #footer.layout02 .inner_b .bt_util ul li:first-child {
+  #footer.layout02 .inner_w .bt_util ul li:first-child {
     margin-left: 0px;
   }
   #footer.layout02 .inner .inner_t .info_middle {
@@ -113,13 +113,13 @@
     display: flex;
     flex-direction: column-reverse;
   }
-  #footer.layout03 .inner_b .bt_util {
+  #footer.layout03 .inner_w .bt_util {
     margin-bottom: 30px;
   }
-  #footer.layout03 .inner_b .bt_util ul {
+  #footer.layout03 .inner_w .bt_util ul {
     justify-content: center;
   }
-  #footer.layout03 .inner_b .bt_util ul li:first-child {
+  #footer.layout03 .inner_w .bt_util ul li:first-child {
     margin-left: 0;
   }
   #footer.layout03 .info_top {
@@ -128,11 +128,11 @@
   }
   #footer.layout03 .info_top .cs_center_txt,
   #footer.layout03 .info_top .bank_txt,
-  #footer.layout03 .info_top .sns_icon {
+  #footer.layout03 .wrap_cs .sns_icon {
     margin: 0 0 30px;
     text-align: center;
   }
-  #footer.layout03 .info_top .sns_icon a {
+  #footer.layout03 .wrap_cs .sns_icon a {
     display: inline-block;
     margin: 0 7px;
   }

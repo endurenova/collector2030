@@ -63,4 +63,14 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   } catch (e) {}
+  try {
+    $(function () {
+      // accodian
+      $('.info_middle-toggle').click(function () {
+        $(this).toggleClass('active');
+        $('.bt_info').slideToggle();
+        $('.bt_escrow').slideToggle();
+      });
+    });
+  } catch (e) {}
 });
