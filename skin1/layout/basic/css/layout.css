@@ -1373,6 +1373,116 @@ a:hover {
   white-space: wrap;
   text-overflow: ellipsis;
 }
+/* 메인페이지 상품 커스터마이징 */
+.main_prd__section {
+  display: none;
+  max-width: 1480px;
+  width: 90%;
+  margin: 0 auto 120px;
+  padding: 0;
+}
+.main_prd__box {
+  width: 100%;
+}
+.main_prd__box .main_prd__list {
+  display: flex;
+  flex-flow: row wrap;
+}
+.main_prd__box .main_prd__list > li {
+  width: var(--item-row-4-width-pc-max1480);
+  margin-right: var(--item-margin-right-pc);
+  margin-bottom: 5%;
+}
+.main_prd__box .main_prd__list > li .prdList__item .thumbnail {
+  position: relative;
+  width: 100%;
+  height: var(--item-row-4-width-pc-max1480);
+  margin: unset;
+  background-color: var(--grayScale-N5);
+  box-sizing: border-box;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.main_prd__box .main_prd__list > li .prdList__item .thumbnail > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  position: relative;
+}
+.main_prd__box .main_prd__list > li .prdList__item .thumbnail > a > img {
+  max-width: 90% !important;
+  max-height: 90% !important;
+  box-sizing: border-box;
+  object-fit: contain;
+  transition: 0.3s;
+}
+.main_prd__box .main_prd__list > li .prdList__item .thumbnail > a:hover > img {
+  transform: scale(1.05);
+}
+.main_prd__box .main_prd__list > li .prdList__item .description {
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  width: 100%;
+  margin: unset;
+  padding: 1% 3%;
+  font-size: 12px;
+  line-height: 18px;
+  box-sizing: border-box;
+}
+
+.main_prd__box .main_prd__list > li .prdList__item .description .name {
+  display: block;
+  text-align: left;
+  font-weight: normal;
+  margin: unset;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin: 3% 0;
+}
+
+.main_prd__box .main_prd__list > li .prdList__item .description .name a {
+}
+.main_prd__box .main_prd__list > li .prdList__item .description .name a span {
+  /* 작품명 */
+  display: block;
+  font-size: 16px !important;
+  color: var(--grayScale-N2) !important;
+  font-weight: var(--font-weight-SemiBold);
+  margin: 0 auto;
+  line-height: 1.2;
+  white-space: nowrap;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.main_prd__box .main_prd__list > li .prdList__item .description .spec {
+}
+
+.main_prd__box .main_prd__list > li .prdList__item .description .spec li {
+}
+
+.main_prd__box .main_prd__list > li .prdList__item .description .spec li .artist-name {
+}
+.main_prd__box .main_prd__list > li .prdList__item .description .spec li .artist-name .korean-pronun {
+  /* 작가명 한국 발음 */
+}
+.main_prd__box .main_prd__list > li .prdList__item .description .spec li .artist-name span:nth-of-type(2) {
+  /* 작가명 */
+}
+.main_prd__box .main_prd__list > li .prdList__item .description .icon {
+  display: flex;
+  width: 100%;
+  margin: 1% 0;
+  justify-content: space-between;
+}
+.main_prd__box .main_prd__list > li .prdList__item .description .icon .product-item__price {
+  /* 가격 */
+  color: var(--main-color);
+  font-size: 14px;
+}
 @media all and (max-width: 1680px) {
   /* 최상단 배너 */
   .main_top_banner .top_banner_box_inner .top_banner_text a {
