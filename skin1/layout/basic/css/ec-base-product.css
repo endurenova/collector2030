@@ -1185,8 +1185,9 @@ svg .main-circ {
 }
 @media (max-width: 560px) {
   .ec-base-product:not(.xans-product-listmain-1) .grid4:not(.grid3_slide) > li {
-    width: 90vw;
-    margin: 0 auto 5%;
+    width: 100%;
+    height: fit-content;
+    margin: 0 auto 10%;
   }
   .ec-base-product .prdList .thumbnail {
     height: 90vw;
