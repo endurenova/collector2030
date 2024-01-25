@@ -32,6 +32,7 @@ img {
   margin: 0;
   padding: 0;
   word-break: keep-all;
+  box-sizing: border-box;
 }
 html {
   width: 100%;

@@ -1002,10 +1002,10 @@ ul.prdList.grid4.list_gallery > li:hover .icon__box {
 
 @media (max-width: calc(1480px / 9 * 10)) {
   ul.prdList.grid4.list_gallery .thumbnail {
-    width: var(--item-row-4-width-pc) !important;
+    width: var(--item-row-3-width-pc) !important;
   }
   ul.prdList.grid4.list_gallery > li {
-    width: var(--item-row-4-width-pc) !important;
+    width: var(--item-row-3-width-pc) !important;
     margin-right: var(--item-margin-right-pc) !important;
   }
   .artist-video-list li {

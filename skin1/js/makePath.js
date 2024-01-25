@@ -1,53 +1,57 @@
+function detectMobileDevice(agent) {
+  const mobileRegex = [/Android/i, /iPhone/i, /iPad/i, /iPod/i, /BlackBerry/i, /Windows Phone/i];
+  return mobileRegex.some(mobile => agent.match(mobile));
+}
+const checkMobile = detectMobileDevice(window.navigator.userAgent);
 try {
-  function detectMobileDevice(agent) {
-    const mobileRegex = [/Android/i, /iPhone/i, /iPad/i, /iPod/i, /BlackBerry/i, /Windows Phone/i];
-    return mobileRegex.some(mobile => agent.match(mobile));
-  }
-  const isMobile = detectMobileDevice(window.navigator.userAgent);
-  if (!isMobile) {
+  if (!checkMobile) {
     document.documentElement.style.setProperty(
       '--item-row-6-width-pc-max1480',
-      'calc((1480px - var(--item-margin-right-pc) * 5) / 6 - 17px)',
+      'calc((1480px - var(--item-margin-right-pc) * 5) / 6 - 8px)',
     );
     document.documentElement.style.setProperty(
       '--item-row-6-width-pc',
-      ' calc((90vw - var(--item-margin-right-pc) * 5) / 6 - 17px)',
+      ' calc((90vw - var(--item-margin-right-pc) * 5) / 6 - 8px)',
     );
     document.documentElement.style.setProperty(
       '--item-row-5-width-pc-max1480',
-      'calc((1480px - var(--item-margin-right-pc) * 4) / 5 - 17px)',
+      'calc((1480px - var(--item-margin-right-pc) * 4) / 5 - 8px)',
     );
     document.documentElement.style.setProperty(
       '--item-row-5-width-pc',
-      ' calc((90vw - var(--item-margin-right-pc) * 4) / 5 - 17px)',
+      ' calc((90vw - var(--item-margin-right-pc) * 4) / 5 - 8px)',
     );
     document.documentElement.style.setProperty(
       '--item-row-4-width-pc-max1480',
-      'calc((1480px - var(--item-margin-right-pc) * 3) / 4 - 17px)',
+      'calc((1480px - var(--item-margin-right-pc) * 3) / 4 - 8px)',
     );
     document.documentElement.style.setProperty(
       '--item-row-4-width-pc',
-      'calc((90vw - var(--item-margin-right-pc) * 3) / 4 - 17px)',
+      'calc((90vw - var(--item-margin-right-pc) * 3) / 4 - 8px)',
     );
     document.documentElement.style.setProperty(
       '--item-row-3-width-pc-max1480',
-      'calc((1480px - var(--item-margin-right-pc) * 2) / 3 - 17px)',
+      'calc((1480px - var(--item-margin-right-pc) * 2) / 3 - 8px)',
     );
     document.documentElement.style.setProperty(
       '--item-row-3-width-pc',
-      'calc((90vw - var(--item-margin-right-pc) * 2) / 3 - 17px)',
+      'calc((90vw - var(--item-margin-right-pc) * 2) / 3 - 8px)',
     );
     document.documentElement.style.setProperty(
       '--item-row-3-width-portable',
-      'calc((90vw - var(--item-margin-right-portable) * 2) / 3 - 17px)',
+      'calc((90vw - var(--item-margin-right-portable) * 2) / 3 - 8px)',
     );
     document.documentElement.style.setProperty(
       '--item-row-2-width-portable',
-      ' calc((90vw - var(--item-margin-right-portable)) / 2) / 3 - 17px)',
+      ' calc((90vw - var(--item-margin-right-portable)) / 2 - 8px)',
     );
+  } else {
   }
 } catch (e) {}
 document.addEventListener('DOMContentLoaded', () => {
+  if (checkMobile || window.innerWidth <= 1024) {
+    document.querySelector('#header').classList.add('portable');
+  }
   try {
     const pathInfo = document.querySelector('.path ol li:nth-of-type(2)');
     const currentPath = document.querySelector('.path li strong');
@@ -55,7 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
     Array.from(headerMenuList).forEach(e => {
       if (e.textContent === currentPath.textContent) {
         const mainCategory = e.closest('.header-menu').querySelector('.main-cate').textContent;
-        pathInfo.innerHTML = `<a href='javascript:void(0);'>${mainCategory}</a>`;
+        pathInfo.innerHTML = `<a class="current-path" href='javascript:void(0);'>${mainCategory}</a>`;
         if (currentPath.textContent === '작가 소개' || currentPath.textContent === '전시 소식') {
           const postAuthorName = document.querySelector('.xans-board-read .description');
           postAuthorName.style.display = 'none';

@@ -12,8 +12,6 @@ document.addEventListener('DOMContentLoaded', () => {
         document.querySelector('#span_product_price_text').classList.add('sold-out');
         document.querySelector('.product_detail_table').classList.add('sold-out');
       }
-    } else {
-      console.log('fff');
     }
   } catch (e) {}
   const detailArea = document.querySelector('#prdDetail > div');

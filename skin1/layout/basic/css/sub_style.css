@@ -220,8 +220,8 @@
 .ec-base-product .prdList .icon {
   display: flex;
   width: 100%;
+  margin: 1% 0;
   justify-content: space-between;
-  margin: 3% 0;
 }
 .ec-base-product .prdList .icon .product-item__price {
   color: var(--main-color);

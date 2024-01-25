@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
           idx: 0,
           url: 'https://player.vimeo.com/video/879491362',
           thumbnail: 'barry_mcgee_thumbnail.png',
+          artistKorean: '배리 맥기',
           artist: 'Barry McGee',
           artistImg: 'barry_mcgee_description.jpg',
         },
@@ -13,6 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
           idx: 1,
           url: 'https://player.vimeo.com/video/873231146',
           thumbnail: 'james_jean_thumbnail.png',
+          artistKorean: '제임스 진',
           artist: 'James Jean',
           artistImg: 'james_jean_description.jpg',
         },
@@ -20,6 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
           idx: 2,
           url: 'https://player.vimeo.com/video/862469222',
           thumbnail: 'jr_thumbnail.png',
+          artistKorean: '제이알',
           artist: 'JR',
           artistImg: 'jr_description.png',
         },
@@ -27,6 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
           idx: 3,
           url: 'https://player.vimeo.com/video/859331318',
           thumbnail: 'dmitri_cherniak_thumbnail.png',
+          artistKorean: '드미트리 체르니아크',
           artist: 'Dmitri Cherniak',
           artistImg: 'dmitri_cherniak_description.jpg',
         },
@@ -34,6 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
           idx: 4,
           url: 'https://player.vimeo.com/video/825026618',
           thumbnail: 'jose_parla_thumbnail.png',
+          artistKorean: '호세 팔라',
           artist: 'José Parlá',
           artistImg: 'jose_parla_description.png',
         },
@@ -41,6 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
           idx: 5,
           url: 'https://player.vimeo.com/video/820578708',
           thumbnail: 'ai_weiwei_thumbnail.png',
+          artistKorean: '아이 웨이웨이',
           artist: 'Ai Weiwei',
           artistImg: 'ai_weiwei_description.jpg',
         },
@@ -59,7 +65,10 @@ document.addEventListener('DOMContentLoaded', () => {
         </div>
         <div class="artist-video-description">
           <img src="/SkinImg/img/${e.artistImg}" alt="${e.artist} image" />
-          <a href="javascript:void(0);" class="artist_name">${e.artist}</a>
+          <a href="javascript:void(0);" class="artist_name">
+            <span>${e.artistKorean}</span>
+            <span>${e.artist}</span>
+          </a>
         </div>
       </li>
     `,

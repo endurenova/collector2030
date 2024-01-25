@@ -6,7 +6,6 @@ document.addEventListener('DOMContentLoaded', () => {
       artistPostList.classList.add('artist-post__list');
 
       const getItemWidth = document.querySelector('.artist-post__list > li > a').clientWidth;
-      console.log(getItemWidth);
       Array.from(artistPostList.querySelectorAll('.thumbnail')).forEach(e => {
         e.style.height = getItemWidth * 0.75 + 'px';
       });

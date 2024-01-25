@@ -8,7 +8,6 @@ document.addEventListener('DOMContentLoaded', () => {
   });
   Array.from(icons).forEach(e => {
     // 품절 아이콘 표시 SOLD OUT 텍스트로 바꾸는 코드
-    console.log(typeof e);
     if (e.getAttribute('alt') === '품절') {
       const itemLayout = e.closest('.prdList__item');
       const icon = e.closest('.icon');

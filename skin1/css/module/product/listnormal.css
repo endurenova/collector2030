@@ -71,6 +71,8 @@
 
 /* 목록페이지 */
 .normalpackage_box {
+  margin: 0 auto;
+  width: 100%;
   margin-bottom: 120px;
 }
 .xans-product-normalmenu {
@@ -196,10 +198,6 @@
   }
   .xans-product-headcategory.titleArea.section h2 {
     width: 100%;
-  }
-  .xans-product-normalpackage {
-    width: 90%;
-    margin: 0 auto;
   }
 
   /* 상품분류 추천상품 */

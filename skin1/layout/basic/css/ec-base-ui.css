@@ -527,6 +527,7 @@ span.noBorder input {
 .path li:first-child {
   background: none;
 }
+
 .path li a {
   font-size: 14px;
   color: var(--grayScale-N1-opa);

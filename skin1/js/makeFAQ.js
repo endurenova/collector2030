@@ -8,7 +8,6 @@ document.addEventListener('DOMContentLoaded', () => {
       searchArea.classList.add('hidden');
       writeBtn.classList.add('hidden');
 
-      console.log(FAQTable.querySelector('th:nth-of-type(1)').textContent);
       FAQTable.innerHTML = `
         <table class="faq-table" border="1">
           <caption>

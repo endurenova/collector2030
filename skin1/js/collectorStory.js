@@ -6,7 +6,6 @@ document.addEventListener('DOMContentLoaded', () => {
       collectorStoryList.classList.add('collector-story__list');
 
       const getItemWidth = document.querySelector('.collector-story__list > li > a').clientWidth;
-      console.log(getItemWidth);
       Array.from(collectorStoryList.querySelectorAll('.thumbnail')).forEach(e => {
         e.style.height = getItemWidth + 'px';
       });

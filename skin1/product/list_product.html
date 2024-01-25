@@ -2,200 +2,205 @@
 ※ 상품진열 공통소스
 -->
 <li id="anchorBoxId_{$product_no}">
-  <div class="prdList__item">
-    <div class="thumbnail">
-      <a href="{$link_product_detail}">
-        <img src="{$image_medium}" id="{$image_medium_id}" alt="{$seo_alt_tag}" loading="lazy" />
-        <span module="product_Imagestyle">
-          <span class="prdIcon {$icon_class_name}" style="background-image: url('{$icon_url}')"></span>
-        </span>
-      </a>
-      <div class="likeButton {$disp_likeprd_class}">
-        <button type="button">{$disp_likeprd_icon} <strong>{$disp_likeprd_count}</strong></button>
-      </div>
-      <div class="badge">
-        <span></span>
-      </div>
-      <div class="icon__box">
-        <span class="wish">
-          {$list_wish_icon}
-          <span class="material-symbols-outlined heart-icon"> favorite </span>
-        </span>
-        <span class="cart">
-          {$basket_icon}
-          <span class="material-symbols-outlined cart-icon"> add_shopping_cart </span>
-        </span>
-        <span class="option">{$option_preview_icon}OPTION</span>
-      </div>
+    <div class="prdList__item">
+        <div class="thumbnail">
+            <a href="{$link_product_detail}">
+                <img src="{$image_medium}" id="{$image_medium_id}" alt="{$seo_alt_tag}" loading="lazy" />
+                <span module="product_Imagestyle">
+                    <span class="prdIcon {$icon_class_name}" style="background-image: url('{$icon_url}')"></span>
+                </span>
+            </a>
+            <div class="likeButton {$disp_likeprd_class}">
+                <button type="button">{$disp_likeprd_icon} <strong>{$disp_likeprd_count}</strong></button>
+            </div>
+            <div class="badge">
+                <span></span>
+            </div>
+            <div class="icon__box">
+                <span class="wish">
+                    {$list_wish_icon}
+                    <span class="material-symbols-outlined heart-icon"> favorite </span>
+                </span>
+                <span class="cart">
+                    {$basket_icon}
+                    <span class="material-symbols-outlined cart-icon"> add_shopping_cart </span>
+                </span>
+                <span class="option">{$option_preview_icon}OPTION</span>
+            </div>
+        </div>
+        <div class="description" ec-data-custom="{$product_custom}" ec-data-price="{$product_price}">
+            <div class="name">
+                <a href="{$link_product_detail}" class="{$product_name_display|display}">
+                    <span class="title {$product_name_title_display|display}">{$product_name_title} :</span>
+                    {$product_name}
+                </a>
+            </div>
+            <ul module="product_ListItem" class="spec">
+                <li class="{$item_display|display}">
+                    <strong class="title {$item_title_display|display}">{$item_title} :</strong>
+                    <span class="artist-name">
+                        <span class="korean-pronun"></span>
+                        {$item_content}
+                    </span>
+                    <svg class="heart-mark" viewBox="467 392 58 57" xmlns="http://www.w3.org/2000/svg">
+                        <g class="Group" fill="none" fill-rule="evenodd" transform="translate(467 392)">
+                            <path
+                                class="heart"
+                                d="M29.144 20.773c-.063-.13-4.227-8.67-11.44-2.59C7.63 28.795 28.94 43.256 29.143 43.394c.204-.138 21.513-14.6 11.44-25.213-7.214-6.08-11.377 2.46-11.44 2.59z"
+                                fill="#AAB8C2"
+                            />
+                            <circle id="main-circ" fill="#E2264D" opacity="0" cx="29.5" cy="29.5" r="1.5" />
+
+                            <g class="grp7" opacity="0" transform="translate(7 6)">
+                                <circle class="oval1" fill="#9CD8C3" cx="2" cy="6" r="2" />
+                                <circle class="oval2" fill="#8CE8C3" cx="5" cy="2" r="2" />
+                            </g>
+
+                            <g class="grp6" opacity="0" transform="translate(0 28)">
+                                <circle class="oval1" fill="#CC8EF5" cx="2" cy="7" r="2" />
+                                <circle class="oval2" fill="#91D2FA" cx="3" cy="2" r="2" />
+                            </g>
+
+                            <g class="grp3" opacity="0" transform="translate(52 28)">
+                                <circle class="oval2" fill="#9CD8C3" cx="2" cy="7" r="2" />
+                                <circle class="oval1" fill="#8CE8C3" cx="4" cy="2" r="2" />
+                            </g>
+
+                            <g class="grp2" opacity="0" transform="translate(44 6)">
+                                <circle class="oval2" fill="#CC8EF5" cx="5" cy="6" r="2" />
+                                <circle class="oval1" fill="#CC8EF5" cx="2" cy="2" r="2" />
+                            </g>
+
+                            <g class="grp5" opacity="0" transform="translate(14 50)">
+                                <circle class="oval1" fill="#91D2FA" cx="6" cy="5" r="2" />
+                                <circle class="oval2" fill="#91D2FA" cx="2" cy="2" r="2" />
+                            </g>
+
+                            <g class="grp4" opacity="0" transform="translate(35 50)">
+                                <circle class="oval1" fill="#F48EA7" cx="6" cy="5" r="2" />
+                                <circle class="oval2" fill="#F48EA7" cx="2" cy="2" r="2" />
+                            </g>
+
+                            <g class="grp1" opacity="0" transform="translate(24)">
+                                <circle class="oval1" fill="#9FC7FA" cx="2.5" cy="3" r="2" />
+                                <circle class="oval2" fill="#9FC7FA" cx="7.5" cy="2" r="2" />
+                            </g>
+                        </g>
+                    </svg>
+                </li>
+                <li class="{$item_display|display}">
+                    <strong class="title {$item_title_display|display}">{$item_title} :</strong>
+                    {$item_content}
+                </li>
+            </ul>
+            <a href="{$link_product_detail}" class="main_list_detail">
+                <span>detail</span>
+                <span class="material-symbols-outlined"> arrow_right_alt </span>
+            </a>
+            <div class="icon">
+                {$soldout_icon} {$stock_icon} {$recommend_icon} {$new_icon} {$product_icons} {$today_arrival_icon} {$pickup_icon} {$benefit_icons}
+            </div>
+        </div>
     </div>
-    <div class="description" ec-data-custom="{$product_custom}" ec-data-price="{$product_price}">
-      <ul module="product_ListItem" class="spec">
-        <li class="{$item_display|display}">
-          <strong class="title {$item_title_display|display}">{$item_title} :</strong>
-          {$item_content}
-          <svg class="heart-mark" viewBox="467 392 58 57" xmlns="http://www.w3.org/2000/svg">
-            <g class="Group" fill="none" fill-rule="evenodd" transform="translate(467 392)">
-              <path
-                class="heart"
-                d="M29.144 20.773c-.063-.13-4.227-8.67-11.44-2.59C7.63 28.795 28.94 43.256 29.143 43.394c.204-.138 21.513-14.6 11.44-25.213-7.214-6.08-11.377 2.46-11.44 2.59z"
-                fill="#AAB8C2"
-              />
-              <circle id="main-circ" fill="#E2264D" opacity="0" cx="29.5" cy="29.5" r="1.5" />
-
-              <g class="grp7" opacity="0" transform="translate(7 6)">
-                <circle class="oval1" fill="#9CD8C3" cx="2" cy="6" r="2" />
-                <circle class="oval2" fill="#8CE8C3" cx="5" cy="2" r="2" />
-              </g>
-
-              <g class="grp6" opacity="0" transform="translate(0 28)">
-                <circle class="oval1" fill="#CC8EF5" cx="2" cy="7" r="2" />
-                <circle class="oval2" fill="#91D2FA" cx="3" cy="2" r="2" />
-              </g>
-
-              <g class="grp3" opacity="0" transform="translate(52 28)">
-                <circle class="oval2" fill="#9CD8C3" cx="2" cy="7" r="2" />
-                <circle class="oval1" fill="#8CE8C3" cx="4" cy="2" r="2" />
-              </g>
-
-              <g class="grp2" opacity="0" transform="translate(44 6)">
-                <circle class="oval2" fill="#CC8EF5" cx="5" cy="6" r="2" />
-                <circle class="oval1" fill="#CC8EF5" cx="2" cy="2" r="2" />
-              </g>
-
-              <g class="grp5" opacity="0" transform="translate(14 50)">
-                <circle class="oval1" fill="#91D2FA" cx="6" cy="5" r="2" />
-                <circle class="oval2" fill="#91D2FA" cx="2" cy="2" r="2" />
-              </g>
-
-              <g class="grp4" opacity="0" transform="translate(35 50)">
-                <circle class="oval1" fill="#F48EA7" cx="6" cy="5" r="2" />
-                <circle class="oval2" fill="#F48EA7" cx="2" cy="2" r="2" />
-              </g>
-
-              <g class="grp1" opacity="0" transform="translate(24)">
-                <circle class="oval1" fill="#9FC7FA" cx="2.5" cy="3" r="2" />
-                <circle class="oval2" fill="#9FC7FA" cx="7.5" cy="2" r="2" />
-              </g>
-            </g>
-          </svg>
-        </li>
-        <li class="{$item_display|display}">
-          <strong class="title {$item_title_display|display}">{$item_title} :</strong>
-          {$item_content}
-        </li>
-      </ul>
-      <div class="name">
-        <a href="{$link_product_detail}" class="{$product_name_display|display}">
-          <span class="title {$product_name_title_display|display}">{$product_name_title} :</span>
-          {$product_name}
-        </a>
-      </div>
-      <a href="{$link_product_detail}" class="main_list_detail">
-        <span>detail</span>
-        <span class="material-symbols-outlined"> arrow_right_alt </span>
-      </a>
-      <div class="icon">
-        {$soldout_icon} {$stock_icon} {$recommend_icon} {$new_icon} {$product_icons} {$today_arrival_icon}
-        {$pickup_icon} {$benefit_icons}
-      </div>
-    </div>
-  </div>
 </li>
 <li id="anchorBoxId_{$product_no}">
-  <div class="prdList__item">
-    <div class="thumbnail">
-      <a href="{$link_product_detail}">
-        <img src="{$image_medium}" id="{$image_medium_id}" alt="{$seo_alt_tag}" loading="lazy" />
-        <span module="product_Imagestyle">
-          <span class="prdIcon {$icon_class_name}" style="background-image: url('{$icon_url}')"> </span>
-        </span>
-      </a>
-      <div class="likeButton {$disp_likeprd_class}">
-        <button type="button">{$disp_likeprd_icon} <strong>{$disp_likeprd_count}</strong></button>
-      </div>
-      <div class="badge"><span></span></div>
-      <div class="icon__box">
-        <span class="wish">
-          {$list_wish_icon}
-          <span class="material-symbols-outlined heart-icon"> favorite </span>
-        </span>
-        <span class="cart">
-          {$basket_icon}
-          <span class="material-symbols-outlined cart-icon"> add_shopping_cart </span>
-        </span>
-        <span class="option">{$option_preview_icon}OPTION</span>
-      </div>
+    <div class="prdList__item">
+        <div class="thumbnail">
+            <a href="{$link_product_detail}">
+                <img src="{$image_medium}" id="{$image_medium_id}" alt="{$seo_alt_tag}" loading="lazy" />
+                <span module="product_Imagestyle">
+                    <span class="prdIcon {$icon_class_name}" style="background-image: url('{$icon_url}')"> </span>
+                </span>
+            </a>
+            <div class="likeButton {$disp_likeprd_class}">
+                <button type="button">{$disp_likeprd_icon} <strong>{$disp_likeprd_count}</strong></button>
+            </div>
+            <div class="badge"><span></span></div>
+            <div class="icon__box">
+                <span class="wish">
+                    {$list_wish_icon}
+                    <span class="material-symbols-outlined heart-icon"> favorite </span>
+                </span>
+                <span class="cart">
+                    {$basket_icon}
+                    <span class="material-symbols-outlined cart-icon"> add_shopping_cart </span>
+                </span>
+                <span class="option">{$option_preview_icon}OPTION</span>
+            </div>
+        </div>
+        <div class="description" ec-data-custom="{$product_custom}" ec-data-price="{$product_price}">
+            <div class="name">
+                <a href="{$link_product_detail}" class="{$product_name_display|display}">
+                    <span class="title {$product_name_title_display|display}">{$product_name_title} :</span>
+                    {$product_name}
+                </a>
+            </div>
+            <ul module="product_ListItem" class="spec">
+                <li class="{$item_display|display}">
+                    <strong class="title {$item_title_display|display}">{$item_title} :</strong>
+                    <span class="artist-name">
+                        <span class="korean-pronun"></span>
+                        {$item_content}
+                    </span>
+                    <svg class="heart-mark" viewBox="467 392 58 57" xmlns="http://www.w3.org/2000/svg">
+                        <g class="Group" fill="none" fill-rule="evenodd" transform="translate(467 392)">
+                            <path
+                                class="heart"
+                                d="M29.144 20.773c-.063-.13-4.227-8.67-11.44-2.59C7.63 28.795 28.94 43.256 29.143 43.394c.204-.138 21.513-14.6 11.44-25.213-7.214-6.08-11.377 2.46-11.44 2.59z"
+                                fill="#AAB8C2"
+                            />
+                            <circle id="main-circ" fill="#E2264D" opacity="0" cx="29.5" cy="29.5" r="1.5" />
+                            <g class="grp7" opacity="0" transform="translate(7 6)">
+                                <circle class="oval1" fill="#9CD8C3" cx="2" cy="6" r="2" />
+                                <circle class="oval2" fill="#8CE8C3" cx="5" cy="2" r="2" />
+                            </g>
+
+                            <g class="grp6" opacity="0" transform="translate(0 28)">
+                                <circle class="oval1" fill="#CC8EF5" cx="2" cy="7" r="2" />
+                                <circle class="oval2" fill="#91D2FA" cx="3" cy="2" r="2" />
+                            </g>
+
+                            <g class="grp3" opacity="0" transform="translate(52 28)">
+                                <circle class="oval2" fill="#9CD8C3" cx="2" cy="7" r="2" />
+                                <circle class="oval1" fill="#8CE8C3" cx="4" cy="2" r="2" />
+                            </g>
+
+                            <g class="grp2" opacity="0" transform="translate(44 6)">
+                                <circle class="oval2" fill="#CC8EF5" cx="5" cy="6" r="2" />
+                                <circle class="oval1" fill="#CC8EF5" cx="2" cy="2" r="2" />
+                            </g>
+
+                            <g class="grp5" opacity="0" transform="translate(14 50)">
+                                <circle class="oval1" fill="#91D2FA" cx="6" cy="5" r="2" />
+                                <circle class="oval2" fill="#91D2FA" cx="2" cy="2" r="2" />
+                            </g>
+
+                            <g class="grp4" opacity="0" transform="translate(35 50)">
+                                <circle class="oval1" fill="#F48EA7" cx="6" cy="5" r="2" />
+                                <circle class="oval2" fill="#F48EA7" cx="2" cy="2" r="2" />
+                            </g>
+
+                            <g class="grp1" opacity="0" transform="translate(24)">
+                                <circle class="oval1" fill="#9FC7FA" cx="2.5" cy="3" r="2" />
+                                <circle class="oval2" fill="#9FC7FA" cx="7.5" cy="2" r="2" />
+                            </g>
+                        </g>
+                    </svg>
+                </li>
+                <li class="{$item_display|display}">
+                    <strong class="title {$item_title_display|display}">{$item_title} :</strong>
+                    {$item_content}
+                </li>
+            </ul>
+            <a href="{$link_product_detail}" class="main_list_detail">
+                <span>detail</span>
+                <span class="material-symbols-outlined"> arrow_right_alt </span>
+            </a>
+            <div class="icon">
+                {$soldout_icon} {$stock_icon} {$recommend_icon} {$new_icon} {$product_icons} {$today_arrival_icon} {$pickup_icon} {$benefit_icons}
+            </div>
+        </div>
     </div>
-    <div class="description" ec-data-custom="{$product_custom}" ec-data-price="{$product_price}">
-      <ul module="product_ListItem" class="spec">
-        <li class="{$item_display|display}">
-          <strong class="title {$item_title_display|display}">{$item_title} :</strong>
-          {$item_content}
-          <svg class="heart-mark" viewBox="467 392 58 57" xmlns="http://www.w3.org/2000/svg">
-            <g class="Group" fill="none" fill-rule="evenodd" transform="translate(467 392)">
-              <path
-                class="heart"
-                d="M29.144 20.773c-.063-.13-4.227-8.67-11.44-2.59C7.63 28.795 28.94 43.256 29.143 43.394c.204-.138 21.513-14.6 11.44-25.213-7.214-6.08-11.377 2.46-11.44 2.59z"
-                fill="#AAB8C2"
-              />
-              <circle id="main-circ" fill="#E2264D" opacity="0" cx="29.5" cy="29.5" r="1.5" />
-
-              <g class="grp7" opacity="0" transform="translate(7 6)">
-                <circle class="oval1" fill="#9CD8C3" cx="2" cy="6" r="2" />
-                <circle class="oval2" fill="#8CE8C3" cx="5" cy="2" r="2" />
-              </g>
-
-              <g class="grp6" opacity="0" transform="translate(0 28)">
-                <circle class="oval1" fill="#CC8EF5" cx="2" cy="7" r="2" />
-                <circle class="oval2" fill="#91D2FA" cx="3" cy="2" r="2" />
-              </g>
-
-              <g class="grp3" opacity="0" transform="translate(52 28)">
-                <circle class="oval2" fill="#9CD8C3" cx="2" cy="7" r="2" />
-                <circle class="oval1" fill="#8CE8C3" cx="4" cy="2" r="2" />
-              </g>
-
-              <g class="grp2" opacity="0" transform="translate(44 6)">
-                <circle class="oval2" fill="#CC8EF5" cx="5" cy="6" r="2" />
-                <circle class="oval1" fill="#CC8EF5" cx="2" cy="2" r="2" />
-              </g>
-
-              <g class="grp5" opacity="0" transform="translate(14 50)">
-                <circle class="oval1" fill="#91D2FA" cx="6" cy="5" r="2" />
-                <circle class="oval2" fill="#91D2FA" cx="2" cy="2" r="2" />
-              </g>
-
-              <g class="grp4" opacity="0" transform="translate(35 50)">
-                <circle class="oval1" fill="#F48EA7" cx="6" cy="5" r="2" />
-                <circle class="oval2" fill="#F48EA7" cx="2" cy="2" r="2" />
-              </g>
-
-              <g class="grp1" opacity="0" transform="translate(24)">
-                <circle class="oval1" fill="#9FC7FA" cx="2.5" cy="3" r="2" />
-                <circle class="oval2" fill="#9FC7FA" cx="7.5" cy="2" r="2" />
-              </g>
-            </g>
-          </svg>
-        </li>
-        <li class="{$item_display|display}">
-          <strong class="title {$item_title_display|display}">{$item_title} :</strong>
-          {$item_content}
-        </li>
-      </ul>
-      <div class="name">
-        <a href="{$link_product_detail}" class="{$product_name_display|display}">
-          <span class="title {$product_name_title_display|display}">{$product_name_title} :</span>
-          {$product_name}
-        </a>
-      </div>
-      <a href="{$link_product_detail}" class="main_list_detail">
-        <span>detail</span>
-        <span class="material-symbols-outlined"> arrow_right_alt </span>
-      </a>
-      <div class="icon">
-        {$soldout_icon} {$stock_icon} {$recommend_icon} {$new_icon} {$product_icons} {$today_arrival_icon}
-        {$pickup_icon} {$benefit_icons}
-      </div>
-    </div>
-  </div>
 </li>
+<!--@js(/js/prdListCustom.js)-->
+<!--@js(/js/getPrdData.js)-->
