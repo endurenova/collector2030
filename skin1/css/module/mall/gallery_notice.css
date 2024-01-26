@@ -1,0 +1,20 @@
+.gallery_notice__contents {
+  margin-top: 55px;
+}
+.gallery-img__box {
+  display: flex;
+  position: relative;
+  flex-flow: row;
+  width: 100%;
+}
+.gallery-img__box img {
+  width: 50%;
+}
+.about_gallery {
+  margin: 0 auto 55px;
+}
+.about_gallery h3 {
+  font-size: 36px;
+  color: var(--grayScale-N1);
+  font-weight: var(--font-weight-Bold);
+}

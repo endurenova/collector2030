@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
       <section class="main_prd__section">
         <div class="main_title ez-align-center">
           <div class="main_title_txt01">
-            전세계에서 가장 주목받고 있는 작품
+            컬렉터 2030에서만 만나볼 수 있는 작품
           </div>
         </div>
         <div class="main_prd__box">

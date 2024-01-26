@@ -10,7 +10,6 @@ document.addEventListener('DOMContentLoaded', () => {
         data.forEach(e1 => {
           e.closest('.artist-name').querySelector('.korean-pronun').textContent = e1[e.textContent];
           e.textContent = `(${e.textContent})`;
-          console.log(e1[e.textContent]);
         }),
       );
   });

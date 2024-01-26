@@ -500,7 +500,7 @@ span.noBorder input {
 .path {
   overflow: hidden;
   margin: 20px 0 0;
-  height: 30px;
+  height: fit-content;
   line-height: 30px;
 }
 .path span {
