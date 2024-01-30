@@ -3,29 +3,6 @@
 <!--@css(/layout/basic/css/main.css)-->
 <!--@import(/smart-banner/shop1/smart-banner-admin-CUSTOM.html)-->
 
-<div class="app-smart-popup" style="z-index: 2147483647; margin-left: 10px; margin-top: 10px">
-  <div class="app-smart-popup-slider app-smart-popup-slider-initialized" id="app-smart-popup-slider-0">
-    <div class="app-smart-popup-slider-list draggable">
-      <div class="app-smart-popup-slider-track" style="opacity: 1; transform: translate3d(0px, 0px, 0px)">
-        <div
-          class="app-smart-popup-slider-slide slick-current app-smart-popup-slider-active"
-          data-slick-index="0"
-          aria-hidden="false"
-        >
-          <div>
-            <div class="smart-popup-img" style="width: 100%; display: inline-block">
-              <img src="https://file.cafe24cos.com/popup-admin-live/col2030/2378aca4-c945-4016-94ef-13587f722dc1.png" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="smart-popup-btns">
-    <button type="button" class="smart-popup-close smart-popup-today" data-popup-no="165781">오늘 하루 열지 않기</button
-    ><button class="smart-popup-close">닫기</button>
-  </div>
-</div>
 <section
   class="section main_product_list"
   data-ez-module="product-list/1"
@@ -98,6 +75,159 @@
     <div module="product_listmore_1" class="more">
       <a href="#none" onclick="{$more_action}" class="btnMore">More +</a>
     </div>
+  </div>
+</section>
+
+<!-- <section
+  class="section main_video ez-align-center"
+  data-ez-module="video/1"
+  data-ez-role="style.background"
+  data-ez-align="center"
+  data-ez="contents-040ul59-1"
+  data-ez-display="visible"
+  style="margin-bottom: 120px"
+>
+  <div class="margin_video_box">
+    <div class="youtube_background"></div>
+    <div class="wrap_video_box">
+      <div class="main_video_box">
+        <iframe
+          data-ez-role="video"
+          id="ytplayer"
+          type="text/html"
+          src="//www.youtube.com/embed/HDPkN8tg5P0"
+          frameborder="0"
+          allowfullscreen
+          data-ez-rawsrc="https://www.youtube.com/embed/HDPkN8tg5P0"
+        ></iframe>
+      </div>
+
+      <div class="main_video_title">
+        비디오 타이틀 수정하는곳
+        <div class="main_title_txt01" data-ez-role="title"></div>
+        <div class="main_title_txt02" data-ez-role="desc"></div>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+<section
+  class="section main_image_text_gallery"
+  data-ez-module="image-gallery/2"
+  data-ez-role="style.background"
+  data-ez-item-length="3"
+  data-ez="contents-12yzxc0-1"
+>
+  <ez-prop data-version="1.0.0">
+    <ez-var data-prop="image" data-namespace="ez.module.image-gallery.image">
+      <ez-item data-id="size" data-pc="480 480" data-mobile="480 480"></ez-item>
+    </ez-var>
+    <ez-var data-prop="display" data-namespace="ez.module.image-gallery.display">
+      <ez-item data-id="item" data-max="10"></ez-item>
+      <ez-item data-id="column" data-default="3" data-min="1" data-max="5"></ez-item>
+    </ez-var>
+    <ez-var data-prop="layout" data-namespace="ez.module.image-gallery.layout">
+      <ez-item data-id="mobile" data-default="slide">
+        <ez-item data-id="options" data-type="array">
+          <ez-item data-id="slide" data-name="슬라이드"></ez-item>
+          <ez-item data-id="more" data-name="더보기"></ez-item>
+          <ez-item data-id="none" data-name="사용안함"></ez-item>
+        </ez-item>
+      </ez-item>
+    </ez-var>
+  </ez-prop>
+  <div class="main_title ez-align-center" data-ez-role="ez-align" data-ez-align="center">
+    <!-- 라이프스타일 타이틀 수정하는곳 -->
+    <div class="main_title_txt01" data-ez-role="title">SPECIAL ARTWORKS</div>
+    <!-- <div class="main_title_txt02" data-ez-role="desc">컬렉터 2030에서만 볼 수 있는 특별한 작품</div> -->
+  </div>
+  <!-- //main_title -->
+
+  <div class="main_3dan_banner ez-mobile-layout-slide" data-ez-role="ez-mobile-layout" data-ez-mobile-layout="slide">
+    <!-- 메인 3단배너 수정하는곳 -->
+    <ul data-ez-role="image-list ez-column" class="ez-column-3" data-ez-column="3">
+      <li data-ez-role="image-item ez-align">
+        <a data-ez-role="a" href="/product/list.html?cate_no=61" target="_self">
+          <picture>
+            <img src="/SkinImg/img/ez-image-contents-bear.jpg" />
+          </picture>
+          <div class="main_3dan_banner_txt">
+            <div class="main_3dan_banner_txt01" data-ez-role="title">베어브릭 에디션</div>
+            <div class="main_banner_more" data-ez-role="desc">자세히 살펴보기</div>
+          </div>
+          <!--//main_3dan_banner_txt-->
+        </a>
+      </li>
+      <li data-ez-role="image-item ez-align">
+        <a data-ez-role="a" href="#" target="_self">
+          <picture>
+            <source
+              srcset="
+                https://ecimg.cafe24img.com/pg715b26588354090/col2030/web/upload/ezst/image/ez-image-contents-12yzxc0-1-19k36bj-3.jpg?v=1703234243387
+              "
+              media="(max-width: 1024px)"
+              data-ez-role="img-pc"
+              data-ez-eb="https://ecimg.cafe24img.com/pg715b26588354090/col2030/web/upload/ezst/image/ez-image-contents-12yzxc0-1-19k36bj-3.edibotbanner.json"
+            />
+            <img
+              src="
+                https://ecimg.cafe24img.com/pg715b26588354090/col2030/web/upload/ezst/image/ez-image-contents-12yzxc0-1-19k36bj-3.jpg?v=1703234243387
+              "
+              data-ez-role="img-mobile"
+            />
+          </picture>
+          <div class="main_3dan_banner_txt">
+            <div class="main_3dan_banner_txt01" data-ez-role="title">컬렉터 에디션</div>
+            <div class="main_banner_more" data-ez-role="desc">자세히 살펴보기</div>
+          </div>
+          <!--//main_3dan_banner_txt-->
+        </a>
+      </li>
+      <li data-ez-role="image-item ez-align">
+        <a data-ez-role="a" href="/category/%EC%98%A4%EB%A6%AC%EC%A7%80%EB%84%90/44/" target="_self">
+          <picture>
+            <source
+              srcset="
+                https://ecimg.cafe24img.com/pg715b26588354090/col2030/web/upload/ezst/image/ez-image-contents-12yzxc0-1-1oql4ub-3.jpg?v=1703584891801
+              "
+              media="(max-width: 1024px)"
+              data-ez-role="img-pc"
+              data-ez-eb="https://ecimg.cafe24img.com/pg715b26588354090/col2030/web/upload/ezst/image/ez-image-contents-12yzxc0-1-1oql4ub-3.edibotbanner.json"
+            />
+            <img
+              src="
+                https://ecimg.cafe24img.com/pg715b26588354090/col2030/web/upload/ezst/image/ez-image-contents-12yzxc0-1-1oql4ub-3.jpg?v=1703584891801
+              "
+              data-ez-role="img-mobile"
+            />
+          </picture>
+          <div class="main_3dan_banner_txt">
+            <div class="main_3dan_banner_txt01" data-ez-role="title" 1>오리지널 원화</div>
+            <div class="main_banner_more" data-ez-role="desc">자세히 살펴보기</div>
+          </div>
+          <!--a-->
+        </a>
+      </li>
+    </ul>
+    <div class="main_image_text_gallery_more"><a href="#none" class="main_image_text_gallery_more_btn">더보기</a></div>
+  </div>
+  <!-- //main_3dan_banner -->
+</section>
+
+<section
+  class="section artist-videos"
+  data-ez-module="html/1"
+  data-ez-name="CUSTOM HTML"
+  data-ez-type="plain"
+  data-ez="contents-0z96adb-1"
+>
+  <!-- 아티스트 비디오 -->
+  <div class="main_title ez-align-center" data-ez-role="ez-align" data-ez-align="center">
+    <div class="main_title_txt01" data-ez-role="title">작가 소개 영상</div>
+    <!-- <div class="main_title_txt02" data-ez-role="desc"></div> -->
+  </div>
+  <div class="artist-video-box swiper-container">
+    <ul class="artist-video-list swiper-wrapper"></ul>
   </div>
 </section>
 
@@ -234,170 +364,6 @@
   <!-- //content_list -->
 </section>
 
-<!-- <section
-  class="section main_video ez-align-center"
-  data-ez-module="video/1"
-  data-ez-role="style.background"
-  data-ez-align="center"
-  data-ez="contents-040ul59-1"
-  data-ez-display="visible"
-  style="margin-bottom: 120px"
->
-  <div class="margin_video_box">
-    <div class="youtube_background"></div>
-    <div class="wrap_video_box">
-      <div class="main_video_box">
-        <iframe
-          data-ez-role="video"
-          id="ytplayer"
-          type="text/html"
-          src="//www.youtube.com/embed/HDPkN8tg5P0"
-          frameborder="0"
-          allowfullscreen
-          data-ez-rawsrc="https://www.youtube.com/embed/HDPkN8tg5P0"
-        ></iframe>
-      </div>
-
-      <div class="main_video_title">
-        비디오 타이틀 수정하는곳
-        <div class="main_title_txt01" data-ez-role="title"></div>
-        <div class="main_title_txt02" data-ez-role="desc"></div>
-      </div>
-    </div>
-  </div>
-</section> -->
-
-<section
-  class="section main_image_text_gallery"
-  data-ez-module="image-gallery/2"
-  data-ez-role="style.background"
-  data-ez-item-length="3"
-  data-ez="contents-12yzxc0-1"
->
-  <ez-prop data-version="1.0.0">
-    <ez-var data-prop="image" data-namespace="ez.module.image-gallery.image">
-      <ez-item data-id="size" data-pc="480 480" data-mobile="480 480"></ez-item>
-    </ez-var>
-    <ez-var data-prop="display" data-namespace="ez.module.image-gallery.display">
-      <ez-item data-id="item" data-max="10"></ez-item>
-      <ez-item data-id="column" data-default="3" data-min="1" data-max="5"></ez-item>
-    </ez-var>
-    <ez-var data-prop="layout" data-namespace="ez.module.image-gallery.layout">
-      <ez-item data-id="mobile" data-default="slide">
-        <ez-item data-id="options" data-type="array">
-          <ez-item data-id="slide" data-name="슬라이드"></ez-item>
-          <ez-item data-id="more" data-name="더보기"></ez-item>
-          <ez-item data-id="none" data-name="사용안함"></ez-item>
-        </ez-item>
-      </ez-item>
-    </ez-var>
-  </ez-prop>
-  <div class="main_title ez-align-center" data-ez-role="ez-align" data-ez-align="center">
-    <!-- 라이프스타일 타이틀 수정하는곳 -->
-    <div class="main_title_txt01" data-ez-role="title">SPECIAL ARTWORKS</div>
-    <!-- <div class="main_title_txt02" data-ez-role="desc">컬렉터 2030에서만 볼 수 있는 특별한 작품</div> -->
-  </div>
-  <!-- //main_title -->
-
-  <div class="main_3dan_banner ez-mobile-layout-slide" data-ez-role="ez-mobile-layout" data-ez-mobile-layout="slide">
-    <!-- 메인 3단배너 수정하는곳 -->
-    <ul data-ez-role="image-list ez-column" class="ez-column-3" data-ez-column="3">
-      <li data-ez-role="image-item ez-align">
-        <a data-ez-role="a" href="/category/%EC%BB%AC%EB%A0%89%ED%84%B0-%EC%97%90%EB%94%94%EC%85%98/32/" target="_self">
-          <picture>
-            <source
-              srcset="
-                https://ecimg.cafe24img.com/pg715b26588354090/col2030/web/upload/ezst/image/ez-image-contents-12yzxc0-1-005h4zv-3.jpg?v=1703234324455
-              "
-              media="(max-width: 1024px)"
-              data-ez-role="img-pc"
-              data-ez-eb="https://ecimg.cafe24img.com/pg715b26588354090/col2030/web/upload/ezst/image/ez-image-contents-12yzxc0-1-005h4zv-3.edibotbanner.json"
-            />
-            <img
-              src="
-                https://ecimg.cafe24img.com/pg715b26588354090/col2030/web/upload/ezst/image/ez-image-contents-12yzxc0-1-005h4zv-3.jpg?v=1703234324455
-              "
-              data-ez-role="img-mobile"
-            />
-          </picture>
-          <div class="main_3dan_banner_txt">
-            <div class="main_3dan_banner_txt01" data-ez-role="title">프리미엄 라인</div>
-            <div class="main_banner_more" data-ez-role="desc">자세히 살펴보기</div>
-          </div>
-          <!--//main_3dan_banner_txt-->
-        </a>
-      </li>
-      <li data-ez-role="image-item ez-align">
-        <a data-ez-role="a" href="#" target="_self">
-          <picture>
-            <source
-              srcset="
-                https://ecimg.cafe24img.com/pg715b26588354090/col2030/web/upload/ezst/image/ez-image-contents-12yzxc0-1-19k36bj-3.jpg?v=1703234243387
-              "
-              media="(max-width: 1024px)"
-              data-ez-role="img-pc"
-              data-ez-eb="https://ecimg.cafe24img.com/pg715b26588354090/col2030/web/upload/ezst/image/ez-image-contents-12yzxc0-1-19k36bj-3.edibotbanner.json"
-            />
-            <img
-              src="
-                https://ecimg.cafe24img.com/pg715b26588354090/col2030/web/upload/ezst/image/ez-image-contents-12yzxc0-1-19k36bj-3.jpg?v=1703234243387
-              "
-              data-ez-role="img-mobile"
-            />
-          </picture>
-          <div class="main_3dan_banner_txt">
-            <div class="main_3dan_banner_txt01" data-ez-role="title">컬렉터 에디션</div>
-            <div class="main_banner_more" data-ez-role="desc">자세히 살펴보기</div>
-          </div>
-          <!--//main_3dan_banner_txt-->
-        </a>
-      </li>
-      <li data-ez-role="image-item ez-align">
-        <a data-ez-role="a" href="/category/%EC%98%A4%EB%A6%AC%EC%A7%80%EB%84%90/44/" target="_self">
-          <picture>
-            <source
-              srcset="
-                https://ecimg.cafe24img.com/pg715b26588354090/col2030/web/upload/ezst/image/ez-image-contents-12yzxc0-1-1oql4ub-3.jpg?v=1703584891801
-              "
-              media="(max-width: 1024px)"
-              data-ez-role="img-pc"
-              data-ez-eb="https://ecimg.cafe24img.com/pg715b26588354090/col2030/web/upload/ezst/image/ez-image-contents-12yzxc0-1-1oql4ub-3.edibotbanner.json"
-            />
-            <img
-              src="
-                https://ecimg.cafe24img.com/pg715b26588354090/col2030/web/upload/ezst/image/ez-image-contents-12yzxc0-1-1oql4ub-3.jpg?v=1703584891801
-              "
-              data-ez-role="img-mobile"
-            />
-          </picture>
-          <div class="main_3dan_banner_txt">
-            <div class="main_3dan_banner_txt01" data-ez-role="title" 1>오리지널 원화</div>
-            <div class="main_banner_more" data-ez-role="desc">자세히 살펴보기</div>
-          </div>
-          <!--a-->
-        </a>
-      </li>
-    </ul>
-    <div class="main_image_text_gallery_more"><a href="#none" class="main_image_text_gallery_more_btn">더보기</a></div>
-  </div>
-  <!-- //main_3dan_banner -->
-</section>
-<section
-  class="section artist-videos"
-  data-ez-module="html/1"
-  data-ez-name="CUSTOM HTML"
-  data-ez-type="plain"
-  data-ez="contents-0z96adb-1"
->
-  <!-- 아티스트 비디오 -->
-  <div class="main_title ez-align-center" data-ez-role="ez-align" data-ez-align="center">
-    <div class="main_title_txt01" data-ez-role="title">작가 소개 영상</div>
-    <!-- <div class="main_title_txt02" data-ez-role="desc"></div> -->
-  </div>
-  <div class="artist-video-box swiper-container">
-    <ul class="artist-video-list swiper-wrapper"></ul>
-  </div>
-</section>
 <section class="section show-room__section">
   <!-- 컬렉터 2030 쇼룸 -->
   <div class="show-room__box">

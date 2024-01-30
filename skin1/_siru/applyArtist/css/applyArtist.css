@@ -1,0 +1,72 @@
+.partnership-inquiry {
+  max-width: 1480px;
+  margin: 0 auto;
+}
+.partnership-inquiry__wrap > ul {
+  display: flex;
+  position: relative;
+  flex-flow: row nowrap;
+  align-items: center;
+  width: 100%;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #efefef;
+}
+.partnership-inquiry__wrap > ul > li:first-of-type {
+  min-width: 200px;
+  text-indent: 1rem;
+}
+.partnership-inquiry__wrap > ul:nth-of-type(6) > li:nth-of-type(2),
+.partnership-inquiry__wrap > ul:nth-of-type(9) > li:nth-of-type(2) {
+  width: 100%;
+}
+.partnership-inquiry__wrap > ul > .must-input::after {
+  content: '*';
+  color: red;
+  margin: 0 5px;
+}
+.input-notice {
+  display: none;
+}
+.input-notice.active {
+  display: unset;
+  text-indent: 0.5rem;
+  color: red;
+  text-wrap: nowrap;
+}
+#clientAddress > ul > li {
+  padding: 0.25rem 0;
+}
+#clientAddress > ul > li:nth-of-type(2) input,
+#clientAddress > ul > li:nth-of-type(3) input {
+  min-width: 400px;
+}
+#clientAddress > ul span {
+  margin-left: 1rem;
+}
+.partnership-inquiry__wrap > ul textarea {
+  width: 100%;
+  min-height: 200px;
+  background: unset;
+}
+input[type='text'][readonly] {
+  background-color: unset;
+}
+input[type='radio'] + label,
+input[type='checkbox'] + label {
+  margin: unset;
+}
+input[type='radio'] + label {
+  margin-right: 1rem;
+}
+.privacyCheck {
+  padding: 0.5rem 0 0.25rem;
+}
+#inquirySubmit.confirm_active {
+  display: none;
+}
+#inquiryConfirm {
+  /* display: none; */
+}
+#inquiryConfirm.confirm_active {
+  display: block;
+}
