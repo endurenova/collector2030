@@ -147,31 +147,32 @@ document.addEventListener('DOMContentLoaded', () => {
             </li>
           `,
           );
-
-          fetch('/_siru/json/artistThumbnail.json')
-            .then(res => res.json())
-            .then(data =>
-              data.forEach(e1 => {
-                if (e1['name'] === artistName) {
-                  document.querySelector('.guideArea').insertAdjacentHTML(
-                    'afterend',
-                    `
-                      <div class="artist-info-box">
-                        <a class="artist-info" href="https://collector2030.com${e1['url']}">
-                          <div class="artist-info__thumbnail">
-                            <img src="${e1['thumbnailImg']}" alt="${e1['nameStrong']}">
-                          </div>
-                          <div class="artist-info__description">
-                            <strong>${e1['nameSpan']}</strong>
-                            <span>${e1['jobs']} Collections</span>
-                          </div>
-                        </a>
-                      </div>
-                    `,
-                  );
-                }
-              }),
-            );
+          setTimeout(() => {
+            fetch('/_siru/json/artistThumbnail.json')
+              .then(res => res.json())
+              .then(data =>
+                data.forEach(e1 => {
+                  if (e1['name'] === artistName) {
+                    document.querySelector('.guideArea').insertAdjacentHTML(
+                      'afterend',
+                      `
+                    <div class="artist-info-box">
+                      <a class="artist-info" href="https://collector2030.com${e1['url']}">
+                        <div class="artist-info__thumbnail">
+                          <img src="${e1['thumbnailImg']}" alt="${e1['nameStrong']}">
+                        </div>
+                        <div class="artist-info__description">
+                          <strong>${e1['nameSpan']}</strong>
+                          <span>${e1['jobs']} Collections</span>
+                        </div>
+                      </a>
+                    </div>
+                  `,
+                    );
+                  }
+                }),
+              );
+          }, 300);
           const selectList = document.querySelector('.background-selector__list'),
             statusVirtualBackground = document.querySelector('.status-idx'),
             totalVirtualBackground = document.querySelector('.total-idx'),
@@ -487,8 +488,13 @@ document.addEventListener('DOMContentLoaded', () => {
   //   makeJson['prdAlt'].push(e.querySelector('.thumbnail > a >img').getAttribute('alt'));
   //   makeJson['prdPrice'].push(e.querySelector('.description .prdPrice').textContent);
   //   if (i + 1 === ids.length) {
+  //     makeJson['prdName'].push(document.querySelector('.td-title').textContent);
+  //     makeJson['prdUrl'].push(window.location.pathname);
+  //     makeJson['prdImg'].push(document.querySelector('.thumbnail > a > img').getAttribute('src'));
+  //     makeJson['prdAlt'].push(document.querySelector('.thumbnail > a > img').getAttribute('alt'));
+  //     makeJson['prdPrice'].push(document.querySelector('.quantity_price').textContent);
   //     let json = JSON.stringify(makeJson);
-  //     alert(json);
+  //     console.log(json);
   //   }
   // });
 });

@@ -105,25 +105,26 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     }
 
-    // fetch('/_siru/json/artist.json')
-    // .then(res => res.json()) // .json() 메서드는 JSON 응답을 JavaScript 객체 리터럴로 구문분석합니다.
-    // .then(data => console.log(data[0]['name']));
+    // fetch('/_siru/json/artistRead.json')
+    //   .then(res => res.json()) // .json() 메서드는 JSON 응답을 JavaScript 객체 리터럴로 구문분석합니다.
+    //   .then(data => console.log(data[0]['name']));
     // console.log(data[0]);
 
     // json 저장용
-
-    // const artworkList = document.querySelector('.prdList').children;
-    // const artistThumbnailImg = document.querySelector('.detail.read-artist > img');
-    // const artistThumbnailName = document.querySelector('.read-artist__title');
-    // let makeJson = {
-    //   name: artistThumbnailName.querySelector('span').textContent,
-    //   thumbnailImg: artistThumbnailImg.getAttribute('src'),
-    //   nameStrong: artistThumbnailName.querySelector('strong').textContent,
-    //   nameSpan: artistThumbnailName.querySelector('span').textContent,
-    //   jobs: artworkList.length,
-    //   url: window.location.pathname,
-    // };
-    // let json = JSON.stringify(makeJson);
-    // alert(json);
+    // setTimeout(() => {
+    //   const artworkList = document.querySelector('.prdList').children;
+    //   const artistThumbnailImg = document.querySelector('.detail.read-artist > img');
+    //   const artistThumbnailName = document.querySelector('.read-artist__title');
+    //   let makeJson = {
+    //     name: artistThumbnailName.querySelector('span').textContent,
+    //     thumbnailImg: artistThumbnailImg.getAttribute('src'),
+    //     nameStrong: artistThumbnailName.querySelector('strong').textContent,
+    //     nameSpan: artistThumbnailName.querySelector('span').textContent,
+    //     jobs: artworkList.length,
+    //     url: window.location.pathname,
+    //   };
+    //   let json = JSON.stringify(makeJson);
+    //   alert(json);
+    // }, 1000);
   } catch (e) {}
 });

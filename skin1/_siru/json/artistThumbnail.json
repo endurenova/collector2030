@@ -4,7 +4,47 @@
     "thumbnailImg": "//ecimg.cafe24img.com/pg715b26588354090/col2030/file_data/2024/01/18/2cbd9c41b7b7cc7c6491dcd358e5f1f7.jpg",
     "nameStrong": "카트린 프리드릭스",
     "nameSpan": "Katrin Fridriks",
-    "jobs": 6,
+    "jobs": 7,
     "url": "/article/%EC%9E%91%EA%B0%80-%EC%86%8C%EA%B0%9C/12/28/"
+  },
+  {
+    "name": "Philip Colbert",
+    "thumbnailImg": "//ecimg.cafe24img.com/pg715b26588354090/col2030/file_data/2024/01/24/ac79a223114e54ef8726fb4c9e0a47bf.png",
+    "nameStrong": "필립 콜버트",
+    "nameSpan": "Philip Colbert",
+    "jobs": 5,
+    "url": "/article/%EC%9E%91%EA%B0%80-%EC%86%8C%EA%B0%9C/12/29/"
+  },
+  {
+    "name": "Takis",
+    "thumbnailImg": "//ecimg.cafe24img.com/pg715b26588354090/col2030/file_data/2024/01/24/ce4a5b398b873938e6883b762cbc86d1.jpg",
+    "nameStrong": "타키스",
+    "nameSpan": "Takis",
+    "jobs": 4,
+    "url": "/article/%EC%9E%91%EA%B0%80-%EC%86%8C%EA%B0%9C/12/34/"
+  },
+  {
+    "name": "Hunt Slonem",
+    "thumbnailImg": "//ecimg.cafe24img.com/pg715b26588354090/col2030/file_data/2024/01/24/67d2ce8e59f4caf26903160f2abec275.jpg",
+    "nameStrong": "헌트 슬로넴",
+    "nameSpan": "Hunt Slonem",
+    "jobs": 2,
+    "url": "/article/%EC%9E%91%EA%B0%80-%EC%86%8C%EA%B0%9C/12/36/"
+  },
+  {
+    "name": "Turi Simeti",
+    "thumbnailImg": "//ecimg.cafe24img.com/pg715b26588354090/col2030/file_data/2024/01/24/bfd8b4225d30fc88fd20e2814d5fa966.jpg",
+    "nameStrong": "투리 시메티",
+    "nameSpan": "Turi Simeti",
+    "jobs": 3,
+    "url": "/article/%EC%9E%91%EA%B0%80-%EC%86%8C%EA%B0%9C/12/33/"
+  },
+  {
+    "name": "Victor Matthews",
+    "thumbnailImg": "//ecimg.cafe24img.com/pg715b26588354090/col2030/file_data/2024/01/24/bfd8f200ce73de375a92a58db9824a5c.jpg",
+    "nameStrong": "빅터 매튜스",
+    "nameSpan": "Victor Matthews",
+    "jobs": 2,
+    "url": "/article/%EC%9E%91%EA%B0%80-%EC%86%8C%EA%B0%9C/12/35/"
   }
 ]
