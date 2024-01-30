@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       const artistName = artistTitle.querySelector('span').textContent;
 
-      fetch('/js/artistRead.json')
+      fetch('/_siru/json/artistRead.json')
         .then(res => res.json())
         .then(data =>
           data.forEach(e1 => {
@@ -105,7 +105,7 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     }
 
-    // fetch('/js/artist.json')
+    // fetch('/_siru/json/artist.json')
     // .then(res => res.json()) // .json() 메서드는 JSON 응답을 JavaScript 객체 리터럴로 구문분석합니다.
     // .then(data => console.log(data[0]['name']));
     // console.log(data[0]);

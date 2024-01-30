@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
   );
 
   Array.from(prdList).forEach(e => {
-    fetch('/js/nameSetting.json')
+    fetch('/_siru/json/nameSetting.json')
       .then(res => res.json())
       .then(data =>
         data.forEach(e1 => {
@@ -39,5 +39,5 @@ document.addEventListener('DOMContentLoaded', () => {
   //   });
   //   let json = JSON.stringify(prdInfoList);
   //   console.log(json);
-  // }, 300);
+  // }, 3000);
 });

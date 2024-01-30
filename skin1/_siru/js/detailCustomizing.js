@@ -55,6 +55,37 @@ document.addEventListener('DOMContentLoaded', () => {
             artworkWidth = artworkSize.split(' ')[0],
             artworkHeight = artworkSize.split(' ')[2];
 
+          console.log(Number(artworkWidth.split('cm')[0]));
+          let simulateSlot = '';
+          if (Number(artworkWidth.split('cm')[0]) < 100 || Number(artworkHeight.split('cm')[0]) < 100) {
+            simulateSlot = `
+            <ul class="tone-selector__list">
+              <li class="active" data-bg-id="0">
+                <span class="tone-name">Bright</span>
+              </li>
+              <li data-bg-id="1">
+                <span class="tone-name">Pastel</span>
+              </li>
+              <li data-bg-id="2">
+                <span class="tone-name">Warm</span>
+              </li>
+              <li data-bg-id="3">
+                <span class="tone-name">Cool</span>
+              </li>
+            </ul>
+          `;
+          } else {
+            simulateSlot = `
+            <ul class="tone-selector__list">
+              <li class="active" data-bg-id="0">
+                <span class="tone-name">Bright</span>
+              </li>
+              <li data-bg-id="3">
+                <span class="tone-name">Cool</span>
+              </li>
+            </ul>
+          `;
+          }
           // 작품 걸어보기
           const simulatorDisplay = `
             <div class="artwork-simulation">
@@ -83,20 +114,7 @@ document.addEventListener('DOMContentLoaded', () => {
                   <div class="tone-select__box">
                     <h3>톤 선택</h3>
                     <div class="tone-selector__area">
-                      <ul class="tone-selector__list">
-                        <li class="active">
-                          <span class="tone-name">Bright</span>
-                        </li>
-                        <li>
-                          <span class="tone-name">Pastel</span>
-                        </li>
-                        <li>
-                          <span class="tone-name">Warm</span>
-                        </li>
-                        <li>
-                          <span class="tone-name">Cool</span>
-                        </li>
-                      </ul>
+                      ${simulateSlot}
                     </div>
                   </div>
                 </div>
@@ -130,7 +148,7 @@ document.addEventListener('DOMContentLoaded', () => {
           `,
           );
 
-          fetch('/js/artistThumbnail.json')
+          fetch('/_siru/json/artistThumbnail.json')
             .then(res => res.json())
             .then(data =>
               data.forEach(e1 => {
@@ -265,7 +283,7 @@ document.addEventListener('DOMContentLoaded', () => {
             });
           };
 
-          fetch('/js/simulatorBackground.json')
+          fetch('/_siru/json/simulatorBackground.json')
             .then(res => res.json())
             .then(data => setBackgroundTone(data[0]));
 
@@ -279,16 +297,17 @@ document.addEventListener('DOMContentLoaded', () => {
               e.classList.add('active');
               selectList.innerHTML = '';
 
-              fetch('/js/simulatorBackground.json')
+              fetch('/_siru/json/simulatorBackground.json')
                 .then(res => res.json())
                 .then(data => {
-                  setBackgroundTone(data[i]);
-                  virtualFrame.style.top = data[i][0].top;
-                  virtualFrame.style.left = data[i][0].left;
-                  virtualBackground.style.backgroundImage = `url(${data[i][0].url})`;
+                  let idx = e.getAttribute('data-bg-id');
+                  setBackgroundTone(data[idx]);
+                  virtualFrame.style.top = data[idx][0].top;
+                  virtualFrame.style.left = data[idx][0].left;
+                  virtualBackground.style.backgroundImage = `url(${data[idx][0].url})`;
                   virtualFrame.style.width =
                     ((Number(artworkWidth.split('cm')[0]) * 37.8 * vitualBackgroundWidth) / 1000) *
-                      data[i][0].sizeRate +
+                      data[idx][0].sizeRate +
                     'px';
                 });
             });
@@ -298,7 +317,7 @@ document.addEventListener('DOMContentLoaded', () => {
             vitualBackgroundWidth = virtualBackground.clientWidth;
 
           // 작품 걸어보기 작품 크기
-          fetch('/js/simulatorBackground.json')
+          fetch('/_siru/json/simulatorBackground.json')
             .then(res => res.json())
             .then(
               data =>

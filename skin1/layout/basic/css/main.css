@@ -735,7 +735,7 @@ ul.prdList.grid4.list_gallery > li:hover .icon__box {
 .show-room__section .show-room__box {
   position: relative;
   width: 100%;
-  height: 540px;
+  max-height: 540px;
 }
 .show-room__box::before {
   content: '';
@@ -753,8 +753,8 @@ ul.prdList.grid4.list_gallery > li:hover .icon__box {
   display: flex;
   flex-flow: column;
   align-items: center;
-  justify-content: start;
-  height: 60%;
+  justify-content: center;
+  height: 100%;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -765,6 +765,7 @@ ul.prdList.grid4.list_gallery > li:hover .icon__box {
   margin: 5% 0;
   font-size: 36px;
   font-weight: var(--font-weight-SemiBold);
+  text-align: center;
   color: var(--grayScale-N5);
 }
 .show-room__info a {
@@ -1416,9 +1417,16 @@ ul.prdList.grid4.list_gallery > li:hover .icon__box {
   }
 
   /* 컬렉터 2030 쇼룸 */
-
+  .show-room__info img {
+    width: clamp(170px, 16.602vw, 256px);
+  }
   .show-room__info h1 {
-    font-size: clamp(24px, 3.129vw, 36px);
+    font-size: clamp(24px, 2.344vw, 36px);
+  }
+  .show-room__info a {
+    font-size: clamp(16px, 1.563vw, 24px);
+    padding: clamp(4px, 0.391vw, 6px) clamp(16px, 1.563vw, 24px);
+    border-radius: clamp(16px, 1.563vw, 24px);
   }
 }
 @media all and (max-width: 1024px) {
@@ -1819,6 +1827,19 @@ ul.prdList.grid4.list_gallery > li:hover .icon__box {
   .main_product_category .tabcontent ul.grid5_slide > li,
   .main_product_category .tabcontent ul.grid5_slide.list_gallery > li {
     width: calc(29% - 10px);
+  }
+
+  /* 컬렉터 2030 쇼룸 */
+  .show-room__info img {
+    width: clamp(100px, 27.778vw, 170px);
+  }
+  .show-room__info h1 {
+    font-size: clamp(14px, 3.889vw, 24px);
+  }
+  .show-room__info a {
+    font-size: clamp(12px, 3.333vw, 16px);
+    padding: clamp(3px, 0.833vw, 4px) clamp(12px, 3.333vw, 16px);
+    border-radius: clamp(12px, 3.333vw, 16px);
   }
   /* 메인 지도 */
   .main_map .main_map_banner .wrap_banner_txt {
