@@ -5,28 +5,28 @@
       "space": "거실 1",
       "top": "30%",
       "left": "50%",
-      "sizeRate": 0.065
+      "sizeRate": 0.085
     },
     {
       "url": "/SkinImg/img/simulate/0-simulate_bg-thumbnail-1.jpg",
       "space": "거실 2",
       "top": "30%",
       "left": "50%",
-      "sizeRate": 0.055
+      "sizeRate": 0.08
     },
     {
       "url": "/SkinImg/img/simulate/0-simulate_bg-thumbnail-2.jpg",
       "space": "거실 3",
       "top": "33%",
       "left": "40%",
-      "sizeRate": 0.065
+      "sizeRate": 0.085
     },
     {
       "url": "/SkinImg/img/simulate/0-simulate_bg-thumbnail-3.jpg",
       "space": "침실",
       "top": "30%",
       "left": "50%",
-      "sizeRate": 0.055
+      "sizeRate": 0.075
     },
     {
       "url": "/SkinImg/img/simulate/0-simulate_bg-thumbnail-4.jpg",
@@ -40,14 +40,14 @@
       "space": "방",
       "top": "25%",
       "left": "35%",
-      "sizeRate": 0.065
+      "sizeRate": 0.075
     },
     {
       "url": "/SkinImg/img/simulate/0-simulate_bg-thumbnail-6.jpg",
       "space": "복도",
       "top": "35%",
       "left": "60%",
-      "sizeRate": 0.06
+      "sizeRate": 0.07
     }
   ],
   [
@@ -70,14 +70,14 @@
       "space": "거실 1",
       "top": "30%",
       "left": "35%",
-      "sizeRate": 0.06
+      "sizeRate": 0.075
     },
     {
       "url": "/SkinImg/img/simulate/1-simulate_bg-thumbnail-3.jpg",
       "space": "거실 2",
       "top": "30%",
       "left": "50%",
-      "sizeRate": 0.05
+      "sizeRate": 0.07
     },
     {
       "url": "/SkinImg/img/simulate/1-simulate_bg-thumbnail-4.jpg",
@@ -116,21 +116,21 @@
       "space": "거실 1",
       "top": "30%",
       "left": "50%",
-      "sizeRate": 0.065
+      "sizeRate": 0.075
     },
     {
       "url": "/SkinImg/img/simulate/3-simulate_bg-thumbnail-1.jpg",
       "space": "거실 2",
       "top": "38%",
       "left": "24%",
-      "sizeRate": 0.05
+      "sizeRate": 0.06
     },
     {
       "url": "/SkinImg/img/simulate/3-simulate_bg-thumbnail-2.jpg",
       "space": "거실 3",
       "top": "30%",
       "left": "35%",
-      "sizeRate": 0.06
+      "sizeRate": 0.07
     }
   ]
 ]
