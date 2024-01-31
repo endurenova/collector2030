@@ -1506,9 +1506,9 @@
   top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
-  box-shadow: 5px 4px 18px -2px var(--grayScale-N1-opa);
-  -webkit-box-shadow: 5px 4px 18px -2px var(--grayScale-N1-opa);
-  -moz-box-shadow: 5px 4px 18px -2px var(--grayScale-N1-opa);
+  box-shadow: 3px 3px 7px 2px var(--grayScale-N1-op);
+  -webkit-box-shadow: 3px 3px 7px 2px var(--grayScale-N1-op);
+  -moz-box-shadow: 3px 3px 7px 2px var(--grayScale-N1-op);
 }
 .simulation-select__wrap {
   display: flex;

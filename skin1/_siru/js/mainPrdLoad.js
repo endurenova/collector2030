@@ -4,7 +4,6 @@ document.addEventListener('DOMContentLoaded', () => {
     <h1>청담동 컬렉터 2030 갤러리에서 작품을 만나보세요!</h1>
     <a href="/shopinfo/gallery_notice.html">갤러리 안내</a>
   `;
-  document.querySelector('.footer_margin').style.display = 'none';
   document.querySelector('.main_product_list').insertAdjacentHTML(
     'afterend',
     `

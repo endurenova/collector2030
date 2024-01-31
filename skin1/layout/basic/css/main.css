@@ -1862,15 +1862,15 @@ ul.prdList.grid4.list_gallery > li:hover .icon__box {
 
   /* 컬렉터 2030 쇼룸 */
   .show-room__info img {
-    width: clamp(100px, 27.778vw, 170px);
+    width: clamp(100px, 20.833vw, 170px);
   }
   .show-room__info h1 {
-    font-size: clamp(14px, 3.889vw, 24px);
+    font-size: clamp(14px, 2.917vw, 24px);
   }
   .show-room__info a {
-    font-size: clamp(12px, 3.333vw, 16px);
-    padding: clamp(3px, 0.833vw, 4px) clamp(12px, 3.333vw, 16px);
-    border-radius: clamp(12px, 3.333vw, 16px);
+    font-size: clamp(12px, 2.5vw, 16px);
+    padding: clamp(3px, 0.625vw, 4px) clamp(12px, 2.5vw, 16px);
+    border-radius: clamp(12px, 2.5vw, 16px);
   }
   /* 메인 지도 */
   .main_map .main_map_banner .wrap_banner_txt {
