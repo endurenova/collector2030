@@ -1,0 +1,46 @@
+.applyArtist-list__box {
+  width: 100%;
+  max-width: 1480px;
+  margin: 0 auto !important;
+}
+.xans-board-movement-1002 {
+  width: 100%;
+  max-width: 1480px;
+  margin: 0 auto !important;
+}
+.inquiry-read {
+  width: 100%;
+  max-width: 1480px;
+  margin: 0 auto;
+}
+.inquiry-read__wrap {
+}
+.inquiry-read__wrap > ul {
+  list-style: square !important;
+}
+.inquiry-read__wrap > ul > li {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  font-size: 16px;
+}
+.inquiry-read__wrap > ul > li > span {
+  display: inline-flex;
+  position: relative;
+  line-height: 1.6;
+}
+.inquiry-read__wrap > ul > li > span:first-of-type {
+  min-width: 80px;
+  width: 5%;
+}
+.inquiry-read__wrap > ul > li > span:first-of-type::after {
+  content: ':';
+  position: absolute;
+  right: 0;
+}
+.inquiry-read__wrap > ul > li > span:last-of-type {
+  width: 90%;
+}
+.ec-base-table.typeList td {
+  text-align: center;
+}

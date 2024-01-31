@@ -277,7 +277,7 @@ input[type='password'] {
   height: 40px;
   line-height: 40px;
   padding: 2px 4px 2px 15px;
-  border: 1px solid var(--pallet-color-5);
+  border: 1px solid var(--main-color-op);
   color: var(--grayScale-N1);
   font-size: 13px;
   box-sizing: border-box;
@@ -298,14 +298,14 @@ input[type='text']:not(:disabled):focus,
 input[type='password']:not(:disabled):focus,
 input[type='text']:not(:disabled):hover,
 input[type='password']:not(:disabled):hover {
-  border-color: var(--grayScale-N1);
+  border-color: var(--main-color);
   transition: 0.3s;
 }
 input[type='text']:disabled {
   background: var(--grayScale-N5);
 }
 input[type='text'][readonly] {
-  background: var(--grayScale-N5);
+  background: var(--grayScale-W);
 }
 textarea {
   padding: 10px 15px;
@@ -363,7 +363,7 @@ select::-ms-expand {
   display: none;
 }
 /* radio */
-input[type='radio'] {
+/* input[type='radio'] {
   position: relative;
   opacity: 1;
   width: 18px;
@@ -385,6 +385,12 @@ input[type='radio']:checked {
 input[type='radio']::-ms-check {
   border: 1px solid var(--grayScale-N1);
   background-color: var(--grayScale-W);
+} */
+input[type='radio'] {
+  accent-color: var(--main-color);
+}
+input[type='radio']:checked {
+  accent-color: var(--main-color);
 }
 /* checkbox */
 input[type='checkbox'] {

@@ -1,0 +1,104 @@
+.partnership-inquiry {
+  max-width: 1480px;
+  margin: 0 auto;
+}
+.partnership-inquiry__wrap > ul {
+  display: flex;
+  position: relative;
+  flex-flow: row nowrap;
+  align-items: center;
+  width: 100%;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--main-color-op);
+}
+.partnership-inquiry__wrap > ul > li:first-of-type {
+  font-size: 14px;
+  min-width: 200px;
+  text-indent: 0.5em;
+}
+.partnership-inquiry__wrap > ul:nth-of-type(6) > li:nth-of-type(2),
+.partnership-inquiry__wrap > ul:nth-of-type(9) > li:nth-of-type(2) {
+  width: 100%;
+}
+.partnership-inquiry__wrap > ul > .must-input::after {
+  content: '*';
+  color: red;
+  margin: 0 5px;
+}
+.input-notice {
+  display: none;
+}
+.input-notice.active {
+  display: unset;
+  text-indent: 0.5rem;
+  color: red;
+  text-wrap: nowrap;
+}
+#clientAddress > ul > li {
+  padding: 0.25rem 0;
+}
+#clientAddress > ul > li:nth-of-type(2) input,
+#clientAddress > ul > li:nth-of-type(3) input {
+  min-width: 400px;
+}
+#clientAddress > ul span {
+  margin-left: 1rem;
+}
+.partnership-inquiry__wrap > ul textarea {
+  width: 100%;
+  min-height: 200px;
+  border: 1px solid var(--pallet-color-4);
+}
+input[type='text'][readonly] {
+  background-color: unset;
+}
+input[type='radio'] + label,
+input[type='checkbox'] + label {
+  margin: 0 15px 0 5px !important;
+}
+div.radio-wrap {
+  display: inline-flex;
+  align-items: center;
+}
+input[type='radio'] {
+  accent-color: var(--main-color);
+}
+input[type='radio']:checked {
+  accent-color: var(--main-color);
+}
+input[type='radio']:hover {
+  cursor: pointer;
+}
+input[type='radio'] + label {
+  cursor: pointer;
+}
+.privacyCheck {
+  padding: 0.5rem 0 0.25rem;
+}
+#inquirySubmit.confirm_active {
+  display: none;
+}
+#inquiryConfirm {
+  /* display: none; */
+}
+#inquiryConfirm.confirm_active {
+  display: block;
+}
+textarea::-webkit-scrollbar {
+  width: 8px;
+  height: 2px;
+}
+textarea::-webkit-scrollbar-button {
+  display: none;
+}
+textarea::-webkit-scrollbar-thumb {
+  border: 0;
+  background: var(--main-color);
+  border-radius: 4px;
+}
+textarea::-webkit-scrollbar-track {
+  height: 2px !important;
+  background: var(--pallet-color-4);
+  left: 0;
+  width: 100%;
+}

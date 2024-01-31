@@ -63,17 +63,19 @@ input[type='checkbox']:checked::-ms-check {
 /* button */
 [class^='btnNormal'],
 a[class^='btnNormal'] {
-  border: 1px solid var(--grayScale-N1);
-  color: var(--grayScale-N1);
+  border: 1px solid var(--main-color);
+  color: var(--main-color);
 }
 [class^='btnSubmit'],
 a[class^='btnSubmit'] {
   background: var(--grayScale-N1);
   color: var(--grayScale-W);
 }
+
 [class^='btnNormal']:not(.disabled):hover,
 [class^='btnNormal']:not(.disabled).selected {
-  border-color: var(--main-color);
+  background: var(--main-color);
+  color: var(--grayScale-W);
 }
 
 /* Table */

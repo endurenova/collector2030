@@ -1,0 +1,263 @@
+<!--@layout(/layout/basic/layout.html)-->
+<!--@js(/applyArtist/js/applyArtist.js)-->
+<script>
+  function execDaumPostcode() {
+    new daum.Postcode({
+      oncomplete: function (data) {
+        var addr = '';
+        if (data.userSelectedType === 'R') {
+          addr = data.roadAddress;
+        } else {
+          addr = data.jibunAddress;
+        }
+
+        document.getElementById('postcode').value = data.zonecode;
+        document.getElementById('addressMain').value = addr;
+        document.getElementById('addressSub').focus();
+      },
+    }).open();
+  }
+</script>
+<div module="board_writePackage_1002">
+  <!--@css(/applyArtist/css/applyArtist.css)-->
+  <div module="board_title_1002">
+    <div class="path">
+      <span>현재 위치</span>
+      <ol>
+        <li><a href="/">홈</a></li>
+        <li><a href="/board/index.html">게시판</a></li>
+        <li title="현재 위치"><strong>{$board_name}</strong></li>
+      </ol>
+    </div>
+    <div class="titleArea">
+      <h2>{$board_title}</h2>
+      <p>{$board_info}</p>
+    </div>
+  </div>
+
+  <div module="board_write_1002">
+    <!--
+            $login_page_url = /member/login.html
+            $deny_access_url = /index.html
+        -->
+    <div class="boardWrite partnership-inquiry">
+      <div class="partnership-inquiry__wrap">
+        <ul>
+          <li class="must-input inquiry-category">지원분야</li>
+          <li>
+            <select name="inquiryCategory" id="inquiryCategory">
+              <option value="" selected>카테고리</option>
+              <option value="드로잉">드로잉</option>
+              <option value="디지털아트">디지털아트</option>
+              <option value="조형물">조형물</option>
+            </select>
+          </li>
+          <li class="input-notice">
+            <span>※ 유형을 선택해 주세요.</span>
+          </li>
+        </ul>
+        <ul>
+          <li class="must-input">성함</li>
+          <li>
+            <input type="text" name="clientName" id="clientName" required />
+          </li>
+          <li class="input-notice">
+            <span>※ 성함을 입력해 주세요.</span>
+          </li>
+        </ul>
+        <ul>
+          <script>
+            function checkNum(e) {
+              e.value = e.value.replace(/[^0-9\-]/gi, '');
+            }
+            function checkNumber(event) {
+              if (
+                event.key === 8 ||
+                event.key === 37 ||
+                event.key === 39 ||
+                event.key === 46 ||
+                (event.key >= 0 && event.key <= 9)
+              ) {
+                let phone = event.target.value.replace(/-/g, '');
+                let replacePhone = '';
+                if (phone.length < 4) {
+                  replacePhone = phone.substr(0, 3);
+                } else if (phone.length <= 4 && phone.length < 8) {
+                  replacePhone = phone.substr(0, 2) + '-' + phone.substr(2, 3);
+                } else if (phone.length <= 8 && phone.length < 12) {
+                  console.log(phone);
+                  replacePhone = phone.substr(0, 2) + '-' + phone.substr(2, 3) + '-' + phone.substr(5);
+                } else if (phone.length >= 12) {
+                  replacePhone = phone.substr(0, 3) + '-' + phone.substr(3, 4) + '-' + phone.substr(6);
+                } else {
+                  replacePhone = phone.substr(0, 3) + '-' + phone.substr(3, 4) + '-' + phone.substr(7);
+                }
+                event.target.value = replacePhone;
+                return true;
+              }
+              return false;
+            }
+          </script>
+          <li class="must-input">연락처</li>
+          <li>
+            <input
+              type="text"
+              name="clientPhone"
+              id="clientPhone"
+              oninput=" checkNum(this)"
+              onkeypress="return checkNumber(event)"
+              required
+            />
+          </li>
+          <li class="input-notice">
+            <span>※ 연락처를 입력해 주세요.</span>
+          </li>
+        </ul>
+        <ul>
+          <script>
+            function checkEng(e) {
+              e.value = e.value.replace(/[^A-Za-z0-9]/gi, '');
+            }
+          </script>
+          <li class="must-input">이메일</li>
+          <li id="clientEmail">
+            <input type="text" id="emailId" name="emailId" value="" oninput=" checkEng(this)" />
+            @
+            <input type="text" id="domainAddress" name="domainAddress" value="" />
+            <select id="domainSelect">
+              <option value="">직접 입력</option>
+              <option value="gmail.com">gmail.com</option>
+              <option value="naver.com">naver.com</option>
+              <option value="daum.net">daum.net</option>
+              <option value="hanmail.net">hanmail.net</option>
+              <option value="kakao.com">kakao.com</option>
+              <option value="nate.com">nate.com</option>
+            </select>
+          </li>
+          <li class="input-notice">
+            <span>※ 이메일 형식에 맞게 입력해 주세요.</span>
+          </li>
+        </ul>
+        <ul>
+          <li>주소</li>
+          <li id="clientAddress">
+            <ul>
+              <li>
+                <input type="text" id="postcode" name="postcode" readonly="readonly" maxlength="14" value="" />
+                <a href="javascript:;" class="btnNormal" onclick="execDaumPostcode()" id="postBtn">우편번호 찾기</a>
+              </li>
+              <li>
+                <input
+                  type="text"
+                  id="addressMain"
+                  name="addressMain"
+                  placeholder=""
+                  readonly="readonly"
+                  value=""
+                /><span>기본주소</span>
+              </li>
+              <li>
+                <input type="text" id="addressSub" name="addressSub" placeholder="" value="" /><span
+                  >나머지주소 (선택입력가능)</span
+                >
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <ul>
+          <li class="must-input">지원내용</li>
+          <li>
+            <div>
+              <textarea id="inquiryText" name="inquiryText" fname="문의내용" rows="3"></textarea>
+              <div class="input-notice">
+                <span>※ 내용을 입력해 주세요.</span>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <ul>
+          <li scope="row">첨부파일1</li>
+          <li><input name="attach_file[]" type="file" /></li>
+        </ul>
+        <ul>
+          <li scope="row">첨부파일2</li>
+          <li><input name="attach_file[]" type="file" /></li>
+        </ul>
+        <ul>
+          <li class="must-input">개인정보 수집 및 이용 동의</li>
+          <li>
+            <div module="Layout_footer">
+              <textarea id="privacyNotice" disabled>
+■ 개인정보의 수집·이용 목적
+저희 {$company_name}에서는 원활한 소통을 위한 필요한 최소한의 개인정보를 수집하고 있습니다.
+
+1. 개인정보의 수집 및 이용 목적
+작가 협업 서비스 제공을 위한 본인 식별, 의사 소통 경로 확보를 위해 아래와 같은 개인정보를 수집하고 있습니다.
+
+2. 수집하는 개인정보의 항목
+이름, 연락처, 이메일
+
+3. 개인정보의 보유 및 이용시간
+개인정보의 수집 목적 또는 제공 받은 목적 달성 시 내규에 준하여 보관 및 파기합니다.
+
+※ 개인정보 수집, 이용에 대한 동의를 거부할 권리가 있으나, 동의를 거부하실 경우, 원활한 소통에 제한이 있을 수 있습니다.
+
+개인정보보호책임자: {$cpo_name}
+							</textarea
+              >
+            </div>
+            <div class="privacyCheck">
+              <div class="radio-wrap">
+                <input type="radio" name="privacyAgree" id="privacyAgree" value="agree" />
+                <label for="privacyAgree">동의합니다</label>
+              </div>
+              <div class="radio-wrap">
+                <input type="radio" name="privacyDisagree" id="privacyDisagree" value="" checked />
+                <label for="privacyDisagree">동의하지 않습니다</label>
+              </div>
+              <div class="input-notice">
+                <span>※ 동의해야 원활한 지원이 가능합니다.</span>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="ec-base-table typeWrite displaynone">
+      <table border="1">
+        <caption>
+          글쓰기 폼
+        </caption>
+        <colgroup>
+          <col style="width: 190px" />
+          <col style="width: auto" />
+        </colgroup>
+        <tbody>
+          <tr>
+            <th scope="row">제목</th>
+            <td>
+              {$form.board_category}{$form.subject}<span class="ec-base-label">{$form.notice}</span
+              ><span class="ec-base-label">{$form.is_post}</span>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" class="RW top">본문</th>
+            <td>{$form.content}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="ec-base-button gBottom">
+      <a href="javascript:;" class="btnNormalFix sizeM inquirySubmit" id="inquirySubmit">등록</a>
+      <a href="javascript:;" onclick="history.back(-1)" class="btnNormalFix sizeM">취소</a>
+    </div>
+  </div>
+
+  <!-- 관리자전용 -->
+  <div class="ec-base-button" module="board_function_1002">
+    <span class="gLeft"><a href="/applyArtist/list.html" class="btnNormalFix sizeM">게시판 목록 (관리자용)</a></span>
+  </div>
+  <!--//-->
+</div>
+<script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
