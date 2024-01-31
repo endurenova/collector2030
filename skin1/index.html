@@ -1,8 +1,9 @@
 <!--@layout(/layout/basic/layout.html)-->
 <!--@js(/layout/basic/js/main.js)-->
+<!--@js(/_siru/js/artistVideo.js)-->
+<!--@js(/_siru/js/mainPrdLoad.js)-->
 <!--@css(/layout/basic/css/main.css)-->
 <!--@import(/smart-banner/shop1/smart-banner-admin-CUSTOM.html)-->
-
 <section
   class="section main_product_list"
   data-ez-module="product-list/1"
@@ -77,40 +78,6 @@
     </div>
   </div>
 </section>
-
-<!-- <section
-  class="section main_video ez-align-center"
-  data-ez-module="video/1"
-  data-ez-role="style.background"
-  data-ez-align="center"
-  data-ez="contents-040ul59-1"
-  data-ez-display="visible"
-  style="margin-bottom: 120px"
->
-  <div class="margin_video_box">
-    <div class="youtube_background"></div>
-    <div class="wrap_video_box">
-      <div class="main_video_box">
-        <iframe
-          data-ez-role="video"
-          id="ytplayer"
-          type="text/html"
-          src="//www.youtube.com/embed/HDPkN8tg5P0"
-          frameborder="0"
-          allowfullscreen
-          data-ez-rawsrc="https://www.youtube.com/embed/HDPkN8tg5P0"
-        ></iframe>
-      </div>
-
-      <div class="main_video_title">
-        비디오 타이틀 수정하는곳
-        <div class="main_title_txt01" data-ez-role="title"></div>
-        <div class="main_title_txt02" data-ez-role="desc"></div>
-      </div>
-    </div>
-  </div>
-</section> -->
-
 <section
   class="section main_image_text_gallery"
   data-ez-module="image-gallery/2"
@@ -149,7 +116,7 @@
       <li data-ez-role="image-item ez-align">
         <a data-ez-role="a" href="/product/list.html?cate_no=61" target="_self">
           <picture>
-            <img src="/SkinImg/img/ez-image-contents-bear.jpg" />
+            <img src="/SkinImg/img/ez-image-contents-bear.jpg" loading="lazy" ez-prevent="img" />
           </picture>
           <div class="main_3dan_banner_txt">
             <div class="main_3dan_banner_txt01" data-ez-role="title">베어브릭 에디션</div>
@@ -202,7 +169,7 @@
             />
           </picture>
           <div class="main_3dan_banner_txt">
-            <div class="main_3dan_banner_txt01" data-ez-role="title" 1>오리지널 원화</div>
+            <div class="main_3dan_banner_txt01" data-ez-role="title" 1="">오리지널 원화</div>
             <div class="main_banner_more" data-ez-role="desc">자세히 살펴보기</div>
           </div>
           <!--a-->
@@ -213,7 +180,6 @@
   </div>
   <!-- //main_3dan_banner -->
 </section>
-
 <section
   class="section artist-videos"
   data-ez-module="html/1"
@@ -230,7 +196,6 @@
     <ul class="artist-video-list swiper-wrapper"></ul>
   </div>
 </section>
-
 <section
   class="section main_product_category"
   data-ez-module="product-list-category/2"
@@ -363,8 +328,13 @@
   </div>
   <!-- //content_list -->
 </section>
-
-<section class="section show-room__section">
+<section
+  class="section show-room__section"
+  data-ez="module-02d33lz-1"
+  data-ez-module="user-defined/1"
+  data-ez-name="USER DEFINED"
+  data-ez-type="plain"
+>
   <!-- 컬렉터 2030 쇼룸 -->
   <div class="show-room__box">
     <div class="show-room__info"></div>
@@ -405,7 +375,12 @@
         media="(max-width: 1024px)"
         data-ez-role="img-pc"
       />
-      <img src="/shop1/skin-skin1/SkinImg/img/main_map_pc.png?v=1702893836522" data-ez-role="img-mobile" />
+      <img
+        src="/shop1/skin-skin1/SkinImg/img/main_map_pc.png?v=1702893836522"
+        data-ez-role="img-mobile"
+        loading="lazy"
+        ez-prevent="img"
+      />
     </picture>
     <div class="main_map_banner_txt_box">
       <div class="main_map_banner_txt">
@@ -465,48 +440,40 @@
   </div>
   <!-- //main_map_banner -->
 </section>
-<!-- <section
-  id="instagramWidgetManual"
-  style="margin-left: 1%; margin-right: 1%; width: 98%; height: 250px"
-  data-ez="contents-1r3lbpb-1"
->
-  <h1>인스타그램 자리</h1>
-</section> -->
-<!--@define(cmc_log)-->
-<!--#ez="1/6"-->
+<div data-ez-module="user-defined/1" data-ez-name="USER DEFINED" data-ez-type="plain" data-ez="module-1x780iw-1">
+  <script>
+    function dragSlide(carousel) {
+      let isDown = false;
+      let startX;
+      let scrollLeft;
 
-<script>
-  function dragSlide(carousel) {
-    let isDown = false;
-    let startX;
-    let scrollLeft;
+      carousel.addEventListener('mousedown', e => {
+        isDown = true;
+        carousel.style.cursor = 'grabbing';
+        startX = e.pageX - carousel.offsetLeft;
+        scrollLeft = carousel.scrollLeft;
 
-    carousel.addEventListener('mousedown', e => {
-      isDown = true;
-      carousel.style.cursor = 'grabbing';
-      startX = e.pageX - carousel.offsetLeft;
-      scrollLeft = carousel.scrollLeft;
-
-      carousel.addEventListener('mousemove', e => {
-        if (!isDown) return;
-        e.preventDefault();
-        const x = e.pageX - carousel.offsetLeft;
-        const walk = (x - startX) * 3; // scroll-fast
-        carousel.scrollLeft = scrollLeft - walk;
+        carousel.addEventListener('mousemove', e => {
+          if (!isDown) return;
+          e.preventDefault();
+          const x = e.pageX - carousel.offsetLeft;
+          const walk = (x - startX) * 3; // scroll-fast
+          carousel.scrollLeft = scrollLeft - walk;
+        });
       });
-    });
 
-    carousel.addEventListener('mouseleave', () => {
-      isDown = false;
-      carousel.style.cursor = 'grab';
-    });
+      carousel.addEventListener('mouseleave', () => {
+        isDown = false;
+        carousel.style.cursor = 'grab';
+      });
 
-    carousel.addEventListener('mouseup', () => {
-      isDown = false;
-      carousel.style.cursor = 'grab';
-    });
-  }
-  dragSlide(document.querySelector('.prdList.grid4.list_gallery'));
-</script>
-<!--@js(/_siru/js/artistVideo.js)-->
-<!--@js(/_siru/js/mainPrdLoad.js)-->
+      carousel.addEventListener('mouseup', () => {
+        isDown = false;
+        carousel.style.cursor = 'grab';
+      });
+    }
+    dragSlide(document.querySelector('.prdList.grid4.list_gallery'));
+  </script>
+</div>
+<!--@define(cmc_log)-->
+<!--#ez="1/2"-->

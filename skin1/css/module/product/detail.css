@@ -1732,6 +1732,9 @@
   }
 }
 @media (max-width: 1280px) {
+  .detail_section {
+    margin: 60px auto 0 !important;
+  }
   .artwork-simulation {
     padding: unset;
   }
@@ -1776,7 +1779,7 @@
     padding-bottom: 8%;
   }
   .xans-product-detail .imgArea .prdImg img {
-    max-width: 50%;
+    max-width: 90%;
   }
   .xans-product-detail .imgArea .listImg {
     display: none;
@@ -1969,6 +1972,7 @@
   /* width: calc(100% - 700px); */
   width: 40%;
 }
+
 .xans-product-detail .imgArea .listImg {
   height: auto;
   padding: 0;
@@ -2051,6 +2055,9 @@
 }
 #totalProducts tbody {
   /* 상품 상세페이지 상품 정보 */
+}
+.detail_section {
+  margin: 120px auto 0 !important;
 }
 #totalProducts tbody tr {
   display: flex;
@@ -2341,8 +2348,8 @@
 .tabProduct ul {
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
-  max-width: 1000px;
+  justify-content: space-evenly;
+  max-width: 1280px;
   width: 100%;
 }
 .tabProduct li {
@@ -2686,8 +2693,20 @@
     transition: all 0.3s;
   }
 }
+@media (max-width: 1280px) {
+  .tabProduct ul {
+    justify-content: space-around;
+  }
+  .tabProduct.tab_fixed ul {
+    justify-content: space-around;
+  }
+}
 @media all and (max-width: 1024px) {
   /* 상세페이지 */
+
+  .detail_section {
+    margin: 0 auto !important;
+  }
   .path {
     display: none;
   }
@@ -2922,10 +2941,6 @@
     margin: 0 auto;
     padding: 15px 0;
   }
-  .tabProduct.tab_fixed ul {
-    width: 90%;
-    margin: 0 auto;
-  }
   .tabProduct li {
     padding: 0;
   }
@@ -3052,5 +3067,10 @@
   .purchase-img-box,
   .purchase-info-box {
     margin: clamp(60px, 16.667vw, 100px) auto 0;
+  }
+}
+@media (max-width: 678px) {
+  .tabProduct.tab_fixed ul {
+    justify-content: space-evenly;
   }
 }

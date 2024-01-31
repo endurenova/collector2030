@@ -971,7 +971,7 @@ svg .main-circ {
   }
   .ec-base-product .prdList .thumbnail a img {
     max-width: 80% !important;
-    max-height: 60% !important;
+    max-height: 80% !important;
   }
   .ec-base-product .prdList .icon__box {
     bottom: 3%;
