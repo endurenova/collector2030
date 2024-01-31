@@ -76,11 +76,15 @@
   position: relative;
 }
 .ec-base-product .prdList .thumbnail a img {
-  max-width: 90% !important;
-  max-height: 90% !important;
+  max-width: 85% !important;
+  max-height: 85% !important;
   box-sizing: border-box;
   object-fit: contain;
   transition: 0.3s;
+}
+ul.prdList.grid4.list_gallery .prdList__item img {
+  max-width: 70% !important;
+  max-height: 90% !important;
 }
 .ec-base-product .prdList .icon__box {
   position: absolute;

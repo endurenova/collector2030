@@ -431,8 +431,8 @@ ul.prdList.grid4.list_gallery > li:hover .icon__box {
   position: relative;
 }
 .main_prd__box .main_prd__list > li .prdList__item .thumbnail > a > img {
-  max-width: 90% !important;
-  max-height: 90% !important;
+  max-width: 85% !important;
+  max-height: 85% !important;
   box-sizing: border-box;
   object-fit: contain;
   transition: 0.3s;
