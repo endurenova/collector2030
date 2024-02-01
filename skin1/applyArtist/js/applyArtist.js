@@ -48,17 +48,6 @@ document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('inquirySubmit').addEventListener('click', event => {
     event.preventDefault();
     mustInputToggle = selectEle => {
-      let mustInput = selectEle.closest('li').nextElementSibling;
-      selectEle.focus();
-      mustInput.classList.add('active');
-      selectEle.addEventListener('change', event => {
-        event.preventDefault();
-        if (selectEle.value !== '') {
-          mustInput.classList.remove('active');
-        }
-      });
-    };
-    mustInputToggleCol = selectEle => {
       let mustInput = selectEle.closest('li').querySelector('.input-notice');
       selectEle.focus();
       mustInput.classList.add('active');
@@ -78,6 +67,10 @@ document.addEventListener('DOMContentLoaded', () => {
       mustInputToggle(inquiryNameInput);
       return false;
     }
+    if (inquiryPhoneInput.value == '') {
+      mustInputToggle(inquiryPhoneInput);
+      return false;
+    }
     if (inquiryEmailInput.value == '') {
       mustInputToggle(inquiryEmailInput);
       return false;
@@ -87,11 +80,11 @@ document.addEventListener('DOMContentLoaded', () => {
       return false;
     }
     if (inquiryTextInput.value == '') {
-      mustInputToggleCol(inquiryTextInput);
+      mustInputToggle(inquiryTextInput);
       return false;
     }
     if (privacyAgree.checked == false) {
-      mustInputToggleCol(privacyAgree);
+      mustInputToggle(privacyAgree);
       return false;
     }
 

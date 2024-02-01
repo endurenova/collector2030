@@ -275,7 +275,7 @@ ul.collector-story__list .summary {
   display: flex;
   flex-flow: column;
   align-items: unset !important;
-  padding: 5% 2%;
+  padding: 5% 0%;
 }
 ul.artist-post__list .summary .subject {
   display: flex;
@@ -286,12 +286,21 @@ ul.artist-post__list .summary .subject {
   border: 1px solid var(--grayScale-N4);
   border-top: none;
 }
+.collector-story__list .comment {
+  display: none !important;
+}
 ul.collector-story__list .summary .subject > strong,
 ul.artist-post__list .summary .subject > strong {
   /* 작가 이름 */
+  display: -webkit-box;
   font-size: var(--gallery-title-font-size);
   color: var(--gallery-title-color);
   font-weight: var(--gallery-title-font-weight);
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  white-space: wrap;
+  text-overflow: ellipsis;
 }
 ul.collector-story__list .summary .subject > span,
 ul.artist-post__list .summary .subject > span {

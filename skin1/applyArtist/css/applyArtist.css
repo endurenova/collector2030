@@ -11,9 +11,13 @@
   padding: 0.5rem 0;
   border-bottom: 1px solid var(--main-color-op);
 }
+.partnership-inquiry__wrap > ul > li:nth-of-type(2) {
+  width: 100%;
+}
 .partnership-inquiry__wrap > ul > li:first-of-type {
   font-size: 14px;
-  min-width: 200px;
+  min-width: clamp(80px, 22.222vw, 200px);
+  width: clamp(80px, 22.222vw, 200px);
   text-indent: 0.5em;
 }
 .partnership-inquiry__wrap > ul:nth-of-type(6) > li:nth-of-type(2),
@@ -42,7 +46,7 @@
   min-width: 400px;
 }
 #clientAddress > ul span {
-  margin-left: 1rem;
+  margin-left: 0.5rem;
 }
 .partnership-inquiry__wrap > ul textarea {
   width: 100%;
@@ -101,4 +105,29 @@ textarea::-webkit-scrollbar-track {
   background: var(--pallet-color-4);
   left: 0;
   width: 100%;
+}
+@media (max-width: 1024px) {
+  #clientEmail > input,
+  #domainSelect {
+    width: clamp(110px, 14.342vw, 176px);
+  }
+}
+@media (max-width: 767px) {
+  .partnership-inquiry__wrap > ul > li:first-of-type {
+    font-size: clamp(12px, 3.333vw, 14px);
+  }
+  #clientAddress > ul > li:nth-of-type(1) input {
+    width: 120px;
+  }
+  #clientAddress > ul > li:nth-of-type(2) input,
+  #clientAddress > ul > li:nth-of-type(3) input {
+    min-width: clamp(160px, 44.444vw, 400px);
+  }
+}
+
+@media (max-width: 540px) {
+  #domainSelect {
+    margin-top: 0.5rem;
+    margin-left: 127px;
+  }
 }

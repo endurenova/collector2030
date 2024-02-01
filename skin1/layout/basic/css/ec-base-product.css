@@ -320,7 +320,7 @@ ul.prdList.grid4.list_gallery .prdList__item img {
 }
 .ec-base-product:not(.xans-product-listmain-1).relation_slide .prdList:not(.grid3_slide) > li {
   /* width: 200px !important; */
-  height: 300px;
+  /* height: 300px; */
 }
 .ec-base-product:not(.xans-product-listmain-1).relation_slide .prdList:not(.grid3_slide) {
   /* 상세페이지 연관 작품 리스트 */

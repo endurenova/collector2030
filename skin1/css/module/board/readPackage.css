@@ -32,7 +32,6 @@
   margin: 0.5% 0%;
 }
 .xans-board-read .ec-base-table .head h3 > strong {
-  padding: 0.5%;
   width: 100%;
   box-sizing: border-box;
 }
@@ -112,6 +111,77 @@
   margin: 0 auto;
   max-width: 100%;
 }
+/* 컬렉터 스토리 커스터마이징 ---------------------------------------------------------------------------------------------------- */
+.story-video {
+  max-width: 100%;
+}
+.story-slide__section {
+  position: relative;
+}
+.story-slide__list {
+  padding: unset !important;
+}
+.story-slide__list > li {
+  width: 100% !important;
+}
+.story-txt__box {
+  margin: 5% auto;
+}
+.story-slide__section {
+  position: relative;
+}
+.story-slide__info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: 10;
+  background: var(--grayScale-N1-opa);
+  cursor: pointer;
+}
+.story-slide__info.hidden {
+  display: none;
+}
+.story-slide__info .material-symbols-outlined {
+  font-size: 72px;
+  color: var(--grayScale-N5);
+  animation: shake 2s ease-in-out both infinite;
+}
+.story-txt {
+  font-family: 'Pretendard';
+  font-weight: var(--font-weight-Medium);
+  font-size: 24px;
+  text-align: center;
+  line-height: 1.6;
+}
+.story-artwork__box {
+  margin: 3% 0;
+}
+.story-artwork__box > .story-txt {
+  font-family: 'Monserrat';
+}
+.story-artwork__box > .story-txt:first-of-type {
+  font-size: 36px;
+  font-weight: var(--font-weight-SemiBold);
+}
+.story-artwork__box > .story-txt:last-child {
+  color: var(--main-color);
+}
+@keyframes shake {
+  0% {
+    transform: translateY(-50%) rotateZ(-45deg);
+  }
+  50% {
+    transform: translateY(-50%) rotateZ(45deg);
+  }
+  100% {
+    transform: translateY(-50%) rotateZ(-45deg);
+  }
+}
+/* ---------------------------------------------------------------------------------------------------- 컬렉터 스토리 커스터마이징 */
 /* 작가 소개 커스터마이징 ---------------------------------------------------------------------------------------------------- */
 .read-artist__slide__section {
   margin: 8% auto;
@@ -131,6 +201,7 @@
   font-size: 16px !important;
   color: var(--grayScale-N1);
 }
+
 .read-artist__title {
   display: flex;
   flex-flow: column;
@@ -230,6 +301,12 @@
 }
 
 @media (max-width: 1280px) {
+  .story-txt {
+    font-size: clamp(18px, 1.758vw, 24px);
+  }
+  .story-artwork__box > .story-txt:first-of-type {
+    font-size: clamp(24px, 2.344vw, 36px);
+  }
   .read-artist__slide-box {
     height: var(--item-row-34-2-height-portable);
   }
@@ -242,6 +319,12 @@
 }
 
 @media (max-width: 1024px) {
+  .story-txt {
+    font-size: clamp(16px, 2.086vw, 18px);
+  }
+  .story-artwork__box > .story-txt:first-of-type {
+    font-size: clamp(20px, 2.608vw, 24px);
+  }
   .read-artist__slide-box {
     height: var(--item-row-34-2-height-portable);
   }
@@ -253,6 +336,12 @@
   }
 }
 @media (max-width: 767px) {
+  .story-txt {
+    font-size: clamp(12px, 2.5vw, 16px);
+  }
+  .story-artwork__box > .story-txt:first-of-type {
+    font-size: clamp(16px, 3.333vw, 20px);
+  }
   .read-artist__title strong {
     font-size: clamp(18px, 3.75vw, 24px);
   }
@@ -275,6 +364,12 @@
   }
 }
 @media (max-width: 480px) {
+  .story-txt {
+    font-size: clamp(11px, 3.056vw, 12px);
+  }
+  .story-artwork__box > .story-txt:first-of-type {
+    font-size: clamp(14px, 3.889vw, 16px);
+  }
   .detail.read-artist > img {
     margin: 0 auto !important;
   }

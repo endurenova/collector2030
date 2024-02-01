@@ -51,18 +51,18 @@
               <option value="디지털아트">디지털아트</option>
               <option value="조형물">조형물</option>
             </select>
-          </li>
-          <li class="input-notice">
-            <span>※ 유형을 선택해 주세요.</span>
+            <div class="input-notice">
+              <span>※ 유형을 선택해 주세요.</span>
+            </div>
           </li>
         </ul>
         <ul>
           <li class="must-input">성함</li>
           <li>
             <input type="text" name="clientName" id="clientName" required />
-          </li>
-          <li class="input-notice">
-            <span>※ 성함을 입력해 주세요.</span>
+            <div class="input-notice">
+              <span>※ 성함을 입력해 주세요.</span>
+            </div>
           </li>
         </ul>
         <ul>
@@ -108,9 +108,9 @@
               onkeypress="return checkNumber(event)"
               required
             />
-          </li>
-          <li class="input-notice">
-            <span>※ 연락처를 입력해 주세요.</span>
+            <div class="input-notice">
+              <span>※ 연락처를 입력해 주세요.</span>
+            </div>
           </li>
         </ul>
         <ul>
@@ -133,9 +133,9 @@
               <option value="kakao.com">kakao.com</option>
               <option value="nate.com">nate.com</option>
             </select>
-          </li>
-          <li class="input-notice">
-            <span>※ 이메일 형식에 맞게 입력해 주세요.</span>
+            <div class="input-notice">
+              <span>※ 이메일 형식에 맞게 입력해 주세요.</span>
+            </div>
           </li>
         </ul>
         <ul>
@@ -157,9 +157,7 @@
                 /><span>기본주소</span>
               </li>
               <li>
-                <input type="text" id="addressSub" name="addressSub" placeholder="" value="" /><span
-                  >나머지주소 (선택입력가능)</span
-                >
+                <input type="text" id="addressSub" name="addressSub" placeholder="" value="" /><span>나머지주소</span>
               </li>
             </ul>
           </li>
@@ -176,11 +174,11 @@
           </li>
         </ul>
         <ul>
-          <li scope="row">첨부파일1</li>
+          <li scope="row">포트폴리오1</li>
           <li><input name="attach_file[]" type="file" /></li>
         </ul>
         <ul>
-          <li scope="row">첨부파일2</li>
+          <li scope="row">포트폴리오2</li>
           <li><input name="attach_file[]" type="file" /></li>
         </ul>
         <ul>
