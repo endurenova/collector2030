@@ -49,6 +49,13 @@ try {
   }
 } catch (e) {}
 document.addEventListener('DOMContentLoaded', () => {
+  window.addEventListener('resize', () => {
+    if (window.innerWidth <= 1024) {
+      document.querySelector('#header').classList.add('portable');
+    } else {
+      document.querySelector('#header').classList.remove('portable');
+    }
+  });
   if (checkMobile || window.innerWidth <= 1024) {
     document.querySelector('#header').classList.add('portable');
   }

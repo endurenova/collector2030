@@ -324,20 +324,24 @@ jQuery(document).ready(function () {
     'click',
     function () {
       jQuery('.xans-layout-searchheader').css('display', 'block');
-      jQuery('body')
-        .addClass('not_scroll')
-        .bind('scroll touchmove mousewheel', function (e) {
-          // 브라우저 스크롤막기
-          e.preventDefault();
-          e.stopPropagation();
-          return false;
-        });
+      if ($(this).hasClass('active')) {
+        $(this).find('img').attr('src', '/SkinImg/img/icon/search_5175453.svg');
+        jQuery('.xans-layout-searchheader').css('display', 'none');
+        jQuery('body').removeClass('not_scroll').unbind('scroll touchmove mousewheel'); // 브라우저 스크롤풀기
+      } else {
+        $(this).find('img').attr('src', '/SkinImg/img/icon/delete_5175664.svg');
+        jQuery('body')
+          .addClass('not_scroll')
+          .bind('scroll touchmove mousewheel', function (e) {
+            // 브라우저 스크롤막기
+            e.preventDefault();
+            e.stopPropagation();
+            return false;
+          });
+      }
+      $(this).toggleClass('active');
     },
   );
-  jQuery('.xans-layout-searchheader fieldset .top_search_box .btnClose').bind('click', function () {
-    jQuery('.xans-layout-searchheader').css('display', 'none');
-    jQuery('body').removeClass('not_scroll').unbind('scroll touchmove mousewheel'); // 브라우저 스크롤풀기
-  });
 
   /* 로그인폼 placeholder 추가 - 서정환 */
   if (jQuery('.xans-member-login').val() != undefined) {

@@ -30,7 +30,15 @@
   color: var(--grayScale-N3);
   box-sizing: border-box;
 }
-
+#xans_myshop_orderstate_shppied_before_count,
+#xans_myshop_orderstate_shppied_standby_count,
+#xans_myshop_orderstate_shppied_begin_count,
+#xans_myshop_orderstate_shppied_complate_count,
+#xans_myshop_orderstate_order_cancel_count,
+#xans_myshop_orderstate_order_exchange_count,
+#xans_myshop_orderstate_order_return_count {
+  /* color: var(--main-color); */
+}
 /********************* Mobile / Tablet *********************/
 @media all and (max-width: 1024px) {
   .xans-myshop-asyncbankbook {
@@ -77,8 +85,8 @@
     font-weight: normal;
   }
   .xans-myshop-asyncbankbook .thumb {
-    width: 30px;
-    height: 30px;
+    width: 36px;
+    height: 36px;
     margin: 0 auto 10px;
   }
   .xans-myshop-asyncbankbook .data {
@@ -112,8 +120,8 @@
     display: none;
   }
   .xans-myshop-asyncbankbook .thumb {
-    width: 30px;
-    height: 30px;
+    width: 36px;
+    height: 36px;
     margin: 0 auto 5px;
   }
   .xans-myshop-asyncbankbook .data {

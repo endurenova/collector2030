@@ -1224,8 +1224,8 @@
   background: var(--grayScale-N4);
 }
 .xans-myshop-asyncbankbook .thumb {
-  width: 32px;
-  height: 32px;
+  width: 36px;
+  height: 36px;
 }
 
 /* 마이페이지 공통 */
@@ -1246,13 +1246,14 @@
   border-top: 2px solid var(--grayScale-N1);
   border-bottom: 1px solid var(--pallet-color-5);
   font-size: 16px;
-  color: var(--grayScale-N4);
+  color: var(--pallet-color-3);
   padding: 64px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.myshopArea .ec-base-prdEmpty svg {
+.myshopArea .ec-base-prdEmpty img {
+  width: 30%;
   margin-bottom: 16px;
 }
 .myshopArea .titleArea--myshop h2 {

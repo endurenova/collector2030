@@ -185,21 +185,28 @@
       <!-- //menu-main/1 -->
       <ul class="top_mypage">
         <li>
-          <a href="/myshop/index.html"><!--@import(/svg/icon-user.html)--></a>
+          <a href="/myshop/index.html"><img src="/SkinImg/img/icon/avatar_7190409.svg" alt="유저 아이콘" /></a>
         </li>
         <li>
           <a href="/order/basket.html" module="Layout_orderBasketcount"
-            ><!--@import(/svg/icon-cart.html)--><span
+            ><img src="/SkinImg/img/icon/shopping-bag_8730005.svg" alt="쇼핑백 아이콘" /><span
               class="count {$basket_count_display|display} {$basket_count_display_class}"
-              ><span class="{$basket_count_class}">{$basket_count}</span></span
-            ></a
-          >
+              ><span class="{$basket_count_class}">{$basket_count}</span>
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="/myshop/wish_list.html"><img src="/SkinImg/img/icon/heart_4790142.svg" alt="하트 아이콘" /></a>
         </li>
         <li class="top_search">
-          <a href="javascript:;" class="eSearch"><!--@import(/svg/icon-search.html)--></a>
+          <a href="javascript:;" class="eSearch"
+            ><img src="/SkinImg/img/icon/search_5175453.svg" alt="돋보기 아이콘"
+          /></a>
         </li>
         <li class="mo_nav">
-          <a href="javascript:;" class="eNavFold"><i aria-hidden="true" class="icon icoNav"></i></a>
+          <a href="javascript:;" class="eNavFold"
+            ><img class="icon icoNav" src="/SkinImg/img/icon/open-menu_3817630.svg" alt="모바일탭 아이콘"
+          /></a>
         </li>
       </ul>
       <!-- //top_mypage -->
@@ -214,13 +221,8 @@
       <fieldset>
         <legend>검색</legend>
         <div class="wrapF_search_box">
-          <div class="search_find_product">Find Product</div>
           <div class="top_search_box">
-            <button type="button" class="btnClose">
-              <img src="/SkinImg/img/pc_search_close.svg" alt="닫기" loading="lazy" ez-prevent="img" />
-            </button>
-            {$form.keyword}<button type="button" class="btnDelete">삭제</button
-            ><button type="button" class="btnSearch" onclick="{$action_search_submit}">
+            {$form.keyword}<button type="button" class="btnSearch" onclick="{$action_search_submit}">
               <img src="/SkinImg/img/top_search.svg" alt="검색" loading="lazy" ez-prevent="img" />
             </button>
             <ul class="autoDrop" id="{$search_auto_id}"></ul>

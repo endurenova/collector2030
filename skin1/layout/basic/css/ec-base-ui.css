@@ -105,6 +105,7 @@ html:lang(zh-tw) .txt11 {
 
 .titleArea h2 {
   font-weight: normal;
+  margin: 3% 0;
 }
 .titleArea h2 font {
   color: var(--grayScale-N1) !important;
@@ -226,24 +227,12 @@ svg.icon {
 .icon[class*='icoArrow'].white {
   border-color: var(--grayScale-W);
 }
-.icon.icoNav {
+
+#header.portable .inner .top_nav_box .top_mypage a.eNavFold .icon.icoNav {
   display: block;
-  width: 20px;
-  height: 2px;
-  color: var(--grayScale-N1);
-  background: currentColor;
-  box-shadow: 0 14px 0;
-  margin: -8px auto 0;
-  position: relative;
-}
-.icon.icoNav:before {
-  content: '';
-  position: absolute;
-  top: 7px;
-  left: 0;
-  width: 20px;
-  height: 2px;
-  background: currentColor;
+  width: 28px;
+  box-shadow: unset;
+  margin: unset;
 }
 .icon.icoUser {
   overflow: hidden;
