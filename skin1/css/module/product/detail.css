@@ -145,7 +145,7 @@
   color: var(--grayScale-N2) !important;
   line-height: 1.4;
 }
-.xans-product-detail .infoArea table > tbody > tr:nth-of-type(2) > td span {
+.xans-product-detail .infoArea table > tbody > tr:nth-of-type(2):not(.option_product) > td span {
   /* 작가명 td */
   font-weight: var(--font-weight-SemiBold) !important;
 }
@@ -154,7 +154,7 @@
   font-weight: var(--font-weight-SemiBold) !important;
   color: var(--grayScale-N1) !important;
 }
-.xans-product-detail .infoArea table > tbody > tr:nth-of-type(3) > td span {
+.xans-product-detail .infoArea table > tbody > tr:nth-of-type(3):not(.option_product) > td span {
   /* 가격란 td */
   font-weight: var(--font-weight-SemiBold) !important;
   color: var(--main-color) !important;
@@ -760,8 +760,7 @@
   font-weight: normal;
 }
 #totalProducts tbody td {
-  padding: 30px 0;
-  line-height: 18px;
+  line-height: 1.6;
   vertical-align: middle;
   word-wrap: break-word;
   word-break: break-all;
@@ -897,7 +896,7 @@
 #totalProducts tr.option_product th[colspan='3'] {
   padding: 25px 0 0;
 }
-#totalProducts tr.option_product + tr.option_product > td {
+#totalProducts tr.option_product + tr.option_product {
   border-top: 1px solid var(--pallet-color-1);
 }
 #totalProducts .xans-product-option,
@@ -2008,7 +2007,7 @@
   position: relative;
   flex-flow: row wrap;
   justify-content: space-between;
-  height: 630px;
+  height: fit-content;
 }
 
 .xans-product-detail .detailArea .RW {
@@ -2021,7 +2020,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 80%;
   padding: 5%;
   box-sizing: border-box;
 }
@@ -2056,13 +2054,13 @@
   /* 상품 상세페이지 상품 정보 */
 }
 .detail_section {
-  margin: 120px auto 0 !important;
+  /* margin: 120px auto 0 !important; */
 }
 #totalProducts tbody tr {
   display: flex;
   position: relative;
   flex-flow: row nowrap;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   width: 100%;
 }
@@ -2098,14 +2096,14 @@
   /* margin: 50px 0 0; */
 }
 .xans-product-detail .infoArea #totalProducts .option_product {
-  background: #faf7f3;
+  /* background: #faf7f3; */
 }
 .xans-product-detail .infoArea #totalProducts .quantity a {
   background: var(--grayScale-W);
 }
 
 .xans-product-detail .infoArea #totalProducts > table > tbody {
-  background: var(--pallet-color-5);
+  /* background: var(--pallet-color-5); */
 }
 .xans-product-detail .infoArea #totalProducts > table > tbody > tr:first-child > td {
   border: none;
@@ -2115,27 +2113,35 @@
   color: var(--grayScale-N2);
   font-size: 16px;
   width: 40%;
-  padding: 30px 10px 30px 25px;
+  padding: 3% 0;
   font-weight: var(--font-weight-SemiBold);
   word-break: keep-all;
 }
-.xans-product-detail .infoArea #totalProducts > table > tbody > tr:first-child > td:nth-of-type(3) {
+.xans-product-detail
+  .infoArea
+  #totalProducts
+  > table
+  > tbody
+  > tr:first-child:not(.option_product)
+  > td:nth-of-type(3) {
   /* 상품 상세페이지 판매가 */
   font-size: 16px;
   width: 30%;
   font-weight: var(--font-weight-SemiBold);
 }
+.xans-product-detail .infoArea #totalProducts > table > tbody > tr:first-child > td.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+}
 .xans-product-detail .infoArea #totalProducts > table > tbody > tr > td:first-child .product {
   font-size: 14px;
 }
 .xans-product-detail .infoArea #totalProducts table .right {
-  padding-right: 25px;
   font-size: 14px;
   font-weight: var(--font-weight-Regular);
   color: var(--grayScale-N1);
-}
-.xans-product-detail .infoArea #totalProducts .delete {
-  margin: 10px 0 0 10px;
 }
 .xans-product-detail .infoArea #totalPrice {
   align-items: center;
@@ -2737,16 +2743,12 @@
     position: relative;
   }
   .xans-product-detail .infoArea #totalProducts .option_product {
-    background: #faf7f3;
+    /* background: #faf7f3; */
   }
   .xans-product-detail .infoArea #totalProducts table p:not(.product) a {
     background: var(--grayScale-W);
   }
-  .xans-product-detail .infoArea #totalProducts > table > tbody > tr > td:first-child {
-    padding: 15px 10px 15px 15px;
-  }
   .xans-product-detail .infoArea #totalProducts table .right {
-    padding: 0px 10px;
     font-size: 12px;
     font-weight: var(--font-weight-Bold);
     color: var(--grayScale-N1);
@@ -2796,9 +2798,6 @@
     margin: 0 5px 0 20px;
     font-size: 19px;
     font-weight: var(--font-weight-Medium);
-  }
-  #totalProducts tbody td {
-    padding: 15px 0;
   }
   #totalProducts .delete {
     margin-top: 0;
