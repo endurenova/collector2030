@@ -46,40 +46,30 @@ document.addEventListener('DOMContentLoaded', () => {
               contentsBox.insertAdjacentHTML(
                 'beforeend',
                 `
-                    <div class="xans-element- xans-product xans-product-relation xans-record-">
-                      <div class="relation">
-                        <div class="relation_title">
-                          <span class="artist_relation_artworks">작가의 작품</span>
-                        </div>
-                        <div class="xans-element- xans-product  ec-base-product swiper-container relation_slide ">
-                          <ul class="swiper-wrapper prdList" >
-                          </ul>
-                        </div>
-                      </div>
+                  <div class="relative-artwork__box">
+                    <div class="relation_title">
+                      <span class="artist_relation_artworks">작가의 작품</span>
                     </div>
+                    <ul class="relative-artwork__list" >
+                    </ul>
+                  </div>
                 `,
               );
-              const detailPrdList = document.querySelector('.relation .prdList');
+              const detailPrdList = document.querySelector('.relative-artwork__list');
               e1['prdUrl'].forEach((e2, i) => {
                 detailPrdList.insertAdjacentHTML(
                   'beforeend',
                   `
-                    <li class="swiper-slide xans-record-">
-                      <div class="prdList__item">
+                    <li class="relative-artwork__item">
+                      <a href="${e2}" class="prdList__item">
                         <div class="thumbnail">
-                          <a href="${e2}">
-                            <img src="${e1['prdImg'][i]}" alt="${e1['prdAlt'][i]}" loading="lazy" ez-prevent="img"/>
-                          </a>
+                          <img src="${e1['prdImg'][i]}" alt="${e1['prdAlt'][i]}" loading="lazy" ez-prevent="img"/>
                         </div>
                         <div class="description">
-                          <div class="name">
-                            <a href="${e2}">${e1['prdName'][i]}</a>
-                          </div>
-                          <div class="price">
-                            <span class="prdPrice">${e1['prdPrice'][i]}</span>
-                          </div>
+                          <span class="name">${e1['prdName'][i]}</span>
+                          <span class="price">${e1['prdPrice'][i]}</span>
                         </div>
-                      </div>
+                      </a>
                     </li>
                   `,
                 );
@@ -87,7 +77,6 @@ document.addEventListener('DOMContentLoaded', () => {
             }
           }),
         );
-
       jQuery(document).ready(function () {
         var swiper01 = new Swiper('.read-artist__slide-box', {
           slidesPerView: 3,

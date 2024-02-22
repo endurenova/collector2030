@@ -974,8 +974,8 @@ svg .main-circ {
     margin-right: var(--item-margin-right-portable);
   }
   .ec-base-product .prdList .thumbnail a img {
-    max-width: 80% !important;
-    max-height: 80% !important;
+    /* max-width: 80% !important;
+    max-height: 80% !important; */
   }
   .ec-base-product .prdList .icon__box {
     bottom: 3%;
@@ -1187,7 +1187,7 @@ svg .main-circ {
     width: 100%;
   }
 }
-@media (max-width: 560px) {
+@media (max-width: 480px) {
   .ec-base-product:not(.xans-product-listmain-1) .grid4:not(.grid3_slide) > li {
     width: 100%;
     height: fit-content;
@@ -1195,7 +1195,5 @@ svg .main-circ {
   }
   .ec-base-product .prdList .thumbnail {
     height: 90vw;
-  }
-  .ec-base-product .prdList .thumbnail a img {
   }
 }

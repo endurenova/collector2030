@@ -272,24 +272,66 @@
 .detail.read-artist .relation .relation_title {
   padding: unset !important;
 }
-.detail.read-artist .prdList {
-  transition: 0.3s;
-}
-.detail.read-artist .prdList li {
-  width: var(--item-row-6-width-pc-max1480) !important;
-  height: unset !important;
-}
-
-.detail.read-artist .prdList__item .thumbnail {
-  width: var(--item-row-6-width-pc-max1480) !important;
-  height: var(--item-row-6-width-pc-max1480) !important;
-}
-.detail.read-artist .prdList__item .thumbnail > a {
+.relative-artwork__box {
+  display: flex;
+  flex-flow: column;
   width: 100%;
-  height: 100%;
 }
-.detail.read-artist .prdList__item .thumbnail > a > img {
-  max-width: 80% !important;
+.relative-artwork__list {
+  display: flex;
+  flex-flow: row wrap;
+}
+.artist_relation_artworks {
+  font-size: 24px;
+  font-weight: var(--font-weight-SemiBold);
+  line-height: 1;
+  color: var(--grayScale-N1);
+}
+.relative-artwork__list .relative-artwork__item {
+  width: var(--item-row-5-width-pc-max1480) !important;
+  margin-right: var(--item-margin-right-pc);
+  margin-bottom: 40px;
+  height: unset !important;
+  list-style: none;
+}
+.relative-artwork__list .relative-artwork__item::marker {
+  content: '';
+  display: none;
+}
+.relative-artwork__list .relative-artwork__item .thumbnail {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--item-row-5-width-pc-max1480);
+  height: var(--item-row-5-width-pc-max1480);
+  background-color: var(--grayScale-N5);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.relative-artwork__list .relative-artwork__item .thumbnail > img {
+  max-width: 80%;
+  transition: 0.2s;
+}
+.relative-artwork__list .relative-artwork__item .thumbnail:hover > img {
+  max-width: 85%;
+}
+.relative-artwork__item .prdList__item .description {
+  display: flex;
+  flex-flow: column;
+}
+.relative-artwork__item .prdList__item .description .name {
+  display: flex;
+  flex-flow: column;
+  font-size: 16px;
+  color: var(--grayScale-N2);
+  font-weight: var(--font-weight-SemiBold);
+}
+.relative-artwork__item .prdList__item .description .price {
+  display: flex;
+  flex-flow: column;
+  font-size: 14px;
+  color: var(--main-color);
+  font-weight: var(--font-weight-Medium);
 }
 @media (max-width: calc(1480px / 9 * 10)) {
   .read-artist__slide-box {
@@ -297,6 +339,15 @@
   }
   .read-artist__slide-list li img {
     width: var(--item-row-3-width-pc) !important;
+  }
+  .relative-artwork__list .relative-artwork__item {
+    width: var(--item-row-4-width-pc) !important;
+    margin-right: var(--item-margin-right-pc);
+    margin-bottom: 40px;
+  }
+  .relative-artwork__list .relative-artwork__item .thumbnail {
+    width: var(--item-row-4-width-pc);
+    height: var(--item-row-4-width-pc);
   }
 }
 
@@ -328,11 +379,28 @@
   .read-artist__slide-box {
     height: var(--item-row-34-2-height-portable);
   }
+
+  .artist_relation_artworks {
+    padding: 50px 0 5px;
+    font-size: clamp(18px, 3.75vw, 24px);
+  }
   .read-artist__slide-list li {
     margin-right: var(--item-margin-right-portable);
   }
   .read-artist__slide-list li img {
     width: var(--item-row-2-width-portable) !important;
+  }
+  .relative-artwork__list .relative-artwork__item {
+    width: var(--item-row-3-width-portable) !important;
+    margin-right: var(--item-margin-right-portable);
+    margin-bottom: 20px;
+  }
+  .relative-artwork__list .relative-artwork__item:nth-of-type(3n) {
+    margin-right: 0;
+  }
+  .relative-artwork__list .relative-artwork__item .thumbnail {
+    width: var(--item-row-3-width-portable);
+    height: var(--item-row-3-width-portable);
   }
 }
 @media (max-width: 767px) {
@@ -362,6 +430,21 @@
   .read-artist__slide-list li img {
     width: var(--item-row-1-width-portable) !important;
   }
+  .relative-artwork__list .relative-artwork__item {
+    width: var(--item-row-2-width-portable) !important;
+    margin-right: var(--item-margin-right-portable);
+    margin-bottom: 20px;
+  }
+  .relative-artwork__list .relative-artwork__item:nth-of-type(3n) {
+    margin-right: var(--item-margin-right-portable);
+  }
+  .relative-artwork__list .relative-artwork__item:nth-of-type(2n) {
+    margin-right: 0;
+  }
+  .relative-artwork__list .relative-artwork__item .thumbnail {
+    width: var(--item-row-2-width-portable);
+    height: var(--item-row-2-width-portable);
+  }
 }
 @media (max-width: 480px) {
   .story-txt {
@@ -372,6 +455,21 @@
   }
   .detail.read-artist > img {
     margin: 0 auto !important;
+  }
+  .relative-artwork__list .relative-artwork__item {
+    width: var(--item-row-1-width-portable) !important;
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
+  .relative-artwork__list .relative-artwork__item:nth-of-type(3n) {
+    margin-right: 0;
+  }
+  .relative-artwork__list .relative-artwork__item:nth-of-type(2n) {
+    margin-right: 0;
+  }
+  .relative-artwork__list .relative-artwork__item .thumbnail {
+    width: var(--item-row-1-width-portable);
+    height: var(--item-row-1-width-portable);
   }
 }
 /* ---------------------------------------------------------------------------------------------------- 작가 소개 커스터마이징 */
