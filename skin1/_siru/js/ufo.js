@@ -1,11 +1,8 @@
-jQuery(document).ready(function () {
-  var pointSize = $('.ufo-pointer').width() / 10;
-  $('body').mousemove(function (e) {
-    $('.ufo-pointer').css('top', e.pageY + pointSize);
-    $('.ufo-pointer').css('left', e.pageX + pointSize);
-    $('.ufo-pointer').fadeIn();
-  });
-  $('body').on('mouseleave', function () {
-    $('.ufo-pointer').fadeOut();
-  });
+document.addEventListener('mousemove', e => {
+  let mouseX = e.pageX + 10;
+  let mouseY = e.pageY + 10;
+
+  let cursor = document.querySelector('.ufo-pointer');
+  cursor.style.left = mouseX + 'px';
+  cursor.style.top = mouseY + 'px';
 });
