@@ -1,6 +1,8 @@
 @charset "utf-8";
 /* **************************** //필수 CSS 수정 및 삭제 불가 **************************** */
-
+* {
+  /* cursor: url('/SkinImg/img/gistar.png') 2 2, auto; */
+}
 /* tag reset */
 html,
 body,
@@ -110,6 +112,13 @@ a:hover {
 }
 a:active {
   text-decoration: none;
+}
+.ufo-pointer {
+  position: absolute;
+  width: 80px;
+  height: auto;
+  transition: all 0.3s ease-out;
+  z-index: 100000;
 }
 .objHidden {
   visibility: hidden;
