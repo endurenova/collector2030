@@ -1,10 +1,19 @@
 [
   {
+    "prdImg": "//ecimg.cafe24img.com/pg715b26588354090/col2030/web/product/big/20240314/8b83a4aec80eb5cce532344ba3227555.jpg",
+    "prdAlt": "Pig Edition - Party, GG Ham",
+    "prdName": "Pig Edition - Party",
+    "prdKor": "지지함",
+    "prdArtist": "(GG Ham)",
+    "prdPrice": "500,000원",
+    "prdUrl": "/product/pig-edition-party/470/category/53/display/1/"
+  },
+  {
     "prdImg": "//ecimg.cafe24img.com/pg715b26588354090/col2030/web/product/big/20240308/fa78c48d61436039443a96a031ed8f74.jpg",
     "prdAlt": "Pig Edition - Camping, GG Ham",
     "prdName": "Pig Edition - Camping",
     "prdKor": "지지함",
-    "prdArtist": "GG Ham",
+    "prdArtist": "(GG Ham)",
     "prdPrice": "500,000원",
     "prdUrl": "/product/pig-edition-camping/469/category/53/display/1/"
   },
@@ -13,7 +22,7 @@
     "prdAlt": "Pig Edition - Sunset, GG Ham",
     "prdName": "Pig Edition - Sunset",
     "prdKor": "지지함",
-    "prdArtist": "GG Ham",
+    "prdArtist": "(GG Ham)",
     "prdPrice": "500,000원",
     "prdUrl": "/product/pig-edition-sunset/468/category/53/display/1/"
   },
@@ -22,7 +31,7 @@
     "prdAlt": "Pig Edition - Slot, GG Ham",
     "prdName": "Pig Edition - Slot",
     "prdKor": "지지함",
-    "prdArtist": "GG Ham",
+    "prdArtist": "(GG Ham)",
     "prdPrice": "500,000원",
     "prdUrl": "/product/pig-edition-slot/467/category/53/display/1/"
   },
@@ -31,7 +40,7 @@
     "prdAlt": "SpongeBob Edition - Tiffany, GG Ham",
     "prdName": "SpongeBob Edition - Tiffany",
     "prdKor": "지지함",
-    "prdArtist": "GG Ham",
+    "prdArtist": "(GG Ham)",
     "prdPrice": "500,000원",
     "prdUrl": "/product/spongebob-edition-tiffany/466/category/53/display/1/"
   },
@@ -40,7 +49,7 @@
     "prdAlt": "SpongeBob Edition - Heremes Orange, GG Ham",
     "prdName": "SpongeBob Edition - Heremes Orange",
     "prdKor": "지지함",
-    "prdArtist": "GG Ham",
+    "prdArtist": "(GG Ham)",
     "prdPrice": "500,000원",
     "prdUrl": "/product/spongebob-edition-heremes-orange/465/category/53/display/1/"
   },
@@ -49,7 +58,7 @@
     "prdAlt": "SpongeBob Edition - Ocean, GG Ham",
     "prdName": "SpongeBob Edition - Ocean",
     "prdKor": "지지함",
-    "prdArtist": "GG Ham",
+    "prdArtist": "(GG Ham)",
     "prdPrice": "500,000원",
     "prdUrl": "/product/spongebob-edition-ocean/464/category/53/display/1/"
   },
@@ -58,7 +67,7 @@
     "prdAlt": "SpongeBob Edition - BB Brown, GG Ham",
     "prdName": "SpongeBob Edition - BB Brown",
     "prdKor": "지지함",
-    "prdArtist": "GG Ham",
+    "prdArtist": "(GG Ham)",
     "prdPrice": "500,000원",
     "prdUrl": "/product/spongebob-edition-bb-brown/463/category/53/display/1/"
   },
@@ -67,7 +76,7 @@
     "prdAlt": "SpongeBob Edition - GG Gray, GG Ham",
     "prdName": "SpongeBob Edition - GG Gray",
     "prdKor": "지지함",
-    "prdArtist": "GG Ham",
+    "prdArtist": "(GG Ham)",
     "prdPrice": "500,000원",
     "prdUrl": "/product/spongebob-edition-gg-gray/462/category/53/display/1/"
   },
@@ -75,8 +84,8 @@
     "prdImg": "//ecimg.cafe24img.com/pg715b26588354090/col2030/web/product/big/20240131/b805950f460265703b275e8859cd22eb.jpg",
     "prdAlt": "BearBrick - Blue, Collector 2030",
     "prdName": "BearBrick - Blue",
-    "prdKor": "지지함",
-    "prdArtist": "Collector 2030",
+    "prdKor": "컬렉터 2030",
+    "prdArtist": "(Collector 2030)",
     "prdPrice": "220,000원",
     "prdUrl": "/product/bearbrick-blue/461/category/53/display/1/"
   },
@@ -85,7 +94,7 @@
     "prdAlt": "BearBrick - Pink, Collector 2030",
     "prdName": "BearBrick - Pink",
     "prdKor": "컬렉터 2030",
-    "prdArtist": "Collector 2030",
+    "prdArtist": "(Collector 2030)",
     "prdPrice": "220,000원",
     "prdUrl": "/product/bearbrick-pink/460/category/53/display/1/"
   },
@@ -94,17 +103,8 @@
     "prdAlt": "BearBrick - Green, Collector 2030",
     "prdName": "BearBrick - Green",
     "prdKor": "컬렉터 2030",
-    "prdArtist": "Collector 2030",
+    "prdArtist": "(Collector 2030)",
     "prdPrice": "220,000원",
     "prdUrl": "/product/bearbrick-green/459/category/53/display/1/"
-  },
-  {
-    "prdImg": "//ecimg.cafe24img.com/pg715b26588354090/col2030/web/product/big/20240131/1a7e45327e60697d5f9ff724d476b8d0.jpg",
-    "prdAlt": "BearBrick - Yellow, Collector 2030",
-    "prdName": "BearBrick - Yellow",
-    "prdKor": "컬렉터 2030",
-    "prdArtist": "Collector 2030",
-    "prdPrice": "220,000원",
-    "prdUrl": "/product/bearbrick-yellow/458/category/53/display/1/"
   }
 ]
