@@ -39,5 +39,5 @@ document.addEventListener('DOMContentLoaded', () => {
   //   });
   //   let json = JSON.stringify(prdInfoList);
   //   console.log(json);
-  // }, 3000);
+  // }, 4000);
 });

@@ -156,7 +156,7 @@
 
 .main_image_text_gallery .main_3dan_banner {
   position: relative;
-  height: var(--item-row-3-width-pc);
+  height: calc(var(--item-row-3-width-pc) - 50px);
 }
 .main_image_text_gallery .main_3dan_banner ul {
   display: flex;
@@ -511,6 +511,20 @@ ul.prdList.grid4.list_gallery > li:hover .icon__box {
   color: var(--main-color);
   font-size: 14px;
 }
+
+.youtube-video-thumbnail {
+  overflow: hidden;
+  transition: 0.3s;
+}
+.youtube-video-thumbnail img {
+  transition: 0.3s;
+}
+.youtube-video-thumbnail:hover {
+  border-radius: 24px;
+}
+.youtube-video-thumbnail:hover img {
+  transform: scale(1.02);
+}
 /* 아티스트 비디오 */
 /* .artist-video-direction {
   position: absolute;
@@ -533,7 +547,7 @@ ul.prdList.grid4.list_gallery > li:hover .icon__box {
 .artist-video-direction .material-symbols-outlined.active:hover {
   font-variation-settings: 'FILL' 1, 'wght' 100, 'GRAD' 0, 'opsz' 24;
 } */
-.artist-video-box {
+/* .artist-video-box {
   position: relative;
   height: calc(var(--item-row-3-width-pc-max1480) / 3 * 2 + 84px);
   margin: 0 auto;
@@ -579,6 +593,7 @@ ul.prdList.grid4.list_gallery > li:hover .icon__box {
   object-fit: contain;
   transition: 0.3s;
 }
+
 .artist-video-thumbnail:hover::before {
   background-color: transparent;
 }
@@ -609,7 +624,7 @@ ul.prdList.grid4.list_gallery > li:hover .icon__box {
 .artist-video-description a span:nth-of-type(2) {
   color: var(--main-color);
   font-size: 11px;
-}
+} */
 .modal-artist-video {
   display: none;
   position: absolute;

@@ -53,9 +53,8 @@ document.addEventListener('DOMContentLoaded', () => {
           const artworkImgSrc = document.querySelector('.prdImg .thumbnail img').src,
             artworkSize = document.querySelector('tr .td-dimensions').textContent,
             artworkWidth = artworkSize.split(' ')[0],
-            artworkHeight = artworkSize.split(' ')[2];
-
-          console.log(Number(artworkWidth.split('cm')[0]));
+            artworkHeight = artworkSize.split(' ')[2],
+            checkRound = artworkSize.split(' ')[3];
           let simulateSlot = '';
           if (Number(artworkWidth.split('cm')[0]) < 100 || Number(artworkHeight.split('cm')[0]) < 100) {
             simulateSlot = `
@@ -264,6 +263,10 @@ document.addEventListener('DOMContentLoaded', () => {
               }
               setStatusIdx();
             });
+
+            if (checkRound == '(⌀)') {
+              virtualFrame.classList.add('check-round');
+            }
             virtualBackgroundList = document.querySelector('.background-selector__list').children;
             Array.from(virtualBackgroundList).forEach((e, i) => {
               e.addEventListener('click', event => {

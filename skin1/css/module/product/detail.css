@@ -1509,6 +1509,9 @@
   -webkit-box-shadow: 3px 3px 7px 2px var(--grayScale-N1-op);
   -moz-box-shadow: 3px 3px 7px 2px var(--grayScale-N1-op);
 }
+.artwork-simulation .virtual-background .check-round {
+  border-radius: 100%;
+}
 .simulation-select__wrap {
   display: flex;
   flex-flow: column nowrap;

@@ -48,6 +48,28 @@ jQuery(document).ready(function () {
       },
     },
   });
+  var youtubeVideo = new Swiper('.youtube-video-box', {
+    slidesPerView: 3,
+    spaceBetween: 20,
+    breakpoints: {
+      1280: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      1024: {
+        slidesPerView: 2,
+        spaceBetween: 10,
+      },
+      767: {
+        slidesPerView: 1,
+        spaceBetween: 10,
+      },
+      480: {
+        slidesPerView: 1,
+        spaceBetween: 10,
+      },
+    },
+  });
   const listMain_1 = document.querySelector('.product_listmain_1-swiper > .swiper-wrapper').children;
   Array.from(listMain_1).forEach(e => {
     e.classList.add('swiper-slide');
