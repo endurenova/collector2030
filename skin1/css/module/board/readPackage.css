@@ -382,7 +382,7 @@
 
   .artist_relation_artworks {
     padding: 50px 0 5px;
-    font-size: clamp(18px, 3.75vw, 24px);
+    font-size: var(--font-size-medium);
   }
   .read-artist__slide-list li {
     margin-right: var(--item-margin-right-portable);
@@ -411,7 +411,7 @@
     font-size: clamp(16px, 3.333vw, 20px);
   }
   .read-artist__title strong {
-    font-size: clamp(18px, 3.75vw, 24px);
+    font-size: var(--font-size-medium);
   }
   .read-artist__title span {
     font-size: clamp(16px, 3.333vw, 18px);

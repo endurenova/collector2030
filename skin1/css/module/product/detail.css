@@ -1465,7 +1465,7 @@
   height: 100%;
 }
 .purchase-img-box .purchase-img-list > li:nth-of-type(3) .artwork-size-info span .measure {
-  font-size: clamp(12px, 3.333vw, 16px);
+  font-size: var(--font-size-regular);
   background-color: var(--grayScale-W);
   padding: 0px 5px;
   z-index: 1;
@@ -1664,7 +1664,7 @@
   height: unset;
 }
 .purchase-info-list .purchase-info-item__box .purchase-info-item__description .description-space {
-  font-size: 14px;
+  font-size: var(--font-size-small);
   color: var(--grayScale-N2);
 }
 .purchase-info-list .purchase-info-item__box .purchase-info-item__description .description-space ul {
@@ -1722,7 +1722,7 @@
   .xans-product #prdDetail table tbody tr th,
   .xans-product #prdDetail table tbody tr td {
     /* 상품 상세 페이지 상세 정보 */
-    font-size: clamp(12px, 3.333vw, 16px) !important;
+    font-size: var(--font-size-regular) !important;
   }
   #mCafe24Order #totalProducts .delete {
     position: relative;
@@ -1741,7 +1741,7 @@
     padding: unset;
   }
   .artwork-simulation > h2 {
-    font-size: clamp(18px, 3.75vw, 24px);
+    font-size: var(--font-size-medium);
     text-align: center;
   }
   .artwork-simulation .virtual-background {
@@ -1766,9 +1766,6 @@
 @media all and (max-width: 1024px) {
   .purchase-info-list .purchase-info-item__box .purchase-info-item .purchase-info-title {
     font-size: clamp(14px, 2.917vw, 16px);
-  }
-  .purchase-info-list .purchase-info-item__box .purchase-info-item__description .description-space {
-    font-size: clamp(12px, 2.5vw, 14px);
   }
   .xans-product #prdDetail table {
     width: 100%;
@@ -2892,7 +2889,7 @@
   /* 관련상품 */
   .relation .relation_title {
     padding: 50px 0 5px;
-    font-size: clamp(18px, 3.75vw, 24px);
+    font-size: var(--font-size-medium);
   }
   .relation .swiper-pagination-bullet {
     width: 8px;

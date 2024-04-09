@@ -1026,7 +1026,7 @@ svg .main-circ {
   .xans-product-detail .infoArea table > tbody > tr > td span,
   .xans-product-detail .infoArea #totalProducts > table > tbody > tr > td:first-child,
   .artist-info-box .artist-info .artist-info__description strong {
-    font-size: clamp(12px, 3.333vw, 16px) !important;
+    font-size: var(--font-size-regular) !important;
   }
   .artist-info-box .artist-info .artist-info__description span {
     font-size: clamp(11px, 3.056vw, 14px) !important;

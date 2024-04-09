@@ -156,7 +156,7 @@
 
 .main_image_text_gallery .main_3dan_banner {
   position: relative;
-  height: calc(var(--item-row-3-width-pc) - 50px);
+  height: var(--item-row-3-width-pc);
 }
 .main_image_text_gallery .main_3dan_banner ul {
   display: flex;
@@ -511,7 +511,13 @@ ul.prdList.grid4.list_gallery > li:hover .icon__box {
   color: var(--main-color);
   font-size: 14px;
 }
-
+.youtube_more {
+  position: absolute;
+  right: 0;
+  bottom: calc(var(--font-size-regular) * -1);
+  font-size: var(--font-size-regular);
+  color: var(--main-color-opa);
+}
 .youtube-video-thumbnail {
   overflow: hidden;
   transition: 0.3s;
@@ -754,7 +760,7 @@ ul.prdList.grid4.list_gallery > li:hover .icon__box {
 .show-room__section .show-room__box {
   position: relative;
   width: 100%;
-  max-height: 540px;
+  max-height: 580px;
 }
 .show-room__box::before {
   content: '';
@@ -765,6 +771,7 @@ ul.prdList.grid4.list_gallery > li:hover .icon__box {
   z-index: 1;
   background-color: var(--grayScale-N1-opa);
 }
+
 .show-room__box iframe {
   /* height: 540px; */
 }
@@ -793,6 +800,11 @@ ul.prdList.grid4.list_gallery > li:hover .icon__box {
   font-size: 24px;
   color: var(--grayScale-N5);
   background-color: var(--main-color);
+}
+.show-room__bg {
+  background-image: url(/SkinImg/img/show.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 /* 메인상품분류 슬라이드 상품진열 */
 .main_product_slide {
@@ -1700,7 +1712,7 @@ ul.prdList.grid4.list_gallery > li:hover .icon__box {
     /* font-size: calc(23px + (30 - 23) * ((100vw - 370px) / (1480 - 370))); */
   }
   .main_title .main_title_txt02 {
-    font-size: clamp(12px, 3.333vw, 16px);
+    font-size: var(--font-size-regular);
     /* font-size: calc(13px + (14 - 13) * ((100vw - 370px) / (1480 - 370))); */
   }
   .main_prd__box .main_prd__list > li {
@@ -1765,7 +1777,7 @@ ul.prdList.grid4.list_gallery > li:hover .icon__box {
     font-size: clamp(14px, 2.917vw, 16px); /* ~ 480px */
   }
   .slide_text_box .slide_btn_area a {
-    font-size: clamp(12px, 2.5vw, 14px); /* ~ 480px */
+    font-size: var(--font-size-small); /* ~ 480px */
   }
   .main_text .main_long_banner .main_long_banner_txt {
     padding: 40px 45px;
@@ -1869,10 +1881,10 @@ ul.prdList.grid4.list_gallery > li:hover .icon__box {
 
   /* 컬렉터 2030 쇼룸 */
   .show-room__info img {
-    width: clamp(100px, 20.833vw, 170px);
+    width: clamp(80px, 20.833vw, 170px);
   }
   .show-room__info h1 {
-    font-size: clamp(14px, 2.917vw, 24px);
+    font-size: clamp(12px, 2.917vw, 24px);
   }
   .show-room__info a {
     font-size: clamp(12px, 2.5vw, 16px);

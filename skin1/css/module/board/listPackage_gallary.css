@@ -580,7 +580,7 @@ ul.artist-post__list .summary > span {
   ul.collector-story__list .summary .subject > strong,
   ul.artist-post__list .summary .subject > strong {
     /* 전시 이름, 작가 이름 */
-    font-size: var(--gallery-title-font-size-clamp);
+    font-size: var(--gallery-title-font-size);
   }
   .xans-board-listpackage-8 .xans-board-list-8 ul.horizontal-board-layout li a .summary .subject span:nth-of-type(1),
   .xans-board-listpackage-8 .xans-board-list-8 ul.horizontal-board-layout li a .summary .subject span:nth-of-type(2),
@@ -588,7 +588,7 @@ ul.artist-post__list .summary > span {
   ul.collector-story__list .summary .subject > span,
   ul.artist-post__list .summary .subject > span {
     /* 작가 이름 영문 표기 */
-    font-size: var(--gallery-span-font-size-clamp);
+    font-size: var(--gallery-span-font-size);
   }
 }
 @media (max-width: 680px) {
