@@ -13,31 +13,31 @@ document.addEventListener('DOMContentLoaded', () => {
         }),
       );
   });
-  setTimeout(() => {
-    let prdInfoList = [];
-    const ids = document.querySelectorAll('.prdList > li');
-    ids.forEach((e, i) => {
-      if (i < 12) {
-        let makeJson = {
-          prdImg: '',
-          prdAlt: '',
-          prdName: '',
-          prdKor: '',
-          prdArtist: '',
-          prdPrice: '',
-          prdUrl: '',
-        };
-        makeJson['prdImg'] = e.querySelector('.thumbnail > a > img').getAttribute('src');
-        makeJson['prdAlt'] = e.querySelector('.thumbnail > a > img').getAttribute('alt');
-        makeJson['prdName'] = e.querySelector('.description .name a span:nth-of-type(2)').textContent;
-        makeJson['prdKor'] = e.querySelector('.artist-name .korean-pronun').textContent;
-        makeJson['prdArtist'] = e.querySelector('.artist-name span:nth-of-type(2)').textContent;
-        makeJson['prdUrl'] = e.querySelector('.thumbnail > a').getAttribute('href');
-        makeJson['prdPrice'] = e.querySelector('.product-item__price').textContent;
-        prdInfoList.push(makeJson);
-      }
-    });
-    let json = JSON.stringify(prdInfoList);
-    console.log(json);
-  }, 300);
+  // setTimeout(() => {
+  //   let prdInfoList = [];
+  //   const ids = document.querySelectorAll('.prdList > li');
+  //   ids.forEach((e, i) => {
+  //     if (i < 12) {
+  //       let makeJson = {
+  //         prdImg: '',
+  //         prdAlt: '',
+  //         prdName: '',
+  //         prdKor: '',
+  //         prdArtist: '',
+  //         prdPrice: '',
+  //         prdUrl: '',
+  //       };
+  //       makeJson['prdImg'] = e.querySelector('.thumbnail > a > img').getAttribute('src');
+  //       makeJson['prdAlt'] = e.querySelector('.thumbnail > a > img').getAttribute('alt');
+  //       makeJson['prdName'] = e.querySelector('.description .name a span:nth-of-type(2)').textContent;
+  //       makeJson['prdKor'] = e.querySelector('.artist-name .korean-pronun').textContent;
+  //       makeJson['prdArtist'] = e.querySelector('.artist-name span:nth-of-type(2)').textContent;
+  //       makeJson['prdUrl'] = e.querySelector('.thumbnail > a').getAttribute('href');
+  //       makeJson['prdPrice'] = e.querySelector('.product-item__price').textContent;
+  //       prdInfoList.push(makeJson);
+  //     }
+  //   });
+  //   let json = JSON.stringify(prdInfoList);
+  //   console.log(json);
+  // }, 300);
 });
