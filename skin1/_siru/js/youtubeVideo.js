@@ -56,8 +56,13 @@ document.addEventListener('DOMContentLoaded', () => {
           artistTitle: '점 하나만 찍어주세요',
           artist: '이우환',
         },
+        {
+          idx: 9,
+          urlID: '8b8QgU9WsfM?si=ialLW7Oc6k0MgliN',
+          artistTitle: '발레리나...좋아?',
+          artist: '에드가 드가',
+        },
       ];
-
       const youtubeVideoList = document.querySelector('.youtube-video-list');
 
       youtubeVideoInfo.forEach(e => {
