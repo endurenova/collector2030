@@ -45,33 +45,6 @@
     "prdUrl": "/product/slate-flight-g-bros-flight-edition/518/category/53/display/1/"
   },
   {
-    "prdImg": "//ecimg.cafe24img.com/pg715b26588354090/col2030/web/product/big/20240412/8f8280bee3643e11dcc1988d5517466e.jpeg",
-    "prdAlt": "Dream Eater, Collector 2030",
-    "prdName": "Dream Eater",
-    "prdKor": "컬렉터 2030",
-    "prdArtist": "(Collector 2030)",
-    "prdPrice": "700,000원",
-    "prdUrl": "/product/dream-eater/517/category/53/display/1/"
-  },
-  {
-    "prdImg": "//ecimg.cafe24img.com/pg715b26588354090/col2030/web/product/big/20240412/86fb5c7f9cbfb991467059285733bade.jpeg",
-    "prdAlt": "Furry Ruin, Collector 2030",
-    "prdName": "Furry Ruin",
-    "prdKor": "컬렉터 2030",
-    "prdArtist": "(Collector 2030)",
-    "prdPrice": "700,000원",
-    "prdUrl": "/product/furry-ruin/516/category/53/display/1/"
-  },
-  {
-    "prdImg": "//ecimg.cafe24img.com/pg715b26588354090/col2030/web/product/big/20240412/bd879475436914c38c8b4f4337f98339.jpeg",
-    "prdAlt": "Lunatic Night, Collector 2030",
-    "prdName": "Lunatic Night",
-    "prdKor": "컬렉터 2030",
-    "prdArtist": "(Collector 2030)",
-    "prdPrice": "700,000원",
-    "prdUrl": "/product/lunatic-night/515/category/53/display/1/"
-  },
-  {
     "prdImg": "//ecimg.cafe24img.com/pg715b26588354090/col2030/web/product/big/20240408/fc7af76c2db98ed068e68c4fdd9ac62e.jpg",
     "prdAlt": "Human Flow, Ai Weiwei",
     "prdName": "Human Flow",
@@ -106,5 +79,32 @@
     "prdArtist": "(GG Ham)",
     "prdPrice": "800,000원",
     "prdUrl": "/product/the-collector-no26/511/category/53/display/1/"
+  },
+  {
+    "prdImg": "//ecimg.cafe24img.com/pg715b26588354090/col2030/web/product/big/20240401/7169ed6ff41afa861aa4536a4220a787.png",
+    "prdAlt": "The Collector No.25, GG Ham",
+    "prdName": "The Collector No.25",
+    "prdKor": "지지함",
+    "prdArtist": "(GG Ham)",
+    "prdPrice": "800,000원",
+    "prdUrl": "/product/the-collector-no25/510/category/53/display/1/"
+  },
+  {
+    "prdImg": "//ecimg.cafe24img.com/pg715b26588354090/col2030/web/product/big/20240401/c017eb95dc546737c5596c0e4745a961.png",
+    "prdAlt": "The Collector No.24, GG Ham",
+    "prdName": "The Collector No.24",
+    "prdKor": "지지함",
+    "prdArtist": "(GG Ham)",
+    "prdPrice": "800,000원",
+    "prdUrl": "/product/the-collector-no24/509/category/53/display/1/"
+  },
+  {
+    "prdImg": "//ecimg.cafe24img.com/pg715b26588354090/col2030/web/product/big/20240401/6435aa58d1485e7c3ec84a3dd98e2739.png",
+    "prdAlt": "The Collector No.23, GG Ham",
+    "prdName": "The Collector No.23",
+    "prdKor": "지지함",
+    "prdArtist": "(GG Ham)",
+    "prdPrice": "800,000원",
+    "prdUrl": "/product/the-collector-no23/508/category/53/display/1/"
   }
 ]
