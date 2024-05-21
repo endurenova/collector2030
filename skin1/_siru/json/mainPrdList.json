@@ -1,5 +1,41 @@
 [
   {
+    "prdImg": "//ecimg.cafe24img.com/pg715b26588354090/col2030/web/product/big/20240521/4edc8b3691b4840c807828c4d603820b.jpg",
+    "prdAlt": "Pumpkin Flight (G-Bros Flight Edition), GG Ham",
+    "prdName": "Pumpkin Flight (G-Bros Flight Edition)",
+    "prdKor": "지지함",
+    "prdArtist": "(GG Ham)",
+    "prdPrice": "5,000,000원",
+    "prdUrl": "/product/pumpkin-flight-g-bros-flight-edition/526/category/53/display/1/"
+  },
+  {
+    "prdImg": "//ecimg.cafe24img.com/pg715b26588354090/col2030/web/product/big/20240521/dc4d44ab2a135593c4e1a55b5a289868.jpg",
+    "prdAlt": "Paprika Flight (G-Bros Flight Edition), GG Ham",
+    "prdName": "Paprika Flight (G-Bros Flight Edition)",
+    "prdKor": "지지함",
+    "prdArtist": "(GG Ham)",
+    "prdPrice": "5,000,000원",
+    "prdUrl": "/product/paprika-flight-g-bros-flight-edition/525/category/53/display/1/"
+  },
+  {
+    "prdImg": "//ecimg.cafe24img.com/pg715b26588354090/col2030/web/product/big/20240521/56c9c3b63e05c91675901fcae3065e96.jpg",
+    "prdAlt": "Beet Flight (G-Bros Flight Edition), GG Ham",
+    "prdName": "Beet Flight (G-Bros Flight Edition)",
+    "prdKor": "지지함",
+    "prdArtist": "(GG Ham)",
+    "prdPrice": "5,000,000원",
+    "prdUrl": "/product/beet-flight-g-bros-flight-edition/524/category/53/display/1/"
+  },
+  {
+    "prdImg": "//ecimg.cafe24img.com/pg715b26588354090/col2030/web/product/big/20240521/497853c17245bdafdeb9e6a8cdae1310.jpg",
+    "prdAlt": "Carrot Flight (G-Bros Flight Edition), GG Ham",
+    "prdName": "Carrot Flight (G-Bros Flight Edition)",
+    "prdKor": "지지함",
+    "prdArtist": "(GG Ham)",
+    "prdPrice": "5,000,000원",
+    "prdUrl": "/product/carrot-flight-g-bros-flight-edition/523/category/53/display/1/"
+  },
+  {
     "prdImg": "//ecimg.cafe24img.com/pg715b26588354090/col2030/web/product/big/20240423/0c7a865cd59b456f2919885b5a99db72.jpg",
     "prdAlt": "Pink Lavender Flight (G-Bros Flight Edition), GG Ham",
     "prdName": "Pink Lavender Flight (G-Bros Flight Edition)",
@@ -70,41 +106,5 @@
     "prdArtist": "(GG Ham)",
     "prdPrice": "800,000원",
     "prdUrl": "/product/the-collector-no27/512/category/53/display/1/"
-  },
-  {
-    "prdImg": "//ecimg.cafe24img.com/pg715b26588354090/col2030/web/product/big/20240401/5102fb97d7f57c998173cd5fabb60e9e.png",
-    "prdAlt": "The Collector No.26, GG Ham",
-    "prdName": "The Collector No.26",
-    "prdKor": "지지함",
-    "prdArtist": "(GG Ham)",
-    "prdPrice": "800,000원",
-    "prdUrl": "/product/the-collector-no26/511/category/53/display/1/"
-  },
-  {
-    "prdImg": "//ecimg.cafe24img.com/pg715b26588354090/col2030/web/product/big/20240401/7169ed6ff41afa861aa4536a4220a787.png",
-    "prdAlt": "The Collector No.25, GG Ham",
-    "prdName": "The Collector No.25",
-    "prdKor": "지지함",
-    "prdArtist": "(GG Ham)",
-    "prdPrice": "800,000원",
-    "prdUrl": "/product/the-collector-no25/510/category/53/display/1/"
-  },
-  {
-    "prdImg": "//ecimg.cafe24img.com/pg715b26588354090/col2030/web/product/big/20240401/c017eb95dc546737c5596c0e4745a961.png",
-    "prdAlt": "The Collector No.24, GG Ham",
-    "prdName": "The Collector No.24",
-    "prdKor": "지지함",
-    "prdArtist": "(GG Ham)",
-    "prdPrice": "800,000원",
-    "prdUrl": "/product/the-collector-no24/509/category/53/display/1/"
-  },
-  {
-    "prdImg": "//ecimg.cafe24img.com/pg715b26588354090/col2030/web/product/big/20240401/6435aa58d1485e7c3ec84a3dd98e2739.png",
-    "prdAlt": "The Collector No.23, GG Ham",
-    "prdName": "The Collector No.23",
-    "prdKor": "지지함",
-    "prdArtist": "(GG Ham)",
-    "prdPrice": "800,000원",
-    "prdUrl": "/product/the-collector-no23/508/category/53/display/1/"
   }
 ]

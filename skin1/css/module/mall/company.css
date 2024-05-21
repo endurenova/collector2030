@@ -1,7 +1,26 @@
 .about_contents {
   margin-top: 55px;
 }
+.film_box {
+  width: 100vw;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 
+  z-index: 0;
+}
+.film_bg {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-size: contain;
+  background-position: center;
+  background-image: url(/SkinImg/img/film.png);
+  opacity: 0.2;
+  z-index: 0;
+}
 /* 컬렉터 소개 */
 .about_contents {
   font-family: 'Noto Sans KR';
@@ -40,6 +59,14 @@
   display: flex;
   justify-content: center;
   width: 50%;
+  max-height: 75%;
+}
+.about_contents .about_collector > .about_box > .img_box > img {
+  width: 80%;
+  border-radius: 30px 30px;
+  box-shadow: 3px 3px 7px 2px var(--grayScale-N1-op);
+  -webkit-box-shadow: 3px 3px 7px 2px var(--grayScale-N1-op);
+  -moz-box-shadow: 3px 3px 7px 2px var(--grayScale-N1-op);
 }
 .about_contents .about_collector > .about_box > .txt_box {
   width: 50%;

@@ -1453,6 +1453,9 @@ ul.prdList.grid4.list_gallery > li:hover .icon__box {
   .main_prd__box .main_prd__list > li:nth-last-child(-n + 3) {
     margin-bottom: 0%;
   }
+  .main_prd__box .main_prd__list > li:last-child {
+    margin-right: 0 !important;
+  }
   /* 컬렉터 2030 쇼룸 */
   .show-room__info img {
     width: clamp(170px, 16.602vw, 256px);

@@ -2878,8 +2878,12 @@ div.ec-base-help ul {
   .about_contents .about_collector > .about_box > .img_box {
     width: 100% !important;
   }
+  .about_contents .about_collector > .about_box > .img_box > img {
+    width: 100% !important;
+  }
   .about_contents .about_collector > .about_box > .txt_box {
     width: 100% !important;
+    margin: 3%;
   }
   /* .about_contents .about_collector > .about_box > .txt_box > .about-company-name {
     font-size: clamp(30px, 3.947vw, 36px) !important;
