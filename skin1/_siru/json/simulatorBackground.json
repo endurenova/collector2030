@@ -5,86 +5,86 @@
       "space": "거실 1",
       "top": "30%",
       "left": "50%",
-      "sizeRate": 0.085
+      "sizeRate": 0.1
     },
     {
       "url": "/SkinImg/img/simulate/0-simulate_bg-thumbnail-1.jpg",
       "space": "거실 2",
       "top": "30%",
       "left": "50%",
-      "sizeRate": 0.08
+      "sizeRate": 0.1
     },
     {
       "url": "/SkinImg/img/simulate/0-simulate_bg-thumbnail-2.jpg",
       "space": "거실 3",
       "top": "33%",
       "left": "40%",
-      "sizeRate": 0.085
+      "sizeRate": 0.1
     },
     {
       "url": "/SkinImg/img/simulate/0-simulate_bg-thumbnail-3.jpg",
       "space": "침실",
       "top": "30%",
       "left": "50%",
-      "sizeRate": 0.075
+      "sizeRate": 0.09
     },
     {
       "url": "/SkinImg/img/simulate/0-simulate_bg-thumbnail-4.jpg",
       "space": "다이닝룸",
       "top": "37%",
       "left": "30%",
-      "sizeRate": 0.09
+      "sizeRate": 0.11
     },
     {
       "url": "/SkinImg/img/simulate/0-simulate_bg-thumbnail-5.jpg",
       "space": "방",
       "top": "25%",
       "left": "35%",
-      "sizeRate": 0.075
+      "sizeRate": 0.1
     },
     {
       "url": "/SkinImg/img/simulate/0-simulate_bg-thumbnail-6.jpg",
       "space": "복도",
       "top": "35%",
       "left": "60%",
-      "sizeRate": 0.07
+      "sizeRate": 0.1
     }
   ],
   [
     {
       "url": "/SkinImg/img/simulate/1-simulate_bg-thumbnail-0.jpg",
       "space": "방 1",
-      "top": "25%",
-      "left": "60%",
-      "sizeRate": 0.085
+      "top": "20%",
+      "left": "55%",
+      "sizeRate": 0.11
     },
     {
       "url": "/SkinImg/img/simulate/1-simulate_bg-thumbnail-1.jpg",
       "space": "방 2",
-      "top": "25%",
+      "top": "30%",
       "left": "51.5%",
-      "sizeRate": 0.075
+      "sizeRate": 0.1
     },
     {
       "url": "/SkinImg/img/simulate/1-simulate_bg-thumbnail-2.jpg",
       "space": "거실 1",
       "top": "30%",
       "left": "35%",
-      "sizeRate": 0.075
+      "sizeRate": 0.1
     },
     {
       "url": "/SkinImg/img/simulate/1-simulate_bg-thumbnail-3.jpg",
       "space": "거실 2",
       "top": "30%",
       "left": "50%",
-      "sizeRate": 0.07
+      "sizeRate": 0.09
     },
     {
       "url": "/SkinImg/img/simulate/1-simulate_bg-thumbnail-4.jpg",
       "space": "다이닝룸",
       "top": "28%",
       "left": "49%",
-      "sizeRate": 0.09
+      "sizeRate": 0.11
     }
   ],
   [
@@ -93,21 +93,21 @@
       "space": "거실",
       "top": "25%",
       "left": "50%",
-      "sizeRate": 0.08
+      "sizeRate": 0.11
     },
     {
       "url": "/SkinImg/img/simulate/2-simulate_bg-thumbnail-1.jpg",
       "space": "방",
       "top": "28%",
       "left": "40%",
-      "sizeRate": 0.09
+      "sizeRate": 0.11
     },
     {
       "url": "/SkinImg/img/simulate/2-simulate_bg-thumbnail-2.jpg",
       "space": "다이닝룸",
       "top": "25%",
       "left": "50%",
-      "sizeRate": 0.095
+      "sizeRate": 0.12
     }
   ],
   [
@@ -116,21 +116,21 @@
       "space": "거실 1",
       "top": "30%",
       "left": "50%",
-      "sizeRate": 0.075
+      "sizeRate": 0.1
     },
     {
       "url": "/SkinImg/img/simulate/3-simulate_bg-thumbnail-1.jpg",
       "space": "거실 2",
       "top": "38%",
       "left": "24%",
-      "sizeRate": 0.06
+      "sizeRate": 0.085
     },
     {
       "url": "/SkinImg/img/simulate/3-simulate_bg-thumbnail-2.jpg",
       "space": "거실 3",
       "top": "30%",
       "left": "35%",
-      "sizeRate": 0.07
+      "sizeRate": 0.09
     }
   ]
 ]
