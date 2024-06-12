@@ -1,5 +1,23 @@
 [
   {
+    "prdImg": "//ecimg.cafe24img.com/pg715b26588354090/col2030/web/product/big/20240612/bba44e27bb8cd32942241ee36359693c.jpg",
+    "prdAlt": "BloodyApple Flight (G-Bros Overlay Edition), Collector 2030",
+    "prdName": "BloodyApple Flight (G-Bros Overlay Edition)",
+    "prdKor": "컬렉터 2030",
+    "prdArtist": "(Collector 2030)",
+    "prdPrice": "4,000,000원",
+    "prdUrl": "/product/bloodyapple-flight-g-bros-overlay-edition/528/category/53/display/1/"
+  },
+  {
+    "prdImg": "//ecimg.cafe24img.com/pg715b26588354090/col2030/web/product/big/20240612/fa17d7c553bbecaf4b66e1cc8d61fb6d.jpg",
+    "prdAlt": "ClearSky Flight (G-Bros Overlay Edition), Collector 2030",
+    "prdName": "ClearSky Flight (G-Bros Overlay Edition)",
+    "prdKor": "컬렉터 2030",
+    "prdArtist": "(Collector 2030)",
+    "prdPrice": "4,000,000원",
+    "prdUrl": "/product/clearsky-flight-g-bros-overlay-edition/527/category/53/display/1/"
+  },
+  {
     "prdImg": "//ecimg.cafe24img.com/pg715b26588354090/col2030/web/product/big/20240521/4edc8b3691b4840c807828c4d603820b.jpg",
     "prdAlt": "Pumpkin Flight (G-Bros Flight Edition), Collector 2030",
     "prdName": "Pumpkin Flight (G-Bros Flight Edition)",
@@ -88,23 +106,5 @@
     "prdArtist": "(Collector 2030)",
     "prdPrice": "800,000원",
     "prdUrl": "/product/the-collector-no27/512/category/53/display/1/"
-  },
-  {
-    "prdImg": "//ecimg.cafe24img.com/pg715b26588354090/col2030/web/product/big/20240401/5102fb97d7f57c998173cd5fabb60e9e.png",
-    "prdAlt": "The Collector No.26, Collector 2030",
-    "prdName": "The Collector No.26",
-    "prdKor": "컬렉터 2030",
-    "prdArtist": "(Collector 2030)",
-    "prdPrice": "800,000원",
-    "prdUrl": "/product/the-collector-no26/511/category/53/display/1/"
-  },
-  {
-    "prdImg": "//ecimg.cafe24img.com/pg715b26588354090/col2030/web/product/big/20240401/7169ed6ff41afa861aa4536a4220a787.png",
-    "prdAlt": "The Collector No.25, Collector 2030",
-    "prdName": "The Collector No.25",
-    "prdKor": "컬렉터 2030",
-    "prdArtist": "(Collector 2030)",
-    "prdPrice": "800,000원",
-    "prdUrl": "/product/the-collector-no25/510/category/53/display/1/"
   }
 ]
