@@ -1065,7 +1065,12 @@ ul.prdList.grid4.list_gallery > li:hover .icon__box {
 .main_product_category .tabcontent.active {
   display: block;
 }
+.tabcontent-list {
+  display: flex;
+  flex-flow: row;
+}
 .main_product_category .content_list {
+  /* Collector Edition list */
   width: 74%;
 }
 
