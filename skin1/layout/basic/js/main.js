@@ -70,10 +70,10 @@ jQuery(document).ready(function () {
       },
     },
   });
-  const listMain_1 = document.querySelector('.product_listmain_1-swiper > .swiper-wrapper').children;
-  Array.from(listMain_1).forEach(e => {
-    e.classList.add('swiper-slide');
-  });
+  // const listMain_1 = document.querySelector('.product_listmain_1-swiper > .swiper-wrapper').children;
+  // Array.from(listMain_1).forEach(e => {
+  //   e.classList.add('swiper-slide');
+  // });
   var newArrivals = new Swiper('.product_listmain_1-swiper', {
     slidesPerView: 4,
     breakpoints: {

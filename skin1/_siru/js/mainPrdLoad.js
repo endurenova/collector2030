@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   document.querySelector('.show-room__info').innerHTML = `
     <img src="/SkinImg/img/logo/collector2030_logo_white.svg" alt="{$mall_name}" />
-    <h1>청담동 컬렉터 2030 갤러리에서 작품을 만나보세요!</h1>
+    <h1>G-Brothers Coming Soon!</h1>
   `;
   document.querySelector('.main_product_list').insertAdjacentHTML(
     'afterend',

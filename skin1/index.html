@@ -36,7 +36,7 @@
             <ul class="swiper-wrapper prdList grid4 list_gallery" data-ez-role="layout ez-discount-tag">
                 <!--@import(/product/list_product.html)-->
             </ul>
-            <script>
+            <!-- <script>
                 const carousel = document.querySelector('.prdList.grid4.list_gallery');
                 let isDown = false;
                 let startX;
@@ -66,7 +66,7 @@
                     isDown = false;
                     carousel.style.cursor = 'grab';
                 });
-            </script>
+            </script> -->
         </div>
         <div module="product_listmore_1" class="more">
             <a href="#none" onclick="{$more_action}" class="btnMore">More +</a>
@@ -198,7 +198,6 @@
     </ez-prop>
     <div class="main_product_inner">
         <div class="main_title ez-align-left" data-ez-role="ez-align" data-ez-align="left">
-            <!-- 에디터가 직접 선정한 트랜드픽 타이틀 수정하는곳 -->
             <div class="main_title_txt01" data-ez-role="title">Collector Edition</div>
             <!-- <div class="main_title_txt02" data-ez-role="subtitle"></div> -->
         </div>
@@ -308,14 +307,14 @@
     <!-- 컬렉터 2030 쇼룸 -->
     <div class="show-room__box">
         <div class="show-room__info"></div>
-        <div style="padding: 42.86% 0 0 0; position: relative">
+        <div style="padding: 42.86% 0 0 0; width: 100%; height: fit-content; position: relative">
             <iframe
                 id="showRoom"
-                src="https://player.vimeo.com/video/906632271?badge=0&amp;background=1&amp;muted=1&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                src="https://player.vimeo.com/video/957533211?badge=0&amp;background=1&amp;muted=1&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
                 frameborder="0"
                 allow="autoplay; fullscreen; picture-in-picture"
-                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%"
-                title="collector2030_m"
+                style="position: absolute; top: 0%; left: 0; width: 100%; height: 100%"
+                title="G-Bros"
             ></iframe>
         </div>
         <script src="https://player.vimeo.com/api/player.js"></script>
@@ -397,7 +396,7 @@
     <!-- //main_map_banner -->
 </section>
 <div data-ez-module="user-defined/1" data-ez-name="USER DEFINED" data-ez-type="plain" data-ez="module-1x780iw-1">
-    <script>
+    <!-- <script>
         function dragSlide(carousel) {
             let isDown = false;
             let startX;
@@ -429,7 +428,7 @@
             });
         }
         dragSlide(document.querySelector('.prdList.grid4.list_gallery'));
-    </script>
+    </script> -->
 </div>
 <!--@define(cmc_log)-->
 <!--#ez="1/2"-->
