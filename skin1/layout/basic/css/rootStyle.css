@@ -113,27 +113,27 @@
 }
 @font-face {
   font-family: 'Montserrat';
-  src: url('../font/Montserrat-VariableFont_wght.ttf');
+  src: url('/layout/basic/font/Montserrat-VariableFont_wght.ttf');
 }
 @font-face {
   font-family: 'MinervaMorden-Black';
-  src: url('../font/minervamodern-black.ttf');
+  src: url('/layout/basic/font/minervamodern-black.ttf');
 }
 @font-face {
   font-family: 'MinervaMorden-BlackItalic';
-  src: url('../font/minervamodern-blackitalic.ttf');
+  src: url('/layout/basic/font/minervamodern-blackitalic.ttf');
 }
 @font-face {
   font-family: 'MinervaMorden-Bold';
-  src: url('../font/minervamodern-bold.ttf');
+  src: url('/layout/basic/font/minervamodern-bold.ttf');
 }
 @font-face {
   font-family: 'MinervaMorden-BoldItalic';
-  src: url('../font/minervamodern-bolditalic.ttf');
+  src: url('/layout/basic/font/minervamodern-bolditalic.ttf');
 }
 @font-face {
   font-family: 'MinervaMorden-Italic';
-  src: url('../font/minervamodern-italic.ttf');
+  src: url('/layout/basic/font/minervamodern-italic.ttf');
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
