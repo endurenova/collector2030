@@ -1,11 +1,11 @@
 document.addEventListener('DOMContentLoaded', () => {
   const checkCollectorStoryRead = document.querySelector('.path li strong');
   try {
-    if (checkCollectorStoryRead.textContent == '컬렉터 스토리') {
+    if (checkCollectorStoryRead.textContent == '스토리') {
       const contentsBox = document.querySelector('.fr-view-article');
-
       const imgList = contentsBox.querySelectorAll('.story-slide-item');
       let itemList = '';
+      document.querySelector('.ec-base-table.typeWrite > .detail ').classList.add('reduce');
       imgList.forEach((e, i) => {
         itemList += `
             <li class='swiper-slide'style="list-style: none !important;">
@@ -25,14 +25,14 @@ document.addEventListener('DOMContentLoaded', () => {
           </div>
         </div>
         `;
-      document.querySelector('.story-slide__info').addEventListener('click', event => {
-        event.preventDefault();
-        event.target.classList.add('hidden');
-      });
+
       jQuery(document).ready(function () {
         var swiper01 = new Swiper('.story-slide__box', {
           slidesPerView: 1,
           spaceBetween: 10,
+          slidesPerView: 'auto',
+          observer: true,
+          observeParents: true,
         });
       });
     }

@@ -1,29 +1,8 @@
-.about_contents {
-  margin-top: 55px;
-}
-.film_box {
-  width: 100vw;
-  height: 100%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-
-  z-index: 0;
-}
-.film_bg {
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  background-size: contain;
-  background-position: center;
-  background-image: url(/SkinImg/img/company/ufo_pattern.png);
-  opacity: 0.2;
-  z-index: 0;
-}
 /* 컬렉터 소개 */
 .about_contents {
+  margin-top: 3%;
   font-family: 'Noto Sans KR';
+  text-shadow: 0 0px 3px #fff;
 }
 .about_contents .about_collector {
   display: flex;
@@ -31,7 +10,6 @@
 }
 .about_contents .about_collector > .about_title {
   text-align: center;
-  margin-bottom: 55px;
 }
 .about_contents .about_collector > .about_title > span {
   font-size: 20px;
@@ -73,7 +51,7 @@
 }
 .about_contents .about_collector > .about_box.content {
   padding: 3% 0;
-  background-color: rgba(255, 255, 255, 1);
+  background-color: rgba(255, 255, 255, 0.5);
   border-radius: 30px 30px;
   box-shadow: 1px 1px 7px 2px var(--grayScale-N1-op);
   -webkit-box-shadow: 1px 1px 7px 2px var(--grayScale-N1-op);
@@ -118,6 +96,7 @@
   display: flex;
   flex-flow: column;
   position: relative;
+  margin-top: 120px;
 }
 /* .about_contents .about_cs::before {
   content: '';
@@ -197,6 +176,59 @@
   padding: 0;
 }
 
+.film_box {
+  width: 100vw;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-size: contain;
+  background-position: center;
+  z-index: 0;
+}
+.film_bg {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-size: contain;
+  background-position: center;
+  background-image: url(/SkinImg/img/company/ufo_pattern.png);
+  opacity: 0.1;
+  z-index: 0;
+}
+
+.film_box .parallax-element {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform: translateZ(0);
+}
+.film_box .gister-UFO {
+  top: 100px;
+  right: 100%;
+  width: 20%;
+  height: auto;
+  z-index: 4;
+  border-radius: 50%;
+}
+.film_box .gister-UFO > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.film_box .gistar-UFO {
+  top: 100px;
+  left: 100%;
+  width: 15%;
+  height: auto;
+  z-index: 3;
+}
+.film_box .gistar-UFO > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
 /********************* Mobile / Tablet *********************/
 @media (max-width: 1024px) {
   .about_contents .about_collector > .about_title > span {

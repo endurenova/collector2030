@@ -74,6 +74,12 @@
 <section class="section">
     <div class="film_box">
         <div class="film_bg"></div>
+        <div class="parallax-element gister-UFO">
+            <img src="/SkinImg/img/IR/gister_UFO.png" alt="지스터 UFO" />
+        </div>
+        <div class="parallax-element gistar-UFO">
+            <img src="/SkinImg/img/IR/gistar_UFO.png" alt="지스타 UFO" />
+        </div>
     </div>
     <div class="about_contents">
         <div class="about_collector">
@@ -110,7 +116,10 @@
                     <h2 class="about-introduce-title">
                         <strong style="color: var(--main-color)">아트토이</strong>
                     </h2>
-                    <p>아트토이 콜렉터들을 위한 제품을 디자인해 제작하고 있으며, 다른 브랜드와 콜라보를 통해 다양성을 추구하고 있습니다.</p>
+                    <p>
+                        온/오프라인을 아우르는 실물 + NFT 패키징 한정판 아트토이 컬렉션을 제작함으로써, NFT는 글로벌 시장에서 거래가 가능하며, 추후 메타버스로의
+                        확장도 구상 중에 있습니다.
+                    </p>
                 </div>
             </div>
             <div class="about_box content">
@@ -146,7 +155,6 @@
                 </div>
             </div>
             <div class="about_cs">
-                <h3 class="about_cs_title">작품 전시 및 콜라보 협업 문의는 얼마든지 오픈 되어 있습니다.</h3>
                 <p class="about_cs_contact">CONTACT</p>
                 <ul class="about_cs_info_box">
                     <li>
@@ -182,6 +190,27 @@
             </div>
         </div>
     </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            let windowWidth = window.innerWidth;
+            let windowHeight = window.innerHeight;
+            let multipleValueX = 0.55;
+            let multipleValueY = 1;
+            if (windowWidth <= windowHeight) {
+                multipleValueX = 0.11;
+                multipleValueY = 1;
+            }
+            window.addEventListener('scroll', function () {
+                const scrolled = window.scrollY; // 윈도우의 스크롤값
+                const gisterUFO = document.querySelector('.gister-UFO');
+                const gistarUFO = document.querySelector('.gistar-UFO');
+                gisterUFO.style.transform = `translate(${scrolled * multipleValueX}px, ${scrolled * multipleValueY}px)`;
+                // circle 왼쪽에서 오른쪽으로 이동
+                gistarUFO.style.transform = `translate(${scrolled * -multipleValueX}px, ${scrolled * multipleValueY}px)`;
+                // square 오른쪽에서 왼쪽으로 이동
+            });
+        });
+    </script>
 </section>
 
 <!--#ez="1/1"-->

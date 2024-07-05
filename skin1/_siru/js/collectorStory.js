@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   const checkCollectorStory = document.querySelector('.path li strong');
   try {
-    if (checkCollectorStory.textContent == '컬렉터 스토리') {
+    if (checkCollectorStory.textContent == '스토리') {
       const collectorStoryList = document.querySelector('.boardList > .xans-board-8 > ul');
       collectorStoryList.classList.add('collector-story__list');
 
