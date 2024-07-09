@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
   let logoTopSize = 0;
   let logoBottomSize = 0;
   let viewBoxH = 0;
+  const wrapAll = document.querySelectorAll('.wrap');
 
   checkDevice = () => {
     if (windowWidth >= windowHeight) {
@@ -20,6 +21,11 @@ document.addEventListener('DOMContentLoaded', () => {
       } else {
         viewBoxH = windowHeight * 0.3;
       }
+      wrapAll.forEach(section => {
+        if (section.classList.contains('column')) {
+          section.classList.remove('column');
+        }
+      });
     } else if (windowWidth < windowHeight) {
       logoTopSize = windowWidth / 3;
       logoBottomSize = windowWidth / 4.74;
@@ -29,6 +35,11 @@ document.addEventListener('DOMContentLoaded', () => {
       } else {
         viewBoxH = windowHeight * 1.2;
       }
+      wrapAll.forEach(section => {
+        if (!section.classList.contains('column')) {
+          section.classList.add('column');
+        }
+      });
     }
   };
 
@@ -66,20 +77,6 @@ document.addEventListener('DOMContentLoaded', () => {
     windowHeight = window.innerHeight;
 
     checkDevice();
-    const wrapAll = document.querySelectorAll('.wrap');
-    if (windowHeight > windowWidth) {
-      wrapAll.forEach(section => {
-        if (!section.classList.contains('column')) {
-          section.classList.add('column');
-        }
-      });
-    } else {
-      wrapAll.forEach(section => {
-        if (section.classList.contains('column')) {
-          section.classList.remove('column');
-        }
-      });
-    }
     logoTop.style.font = `normal normal normal ${logoTopSize}px MinervaMorden-Black`;
     logoBottom.style.font = `normal normal normal ${logoBottomSize}px MinervaMorden-Black`;
   });
