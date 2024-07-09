@@ -75,10 +75,18 @@
     <div class="film_box">
         <div class="film_bg"></div>
         <div class="parallax-element gister-UFO">
-            <img src="/SkinImg/img/IR/gister_UFO.png" alt="지스터 UFO" />
+            <img class="g_f" src="/SkinImg/img/IR/gister_UFO.png" alt="지스터 UFO" /><img
+                class="g_b displayNone"
+                src="/SkinImg/img/IR/gister_UFO_2.png"
+                alt="지스터 UFO"
+            />
         </div>
         <div class="parallax-element gistar-UFO">
-            <img src="/SkinImg/img/IR/gistar_UFO.png" alt="지스타 UFO" />
+            <img class="g_f" src="/SkinImg/img/IR/gistar_UFO.png" alt="지스타 UFO" /><img
+                class="g_b displayNone"
+                src="/SkinImg/img/IR/gistar_UFO_2.png"
+                alt="지스타 UFO"
+            />
         </div>
     </div>
     <div class="about_contents">
@@ -191,23 +199,56 @@
         </div>
     </div>
     <script>
+        let gisterSize = 20;
+        let gistarSize = 15;
+        const UFOFront = document.querySelectorAll('.g_f');
+        const UFOBack = document.querySelectorAll('.g_b');
         document.addEventListener('DOMContentLoaded', () => {
             let windowWidth = window.innerWidth;
             let windowHeight = window.innerHeight;
-            let multipleValueX = 0.55;
+            let multipleValueX = 0.6;
             let multipleValueY = 1;
             if (windowWidth <= windowHeight) {
-                multipleValueX = 0.11;
+                multipleValueX = 0.12;
                 multipleValueY = 1;
             }
+            let lo = 0;
             window.addEventListener('scroll', function () {
                 const scrolled = window.scrollY; // 윈도우의 스크롤값
                 const gisterUFO = document.querySelector('.gister-UFO');
                 const gistarUFO = document.querySelector('.gistar-UFO');
+                if (lo < scrolled) {
+                    gisterSize += 0.1;
+                    gistarSize += 0.1;
+                    UFOFront.forEach(ufo => {
+                        if (ufo.classList.contains('displayNone')) {
+                            ufo.classList.remove('displayNone');
+                        }
+                    });
+                    UFOBack.forEach(ufo2 => {
+                        if (!ufo2.classList.contains('displayNone')) {
+                            ufo2.classList.add('displayNone');
+                        }
+                    });
+                } else if (lo > scrolled) {
+                    gisterSize -= 0.1;
+                    gistarSize -= 0.1;
+                    UFOFront.forEach(ufo => {
+                        if (!ufo.classList.contains('displayNone')) {
+                            ufo.classList.add('displayNone');
+                        }
+                    });
+                    UFOBack.forEach(ufo2 => {
+                        if (ufo2.classList.contains('displayNone')) {
+                            ufo2.classList.remove('displayNone');
+                        }
+                    });
+                }
                 gisterUFO.style.transform = `translate(${scrolled * multipleValueX}px, ${scrolled * multipleValueY}px)`;
-                // circle 왼쪽에서 오른쪽으로 이동
                 gistarUFO.style.transform = `translate(${scrolled * -multipleValueX}px, ${scrolled * multipleValueY}px)`;
-                // square 오른쪽에서 왼쪽으로 이동
+                gisterUFO.style.width = `${gisterSize}%`;
+                gistarUFO.style.width = `${gistarSize}%`;
+                lo = scrolled;
             });
         });
     </script>

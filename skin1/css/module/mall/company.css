@@ -212,11 +212,6 @@
   z-index: 4;
   border-radius: 50%;
 }
-.film_box .gister-UFO > img {
-  display: block;
-  width: 100%;
-  height: 100%;
-}
 .film_box .gistar-UFO {
   top: 100px;
   left: 100%;
@@ -224,11 +219,20 @@
   height: auto;
   z-index: 3;
 }
+.film_box .gister-UFO > img,
 .film_box .gistar-UFO > img {
-  display: block;
   width: 100%;
   height: 100%;
 }
+.film_box .gister-UFO > img,
+.film_box .gistar-UFO > img {
+  display: block;
+}
+.film_box .gister-UFO > img.displayNone,
+.film_box .gistar-UFO > img.displayNone {
+  display: none;
+}
+
 /********************* Mobile / Tablet *********************/
 @media (max-width: 1024px) {
   .about_contents .about_collector > .about_title > span {
