@@ -203,8 +203,9 @@ body section.intro-section .parallax-element.title svg.logo {
 body section.intro-section .sub-title {
   display: block;
   position: absolute;
-  bottom: 7%;
+  bottom: 50%;
   right: 5%;
+  transform: translateY(-100%);
   font-size: var(--fontSize-contentTitle);
   opacity: 0;
   font-family: "Spoqa-Bold";
@@ -311,12 +312,30 @@ body section.BM-section > .wrap {
 }
 body section.BM-section > .wrap > h1 {
   display: flex;
+  position: relative;
   align-items: center;
   justify-content: center;
-  font-size: var(--fontSize-title);
+  font-size: var(--fontSize-subject);
   height: 15%;
   font-family: "Pretendard-Bold";
   text-align: center;
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-underline-offset: calc(0.3 * var(--fontSize-subject));
+}
+body section.BM-section > .wrap > h1::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: calc(1.4 * var(--fontSize-subject));
+  height: calc(1.4 * var(--fontSize-subject));
+  top: calc(50% + 0.05 * var(--fontSize-subject));
+  left: calc(-1.1 * var(--fontSize-subject));
+  transform: translate(-50%, -50%);
+  background-image: url(/SkinImg/img/hex.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 body section.BM-section > .wrap > ul {
   display: flex;
@@ -376,24 +395,8 @@ body section.BM-section > .wrap > ul > li a.BM-link::before {
   rotate: 180deg;
   transition: 0.3s;
 }
-body section.BM-section > .wrap > ul > li a.BM-link:hover {
-  background-color: #000;
-}
 body section.BM-section > .wrap > ul > li a.BM-link:hover::before {
-  background-color: #fff;
-}
-body section.BM-section::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: #333;
-  opacity: 0.05;
-}
-body.column section {
-  height: 100vh;
+  scale: 1.1;
 }
 body.column section.intro-content > .wrap {
   flex-flow: column;

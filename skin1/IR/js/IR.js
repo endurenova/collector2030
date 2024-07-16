@@ -1,4 +1,13 @@
+window.addEventListener('beforeunload', function () {
+  window.scrollTo(0, 0);
+});
+window.addEventListener('load', function () {
+  window.scrollTo(0, 0);
+});
 document.addEventListener('DOMContentLoaded', () => {
+  if (document.querySelector('.intro-section')) {
+    document.body.style.overflowY = 'hidden';
+  }
   let windowWidth = window.innerWidth;
   let windowHeight = window.innerHeight;
 
@@ -87,4 +96,8 @@ document.addEventListener('DOMContentLoaded', () => {
     gistarUFO.style.transform = `translate(${scrolled * -0.5}px, ${scrolled * 0.5}px)`;
     // square 오른쪽에서 왼쪽으로 이동z
   });
+
+  setTimeout(() => {
+    document.body.style.overflowY = 'auto';
+  }, 3000);
 });
