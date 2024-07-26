@@ -423,7 +423,7 @@ body.column section.BM-section .wrap > ul > li {
   height: 100%;
 }
 
-#header {
+#header-IR {
   position: fixed;
   left: 0;
   top: 0;
@@ -433,20 +433,20 @@ body.column section.BM-section .wrap > ul > li {
   height: 7vh;
   transition: 0.3s;
 }
-#header.hidden {
+#header-IR.hidden {
   transform: translateY(-6vh);
 }
-#header #gnb {
+#header-IR #gnb {
   display: flex;
   justify-content: space-around;
   align-items: center;
   height: 100%;
   padding: 0 1%;
 }
-#header #gnb li {
+#header-IR #gnb li {
   padding: 0 1%;
 }
-#header #gnb li a {
+#header-IR #gnb li a {
   display: flex;
   font-family: "Spoqa-Bold";
   color: #fff;
