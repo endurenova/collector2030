@@ -1,3 +1,4 @@
+@ -1,219 +1,216 @@
 <div
   class="main_top_banner ez-align-left"
   data-ez-module="top-banner"
@@ -39,9 +40,7 @@
     <div class="toparea display_pc_only">
       <div class="toparea_shoppinginfo">
         <div module="Layout_multishopList">
-          <button type="button" class="toggle">
-            {$current_language} <i aria-hidden="true" class="icon icoArrowBottom"></i>
-          </button>
+          <button type="button" class="toggle">{$current_language} <i aria-hidden="true" class="icon icoArrowBottom"></i></button>
           <ul module="Layout_multishopListitem">
             <li class="{$selected_class}">
               <a href="//{$shop_domain}/">{$locale_language}</a>
@@ -60,16 +59,15 @@
               <a href="/myshop/deposits/historyList.html">{$deposit_name} <strong>{$deposit}</strong></a>
             </li>
             <li class="{$use_coupon_cnt|display}">
-              <a href="/myshop/coupon/coupon.html">Coupon <strong>{$coupon_cnt}</strong></a>
+              <a href="/myshop/coupon/coupon.html">쿠폰 <strong>{$coupon_cnt}</strong></a>
             </li>
             <li class="{$use_interest_prd|display}">
-              <a href="/myshop/wish_list.html">Wish List <strong>{$interest_prd_cnt}</strong></a>
+              <a href="/myshop/wish_list.html">관심상품 <strong>{$interest_prd_cnt}</strong></a>
             </li>
             <li class="{$use_like_product_cnt|display}">{$like_prd_tag}</li>
             <li class="{$use_basket_cnt|display}">
               <a href="/order/basket.html"
-                >Basket
-                <strong>{$basket_cnt}<span class="{$use_basket_price|display}">({$basket_price})</span></strong></a
+                >장바구니 <strong>{$basket_cnt}<span class="{$use_basket_price|display}">({$basket_price})</span></strong></a
               >
             </li>
           </ul>
@@ -78,12 +76,13 @@
       <!-- //toparea_shoppinginfo -->
 
       <div class="toparea_state" data-ez-group="top-util-menu" data-ez-role="list">
-        <a data-ez-item="mypage" module="Layout_stateLogon" href="/myshop/index.html">My page</a>
-        <a data-ez-item="order" href="/myshop/order/list.html">Order Info</a>
-        <a data-ez-item="modify" module="Layout_stateLogon" href="/member/modify.html">Modify</a>
-        <a data-ez-item="login" module="Layout_statelogoff" href="/member/login.html">Login</a>
-        <a data-ez-item="join" module="Layout_statelogoff" href="/member/agreement.html">Join</a>
-        <a data-ez-item="logout" module="Layout_stateLogon" href="{$action_logout}">Logout</a>
+        <a data-ez-item="mypage" module="Layout_stateLogon" href="/myshop/index.html">마이페이지</a>
+        <a data-ez-item="order" href="/myshop/order/list.html">주문조회</a>
+        <a data-ez-item="login" module="Layout_statelogoff" href="/member/login.html">로그인</a>
+        <a data-ez-item="join" module="Layout_statelogoff" href="/member/agreement.html">회원가입</a>
+        <!-- <a data-ez-item="modify" module="Layout_stateLogon" href="/member/modify.html">내정보수정</a> -->
+        <a data-ez-item="logout" module="Layout_stateLogon" href="{$action_logout}">로그아웃</a>
+
         <!-- <a data-ez-item="recent" href="/product/recent_view_product.html">최근본상품</a> -->
         <!-- <div class="toparea_state_board">
                     <a data-ez-item="board" href="#none">고객센터<i aria-hidden="true" class="icon icoArrowBottom"></i></a>
@@ -102,9 +101,7 @@
       <!-- <div class="top_logo" module="Layout_LogoTop"><a href="/"><img src="{$logo}" alt="{$mall_name}" loading="lazy" ez-prevent="img"></a></div> -->
 
       <div class="top_logo" module="Layout_LogoTop">
-        <a href="/"
-          ><img src="/SkinImg/img/logo/collector2030_logo_black.svg" alt="{$mall_name}" loading="lazy" ez-prevent="img"
-        /></a>
+        <a href="/"><img src="/SkinImg/img/logo/collector2030_logo_black.svg" alt="{$mall_name}" loading="lazy" ez-prevent="img" /></a>
       </div>
       <div data-ez-module="menu-main/1" data-ez-mode="manual">
         <div class="xans-element- xans-layout xans-layout-category top_category">
@@ -112,49 +109,47 @@
             <li class="header-menu">
               <a class="main-cate" href="javascript:void(0);">Collector 2030</a>
               <ul class="sub_cate01">
-                <li><a href="/shopinfo/company.html">About Collector</a></li>
+                <li><a href="/shopinfo/company.html">컬렉터 소개</a></li>
               </ul>
             </li>
             <li class="header-menu">
               <a class="main-cate" href="javascript:void(0);">Artworks</a>
               <ul class="sub_cate01">
-                <li><a href="/category/%EC%A0%84%EC%B2%B4/53/">All</a></li>
+                <li><a href="/category/%EC%A0%84%EC%B2%B4/53/">전체</a></li>
                 <li>
-                  <a href="/category/%ED%94%84%EB%A6%AC%EB%AF%B8%EC%97%84-%EA%B3%A0%EA%B0%80-%EC%9E%91%ED%90%88/58/"
-                    >Premium Artworks</a
-                  >
+                  <a href="/category/%ED%94%84%EB%A6%AC%EB%AF%B8%EC%97%84-%EA%B3%A0%EA%B0%80-%EC%9E%91%ED%90%88/58/">프리미엄 에디션</a>
                 </li>
+                <!-- <li>
+                  <a href="/category/%EC%BB%AC%EB%A0%89%ED%84%B0-%EC%97%90%EB%94%94%EC%85%98/32/">컬렉터 에디션</a>
+                </li> -->
                 <li>
-                  <a href="/category/%EC%BB%AC%EB%A0%89%ED%84%B0-%EC%97%90%EB%94%94%EC%85%98/32/">Hand Painting</a>
+                  <a href="/category/%ED%94%84%EB%A6%B0%ED%8A%B8-%EC%97%90%EB%94%94%EC%85%98/33/">프린트 에디션</a>
                 </li>
-                <li>
-                  <a href="/category/%ED%94%84%EB%A6%B0%ED%8A%B8-%EC%97%90%EB%94%94%EC%85%98/33/">Print Edition</a>
-                </li>
-                <li><a href="/category/%EC%98%A4%EB%A6%AC%EC%A7%80%EB%84%90/44/">Original</a></li>
-                <li><a href="/category/%EC%A1%B0%ED%98%95%EB%AC%BC/45/">Sculpture</a></li>
+                <li><a href="/category/%EC%98%A4%EB%A6%AC%EC%A7%80%EB%84%90/44/">오리지널</a></li>
+                <!-- <li><a href="/category/%EC%A1%B0%ED%98%95%EB%AC%BC/45/">조형물</a></li> -->
               </ul>
             </li>
             <li class="header-menu">
               <a class="main-cate" href="javascript:void(0);">Artists</a>
               <ul class="sub_cate01">
-                <li><a href="/board/%EC%9E%91%EA%B0%80-%EC%86%8C%EA%B0%9C/12/">Introduce</a></li>
-                <li><a href="/board/%EC%9E%91%EA%B0%80-%EA%B3%B5%EB%AA%A8/1002/">Recruitment</a></li>
+                <li><a href="/board/%EC%9E%91%EA%B0%80-%EC%86%8C%EA%B0%9C/12/">작가 소개</a></li>
+                <li><a href="/board/%EC%9E%91%EA%B0%80-%EA%B3%B5%EB%AA%A8/1002/">작가 공모</a></li>
               </ul>
             </li>
             <li class="header-menu">
               <a class="main-cate" href="javascript:void(0);">Magazine</a>
               <ul class="sub_cate01">
-                <li><a href="/board/%EC%BB%AC%EB%A0%89%ED%84%B0-%EC%8A%A4%ED%86%A0%EB%A6%AC/8/">Collector Story</a></li>
-                <li><a href="/board/%EC%A0%84%EC%8B%9C-%EC%86%8C%EC%8B%9D/13/">Exhibition</a></li>
-                <li><a href="/board/%EB%AF%B8%EB%94%94%EC%96%B4/14/">Media</a></li>
+                <li><a href="/board/%EC%BB%AC%EB%A0%89%ED%84%B0-%EC%8A%A4%ED%86%A0%EB%A6%AC/8/">컬렉터 스토리</a></li>
+                <li><a href="/board/%EC%A0%84%EC%8B%9C-%EC%86%8C%EC%8B%9D/13/">전시 소식</a></li>
+                <li><a href="/board/%EB%AF%B8%EB%94%94%EC%96%B4/14/">미디어</a></li>
               </ul>
             </li>
             <li class="header-menu">
               <a class="main-cate" href="javascript:void(0);">Community</a>
               <ul class="sub_cate01">
-                <li><a href="/board/%EA%B3%B5%EC%A7%80%EC%82%AC%ED%95%AD/1/">Notice</a></li>
-                <li><a href="/board/%EB%89%B4%EC%8A%A4%EC%9D%B4%EB%B2%A4%ED%8A%B8/15/">News&#47;Event</a></li>
-                <li><a href="/board/%EB%A6%AC%EB%B7%B0/4/">Review</a></li>
+                <li><a href="/board/%EA%B3%B5%EC%A7%80%EC%82%AC%ED%95%AD/1/">공지사항</a></li>
+                <li><a href="/board/%EB%89%B4%EC%8A%A4%EC%9D%B4%EB%B2%A4%ED%8A%B8/15/">뉴스/이벤트</a></li>
+                <li><a href="/board/%EB%A6%AC%EB%B7%B0/4/">리뷰</a></li>
                 <li><a href="/board/FAQ/3/">FAQ</a></li>
               </ul>
             </li>
@@ -168,8 +163,7 @@
         </li>
         <li>
           <a href="/order/basket.html" module="Layout_orderBasketcount"
-            ><!--@import(/svg/icon-cart.html)--><span
-              class="count {$basket_count_display|display} {$basket_count_display_class}"
+            ><!--@import(/svg/icon-cart.html)--><span class="count {$basket_count_display|display} {$basket_count_display_class}"
               ><span class="{$basket_count_class}">{$basket_count}</span></span
             ></a
           >

@@ -1,0 +1,204 @@
+<div
+  class="main_top_banner ez-align-left"
+  data-ez-module="top-banner"
+  data-ez-align="left"
+  data-ez-role="style.color"
+  data-ez-display="hidden"
+  data-ez="contents-1h9g171-1"
+  style="display: none"
+>
+  <div class="top_banner_box_inner">
+    <div class="top_banner_text">
+      <!-- 최상단 배너 수정하는곳 -->
+      <a data-ez-role="a" href="#" data-href="#" target="_self">첫 쇼핑을 지원하는 3,000원 할인 회원가입 쿠폰</a>
+    </div>
+    <!-- //top_banner_text -->
+
+    <div class="top_banner_close" data-ez-role="close">
+      <input type="checkbox" name="chkbox" id="top_banner_box_cloase" value="1" data-ez-role="disable-term" /><label
+        for="top_banner_box_cloase"
+        data-ez-role="disable-text"
+        >오늘 하루 보지 않기</label
+      >
+      <i aria-hidden="true" class="icon icoClose">닫기</i>
+    </div>
+    <!-- //top_banner_close -->
+  </div>
+  <!-- //top_banner_box_inner -->
+</div>
+<header id="header" class="layout01" data-ez-layout="layout01" data-ez="contents-0x2iz04-1" style="margin-bottom: 0px">
+  <ez-prop data-version="1.0.0">
+    <ez-var data-prop="layout" data-namespace="ez.layout.header.layout" data-type="array">
+      <ez-item data-id="layout01" data-name="1단 기본형"></ez-item>
+      <ez-item data-id="layout04" data-name="1단 로고 우측형"></ez-item>
+      <ez-item data-id="layout03" data-name="2단 좌측형"></ez-item>
+      <ez-item data-id="layout02" data-name="2단 중앙형"></ez-item>
+    </ez-var>
+  </ez-prop>
+  <div class="inner">
+    <div class="toparea display_pc_only">
+      <div class="toparea_shoppinginfo">
+        <ul class="select_link">
+          <li class="select_collcector">
+            <a href="https://collector2030.com/">컬렉터2030</a>
+          </li>
+          <li class="select_gbrothers active">
+            <a href="https://col2030.cafe24.com/shop4">지브라더스</a>
+          </li>
+        </ul>
+        <!-- <div module="Layout_multishopList">
+                    <button type="button" class="toggle">{$current_language} <i aria-hidden="true" class="icon icoArrowBottom"></i></button>
+                    <ul module="Layout_multishopListitem">
+                        <li class="{$selected_class}">
+                            <a href="//{$shop_domain}/">{$locale_language}</a>
+                        </li>
+                        <li class="{$selected_class}">
+                            <a href="//{$shop_domain}/">{$locale_language}</a>
+                        </li>
+                    </ul>
+                </div> -->
+        <div data-ez-group="shopping-info" data-ez-role="list">
+          <ul module="Layout_shoppingInfo">
+            <li class="{$use_mileage|display}">
+              <a href="/myshop/mileage/historyList.html">{$mileage_name} <strong>{$mileage}</strong></a>
+            </li>
+            <li class="{$use_deposit|display}">
+              <a href="/myshop/deposits/historyList.html">{$deposit_name} <strong>{$deposit}</strong></a>
+            </li>
+            <li class="{$use_coupon_cnt|display}">
+              <a href="/myshop/coupon/coupon.html">쿠폰 <strong>{$coupon_cnt}</strong></a>
+            </li>
+            <li class="{$use_interest_prd|display}">
+              <a href="/myshop/wish_list.html">관심상품 <strong>{$interest_prd_cnt}</strong></a>
+            </li>
+            <li class="{$use_like_product_cnt|display}">{$like_prd_tag}</li>
+            <li class="{$use_basket_cnt|display}">
+              <a href="/order/basket.html"
+                >장바구니 <strong>{$basket_cnt}<span class="{$use_basket_price|display}">({$basket_price})</span></strong></a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- //toparea_shoppinginfo -->
+
+      <div class="toparea_state" data-ez-group="top-util-menu" data-ez-role="list">
+        <a data-ez-item="mypage" module="Layout_stateLogon" href="/myshop/index.html">마이페이지</a>
+        <a data-ez-item="order" href="/myshop/order/list.html">주문조회</a>
+        <a data-ez-item="login" module="Layout_statelogoff" href="/member/login.html">로그인</a>
+        <a data-ez-item="join" module="Layout_statelogoff" href="/member/agreement.html">회원가입</a>
+        <!-- <a data-ez-item="modify" module="Layout_stateLogon" href="/member/modify.html">내정보수정</a> -->
+        <a data-ez-item="logout" module="Layout_stateLogon" href="{$action_logout}">로그아웃</a>
+
+        <!-- <a data-ez-item="recent" href="/product/recent_view_product.html">최근본상품</a> -->
+        <!-- <div class="toparea_state_board">
+                    <a data-ez-item="board" href="#none">고객센터<i aria-hidden="true" class="icon icoArrowBottom"></i></a>
+                    <ul module="Layout_BoardInfo">
+                        <li><a href="{$link_board_list}">{$board_name}</a></li>
+                        <li><a href="{$link_board_list}">{$board_name}</a></li>
+                    </ul>
+                </div> -->
+      </div>
+      <!-- //toparea_state -->
+    </div>
+    <!-- //toparea -->
+
+    <div class="top_nav_box" id="top_nav_box">
+      <!-- //top_logo -->
+      <!-- <div class="top_logo" module="Layout_LogoTop"><a href="/"><img src="{$logo}" alt="{$mall_name}" loading="lazy" ez-prevent="img"></a></div> -->
+
+      <div class="top_logo" module="Layout_LogoTop">
+        <a href="/"><img src="/SkinImg/img/logo/GBrothers.png" alt="{$mall_name}" loading="lazy" ez-prevent="img" /></a>
+      </div>
+      <!-- //menu-main/1 -->
+      <ul class="top_mypage">
+        <li>
+          <a href="/myshop/index.html"><img src="/SkinImg/img/icon/avatar_7190409.svg" alt="유저 아이콘" /></a>
+        </li>
+        <li>
+          <a href="/order/basket.html" module="Layout_orderBasketcount"
+            ><img src="/SkinImg/img/icon/shopping-bag_8730005.svg" alt="쇼핑백 아이콘" /><span
+              class="count {$basket_count_display|display} {$basket_count_display_class}"
+              ><span class="{$basket_count_class}">{$basket_count}</span>
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="/myshop/wish_list.html"><img src="/SkinImg/img/icon/heart_4790142.svg" alt="하트 아이콘" /></a>
+        </li>
+        <li class="top_search">
+          <a href="javascript:;" class="eSearch"><img src="/SkinImg/img/icon/search_5175453.svg" alt="돋보기 아이콘" /></a>
+        </li>
+        <li class="mo_nav">
+          <a href="javascript:;" class="eNavFold"><img class="icon icoNav" src="/SkinImg/img/icon/open-menu_3817630.svg" alt="모바일탭 아이콘" /></a>
+        </li>
+      </ul>
+      <!-- //top_mypage -->
+    </div>
+    <!-- //top_nav_box -->
+
+    <div module="Layout_SearchHeader">
+      <!--
+				$product_page=/product/detail.html
+				$category_page=/product/list.html
+			-->
+      <fieldset>
+        <legend>검색</legend>
+        <div class="wrapF_search_box">
+          <div class="top_search_box">
+            {$form.keyword}<button type="button" class="btnSearch" onclick="{$action_search_submit}">
+              <img src="/SkinImg/img/top_search.svg" alt="검색" loading="lazy" ez-prevent="img" />
+            </button>
+            <ul class="autoDrop" id="{$search_auto_id}"></ul>
+          </div>
+          <!-- //top_search_box -->
+        </div>
+      </fieldset>
+    </div>
+    <!-- //Layout_SearchHeader -->
+    <div class="header_nav">
+      <div class="header_menu__box">
+        <button class="category_btn"><img src="/SkinImg/img/icon/open-menu_3817630.svg" alt="모바일탭 아이콘" />카테고리</button>
+        <ul class="header_menu__list">
+          <li class="header-menu">
+            <a class="main-cate" href="javascript:void(0);">베스트</a>
+          </li>
+          <li class="header-menu">
+            <a class="main-cate" href="javascript:void(0);">신상품</a>
+          </li>
+          <li class="header-menu">
+            <a class="main-cate" href="javascript:void(0);">콜라보</a>
+          </li>
+        </ul>
+      </div>
+      <div class="header_sns">
+        <!-- prettier-ignore -->
+        <div class="content-box">
+          <img src="/SkinImg/img/logo/gbros.png" alt="지브라더스얼굴" /><p>지브라더스의 일상이 궁금하다면?</p>
+        </div>
+        <ul class="sns_list">
+          <li>
+            <a href=""><img src="/SkinImg/img/icon/instagram_sns.png" alt="인스타그램 아이콘" /></a>
+          </li>
+          <li>
+            <a href=""><img src="/SkinImg/img/icon/facebook_sns.png" alt="페이스북 아이콘" /></a>
+          </li>
+          <li>
+            <a href=""><img src="/SkinImg/img/icon/x_sns.png" alt="엑스 아이콘" /></a>
+          </li>
+          <li>
+            <a href=""><img src="/SkinImg/img/icon/youtube_sns.png" alt="유튜브 아이콘" /></a>
+          </li>
+          <li>
+            <a href=""><img src="/SkinImg/img/icon/tiktok_sns.png" alt="틱톡 아이콘" /></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- //inner -->
+</header>
+<div data-ez-module="user-defined/1" data-ez-name="USER DEFINED" data-ez-type="plain" data-ez="module-09gapfl-1">
+  <!--@js(/_siru/js/makePath.js)-->
+</div>
+<!--#ez="1/2"-->

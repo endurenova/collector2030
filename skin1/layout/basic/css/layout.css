@@ -229,8 +229,7 @@ a:hover {
 /* 컬렉터2030, 지브라더스 링크 선택 -------------------------------------------------------------------------------- */
 
 #header .inner .toparea .toparea_shoppinginfo .select_link {
-  /* display: flex; */
-  display: none;
+  display: flex;
   flex-flow: row;
   position: relative;
   font-family: 'Noto Sans KR';
