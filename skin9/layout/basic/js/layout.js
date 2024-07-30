@@ -50,9 +50,11 @@ function fixedHeader() {
   if (scrollY > header.offsetTop) {
     header.classList.add('fixed');
     fixed_margin.style.marginTop = header_height;
+    console.log(header_height);
   } else {
     header.classList.remove('fixed');
     fixed_margin.style.marginTop = '0px';
+    console.log(header_height);
   }
 }
 
@@ -320,28 +322,25 @@ jQuery(document).ready(function () {
   });
 
   /* 상단검색 팝업 - 서정환 */
-  jQuery('#header .inner .top_nav_box .top_mypage .eSearch, .bottom-nav__tabBar li .eSearch').bind(
-    'click',
-    function () {
-      jQuery('.xans-layout-searchheader').css('display', 'block');
-      if ($(this).hasClass('active')) {
-        $(this).find('img').attr('src', '/SkinImg/img/icon/search_5175453.svg');
-        jQuery('.xans-layout-searchheader').css('display', 'none');
-        jQuery('body').removeClass('not_scroll').unbind('scroll touchmove mousewheel'); // 브라우저 스크롤풀기
-      } else {
-        $(this).find('img').attr('src', '/SkinImg/img/icon/delete_5175664.svg');
-        jQuery('body')
-          .addClass('not_scroll')
-          .bind('scroll touchmove mousewheel', function (e) {
-            // 브라우저 스크롤막기
-            e.preventDefault();
-            e.stopPropagation();
-            return false;
-          });
-      }
-      $(this).toggleClass('active');
-    },
-  );
+  jQuery('#header .inner .top_nav_box .top_mypage .eSearch, .bottom-nav__tabBar li .eSearch').bind('click', function () {
+    jQuery('.xans-layout-searchheader').css('display', 'block');
+    if ($(this).hasClass('active')) {
+      $(this).find('img').attr('src', '/SkinImg/img/icon/search_5175453.svg');
+      jQuery('.xans-layout-searchheader').css('display', 'none');
+      jQuery('body').removeClass('not_scroll').unbind('scroll touchmove mousewheel'); // 브라우저 스크롤풀기
+    } else {
+      $(this).find('img').attr('src', '/SkinImg/img/icon/delete_5175664.svg');
+      jQuery('body')
+        .addClass('not_scroll')
+        .bind('scroll touchmove mousewheel', function (e) {
+          // 브라우저 스크롤막기
+          e.preventDefault();
+          e.stopPropagation();
+          return false;
+        });
+    }
+    $(this).toggleClass('active');
+  });
 
   /* 로그인폼 placeholder 추가 - 서정환 */
   if (jQuery('.xans-member-login').val() != undefined) {

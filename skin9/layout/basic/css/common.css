@@ -43,7 +43,7 @@ html {
 body,
 code {
   font-size: 13px;
-  font-family: 'Montserrat', 'Noto Sans KR', Arial, sans-serif;
+  font-family: 'Noto Sans KR', 'Noto Sans KR', Arial, sans-serif;
   color: var(--grayScale-N1);
   background: var(--grayScale-W);
 }
@@ -83,7 +83,7 @@ input,
 select,
 textarea {
   font-size: 100%;
-  font-family: 'Montserrat', 'Noto Sans KR', Arial, sans-serif;
+  font-family: 'Noto Sans KR', 'Noto Sans KR', Arial, sans-serif;
   color: var(--grayScale-N1);
   color: var(--grayScale-N1);
   vertical-align: middle;
@@ -91,7 +91,7 @@ textarea {
   box-sizing: border-box;
 }
 button {
-  font-family: 'Montserrat', 'Noto Sans KR', Arial, sans-serif;
+  font-family: 'Noto Sans KR', 'Noto Sans KR', Arial, sans-serif;
   overflow: visible;
   padding: 0;
   margin: 0;
