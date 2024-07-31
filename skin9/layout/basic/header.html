@@ -83,10 +83,10 @@
       <!-- //toparea_shoppinginfo -->
 
       <div class="toparea_state" data-ez-group="top-util-menu" data-ez-role="list">
+        <a data-ez-item="login" module="Layout_statelogoff" href="/member/login.html">로그인</a>
         <a data-ez-item="recent" href="/product/recent_view_product.html">최근본상품</a>
         <a data-ez-item="order" href="/myshop/order/list.html">주문조회</a>
         <a data-ez-item="mypage" module="Layout_stateLogon" href="/myshop/index.html">마이페이지</a>
-        <a data-ez-item="login" module="Layout_statelogoff" href="/member/login.html">로그인</a>
         <a data-ez-item="join" module="Layout_statelogoff" href="/member/agreement.html">회원가입</a>
         <!-- <a data-ez-item="modify" module="Layout_stateLogon" href="/member/modify.html">내정보수정</a> -->
         <a data-ez-item="logout" module="Layout_stateLogon" href="{$action_logout}">로그아웃</a>
@@ -110,8 +110,28 @@
         <a href="/"><img src="/SkinImg/img/logo/GBrothers.png" alt="{$mall_name}" loading="lazy" ez-prevent="img" /></a>
       </div>
       <!-- //menu-main/1 -->
+
+      <div module="Layout_SearchHeader">
+        <!--
+				$product_page=/product/detail.html
+				$category_page=/product/list.html
+			-->
+        <fieldset>
+          <legend>검색</legend>
+          <div class="wrapF_search_box">
+            <div class="top_search_box">
+              {$form.keyword}<button type="button" class="btnSearch" onclick="{$action_search_submit}">
+                <img src="/SkinImg/img/top_search.svg" alt="검색" loading="lazy" ez-prevent="img" />
+              </button>
+              <ul class="autoDrop" id="{$search_auto_id}"></ul>
+            </div>
+            <!-- //top_search_box -->
+          </div>
+        </fieldset>
+      </div>
+      <!-- //Layout_SearchHeader -->
       <ul class="top_mypage">
-        <li>
+        <!-- <li>
           <a href="/myshop/index.html"><img src="/SkinImg/img/icon/avatar_7190409.svg" alt="유저 아이콘" /></a>
         </li>
         <li>
@@ -124,7 +144,7 @@
         </li>
         <li>
           <a href="/myshop/wish_list.html"><img src="/SkinImg/img/icon/heart_4790142.svg" alt="하트 아이콘" /></a>
-        </li>
+        </li> -->
         <li class="top_search">
           <a href="javascript:;" class="eSearch"><img src="/SkinImg/img/icon/search_5175453.svg" alt="돋보기 아이콘" /></a>
         </li>
@@ -136,25 +156,6 @@
     </div>
     <!-- //top_nav_box -->
 
-    <div module="Layout_SearchHeader">
-      <!--
-				$product_page=/product/detail.html
-				$category_page=/product/list.html
-			-->
-      <fieldset>
-        <legend>검색</legend>
-        <div class="wrapF_search_box">
-          <div class="top_search_box">
-            {$form.keyword}<button type="button" class="btnSearch" onclick="{$action_search_submit}">
-              <img src="/SkinImg/img/top_search.svg" alt="검색" loading="lazy" ez-prevent="img" />
-            </button>
-            <ul class="autoDrop" id="{$search_auto_id}"></ul>
-          </div>
-          <!-- //top_search_box -->
-        </div>
-      </fieldset>
-    </div>
-    <!-- //Layout_SearchHeader -->
     <div class="header_nav">
       <div class="header_menu__box">
         <button class="category_btn"><img src="/SkinImg/img/icon/open-menu_3817630.svg" alt="모바일탭 아이콘" />카테고리</button>
