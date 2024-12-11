@@ -1,0 +1,464 @@
+<!--@layout(/layout/basic/layout.html)-->
+<!--@js(/layout/basic/js/main.js)-->
+<!--@js(/_siru/js/mainPrdLoad.js)-->
+<!--@css(/layout/basic/css/main.css)-->
+<!--@import(/smart-banner/shop1/smart-banner-admin-CUSTOM.html)-->
+<section
+  class="section main_product_list"
+  data-ez-module="product-list/1"
+  data-ez-layout="grid4 list_gallery"
+  data-ez="contents-0kmfxtm-1"
+  style="margin-bottom: 120px"
+>
+  <ez-prop data-version="1.0.0">
+    <ez-var data-prop="layout" data-namespace="ez.module.product-list.layout" data-type="array">
+      <ez-item data-id="grid3" data-name="일반3단형(PC 3열/MOBILE 1열)"></ez-item>
+      <ez-item data-id="grid4" data-name="일반4단형(PC 4열/MOBILE 2열)"></ez-item>
+      <ez-item data-id="grid5" data-name="일반5단형(PC 5열/MOBILE 2열)"></ez-item>
+      <ez-item data-id="grid3 list_gallery" data-name="이미지강조3단형(PC 3열/MOBILE 1열)"></ez-item>
+      <ez-item data-id="grid4 list_gallery" data-name="이미지강조4단형(PC 4열/MOBILE 2열)"></ez-item>
+      <ez-item data-id="grid5 list_gallery" data-name="이미지강조5단형(PC 5열/MOBILE 2열)"></ez-item>
+    </ez-var>
+  </ez-prop>
+
+  <!-- //main_title -->
+
+  <div data-ez-holder="product_listmain">
+    <div module="product_listmain_1" class="ec-base-product swiper-container product_listmain_1-swiper">
+      <!--
+				$count = 8
+				$basket_result = /product/add_basket.html
+				$basket_option = /product/basket_option.html
+				$moreview = no
+				$cache = yes
+			-->
+      <ul class="swiper-wrapper prdList grid4 list_gallery" data-ez-role="layout ez-discount-tag">
+        <!--@import(/product/list_product.html)-->
+      </ul>
+      <!-- <script>
+                const carousel = document.querySelector('.prdList.grid4.list_gallery');
+                let isDown = false;
+                let startX;
+                let scrollLeft;
+
+                carousel.addEventListener('mousedown', e => {
+                    isDown = true;
+                    carousel.style.cursor = 'grabbing';
+                    startX = e.pageX - carousel.offsetLeft;
+                    scrollLeft = carousel.scrollLeft;
+
+                    carousel.addEventListener('mousemove', e => {
+                        if (!isDown) return;
+                        e.preventDefault();
+                        const x = e.pageX - carousel.offsetLeft;
+                        const walk = (x - startX) * 3; // scroll-fast
+                        carousel.scrollLeft = scrollLeft - walk;
+                    });
+                });
+
+                carousel.addEventListener('mouseleave', () => {
+                    isDown = false;
+                    carousel.style.cursor = 'grab';
+                });
+
+                carousel.addEventListener('mouseup', () => {
+                    isDown = false;
+                    carousel.style.cursor = 'grab';
+                });
+            </script> -->
+    </div>
+    <div module="product_listmore_1" class="more">
+      <a href="#none" onclick="{$more_action}" class="btnMore">More +</a>
+    </div>
+  </div>
+</section>
+<section
+  class="section main_image_text_gallery"
+  data-ez-module="image-gallery/2"
+  data-ez-role="style.background"
+  data-ez-item-length="3"
+  data-ez="contents-12yzxc0-1"
+>
+  <ez-prop data-version="1.0.0">
+    <ez-var data-prop="image" data-namespace="ez.module.image-gallery.image">
+      <ez-item data-id="size" data-pc="480 480" data-mobile="480 480"></ez-item>
+    </ez-var>
+    <ez-var data-prop="display" data-namespace="ez.module.image-gallery.display">
+      <ez-item data-id="item" data-max="10"></ez-item>
+      <ez-item data-id="column" data-default="3" data-min="1" data-max="5"></ez-item>
+    </ez-var>
+    <ez-var data-prop="layout" data-namespace="ez.module.image-gallery.layout">
+      <ez-item data-id="mobile" data-default="slide">
+        <ez-item data-id="options" data-type="array">
+          <ez-item data-id="slide" data-name="슬라이드"></ez-item>
+          <ez-item data-id="more" data-name="더보기"></ez-item>
+          <ez-item data-id="none" data-name="사용안함"></ez-item>
+        </ez-item>
+      </ez-item>
+    </ez-var>
+  </ez-prop>
+  <div class="main_title ez-align-center" data-ez-role="ez-align" data-ez-align="center">
+    <!-- 라이프스타일 타이틀 수정하는곳 -->
+    <div class="main_title_txt01" data-ez-role="title">SPECIAL ARTWORKS</div>
+    <!-- <div class="main_title_txt02" data-ez-role="desc">컬렉터 2030에서만 볼 수 있는 특별한 작품</div> -->
+  </div>
+  <!-- //main_title -->
+
+  <div class="main_3dan_banner ez-mobile-layout-slide" data-ez-role="ez-mobile-layout" data-ez-mobile-layout="slide">
+    <!-- 메인 3단배너 수정하는곳 -->
+    <ul data-ez-role="image-list ez-column" class="ez-column-3" data-ez-column="3">
+      <li data-ez-role="image-item ez-align">
+        <a data-ez-role="a" href="/product/list.html?cate_no=61" target="_self">
+          <picture>
+            <img src="/SkinImg/img/ez-image-contents-bear.jpg" loading="lazy" ez-prevent="img" />
+          </picture>
+          <div class="main_3dan_banner_txt">
+            <div class="main_3dan_banner_txt01" data-ez-role="title">컬렉터 에디션</div>
+            <div class="main_banner_more" data-ez-role="desc">자세히 살펴보기</div>
+          </div>
+          <!--//main_3dan_banner_txt-->
+        </a>
+      </li>
+      <li data-ez-role="image-item ez-align">
+        <a data-ez-role="a" href="#" target="_self">
+          <picture>
+            <img src="/SkinImg/img/spa_02.jpg" alt="지스타 UFO" />
+          </picture>
+          <div class="main_3dan_banner_txt">
+            <div class="main_3dan_banner_txt01" data-ez-role="title">지브라더스</div>
+            <div class="main_banner_more" data-ez-role="desc">자세히 살펴보기</div>
+          </div>
+          <!--//main_3dan_banner_txt-->
+        </a>
+      </li>
+      <li data-ez-role="image-item ez-align">
+        <a data-ez-role="a" href="/product/list.html?cate_no=63" target="_self">
+          <picture>
+            <img src="/SkinImg/img/spa_03.jpg" alt="나이키 에디션" />
+          </picture>
+          <div class="main_3dan_banner_txt">
+            <div class="main_3dan_banner_txt01" data-ez-role="title" 1="">나이키 에디션</div>
+            <div class="main_banner_more" data-ez-role="desc">자세히 살펴보기</div>
+          </div>
+          <!--a-->
+        </a>
+      </li>
+    </ul>
+    <div class="main_image_text_gallery_more"><a href="#none" class="main_image_text_gallery_more_btn">더보기</a></div>
+  </div>
+  <!-- //main_3dan_banner -->
+</section>
+<!-- <section class="section artist-videos" data-ez-module="html/1" data-ez-name="CUSTOM HTML" data-ez-type="plain" data-ez="contents-0z96adb-1">
+    <div class="main_title ez-align-center" data-ez-role="ez-align" data-ez-align="center">
+        <div class="main_title_txt01" data-ez-role="title">작가 소개 영상</div>
+    </div>
+    <div class="youtube-video-box swiper-container">
+        <ul class="youtube-video-list swiper-wrapper"></ul>
+    </div>
+</section> -->
+<section class="section main_product_category" data-ez-module="product-list-category/2" data-ez-layout="grid3_slide list_gallery" data-ez="contents-1geex3l-1">
+  <ez-prop data-version="1.0.0">
+    <ez-var data-prop="layout" data-namespace="ez.module.product-list-category.layout" data-type="array">
+      <ez-item data-id="grid3_slide" data-name="일반3단형(PC 3열/MOBILE 2열)"></ez-item>
+      <ez-item data-id="grid4_slide" data-name="일반4단형(PC 4열/MOBILE 2열)"></ez-item>
+      <ez-item data-id="grid5_slide" data-name="일반5단형(PC 5열/MOBILE 3열)"></ez-item>
+      <ez-item data-id="grid3_slide list_gallery" data-name="이미지강조3단형(PC 3열/MOBILE 2열)"></ez-item>
+      <ez-item data-id="grid4_slide list_gallery" data-name="이미지강조4단형(PC 4열/MOBILE 2열)"></ez-item>
+      <ez-item data-id="grid5_slide list_gallery" data-name="이미지강조5단형(PC 5열/MOBILE 3열)"></ez-item>
+    </ez-var>
+  </ez-prop>
+  <!-- <div class="main_product_inner">
+        <div class="main_title ez-align-left">
+            <div class="main_title_txt01">Collector Edition</div>
+        </div>
+        <ul class="main_product_tab">
+            <li>
+                <button type="button" class="button">지브라더스</button>
+            </li>
+            <li>
+                <button type="button" class="button">스펀지밥</button>
+            </li>
+            <li>
+                <button type="button" class="button">베어브릭</button>
+            </li>
+            <li>
+                <button type="button" class="button">나이키</button>
+            </li>
+        </ul>
+    </div> -->
+  <!-- <div class="content_list">
+        <div class="tabcontent active swiper-container" id="tabContent1">
+            <ul class="tabcontent-list swiper-wrapper">
+                <li class="swiper-slide">
+                    <div class="prdList__item">
+                        <div class="thumbnail">
+                            <a href="">
+                                <img src="/SkinImg/img/spa_02.jpg" alt="" />
+                            </a>
+                        </div>
+                        <div class="description">
+                            <div class="name">
+                                <a href="">
+                                    <span>fjfjfj</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="swiper-slide">
+                    <div class="prdList__item">
+                        <div class="thumbnail">
+                            <a href="">
+                                <img src="/SkinImg/img/spa_02.jpg" alt="" />
+                            </a>
+                        </div>
+                        <div class="description">
+                            <div class="name">
+                                <a href="">
+                                    <span>fjfjfj</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="swiper-slide">
+                    <div class="prdList__item">
+                        <div class="thumbnail">
+                            <a href="">
+                                <img src="/SkinImg/img/spa_02.jpg" alt="" />
+                            </a>
+                        </div>
+                        <div class="description">
+                            <div class="name">
+                                <a href="">
+                                    <span>fjfjfj</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="tabcontent" id="tabContent2" data-ez-role="content-item">
+            <div data-ez-holder="product_listmain"></div>
+        </div>
+
+        <div class="tabcontent" id="tabContent3" data-ez-role="content-item">
+            <div data-ez-holder="product_listmain"></div>
+        </div>
+
+        <div class="tabcontent" id="tabContent4" data-ez-role="content-item">
+            <div data-ez-holder="product_listmain"></div>
+        </div>
+    </div> -->
+  <!-- //main_product_inner -->
+
+  <div class="content_list" data-ez-role="content-list">
+    <div class="tabcontent" id="tabContent1" data-ez-role="content-item">
+      <div data-ez-holder="product_listmain">
+        <div module="product_listmain_1" class="ec-base-product swiper-container swiper03">
+          <!--
+						$count = 100
+						$basket_result = /product/add_basket.html
+						$basket_option = /product/basket_option.html
+						$moreview = no
+						$cache = no
+					-->
+          <ul class="prdList swiper-wrapper ez-discount-tag-off grid3_slide list_gallery" data-ez-role="layout ez-discount-tag" data-ez-discount-tag="off">
+            <!--@import(/product/list_product_slide.html)-->
+          </ul>
+          <div class="swiper-scrollbar swiper-scrollbar_swiper03"></div>
+        </div>
+      </div>
+    </div>
+    <!-- //tabContent1 -->
+
+    <div class="tabcontent" id="tabContent2" data-ez-role="content-item">
+      <div data-ez-holder="product_listmain">
+        <div module="product_listmain_2" class="ec-base-product swiper-container swiper03">
+          <!--
+						$count = 100
+						$basket_result = /product/add_basket.html
+						$basket_option = /product/basket_option.html
+						$moreview = no
+						$cache = no
+					-->
+          <ul class="prdList swiper-wrapper grid3_slide list_gallery" data-ez-role="layout ez-discount-tag">
+            <!--@import(/product/list_product_slide.html)-->
+          </ul>
+          <div class="swiper-scrollbar swiper-scrollbar_swiper03"></div>
+        </div>
+      </div>
+    </div>
+    <!-- //tabContent2 -->
+
+    <div class="tabcontent" id="tabContent3" data-ez-role="content-item">
+      <div data-ez-holder="product_listmain">
+        <div module="product_listmain_3" class="ec-base-product swiper-container swiper03">
+          <!--
+						$count = 100
+						$basket_result = /product/add_basket.html
+						$basket_option = /product/basket_option.html
+						$moreview = no
+						$cache = no
+					-->
+          <ul class="prdList swiper-wrapper grid3_slide list_gallery" data-ez-role="layout ez-discount-tag">
+            <!--@import(/product/list_product_slide.html)-->
+          </ul>
+          <div class="swiper-scrollbar swiper-scrollbar_swiper03"></div>
+        </div>
+      </div>
+    </div>
+    <!-- //tabContent3 -->
+
+    <div class="tabcontent" id="tabContent4" data-ez-role="content-item">
+      <div data-ez-holder="product_listmain">
+        <div module="product_listmain_4" class="ec-base-product swiper-container swiper03">
+          <!--
+						$count = 100
+						$basket_result = /product/add_basket.html
+						$basket_option = /product/basket_option.html
+						$moreview = no
+						$cache = no
+					-->
+          <ul class="prdList swiper-wrapper grid3_slide list_gallery" data-ez-role="layout ez-discount-tag">
+            <!--@import(/product/list_product_slide.html)-->
+          </ul>
+          <div class="swiper-scrollbar swiper-scrollbar_swiper03"></div>
+        </div>
+      </div>
+    </div>
+    <!-- //tabContent4 -->
+  </div>
+  <!-- //content_list -->
+</section>
+<section class="section show-room__section" data-ez="module-02d33lz-1" data-ez-module="user-defined/1" data-ez-name="USER DEFINED" data-ez-type="plain">
+  <!-- 컬렉터 2030 쇼룸 -->
+  <div class="show-room__box">
+    <div class="show-room__info"></div>
+    <div style="padding: 42.86% 0 0 0; width: 100%; height: fit-content; position: relative">
+      <iframe
+        id="showRoom"
+        src="https://player.vimeo.com/video/1037350142?badge=0&amp;background=1&amp;muted=1&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+        frameborder="0"
+        allow="autoplay; fullscreen; picture-in-picture"
+        style="position: absolute; top: 0%; left: 0; width: 100%; height: 100%"
+        title="G-Bros"
+      ></iframe>
+    </div>
+    <script src="https://player.vimeo.com/api/player.js"></script>
+  </div>
+</section>
+<section
+  class="section main_map ez-align-left"
+  data-ez-module="map/1"
+  data-ez-align="left"
+  data-ez="contents-14r7dtv-1"
+  style="margin-bottom: 120px; display: none"
+  data-ez-display="hidden"
+>
+  <ez-prop data-version="1.0.0">
+    <ez-var data-prop="image" data-namespace="ez.module.map.image">
+      <ez-item data-id="size" data-pc="830 520" data-mobile="830 520"></ez-item>
+    </ez-var>
+  </ez-prop>
+  <div class="main_map_banner">
+    <!-- 메인 지도 -->
+    <div class="wrap_banner_txt">
+      <div class="main_map_banner_txt01" data-ez-role="title"></div>
+    </div>
+    <picture>
+      <source srcset="/shop1/skin-skin1/SkinImg/img/main_map_pc.png?v=1702893836522" media="(max-width: 1024px)" data-ez-role="img-pc" />
+      <img src="/shop1/skin-skin1/SkinImg/img/main_map_pc.png?v=1702893836522" data-ez-role="img-mobile" loading="lazy" ez-prevent="img" />
+    </picture>
+    <div class="main_map_banner_txt_box">
+      <div class="main_map_banner_txt">
+        <div class="map_txt" data-ez-role="desc">
+          <p>
+            <strong><span>주소</span></strong>
+          </p>
+          <p>
+            <span
+              style="
+                font-family: Jost, 'Noto Sans KR', Arial, sans-serif;
+                font-size: 13px;
+                font-style: normal;
+                font-variant-ligatures: normal;
+                font-variant-caps: normal;
+                font-weight: 300;
+                letter-spacing: -0.65px;
+                orphans: 2;
+                text-align: start;
+                text-indent: 0px;
+                text-transform: none;
+                widows: 2;
+                word-spacing: 0px;
+                -webkit-text-stroke-width: 0px;
+                white-space: normal;
+                text-decoration-thickness: initial;
+                text-decoration-style: initial;
+                text-decoration-color: initial;
+                display: inline !important;
+                float: none;
+              "
+              >서울특별시 강남구 도산대로99길 17 1층</span
+            >
+          </p>
+          <p><br /></p>
+          <p><br /></p>
+          <p>
+            <strong><span>운영시간</span></strong>
+          </p>
+          <p>운영시간 : 오전 10시 ~ 오후 10시</p>
+          <p><br /></p>
+        </div>
+        <!-- //map_txt -->
+        <div class="main_long_banner_link">
+          <span class="displaynone" data-ez-role="address">서울특별시 동작구 보라매로0길 00</span
+          ><a data-ez-role="a" href="https://www.google.com/maps/dir/서울특별시%20동작구%20보라매로0길%2000" target="_blank">바로가기</a>
+        </div>
+      </div>
+      <!-- //main_map_banner_txt -->
+    </div>
+    <!-- //main_long_banner_txt -->
+  </div>
+  <!-- //main_map_banner -->
+</section>
+<div data-ez-module="user-defined/1" data-ez-name="USER DEFINED" data-ez-type="plain" data-ez="module-1x780iw-1">
+  <!-- <script>
+        function dragSlide(carousel) {
+            let isDown = false;
+            let startX;
+            let scrollLeft;
+
+            carousel.addEventListener('mousedown', e => {
+                isDown = true;
+                carousel.style.cursor = 'grabbing';
+                startX = e.pageX - carousel.offsetLeft;
+                scrollLeft = carousel.scrollLeft;
+
+                carousel.addEventListener('mousemove', e => {
+                    if (!isDown) return;
+                    e.preventDefault();
+                    const x = e.pageX - carousel.offsetLeft;
+                    const walk = (x - startX) * 3; // scroll-fast
+                    carousel.scrollLeft = scrollLeft - walk;
+                });
+            });
+
+            carousel.addEventListener('mouseleave', () => {
+                isDown = false;
+                carousel.style.cursor = 'grab';
+            });
+
+            carousel.addEventListener('mouseup', () => {
+                isDown = false;
+                carousel.style.cursor = 'grab';
+            });
+        }
+        dragSlide(document.querySelector('.prdList.grid4.list_gallery'));
+    </script> -->
+</div>
+<!--@define(cmc_log)-->
+<!--#ez="1/2"-->

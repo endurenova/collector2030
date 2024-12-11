@@ -56,7 +56,7 @@ body::-webkit-scrollbar-track {
   zoom: 1;
 }
 .cboth:after {
-  content: ' ';
+  content: " ";
   display: block;
   clear: both;
 }
@@ -82,7 +82,7 @@ textarea,
 body,
 code,
 button {
-  font-family: 'Montserrat', 'Noto Sans KR', Arial, sans-serif !important;
+  font-family: "Montserrat", "Noto Sans KR", Arial, sans-serif !important;
 }
 a:hover {
   text-decoration: none;
@@ -177,7 +177,7 @@ a:hover {
   align-items: center;
   margin-left: 30px;
 }
-.main_top_banner .top_banner_box_inner .top_banner_close input[type='checkbox'] {
+.main_top_banner .top_banner_box_inner .top_banner_close input[type="checkbox"] {
   width: 15px;
   height: 15px;
   background-size: 15px;
@@ -232,7 +232,7 @@ a:hover {
   display: flex;
   flex-flow: row;
   position: relative;
-  font-family: 'Noto Sans KR';
+  font-family: "Noto Sans KR";
 }
 #header .inner .toparea .toparea_shoppinginfo .select_link li {
   margin-right: 20px;
@@ -241,7 +241,7 @@ a:hover {
   font-weight: var(--font-weight-Bold);
 }
 #header .inner .toparea .toparea_shoppinginfo .select_link::after {
-  content: '';
+  content: "";
   border-right: 1px solid var(--grayScale-N1);
   position: absolute;
   height: 20px;
@@ -410,7 +410,7 @@ a:hover {
   align-items: center;
   justify-content: space-between;
 }
-#header .inner .top_nav_box div[data-ez-module='menu-main/1'] {
+#header .inner .top_nav_box div[data-ez-module="menu-main/1"] {
   display: flex;
   width: 70%;
   justify-content: space-around;
@@ -444,7 +444,7 @@ a:hover {
   color: var(--grayScale-N1);
 }
 #header .inner .top_nav_box .top_category > ul > li > a:after {
-  content: '';
+  content: "";
   position: relative;
   display: block;
   bottom: 24px;
@@ -522,12 +522,12 @@ a:hover {
 }
 #header .inner .top_nav_box .top_category .sub_cate01 li:after,
 #header .inner .top_nav_box .top_category .sub-category li:after {
-  content: '';
+  content: "";
   position: absolute;
   top: 50%;
   right: 25px;
   margin-top: -3px;
-  background: url('/SkinImg/img/arrow.png') no-repeat;
+  background: url("/SkinImg/img/arrow.png") no-repeat;
   z-index: 10;
   width: 4px;
   height: 7px;
@@ -797,7 +797,7 @@ a:hover {
   font-size: 0;
   width: 20px;
   height: 45px;
-  background: url('//img.echosting.cafe24.com/skin/mobile_ko_KR/layout/btn_delete.png') no-repeat 0 center;
+  background: url("//img.echosting.cafe24.com/skin/mobile_ko_KR/layout/btn_delete.png") no-repeat 0 center;
   background-size: 20px;
   margin: 0 5px;
 }
@@ -1145,7 +1145,7 @@ a:hover {
   width: 65px;
 }
 #right_quick > div .kakao-chat__btn::before {
-  content: '톡채널';
+  content: "톡채널";
   width: 0px;
   display: flex;
   position: absolute;
@@ -1801,7 +1801,7 @@ a:hover {
     margin-bottom: 3%;
   }
   #footer .inner .inner_t .info_middle .info_middle-toggle:after {
-    content: '';
+    content: "";
     display: inline-block;
     width: 36px;
     height: 30px;
@@ -1843,7 +1843,7 @@ a:hover {
     transform: scale(1);
   }
   .artist-video-thumbnail:hover .play_btn.material-symbols-outlined {
-    font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+    font-variation-settings: "FILL" 0, "wght" 300, "GRAD" 0, "opsz" 24;
   }
   .artist-video-direction {
     display: none;
