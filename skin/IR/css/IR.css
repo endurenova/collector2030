@@ -1,0 +1,523 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "MinervaMorden-Black";
+  src: url("/IR/font/minervamodern-black.ttf");
+}
+@font-face {
+  font-family: "MinervaMorden-Bold";
+  src: url("/IR/font/minervamodern-bold.ttf");
+}
+@font-face {
+  font-family: "Spoqa-Thin";
+  src: url("/IR/font/SpoqaHanSansNeo-Thin.ttf");
+}
+@font-face {
+  font-family: "Spoqa-Light";
+  src: url("/IR/font/SpoqaHanSansNeo-Light.ttf");
+}
+@font-face {
+  font-family: "Spoqa-Regular";
+  src: url("/IR/font/SpoqaHanSansNeo-Regular.ttf");
+}
+@font-face {
+  font-family: "Spoqa-Medium";
+  src: url("/IR/font/SpoqaHanSansNeo-Medium.ttf");
+}
+@font-face {
+  font-family: "Spoqa-Bold";
+  src: url("/IR/font/SpoqaHanSansNeo-Bold.ttf");
+}
+:root {
+  --grayScale-N1: #1d1611;
+  --fontSize-subject: clamp(36px, 3.516vw, 48px); /* 1024px */
+  --fontSize-title: clamp(24px, 2.344vw, 36px);
+  --fontSize-contentTitle: clamp(18px, 1.758vw, 20px); /* 1024px */
+  --fontSize-contentText: clamp(16px, 1.563vw, 18px); /* 1024px */
+  --fontSize-p: clamp(14px, 1.367vw, 16px); /* 1024px */
+}
+
+@media (max-width: 1024px) {
+  :root {
+    --fontSize-subject: clamp(28px, 3.684vw, 36px);
+    --fontSize-title: clamp(18px, 2.368vw, 24px);
+    --fontSize-contentTitle: clamp(16px, 2.105vw, 18px); /* 760px */
+    --fontSize-contentText: clamp(14px, 1.842vw, 16px); /* 760px */
+    --fontSize-p: clamp(12px, 1.579vw, 14px); /* 760px */
+  }
+}
+@media (max-width: 760px) {
+  :root {
+    --fontSize-subject: clamp(24px, 5vw, 28px);
+    --fontSize-title: clamp(14px, 2.917vw, 18px);
+    --fontSize-contentTitle: clamp(14px, 2.917vw, 16px); /* 480px */
+    --fontSize-contentText: clamp(12px, 2.5vw, 14px); /* 480px */
+    --fontSize-p: clamp(11px, 2.292vw, 12px); /* 480px */
+  }
+}
+@media (max-width: 480px) {
+  :root {
+    --fontSize-contentTitle: clamp(12px, 3.333vw, 14px);
+    --fontSize-contentText: clamp(11px, 3.056vw, 12px);
+  }
+}
+@keyframes stroke {
+  0% {
+    stroke-dashoffset: 20% 0%;
+    stroke-dasharray: 0% 20%;
+    fill: rgba(41, 41, 41, 0);
+    stroke: #292929;
+    stroke-width: 0.5;
+  }
+  40% {
+    stroke-dashoffset: 10%;
+    stroke-dasharray: 33%;
+    fill: rgba(41, 41, 41, 0);
+    stroke-width: 1;
+  }
+  60% {
+    stroke-dashoffset: 0% 30%;
+    stroke-dasharray: 50% 0%;
+    fill: #292929;
+    stroke: rgb(41, 41, 41);
+    stroke-width: 0.5;
+  }
+  100% {
+    fill: #292929;
+    stroke: rgba(41, 41, 41, 0.5);
+    stroke-width: 0.5;
+  }
+}
+@keyframes aps {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes rps {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+body {
+  width: 100vw;
+  overflow-x: hidden;
+  font-family: "Spoqa-Medium";
+}
+body::-webkit-scrollbar {
+  width: 8px; /* 스크롤바의 너비 */
+}
+body::-webkit-scrollbar-thumb {
+  height: 30%; /* 스크롤바의 길이 */
+  background: #217af4; /* 스크롤바의 색상 */
+  border-radius: 10px;
+}
+body::-webkit-scrollbar-track {
+  background: rgba(33, 122, 244, 0.1); /*스크롤바 뒷 배경 색상*/
+}
+body .ufo-pointer {
+  position: absolute;
+  width: 80px;
+  height: auto;
+  transition: 0.3s ease-out;
+  z-index: 100000;
+}
+body section .wrap {
+  display: flex;
+  height: 100vh;
+  width: 90%;
+  margin: 0 auto;
+}
+body section.intro-section {
+  height: 200vh;
+  position: relative;
+  overflow: hidden;
+}
+body section.intro-section .parallax-element {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform: translateZ(0);
+}
+body section.intro-section .parallax-element.background {
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: contain;
+  background-attachment: fixed;
+  z-index: 1;
+}
+body section.intro-section .parallax-element.background::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+body section.intro-section .parallax-element.gister-UFO {
+  top: 300px;
+  right: 100%;
+  width: 300px;
+  height: 300px;
+  z-index: 4;
+  border-radius: 50%;
+}
+body section.intro-section .parallax-element.gister-UFO img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+body section.intro-section .parallax-element.gistar-UFO {
+  bottom: 800px;
+  left: 100%;
+  width: 200px;
+  height: 200px;
+  z-index: 3;
+}
+body section.intro-section .parallax-element.gistar-UFO img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+body section.intro-section .parallax-element.title {
+  position: fixed;
+  font-family: "MinervaMorden-Black";
+  color: white;
+  text-align: center;
+  width: 100%;
+  height: auto;
+  top: 50%; /* 초기 위치 조정 */
+  transform: scale(1) translateY(-50%);
+}
+body section.intro-section .parallax-element.title svg.logo {
+  -moz-animation: stroke 5s 1 alternate;
+  -webkit-animation: stroke 5s 1 alternate;
+  animation: stroke 5s 1 alternate;
+  fill: #292929;
+}
+body section.intro-section .sub-title {
+  display: block;
+  position: absolute;
+  bottom: 50%;
+  right: 5%;
+  transform: translateY(-100%);
+  font-size: var(--fontSize-contentTitle);
+  opacity: 0;
+  font-family: "Spoqa-Bold";
+}
+body section.intro-section .sub-title.active {
+  opacity: 1;
+  animation: aps 0.5s 1 alternate;
+}
+body section.intro-section .sub-title.unactive {
+  opacity: 0;
+  animation: rps 0.5s 1 alternate;
+}
+body section.intro-section .sub-title span {
+  display: block;
+  text-align: right;
+}
+body section.intro-content {
+  position: relative;
+  z-index: 100;
+  height: 100%;
+  background-image: url(/SkinImg/img/IR/pattern_UFO.png);
+  background-repeat: repeat;
+  background-size: contain;
+  background-position: center 80%;
+  box-sizing: border-box;
+  font-size: 3rem;
+  color: var(--grayScale-N1);
+  z-index: 3;
+}
+body section.intro-content > .wrap {
+  flex-flow: row;
+  justify-content: space-around;
+  align-items: center;
+}
+body section.intro-content::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #ffffff;
+  opacity: 0.8;
+}
+body section.intro-content .intro-content__thumbnail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45%;
+}
+body section.intro-content .intro-content__thumbnail img {
+  width: 100%;
+  height: 100%;
+}
+body section.intro-content .intro-content__box {
+  display: flex;
+  flex-flow: column;
+  -ms-flex-flow: column;
+  align-items: center;
+  width: 45%;
+  z-index: 1;
+}
+body section.intro-content .intro-content__box img {
+  padding: 5%;
+  width: 80%;
+  margin: 0 auto;
+}
+body section.intro-content .intro-text__box {
+  display: flex;
+  flex-flow: column;
+  -ms-flex-flow: column;
+  justify-content: space-around;
+  height: 50%;
+  padding: 2% 3%;
+  text-shadow: 0 0px 3px #fff;
+}
+body section.intro-content .intro-text__box h3 {
+  font-family: "Spoqa-Bold";
+  font-size: var(--fontSize-contentTitle);
+  margin-bottom: var(--fontSize-contentTitle);
+}
+body section.intro-content .intro-text__box p {
+  font-family: "Spoqa-Medium";
+  font-size: var(--fontSize-contentText);
+  line-height: 1.5;
+}
+body section.intro-content .intro-text__box p span {
+  display: block;
+}
+body section.intro-content .intro-text__box p span:first-child {
+  margin-bottom: var(--fontSize-contentText);
+}
+body section.BM-section {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  color: var(--grayScale-N1);
+}
+body section.BM-section > .wrap {
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+body section.BM-section > .wrap > h1 {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--fontSize-subject);
+  height: 15%;
+  font-family: "Pretendard-Bold";
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-underline-offset: calc(0.3 * var(--fontSize-subject));
+}
+body section.BM-section > .wrap > h1::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: calc(1.4 * var(--fontSize-subject));
+  height: calc(1.4 * var(--fontSize-subject));
+  top: calc(50% + 0.05 * var(--fontSize-subject));
+  left: calc(-1.1 * var(--fontSize-subject));
+  transform: translate(-50%, -50%);
+  background-image: url(/SkinImg/img/hex.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+body section.BM-section > .wrap > ul {
+  display: flex;
+  position: relative;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-content: space-around;
+  height: 85%;
+}
+body section.BM-section > .wrap > ul > li {
+  display: flex;
+  position: relative;
+  flex-flow: row;
+  align-items: center;
+  width: 45%;
+  height: 30%;
+}
+body section.BM-section > .wrap > ul > li > img {
+  box-sizing: border-box;
+  position: relative;
+  width: 35%;
+  height: 100%;
+}
+body section.BM-section > .wrap > ul > li > img > span {
+  text-wrap: nowrap;
+}
+body section.BM-section > .wrap > ul > li .BM-txt__box {
+  width: 55%;
+}
+body section.BM-section > .wrap > ul > li .BM-txt__box h3 {
+  font-family: "Spoqa-Bold";
+  font-size: var(--fontSize-contentTitle);
+  line-height: 1.6;
+}
+body section.BM-section > .wrap > ul > li .BM-txt__box p {
+  font-family: "Spoqa-Medium";
+  font-size: var(--fontSize-p);
+  word-break: break-all;
+}
+body section.BM-section > .wrap > ul > li a.BM-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 10%;
+  height: 100%;
+  transition: 0.3s;
+}
+body section.BM-section > .wrap > ul > li a.BM-link::before {
+  content: "";
+  display: block;
+  mask: url(/SkinImg/img/first-btn.svg) no-repeat center;
+  -webkit-mask: url(/SkinImg/img/first-btn.svg) no-repeat center;
+  background-color: #000;
+  width: 90%;
+  height: 90%;
+  rotate: 180deg;
+  transition: 0.3s;
+}
+body section.BM-section > .wrap > ul > li a.BM-link:hover::before {
+  scale: 1.1;
+}
+body.column section.intro-content > .wrap {
+  flex-flow: column;
+  padding: 5% 0;
+}
+body.column section.intro-content .intro-content__thumbnail,
+body.column section.intro-content .intro-content__box {
+  width: 100%;
+  margin: 5% 0;
+}
+body.column section.intro-content .intro-content__thumbnail img,
+body.column section.intro-content .intro-content__box img {
+  width: 75%;
+}
+body.column section.intro-content .intro-content__box img {
+  display: none;
+}
+body.column section.BM-section .wrap > ul > li {
+  width: 100%;
+}
+
+.fp-overflow {
+  width: 100%;
+  height: 100%;
+}
+
+#header-IR {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: var(--grayScale-N1-opa);
+  z-index: 1;
+  height: 7vh;
+  transition: 0.3s;
+}
+#header-IR.hidden {
+  transform: translateY(-6vh);
+}
+#header-IR #gnb {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  padding: 0 1%;
+}
+#header-IR #gnb li {
+  padding: 0 1%;
+}
+#header-IR #gnb li a {
+  display: flex;
+  font-family: "Spoqa-Bold";
+  color: #fff;
+  font-size: 11px;
+  text-align: center;
+}
+
+#fullpage section.intro .intro-bg_1 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #323f4f;
+  clip-path: polygon(43% 0%, 100% 0%, 100% 100%, 63% 100%);
+}
+#fullpage section.intro .intro-bg_2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #222a35;
+  clip-path: polygon(58% 0, 100% 0, 100% 100%, 48% 100%);
+}
+#fullpage section.intro .img-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  height: 100%;
+  margin-left: 5%;
+}
+#fullpage section.intro .img-box img {
+  width: 80%;
+}
+#fullpage section.intro .img-box img.reflect-effect {
+  -webkit-box-reflect: below 0 linear-gradient(transparent, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+}
+#fullpage section.intro .title-box {
+  position: absolute;
+  right: 10%;
+  bottom: 5%;
+  text-align: right;
+  color: #fff;
+}
+#fullpage section.intro .title-box h1 {
+  font-family: "Spoqa-Bold";
+  font-size: var(--fontSize-subject);
+  line-height: 1.6;
+}
+#fullpage section.intro .title-box p {
+  font-family: "Spoqa-Medium";
+  font-size: var(--fontSize-contentTitle);
+}
+#fullpage section:nth-of-type(2) {
+  background-color: orange;
+}
+#fullpage section:nth-of-type(3) {
+  background-color: yellow;
+}
+#fullpage section:nth-of-type(4) {
+  background-color: greenyellow;
+}
+
+.column #fullpage section.intro .intro-bg_1 {
+  clip-path: polygon(0% 0%, 0% 25%, 175% 0%, 0% 0%);
+}
+.column #fullpage section.intro .intro-bg_2 {
+  clip-path: polygon(100% 75%, 100% 0%, 100% 100%, -130% 100%);
+}
+.column #fullpage section.intro .img-box {
+  width: 100%;
+  margin-left: unset;
+}
+.column #fullpage section.intro .img-box img {
+  width: 70%;
+}
